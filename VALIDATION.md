@@ -17,7 +17,7 @@
 
 There is no separate pytest suite; verification uses the scripts and notebook assertions above. The short verification and scalar-inversion reports were refreshed by their documented commands. Supplied notebook exports and trajectory reports were retained.
 
-Before publication, choose a license (none is supplied) and make the initial Git commit (all repository content is currently untracked). These decisions remain with the author.
+At the time of this initial audit, no license or initial Git commit was present. Subsequent licensing changes are recorded below.
 
 ## Paper software acknowledgements: 15 October 2026
 
@@ -26,6 +26,14 @@ Added the project repository URL near the end of the paper and Generapy/mpmath r
 The introduction's literature review was subsequently revised to explain the roles of hyperelliptic Kleinian functions, inversion on strata, prime forms and interpolation determinants. Added the Eilbeck--Enolskii--Previato (2003) addition-formula reference. The updated PDF was rebuilt and the affected pages visually checked; paper verification and manifest checks pass.
 
 The ``Our contribution'' subsection was also rewritten to retain the Hamiltonian with explicit definitions of its complex modes, paired powers, integer weights and polynomial, while describing the reduction and reconstruction in words. The rebuilt introduction was visually checked, and paper verification and manifest checks pass.
+
+## Response to pre-submission review: 15 October 2026
+
+Added explicit odd-degree scope to the abstract, a local ODE uniqueness sentence, a distinction from algebraic complete integrability, and a table of the existing scalar-coordinate, paired-power and complete-product checks. Added the original Frobenius--Stickelberger citation and its 2026 English translation, crediting both translators. The paper verification script now compares every entry of the new table with the saved numerical reports. No numerical algorithm or trajectory data was changed.
+
+Applied MIT to the software with exact coverage and exclusions in `LICENSE_SCOPE.md`; the manuscript and figures remain outside that license. Recorded a point-by-point response in `reviews/response_to_critical_review.md`. The existing `.gitignore` excludes `reviews/`, so the review and response remain local and are omitted from the public-bundle checksum manifest.
+
+Rebuilt the 35-page PDF, checked the affected rendered pages, and reran paper verification and the checksum checks. The earlier full notebook execution results remain applicable to the unchanged numerical code.
 
 ## Original packaging record
 

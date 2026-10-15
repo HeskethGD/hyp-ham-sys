@@ -133,6 +133,10 @@ def check_results():
     assert oscillatory['analytic_samples'] == 97 and oscillatory['plot_samples'] == 1537
     assert oscillatory['turning_and_zero_observations'] == 18
     assert oscillatory['z_duration'] in SOURCE and oscillatory['scalar_period'] in SOURCE
+    for example in (extended, oscillatory):
+        for key in ('sigma_inversion_error', 'paired_power_error', 'U_product_error', 'V_product_error'):
+            mantissa, exponent = f"{float(example['analytic_maxima'][key]):.6e}".split('e')
+            assert mantissa + r'\times10^{' + str(int(exponent)) + '}' in SOURCE
     for row in oscillatory['convergence']:
         assert f"{row['steps']:,}" in SOURCE
         for key in ('step', 'max_mode_error'):

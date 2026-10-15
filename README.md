@@ -19,6 +19,10 @@ The paper derives scalar hyperelliptic motion from polynomial canonical Hamilton
 
 Each notebook directory includes an executed `notebook.html`, its `results.json`, and relevant figures. No execution is needed to read the HTML or PDF. The source notebooks are authoritative; the HTML files record the executed walkthroughs. The paper uses the combined figure layouts.
 
+## License
+
+The Python code, notebook source files and accompanying software documentation are available under the [MIT license](LICENSE). See [LICENSE_SCOPE.md](LICENSE_SCOPE.md) for the exact scope. The manuscript, figures, generated HTML exports and numerical reports are excluded from this software license; no manuscript license is selected here. Third-party dependencies retain their own licenses.
+
 ## Python setup
 
 Python **3.14** was used for the supplied results. Git is needed to install the two pinned source dependencies. From this repository root:

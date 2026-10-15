@@ -15,7 +15,7 @@
 \begin{document}
 \maketitle
 \begin{abstract}
-We study polynomial Hamiltonian systems whose Hamiltonians consist of two weighted products of canonical modes minus a polynomial in their powers. This class extends the structure of familiar genus-one coupled-mode systems from nonlinear optics. We construct local analytic solutions in terms of hyperelliptic sigma functions and Abelian integrals, subject to stated degree and regularity conditions. The paired powers and complete weighted mode products are related to \^Onishi's determinant identities, extending the Frobenius--Stickelberger structure of the elliptic case. Explicit genus-two and genus-three examples include bounded oscillatory scalar motion. We evaluate the solutions using Generapy, a purpose-built Python package for algebraic curves and Abelian functions, and validate them against independent fourth-order Runge--Kutta integration.
+We study polynomial Hamiltonian systems whose Hamiltonians consist of two weighted products of canonical modes minus a polynomial in their powers. This class extends the structure of familiar genus-one coupled-mode systems from nonlinear optics. We construct local analytic solutions in terms of sigma functions and Abelian integrals on smooth odd-degree hyperelliptic curves, subject to stated degree and regularity conditions. The paired powers and complete weighted mode products are related to \^Onishi's determinant identities, extending the Frobenius--Stickelberger structure of the elliptic case. Explicit genus-two and genus-three examples include bounded oscillatory scalar motion. We evaluate the solutions using Generapy, a purpose-built Python package for algebraic curves and Abelian functions, and validate them against independent fourth-order Runge--Kutta integration.
 \end{abstract}
 
 \section{Introduction}
@@ -24,7 +24,7 @@ Many algebraic coupled-mode systems in nonlinear optics admit genus-one elliptic
 
 The same viewpoint includes the polynomial differential systems defining Jacobi, lemniscatic and Dixon elliptic functions~\cite{dixon}. The coupled-mode systems also admit projections onto the unforced, undamped Duffing oscillator, the Euler top and the Lagrange top. These connections link optical models to the classical and geometric mechanics of integrable systems; background accounts are given in~\cite{holm,holm-rigid,whittaker-dynamics,mechanics,duffing}.
 
-Optical solutions commonly express modal powers through Jacobi or Weierstrass elliptic functions and recover phases through elliptic integrals. In~\cite{envelopes,fourwave,coupler}, the full complex amplitudes were instead expressed as shifted Weierstrass sigma ratios with exponential factors. Their conservation laws have a common determinant origin: the $2\times2$ Frobenius--Stickelberger identity gives paired-mode powers, while higher-order determinants give the complete products entering the Hamiltonian~\cite{fourwave,coupler}.
+Optical solutions commonly express modal powers through Jacobi or Weierstrass elliptic functions and recover phases through elliptic integrals. In~\cite{envelopes,fourwave,coupler}, the full complex amplitudes were instead expressed as shifted Weierstrass sigma ratios with exponential factors. Their conservation laws have a common determinant origin: the $2\times2$ Frobenius--Stickelberger identity gives paired-mode powers, while higher-order determinants give the complete products entering the Hamiltonian~\cite{frobenius-stickelberger,fourwave,coupler}.
 
 The mode count and interaction multiplicities are integer parameters; in optics, the interaction degree is related to the material nonlinearity. Increasing these parameters can produce scalar curves of genus greater than one. What then replaces the elliptic sigma solutions and their determinant conservation laws?
 
@@ -493,7 +493,7 @@ Together with $\rho''=qq_\rho-2r_\rho$ and $q^2-(\rho')^2=4r$, these imply
 -\sum_{j=1}^{N}\beta_jQ_j(I)
 =\sum_{j=1}^{N}\beta_j\frac{u_j'}{u_j}.
 \]
-The initial product condition therefore gives $U=(q+\rho')/2$. Since $UV=r$, it also gives $V=(q-\rho')/2$. Substituting these products into the logarithmic equations recovers the polynomial canonical equations \eqref{eq:canonical}. Finally, $H=0$ follows from $U+V=q$, and the weighted invariants follow from $I_j=\gamma_j-\beta_j\rho$.
+The initial product condition therefore gives $U=(q+\rho')/2$. Since $UV=r$, it also gives $V=(q-\rho')/2$. Substituting these products into the logarithmic equations recovers the polynomial canonical equations \eqref{eq:canonical}. Finally, $H=0$ follows from $U+V=q$, and the weighted invariants follow from $I_j=\gamma_j-\beta_j\rho$. The canonical vector field is polynomial, so local uniqueness for analytic ordinary differential equations identifies the constructed modes with the solution of the prescribed initial-value problem on this chart.
 \end{proof}
 
 The nonzero-power and nonvanishing-factor conditions specify a chart for the logarithmic proof, rather than singularities of the polynomial canonical equations. At a modal zero, those equations can continue a finite solution even though its logarithmic derivative is undefined; the sigma expressions must then be interpreted by continuation or limits. Finite turning points likewise do not obstruct scalar continuation. Continuation around curve cycles is a separate issue and can introduce multipliers, as discussed in Section~\ref{sec:discussion}.
@@ -1021,14 +1021,27 @@ These solve the canonical system for the seven-pair Hamiltonian with quadratic m
 
 \section{Numerical validation}\label{sec:numerical}
 
-We compare the sigma solutions with independent numerical integration of the full polynomial canonical equations, first on an exterior genus-two branch and then over three oscillations of a bounded genus-three branch. Numerous symbolic and numerical checks were carried out in Python; the code is provided in the accompanying open-source repository.
-% TODO: add the public repository URL.
+We compare the sigma solutions with independent numerical integration of the full polynomial canonical equations, first on an exterior genus-two branch and then over three oscillations of a bounded genus-three branch. Numerous symbolic and numerical checks were carried out in Python; the code is provided in the repository identified in the code availability statement.
 
 Both comparisons use 30-digit working precision. This specifies the arithmetic, not the achieved accuracy: the observed discrepancies and their reduction under RK4 step halving provide the accuracy evidence. Let $s$ denote the state vector containing all $u_j$ and $v_j$ modes. The scaled mode discrepancy at an observation time is
 \[
 E_{\rm mode}=\max_\ell\frac{|s_\ell^{\rm RK4}-s_\ell^\sigma|}{\max(1,|s_\ell^\sigma|)}.
 \]
 The sigma solution is sampled on a sparse grid, while RK4 uses a finer grid containing those observation times. Step halving distinguishes finite-step integration error from arithmetic precision. At each observation time, numerical inversion of the scalar Abelian integral determines $\rho(z)$. We then evaluate the Abel vector and the prescribed sigma formulas for the individual modes; the scalar sigma ratio provides a consistency check. The polynomial and exponential coefficients are prescribed analytically, without fitting to trajectory data.
+
+Table~\ref{tab:analytic-checks} reports the existing sigma-based consistency checks separately from the RK4 comparisons. The scalar sigma ratio is compared with the quadrature-inverted coordinate; paired powers and complete products are compared with their prescribed curve expressions. Coordinate discrepancies are divided by $\max(1,|\rho|)$, paired-power discrepancies by $\max(1,|I_j^\sigma|,|\gamma_j-\beta_j\rho|)$, and complete-product discrepancies by $\max(1,|U^\sigma|)$ or $\max(1,|V^\sigma|)$. Here the superscript $\sigma$ denotes evaluation from the sigma mode formulas. The genus-three coordinate lies below one in magnitude, so its absolute and scaled coordinate discrepancies coincide. These checks test the coordinate representation and algebraic identities at the computed Abel vectors; they do not replace scalar inversion at prescribed propagation or provide certified bounds on all sigma-evaluation errors.
+
+\begin{table}[htbp]
+\centering\small
+\begin{tabular}{lcc}\toprule
+Maximum scaled discrepancy & Genus two & Genus three\\\midrule
+Scalar sigma coordinate & $5.672682\times10^{-31}$ & $9.423342\times10^{-30}$\\
+Paired modal powers & $8.376260\times10^{-31}$ & $5.994113\times10^{-29}$\\
+Complete product $U$ & $1.461370\times10^{-30}$ & $8.992481\times10^{-30}$\\
+Complete product $V$ & $2.264083\times10^{-30}$ & $2.818472\times10^{-29}$\\
+\bottomrule\end{tabular}
+\caption{Sigma-based consistency checks at 30-digit working precision, over 33 genus-two observations and 97 uniform genus-three observations plus 18 turning-point and modal-zero observations. Values are maxima from the supplied numerical reports.}\label{tab:analytic-checks}
+\end{table}
 
 \subsection{Extended genus-two trajectory}
 
@@ -1153,7 +1166,7 @@ The weighted powers in \eqref{eq:weighted-invariants}, together with $H$, give $
 \]
 the powers commute mutually and satisfy $\{I_j,H\}=\beta_j(V-U)$. Hence $\{C_j,H\}=\{C_j,C_k\}=0$.
 
-On the open set where every $I_j\ne0$, the differentials $dI_j$ are independent and the $N-1$ weighted combinations $dC_j$ have rank $N-1$. The tangent variation $u_1\mapsto e^t u_1$, $v_1\mapsto e^{-t}v_1$ preserves every power but gives $dH/dt=\beta_1(U-V)$. Therefore $dH$ is independent of the $dC_j$ where $U\ne V$. This proves complex local Liouville integrability on that open set. The short regular trajectory charts satisfy this condition. The oscillatory genus-three path also reaches turning points and modal zeros outside that open set; the independence argument above applies to its regular segments. A real compact-torus interpretation would additionally require reality conditions, regularity and compactness of the real invariant levels.
+On the open set where every $I_j\ne0$, the differentials $dI_j$ are independent and the $N-1$ weighted combinations $dC_j$ have rank $N-1$. The tangent variation $u_1\mapsto e^t u_1$, $v_1\mapsto e^{-t}v_1$ preserves every power but gives $dH/dt=\beta_1(U-V)$. Therefore $dH$ is independent of the $dC_j$ where $U\ne V$. This proves complex local Liouville integrability on that open set; algebraic complete integrability is not established here. The short regular trajectory charts satisfy this condition. The oscillatory genus-three path also reaches turning points and modal zeros outside that open set; the independence argument above applies to its regular segments. A real compact-torus interpretation would additionally require reality conditions, regularity and compactness of the real invariant levels.
 
 \subsection{Continuation and spectral questions}
 
@@ -1166,6 +1179,7 @@ Further questions concern short sigma-only formulas for the higher-genus second-
 \section*{Code availability}
 
 The project repository, \url{https://github.com/HeskethGD/hyp-ham-sys}, contains the computational notebooks, numerical verification scripts and figure-generation routines used in this work, together with the manuscript source, executed notebook exports and saved numerical results.
+The software is distributed under the MIT license, with its scope specified in the repository; that license does not apply to the manuscript or its figures. Dependency versions and execution instructions are recorded in the repository.
 
 \begin{thebibliography}{99}
 
@@ -1200,6 +1214,8 @@ The project repository, \url{https://github.com/HeskethGD/hyp-ham-sys}, contains
 \bibitem{duffing}A. V. Tsiganov, \emph{Duffing oscillator and elliptic curve cryptography}, arXiv:1801.01255.
 
 \bibitem{onishi}Y. \^Onishi, \emph{Determinant expressions for hyperelliptic functions}, Proc. Edinburgh Math. Soc. \textbf{48} (2005) 705--742; arXiv:math/0105189, version 8, with the author's \href{https://math-meijo-u.heteml.net/research/pub/correct_pem.pdf}{published errata}.
+
+\bibitem{frobenius-stickelberger}G. Frobenius and L. Stickelberger, \emph{Zur Theorie der elliptischen Functionen}, \href{https://doi.org/10.1515/crll.1877.83.175}{Journal f\"ur die reine und angewandte Mathematik \textbf{83} (1877), 175--179}. English translation and digitisation by K. Khazanzheiev and G. Hesketh, \emph{On the theory of elliptic functions}, \href{https://arxiv.org/abs/2603.27466}{arXiv:2603.27466}, 2026.
 
 \bibitem{baker-abelian}H. F. Baker, \emph{Abelian Functions: Abel's Theorem and the Allied Theory of Theta Functions}, Cambridge University Press, 1897.
 
