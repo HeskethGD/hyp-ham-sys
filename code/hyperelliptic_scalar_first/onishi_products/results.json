@@ -1,0 +1,1238 @@
+{
+  "passed": true,
+  "dps": 30,
+  "exact": [
+    {
+      "genus": 2,
+      "checks": {
+        "actual_q_recovered": true,
+        "divisor_norm": true,
+        "total_weight": true,
+        "main_lists_distinct": true,
+        "residual_lists_distinct": true,
+        "multiplicities": true,
+        "main_V_determinant": true,
+        "sheet_involution_U_determinant": true,
+        "auxiliary_Vandermonde": true,
+        "coefficient_minor_nonzero": true,
+        "Vandermonde_inverse_recovers_q": true,
+        "Schur_complement_is_half_difference": true,
+        "Schur_block_determinant": true,
+        "Onishi_Schur_column_sign": true,
+        "contact_order_mode_1": true,
+        "contact_order_mode_2": true,
+        "contact_order_mode_3": true,
+        "contact_order_mode_4": true,
+        "contact_order_mode_5": true
+      },
+      "Delta": "21/50000",
+      "Delta_residual": "4/5",
+      "main_indices": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "residual_indices": [
+        1,
+        5
+      ],
+      "schur_q_latex": "4 \\rho^{3} + \\frac{\\rho^{2}}{2} - \\frac{321 \\rho}{200} - \\frac{81}{1000}",
+      "schur_coefficients": [
+        "-81/1000",
+        "-321/200",
+        "1/2",
+        "4"
+      ]
+    },
+    {
+      "genus": 3,
+      "checks": {
+        "actual_q_recovered": true,
+        "divisor_norm": true,
+        "total_weight": true,
+        "main_lists_distinct": true,
+        "residual_lists_distinct": true,
+        "multiplicities": true,
+        "main_V_determinant": true,
+        "sheet_involution_U_determinant": true,
+        "auxiliary_Vandermonde": true,
+        "coefficient_minor_nonzero": true,
+        "Vandermonde_inverse_recovers_q": true,
+        "Schur_complement_is_half_difference": true,
+        "Schur_block_determinant": true,
+        "Onishi_Schur_column_sign": true,
+        "contact_order_mode_1": true,
+        "contact_order_mode_2": true,
+        "contact_order_mode_3": true,
+        "contact_order_mode_4": true,
+        "contact_order_mode_5": true,
+        "contact_order_mode_6": true,
+        "contact_order_mode_7": true
+      },
+      "Delta": "81/4000000000",
+      "Delta_residual": "357/4000",
+      "main_indices": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "residual_indices": [
+        1,
+        6,
+        7
+      ],
+      "schur_q_latex": "4 \\rho^{4} + \\frac{\\rho^{3}}{2} - \\frac{11 \\rho^{2}}{4} + \\frac{249 \\rho}{800} + \\frac{4329}{40000}",
+      "schur_coefficients": [
+        "4329/40000",
+        "249/800",
+        "-11/4",
+        "1/2",
+        "4"
+      ]
+    }
+  ],
+  "lower_family_interpolation": [
+    {
+      "genus": 2,
+      "interpolation_columns_passed": true
+    },
+    {
+      "genus": 3,
+      "interpolation_columns_passed": true
+    },
+    {
+      "genus": 4,
+      "interpolation_columns_passed": true
+    },
+    {
+      "genus": 5,
+      "interpolation_columns_passed": true
+    }
+  ],
+  "numerical": [
+    {
+      "genus": 2,
+      "main_size": 5,
+      "auxiliary_size": 3,
+      "lattice_shift": [
+        2,
+        1,
+        -2,
+        -1
+      ],
+      "main_sign": -1,
+      "auxiliary_sign": 1,
+      "max_scaled_error": 9.1881518526e-30
+    },
+    {
+      "genus": 3,
+      "main_size": 6,
+      "auxiliary_size": 4,
+      "lattice_shift": [
+        3,
+        2,
+        1,
+        -2,
+        -1,
+        -1
+      ],
+      "main_sign": -1,
+      "auxiliary_sign": 1,
+      "max_scaled_error": 3.32850208734e-28
+    }
+  ],
+  "rows": [
+    {
+      "genus": 2,
+      "check": "weighted divisor Abel lattice coordinate 1",
+      "scaled_error": "1.97215226305e-31",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "weighted divisor Abel lattice coordinate 2",
+      "scaled_error": "3.94430452611e-31",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "balanced weighted Abel sum",
+      "scaled_error": "3.94430452611e-31",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "weighted exponential coefficient 1",
+      "scaled_error": "1.13318339972e-30",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "weighted exponential coefficient 2",
+      "scaled_error": "1.58999998636e-30",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "main corrected Onishi identity: rho=4.5, sheet=+1",
+      "scaled_error": "3.48619055673e-31",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "sheet-involution Onishi identity: rho=4.5, sheet=+1",
+      "scaled_error": "4.34610954616e-31",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "auxiliary corrected Onishi identity: rho=4.5, sheet=+1",
+      "scaled_error": "5.12240366395e-31",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "Vandermonde inverse gives prescribed q: rho=4.5, sheet=+1",
+      "scaled_error": "5.49786472441e-31",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "Schur block determinant: rho=4.5, sheet=+1",
+      "scaled_error": "8.34823097887e-31",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "Onishi to Schur column sign: rho=4.5, sheet=+1",
+      "scaled_error": "6.67858478309e-31",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "V interpolation: rho=4.5, sheet=+1",
+      "scaled_error": "1.33571695662e-30",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "U interpolation: rho=4.5, sheet=+1",
+      "scaled_error": "1.05117948675e-30",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "composite residual split: rho=4.5, sheet=+1",
+      "scaled_error": "2.70295073687e-30",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "raw weighted point product: rho=4.5, sheet=+1",
+      "scaled_error": "4.29047010801e-31",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "sigma solution U = sheet-involution determinant: rho=4.5, sheet=+1",
+      "scaled_error": "2.34787522972e-31",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "sigma solution V = determinant: rho=4.5, sheet=+1",
+      "scaled_error": "2.34494850911e-30",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "Hamiltonian product identity: rho=4.5, sheet=+1",
+      "scaled_error": "1.647022415e-31",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "paired mode powers: rho=4.5, sheet=+1",
+      "scaled_error": "5.89035468885e-31",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "main corrected Onishi identity: rho=4.6, sheet=+1",
+      "scaled_error": "2.77529851736e-31",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "sheet-involution Onishi identity: rho=4.6, sheet=+1",
+      "scaled_error": "4.65935658372e-31",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "auxiliary corrected Onishi identity: rho=4.6, sheet=+1",
+      "scaled_error": "9.01249179535e-31",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "Vandermonde inverse gives prescribed q: rho=4.6, sheet=+1",
+      "scaled_error": "5.14570635827e-31",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "Schur block determinant: rho=4.6, sheet=+1",
+      "scaled_error": "7.80844429398e-31",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "Onishi to Schur column sign: rho=4.6, sheet=+1",
+      "scaled_error": "7.80844429398e-31",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "V interpolation: rho=4.6, sheet=+1",
+      "scaled_error": "1.40551997292e-30",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "U interpolation: rho=4.6, sheet=+1",
+      "scaled_error": "9.84293070046e-31",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "composite residual split: rho=4.6, sheet=+1",
+      "scaled_error": "3.36671003036e-30",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "raw weighted point product: rho=4.6, sheet=+1",
+      "scaled_error": "4.34190787714e-31",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "sigma solution U = sheet-involution determinant: rho=4.6, sheet=+1",
+      "scaled_error": "6.29660049898e-31",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "sigma solution V = determinant: rho=4.6, sheet=+1",
+      "scaled_error": "2.32789526514e-30",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "Hamiltonian product identity: rho=4.6, sheet=+1",
+      "scaled_error": "5.18396456858e-31",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "paired mode powers: rho=4.6, sheet=+1",
+      "scaled_error": "2.3792515485e-30",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "main corrected Onishi identity: rho=4.7, sheet=+1",
+      "scaled_error": "3.10147428388e-31",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "sheet-involution Onishi identity: rho=4.7, sheet=+1",
+      "scaled_error": "5.13514220962e-31",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "auxiliary corrected Onishi identity: rho=4.7, sheet=+1",
+      "scaled_error": "4.91724502635e-31",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "Vandermonde inverse gives prescribed q: rho=4.7, sheet=+1",
+      "scaled_error": "7.23462011774e-31",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "Schur block determinant: rho=4.7, sheet=+1",
+      "scaled_error": "5.85105986604e-31",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "Onishi to Schur column sign: rho=4.7, sheet=+1",
+      "scaled_error": "5.85105986604e-31",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "V interpolation: rho=4.7, sheet=+1",
+      "scaled_error": "1.46276496651e-30",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "U interpolation: rho=4.7, sheet=+1",
+      "scaled_error": "1.23070072419e-30",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "composite residual split: rho=4.7, sheet=+1",
+      "scaled_error": "2.42195505806e-30",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "raw weighted point product: rho=4.7, sheet=+1",
+      "scaled_error": "3.50539420547e-31",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "sigma solution U = sheet-involution determinant: rho=4.7, sheet=+1",
+      "scaled_error": "1.28050751311e-30",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "sigma solution V = determinant: rho=4.7, sheet=+1",
+      "scaled_error": "4.42784421919e-30",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "Hamiltonian product identity: rho=4.7, sheet=+1",
+      "scaled_error": "1.14554040571e-30",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "paired mode powers: rho=4.7, sheet=+1",
+      "scaled_error": "9.1881518526e-30",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "main corrected Onishi identity: rho=4.5, sheet=-1",
+      "scaled_error": "3.59992795115e-31",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "sheet-involution Onishi identity: rho=4.5, sheet=-1",
+      "scaled_error": "2.50732295201e-31",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "auxiliary corrected Onishi identity: rho=4.5, sheet=-1",
+      "scaled_error": "7.09353004861e-31",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "Vandermonde inverse gives prescribed q: rho=4.5, sheet=-1",
+      "scaled_error": "5.49786472441e-31",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "Schur block determinant: rho=4.5, sheet=-1",
+      "scaled_error": "5.83988603749e-31",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "Onishi to Schur column sign: rho=4.5, sheet=-1",
+      "scaled_error": "5.83988603749e-31",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "V interpolation: rho=4.5, sheet=-1",
+      "scaled_error": "1.05117948675e-30",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "U interpolation: rho=4.5, sheet=-1",
+      "scaled_error": "1.33571695662e-30",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "composite residual split: rho=4.5, sheet=-1",
+      "scaled_error": "2.048899642e-30",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "raw weighted point product: rho=4.5, sheet=-1",
+      "scaled_error": "4.32771719112e-31",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "sigma solution U = sheet-involution determinant: rho=4.5, sheet=-1",
+      "scaled_error": "1.33578654316e-30",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "sigma solution V = determinant: rho=4.5, sheet=-1",
+      "scaled_error": "5.91683990228e-31",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "Hamiltonian product identity: rho=4.5, sheet=-1",
+      "scaled_error": "2.79467105949e-31",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "paired mode powers: rho=4.5, sheet=-1",
+      "scaled_error": "2.55416973868e-31",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "main corrected Onishi identity: rho=4.6, sheet=-1",
+      "scaled_error": "4.01322678022e-31",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "sheet-involution Onishi identity: rho=4.6, sheet=-1",
+      "scaled_error": "2.85183512145e-31",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "auxiliary corrected Onishi identity: rho=4.6, sheet=-1",
+      "scaled_error": "7.85370305175e-31",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "Vandermonde inverse gives prescribed q: rho=4.6, sheet=-1",
+      "scaled_error": "5.14570635827e-31",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "Schur block determinant: rho=4.6, sheet=-1",
+      "scaled_error": "5.46829483359e-31",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "Onishi to Schur column sign: rho=4.6, sheet=-1",
+      "scaled_error": "5.46829483359e-31",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "V interpolation: rho=4.6, sheet=-1",
+      "scaled_error": "9.84293070046e-31",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "U interpolation: rho=4.6, sheet=-1",
+      "scaled_error": "1.40551997292e-30",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "composite residual split: rho=4.6, sheet=-1",
+      "scaled_error": "2.31791922936e-30",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "raw weighted point product: rho=4.6, sheet=-1",
+      "scaled_error": "4.96159515049e-31",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "sigma solution U = sheet-involution determinant: rho=4.6, sheet=-1",
+      "scaled_error": "3.13534604398e-31",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "sigma solution V = determinant: rho=4.6, sheet=-1",
+      "scaled_error": "1.57043642002e-30",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "Hamiltonian product identity: rho=4.6, sheet=-1",
+      "scaled_error": "1.28344365354e-30",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "paired mode powers: rho=4.6, sheet=-1",
+      "scaled_error": "5.89834009615e-30",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "main corrected Onishi identity: rho=4.7, sheet=-1",
+      "scaled_error": "5.20948008565e-31",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "sheet-involution Onishi identity: rho=4.7, sheet=-1",
+      "scaled_error": "3.37166222802e-31",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "auxiliary corrected Onishi identity: rho=4.7, sheet=-1",
+      "scaled_error": "1.10207568535e-30",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "Vandermonde inverse gives prescribed q: rho=4.7, sheet=-1",
+      "scaled_error": "7.23462011774e-31",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "Schur block determinant: rho=4.7, sheet=-1",
+      "scaled_error": "6.15350362094e-31",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "Onishi to Schur column sign: rho=4.7, sheet=-1",
+      "scaled_error": "6.15350362094e-31",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "V interpolation: rho=4.7, sheet=-1",
+      "scaled_error": "1.23070072419e-30",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "U interpolation: rho=4.7, sheet=-1",
+      "scaled_error": "1.46276496651e-30",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "composite residual split: rho=4.7, sheet=-1",
+      "scaled_error": "1.85464941919e-30",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "raw weighted point product: rho=4.7, sheet=-1",
+      "scaled_error": "5.68434742251e-31",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "sigma solution U = sheet-involution determinant: rho=4.7, sheet=-1",
+      "scaled_error": "1.03089297757e-30",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "sigma solution V = determinant: rho=4.7, sheet=-1",
+      "scaled_error": "3.59379285777e-31",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "Hamiltonian product identity: rho=4.7, sheet=-1",
+      "scaled_error": "8.72937295818e-31",
+      "passed": true
+    },
+    {
+      "genus": 2,
+      "check": "paired mode powers: rho=4.7, sheet=-1",
+      "scaled_error": "3.24852147471e-30",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "weighted divisor Abel lattice coordinate 1",
+      "scaled_error": "1.11229387636e-28",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "weighted divisor Abel lattice coordinate 2",
+      "scaled_error": "1.73560604197e-29",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "weighted divisor Abel lattice coordinate 3",
+      "scaled_error": "2.36658271566e-30",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "balanced weighted Abel sum",
+      "scaled_error": "1.12600223006e-28",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "weighted exponential coefficient 1",
+      "scaled_error": "7.29646365544e-30",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "weighted exponential coefficient 2",
+      "scaled_error": "1.48841977913e-29",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "weighted exponential coefficient 3",
+      "scaled_error": "3.37001526437e-30",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "main corrected Onishi identity: rho=5.5, sheet=+1",
+      "scaled_error": "2.95106954583e-34",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "sheet-involution Onishi identity: rho=5.5, sheet=+1",
+      "scaled_error": "2.92234830743e-34",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "auxiliary corrected Onishi identity: rho=5.5, sheet=+1",
+      "scaled_error": "6.48534614949e-29",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "Vandermonde inverse gives prescribed q: rho=5.5, sheet=+1",
+      "scaled_error": "1.36761994673e-29",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "Schur block determinant: rho=5.5, sheet=+1",
+      "scaled_error": "2.20574522007e-29",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "Onishi to Schur column sign: rho=5.5, sheet=+1",
+      "scaled_error": "2.18067993348e-29",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "V interpolation: rho=5.5, sheet=+1",
+      "scaled_error": "6.26632164792e-30",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "U interpolation: rho=5.5, sheet=+1",
+      "scaled_error": "7.09043148613e-30",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "composite residual split: rho=5.5, sheet=+1",
+      "scaled_error": "1.02814592975e-28",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "raw weighted point product: rho=5.5, sheet=+1",
+      "scaled_error": "3.05218759593e-33",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "sigma solution U = sheet-involution determinant: rho=5.5, sheet=+1",
+      "scaled_error": "7.28757536044e-30",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "sigma solution V = determinant: rho=5.5, sheet=+1",
+      "scaled_error": "5.89063630289e-30",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "Hamiltonian product identity: rho=5.5, sheet=+1",
+      "scaled_error": "1.23317966256e-31",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "paired mode powers: rho=5.5, sheet=+1",
+      "scaled_error": "4.53743579847e-31",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "main corrected Onishi identity: rho=5.6, sheet=+1",
+      "scaled_error": "3.19236446995e-34",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "sheet-involution Onishi identity: rho=5.6, sheet=+1",
+      "scaled_error": "3.16497134172e-34",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "auxiliary corrected Onishi identity: rho=5.6, sheet=+1",
+      "scaled_error": "4.79935909926e-29",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "Vandermonde inverse gives prescribed q: rho=5.6, sheet=+1",
+      "scaled_error": "1.38488828818e-29",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "Schur block determinant: rho=5.6, sheet=+1",
+      "scaled_error": "2.19411706599e-29",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "Onishi to Schur column sign: rho=5.6, sheet=+1",
+      "scaled_error": "2.19411706599e-29",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "V interpolation: rho=5.6, sheet=+1",
+      "scaled_error": "6.18554279242e-30",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "U interpolation: rho=5.6, sheet=+1",
+      "scaled_error": "7.13776495868e-30",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "composite residual split: rho=5.6, sheet=+1",
+      "scaled_error": "9.687919712e-29",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "raw weighted point product: rho=5.6, sheet=+1",
+      "scaled_error": "3.08236652056e-33",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "sigma solution U = sheet-involution determinant: rho=5.6, sheet=+1",
+      "scaled_error": "2.952359299e-29",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "sigma solution V = determinant: rho=5.6, sheet=+1",
+      "scaled_error": "3.65873757561e-29",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "Hamiltonian product identity: rho=5.6, sheet=+1",
+      "scaled_error": "2.44625546407e-30",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "paired mode powers: rho=5.6, sheet=+1",
+      "scaled_error": "3.88430744488e-29",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "main corrected Onishi identity: rho=.462269035550823690056927809775, sheet=+1",
+      "scaled_error": "1.32657942036e-37",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "sheet-involution Onishi identity: rho=.462269035550823690056927809775, sheet=+1",
+      "scaled_error": "5.69791874006e-38",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "auxiliary corrected Onishi identity: rho=.462269035550823690056927809775, sheet=+1",
+      "scaled_error": "1.76022538507e-32",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "Vandermonde inverse gives prescribed q: rho=.462269035550823690056927809775, sheet=+1",
+      "scaled_error": "4.10454189748e-30",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "Schur block determinant: rho=.462269035550823690056927809775, sheet=+1",
+      "scaled_error": "3.45126646034e-30",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "Onishi to Schur column sign: rho=.462269035550823690056927809775, sheet=+1",
+      "scaled_error": "3.56220002514e-30",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "V interpolation: rho=.462269035550823690056927809775, sheet=+1",
+      "scaled_error": "5.60830799806e-30",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "U interpolation: rho=.462269035550823690056927809775, sheet=+1",
+      "scaled_error": "6.33245765715e-31",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "composite residual split: rho=.462269035550823690056927809775, sheet=+1",
+      "scaled_error": "1.18806444714e-28",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "raw weighted point product: rho=.462269035550823690056927809775, sheet=+1",
+      "scaled_error": "3.86900830851e-37",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "sigma solution U = sheet-involution determinant: rho=.462269035550823690056927809775, sheet=+1",
+      "scaled_error": "2.05619514081e-30",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "sigma solution V = determinant: rho=.462269035550823690056927809775, sheet=+1",
+      "scaled_error": "1.32994798869e-29",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "Hamiltonian product identity: rho=.462269035550823690056927809775, sheet=+1",
+      "scaled_error": "9.74088674955e-30",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "paired mode powers: rho=.462269035550823690056927809775, sheet=+1",
+      "scaled_error": "1.07894568009e-29",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "main corrected Onishi identity: rho=5.5, sheet=-1",
+      "scaled_error": "3.49895070057e-34",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "sheet-involution Onishi identity: rho=5.5, sheet=-1",
+      "scaled_error": "3.73444196553e-34",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "auxiliary corrected Onishi identity: rho=5.5, sheet=-1",
+      "scaled_error": "4.9972167634e-29",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "Vandermonde inverse gives prescribed q: rho=5.5, sheet=-1",
+      "scaled_error": "1.36761994673e-29",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "Schur block determinant: rho=5.5, sheet=-1",
+      "scaled_error": "1.94986865869e-29",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "Onishi to Schur column sign: rho=5.5, sheet=-1",
+      "scaled_error": "1.93017301567e-29",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "V interpolation: rho=5.5, sheet=-1",
+      "scaled_error": "7.09043148613e-30",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "U interpolation: rho=5.5, sheet=-1",
+      "scaled_error": "6.26632164792e-30",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "composite residual split: rho=5.5, sheet=-1",
+      "scaled_error": "8.85952008413e-29",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "raw weighted point product: rho=5.5, sheet=-1",
+      "scaled_error": "3.34266775567e-33",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "sigma solution U = sheet-involution determinant: rho=5.5, sheet=-1",
+      "scaled_error": "6.64328861703e-30",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "sigma solution V = determinant: rho=5.5, sheet=-1",
+      "scaled_error": "6.3031013555e-30",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "Hamiltonian product identity: rho=5.5, sheet=-1",
+      "scaled_error": "3.44151498672e-31",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "paired mode powers: rho=5.5, sheet=-1",
+      "scaled_error": "7.93967093316e-31",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "main corrected Onishi identity: rho=5.6, sheet=-1",
+      "scaled_error": "3.30602798799e-34",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "sheet-involution Onishi identity: rho=5.6, sheet=-1",
+      "scaled_error": "4.20756020591e-34",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "auxiliary corrected Onishi identity: rho=5.6, sheet=-1",
+      "scaled_error": "6.91550408426e-29",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "Vandermonde inverse gives prescribed q: rho=5.6, sheet=-1",
+      "scaled_error": "1.38488828818e-29",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "Schur block determinant: rho=5.6, sheet=-1",
+      "scaled_error": "1.92170595041e-29",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "Onishi to Schur column sign: rho=5.6, sheet=-1",
+      "scaled_error": "1.94000791185e-29",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "V interpolation: rho=5.6, sheet=-1",
+      "scaled_error": "7.13776495868e-30",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "U interpolation: rho=5.6, sheet=-1",
+      "scaled_error": "6.18554279242e-30",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "composite residual split: rho=5.6, sheet=-1",
+      "scaled_error": "9.58821666818e-29",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "raw weighted point product: rho=5.6, sheet=-1",
+      "scaled_error": "3.95669517447e-33",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "sigma solution U = sheet-involution determinant: rho=5.6, sheet=-1",
+      "scaled_error": "2.80642741255e-29",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "sigma solution V = determinant: rho=5.6, sheet=-1",
+      "scaled_error": "2.31433513971e-29",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "Hamiltonian product identity: rho=5.6, sheet=-1",
+      "scaled_error": "1.65912382087e-30",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "paired mode powers: rho=5.6, sheet=-1",
+      "scaled_error": "1.82848182399e-29",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "main corrected Onishi identity: rho=.462269035550823690056927809775, sheet=-1",
+      "scaled_error": "5.78343978843e-38",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "sheet-involution Onishi identity: rho=.462269035550823690056927809775, sheet=-1",
+      "scaled_error": "1.44734647612e-37",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "auxiliary corrected Onishi identity: rho=.462269035550823690056927809775, sheet=-1",
+      "scaled_error": "1.06602424709e-32",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "Vandermonde inverse gives prescribed q: rho=.462269035550823690056927809775, sheet=-1",
+      "scaled_error": "4.10454189748e-30",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "Schur block determinant: rho=.462269035550823690056927809775, sheet=-1",
+      "scaled_error": "1.42826964676e-30",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "Onishi to Schur column sign: rho=.462269035550823690056927809775, sheet=-1",
+      "scaled_error": "1.41902518302e-30",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "V interpolation: rho=.462269035550823690056927809775, sheet=-1",
+      "scaled_error": "6.33245765715e-31",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "U interpolation: rho=.462269035550823690056927809775, sheet=-1",
+      "scaled_error": "5.60830799806e-30",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "composite residual split: rho=.462269035550823690056927809775, sheet=-1",
+      "scaled_error": "3.32850208734e-28",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "raw weighted point product: rho=.462269035550823690056927809775, sheet=-1",
+      "scaled_error": "6.94075245861e-39",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "sigma solution U = sheet-involution determinant: rho=.462269035550823690056927809775, sheet=-1",
+      "scaled_error": "7.77097436721e-30",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "sigma solution V = determinant: rho=.462269035550823690056927809775, sheet=-1",
+      "scaled_error": "6.40359694622e-31",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "Hamiltonian product identity: rho=.462269035550823690056927809775, sheet=-1",
+      "scaled_error": "1.32899388305e-29",
+      "passed": true
+    },
+    {
+      "genus": 3,
+      "check": "paired mode powers: rho=.462269035550823690056927809775, sheet=-1",
+      "scaled_error": "1.07502891443e-29",
+      "passed": true
+    }
+  ],
+  "tolerance": "1.0e-22",
+  "scope": "Complete weighted determinant proof for the two paper examples and stated interpolation families; higher degree and forced confluent lists excluded.",
+  "fitting": "None. FS signs, split constants and gauges are prescribed. Lattice rounding is verified discrete path identification.",
+  "versions": {
+    "generapy": "0.1.1.dev4+gaed252bd5",
+    "mpmath": "1.4.1",
+    "sympy": "1.15.0.dev0",
+    "marimo": "0.25.1"
+  }
+}

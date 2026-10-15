@@ -1,0 +1,64 @@
+{
+  "passed": true,
+  "dps": 25,
+  "tolerance": "1e-18",
+  "rows": [
+    {
+      "genus": 3,
+      "sheet": 1,
+      "rho": "5.5",
+      "general_scaled_error": "5.639867813e-26",
+      "published_scaled_error": "1.879955938e-26"
+    },
+    {
+      "genus": 3,
+      "sheet": 1,
+      "rho": "5.6",
+      "general_scaled_error": "3.692770592e-26",
+      "published_scaled_error": "0.0"
+    },
+    {
+      "genus": 3,
+      "sheet": -1,
+      "rho": "5.5",
+      "general_scaled_error": "1.127973563e-25",
+      "published_scaled_error": "1.879955938e-26"
+    },
+    {
+      "genus": 3,
+      "sheet": -1,
+      "rho": "5.6",
+      "general_scaled_error": "1.292469707e-25",
+      "published_scaled_error": "1.846385296e-26"
+    },
+    {
+      "genus": 4,
+      "sheet": 1,
+      "rho": "10",
+      "general_scaled_error": "1.160120809e-23",
+      "published_scaled_error": "4.404736762e-24"
+    },
+    {
+      "genus": 4,
+      "sheet": 1,
+      "rho": "10.2",
+      "general_scaled_error": "9.285507857e-24",
+      "published_scaled_error": "3.20329747e-24"
+    },
+    {
+      "genus": 4,
+      "sheet": -1,
+      "rho": "10",
+      "general_scaled_error": "3.1060632e-22",
+      "published_scaled_error": "1.587979981e-22"
+    },
+    {
+      "genus": 4,
+      "sheet": -1,
+      "rho": "10.2",
+      "general_scaled_error": "3.304667643e-22",
+      "published_scaled_error": "1.690043526e-22"
+    }
+  ],
+  "scope": "Coordinate recovery at two regular points on each sheet in genera three and four; no genus-four canonical trajectory check."
+}

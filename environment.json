@@ -1,0 +1,29 @@
+{
+  "python": "3.14.7 (main, Aug  5 2026, 10:29:49) [Clang 21.0.0 (clang-2100.1.1.101)]",
+  "packages": {
+    "generapy": "0.1.1.dev4+gaed252bd5",
+    "sympy": "1.15.0.dev0",
+    "marimo": "0.25.1",
+    "matplotlib": "3.11.2",
+    "mpmath": "1.4.1",
+    "numpy": "2.5.3"
+  },
+  "vcs": {
+    "generapy": {
+      "url": "https://github.com/HeskethGD/generapy.git",
+      "vcs_info": {
+        "commit_id": "aed252bd5a3b5014fc37e81ec4634d84c908cf18",
+        "requested_revision": "main",
+        "vcs": "git"
+      }
+    },
+    "sympy": {
+      "url": "https://github.com/sympy/sympy.git",
+      "vcs_info": {
+        "commit_id": "319ea7a6186edf88bc23d502917242b10314ae51",
+        "requested_revision": "master",
+        "vcs": "git"
+      }
+    }
+  }
+}

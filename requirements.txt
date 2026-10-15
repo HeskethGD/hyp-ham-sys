@@ -1,0 +1,8 @@
+# Versions used for the supplied numerical results. Python 3.14 was used.
+# VCS dependencies are pinned to commits, rather than moving branches.
+generapy @ git+https://github.com/HeskethGD/generapy.git@aed252bd5a3b5014fc37e81ec4634d84c908cf18
+sympy @ git+https://github.com/sympy/sympy.git@319ea7a6186edf88bc23d502917242b10314ae51
+marimo==0.25.1
+matplotlib==3.11.2
+mpmath==1.4.1
+numpy==2.5.3

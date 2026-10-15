@@ -1,0 +1,5536 @@
+{
+  "symbolic": {
+    "passed": true,
+    "checks": {
+      "(1, 1, 1) u product propagation": true,
+      "(1, 1, 1) v product propagation": true,
+      "(1, 1, 1) product norm": true,
+      "(1, 1, 1) scalar acceleration chain rule": true,
+      "(1, 1, 1) point-factor split": true,
+      "(1, 1, 1) weighted power rates": true,
+      "(1, 1, 1) conserved powers commute with H": true,
+      "(1, 1, 1) mutual involution": true,
+      "(1, 1, 1) independence witness": true,
+      "(2, 1, 1, 1) u product propagation": true,
+      "(2, 1, 1, 1) v product propagation": true,
+      "(2, 1, 1, 1) product norm": true,
+      "(2, 1, 1, 1) scalar acceleration chain rule": true,
+      "(2, 1, 1, 1) point-factor split": true,
+      "(2, 1, 1, 1) weighted power rates": true,
+      "(2, 1, 1, 1) conserved powers commute with H": true,
+      "(2, 1, 1, 1) mutual involution": true,
+      "(2, 1, 1, 1) independence witness": true,
+      "(3, 2, 1) u product propagation": true,
+      "(3, 2, 1) v product propagation": true,
+      "(3, 2, 1) product norm": true,
+      "(3, 2, 1) scalar acceleration chain rule": true,
+      "(3, 2, 1) point-factor split": true,
+      "(3, 2, 1) weighted power rates": true,
+      "(3, 2, 1) conserved powers commute with H": true,
+      "(3, 2, 1) mutual involution": true,
+      "(3, 2, 1) independence witness": true,
+      "example smooth genus two": true,
+      "example nonbranch fixed points": true,
+      "example affine gauges": true,
+      "example leading coefficient four": true,
+      "example weighted centre": true,
+      "example repeated intersection at double mode": true,
+      "example contact order 2 at -3/10": true,
+      "example contact order 1 at -1/5": true,
+      "example contact order 1 at -1/10": true,
+      "example contact order 1 at 2/5": true,
+      "example contact order 1 at 1/2": true,
+      "reject high-degree off-line phase despite low q": true,
+      "genus three smooth degree-seven curve": true,
+      "genus three leading coefficient four": true,
+      "genus three nonbranch fixed points": true,
+      "genus three quadratic gauges": true,
+      "notebook markdown has no escaped control characters": true,
+      "notebook display math delimiters balanced": true,
+      "notebook example fraction uses braced LaTeX": true
+    }
+  },
+  "numerical": {
+    "passed": true,
+    "dps": 30,
+    "genus": 2,
+    "rows": [
+      {
+        "check": "h_1,1: fixed-point sigma versus reference formula",
+        "scaled_error": "1.787263e-31",
+        "passed": true
+      },
+      {
+        "check": "h_1,1: fixed-point sigma versus second-kind Abel integral",
+        "scaled_error": "1.3558547e-31",
+        "passed": true
+      },
+      {
+        "check": "h_1,2: fixed-point sigma versus reference formula",
+        "scaled_error": "1.8314829e-30",
+        "passed": true
+      },
+      {
+        "check": "h_1,2: fixed-point sigma versus second-kind Abel integral",
+        "scaled_error": "1.7846269e-32",
+        "passed": true
+      },
+      {
+        "check": "h_2,1: fixed-point sigma versus reference formula",
+        "scaled_error": "1.27053e-31",
+        "passed": true
+      },
+      {
+        "check": "h_2,1: fixed-point sigma versus second-kind Abel integral",
+        "scaled_error": "3.6977855e-32",
+        "passed": true
+      },
+      {
+        "check": "h_2,2: fixed-point sigma versus reference formula",
+        "scaled_error": "4.1584568e-30",
+        "passed": true
+      },
+      {
+        "check": "h_2,2: fixed-point sigma versus second-kind Abel integral",
+        "scaled_error": "1.7813362e-32",
+        "passed": true
+      },
+      {
+        "check": "h_3,1: fixed-point sigma versus reference formula",
+        "scaled_error": "3.0814879e-32",
+        "passed": true
+      },
+      {
+        "check": "h_3,1: fixed-point sigma versus second-kind Abel integral",
+        "scaled_error": "9.9374999e-32",
+        "passed": true
+      },
+      {
+        "check": "h_3,2: fixed-point sigma versus reference formula",
+        "scaled_error": "2.1397463e-30",
+        "passed": true
+      },
+      {
+        "check": "h_3,2: fixed-point sigma versus second-kind Abel integral",
+        "scaled_error": "1.7789267e-32",
+        "passed": true
+      },
+      {
+        "check": "h_4,1: fixed-point sigma versus reference formula",
+        "scaled_error": "9.8800018e-32",
+        "passed": true
+      },
+      {
+        "check": "h_4,1: fixed-point sigma versus second-kind Abel integral",
+        "scaled_error": "6.5513332e-32",
+        "passed": true
+      },
+      {
+        "check": "h_4,2: fixed-point sigma versus reference formula",
+        "scaled_error": "2.8235811e-30",
+        "passed": true
+      },
+      {
+        "check": "h_4,2: fixed-point sigma versus second-kind Abel integral",
+        "scaled_error": "1.5225851e-31",
+        "passed": true
+      },
+      {
+        "check": "h_5,1: fixed-point sigma versus reference formula",
+        "scaled_error": "2.0486681e-31",
+        "passed": true
+      },
+      {
+        "check": "h_5,1: fixed-point sigma versus second-kind Abel integral",
+        "scaled_error": "1.0477059e-31",
+        "passed": true
+      },
+      {
+        "check": "h_5,2: fixed-point sigma versus reference formula",
+        "scaled_error": "9.8640367e-31",
+        "passed": true
+      },
+      {
+        "check": "h_5,2: fixed-point sigma versus second-kind Abel integral",
+        "scaled_error": "1.4552087e-31",
+        "passed": true
+      },
+      {
+        "check": "h_1,1: finite sigma jets at rho=0.0",
+        "scaled_error": "1.540744e-31",
+        "passed": true
+      },
+      {
+        "check": "h_1,2: finite sigma jets at rho=0.0",
+        "scaled_error": "1.1622019e-29",
+        "passed": true
+      },
+      {
+        "check": "h_2,1: finite sigma jets at rho=0.0",
+        "scaled_error": "2.0486681e-31",
+        "passed": true
+      },
+      {
+        "check": "h_2,2: finite sigma jets at rho=0.0",
+        "scaled_error": "6.0081753e-30",
+        "passed": true
+      },
+      {
+        "check": "h_3,1: finite sigma jets at rho=0.0",
+        "scaled_error": "9.9374999e-32",
+        "passed": true
+      },
+      {
+        "check": "h_3,2: finite sigma jets at rho=0.0",
+        "scaled_error": "1.7375297e-30",
+        "passed": true
+      },
+      {
+        "check": "h_4,1: finite sigma jets at rho=0.0",
+        "scaled_error": "1.9808e-31",
+        "passed": true
+      },
+      {
+        "check": "h_4,2: finite sigma jets at rho=0.0",
+        "scaled_error": "9.7742375e-30",
+        "passed": true
+      },
+      {
+        "check": "h_5,1: finite sigma jets at rho=0.0",
+        "scaled_error": "2.7291617e-31",
+        "passed": true
+      },
+      {
+        "check": "h_5,2: finite sigma jets at rho=0.0",
+        "scaled_error": "5.0771312e-30",
+        "passed": true
+      },
+      {
+        "check": "h_1,1: finite sigma jets at rho=4.5",
+        "scaled_error": "8.8071836e-30",
+        "passed": true
+      },
+      {
+        "check": "h_1,2: finite sigma jets at rho=4.5",
+        "scaled_error": "2.1958889e-30",
+        "passed": true
+      },
+      {
+        "check": "h_2,1: finite sigma jets at rho=4.5",
+        "scaled_error": "5.3596209e-30",
+        "passed": true
+      },
+      {
+        "check": "h_2,2: finite sigma jets at rho=4.5",
+        "scaled_error": "1.4358277e-30",
+        "passed": true
+      },
+      {
+        "check": "h_3,1: finite sigma jets at rho=4.5",
+        "scaled_error": "6.8743458e-30",
+        "passed": true
+      },
+      {
+        "check": "h_3,2: finite sigma jets at rho=4.5",
+        "scaled_error": "1.4997945e-30",
+        "passed": true
+      },
+      {
+        "check": "h_4,1: finite sigma jets at rho=4.5",
+        "scaled_error": "7.3482523e-30",
+        "passed": true
+      },
+      {
+        "check": "h_4,2: finite sigma jets at rho=4.5",
+        "scaled_error": "1.5021116e-30",
+        "passed": true
+      },
+      {
+        "check": "h_5,1: finite sigma jets at rho=4.5",
+        "scaled_error": "7.8298419e-30",
+        "passed": true
+      },
+      {
+        "check": "h_5,2: finite sigma jets at rho=4.5",
+        "scaled_error": "1.7167135e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.55 inversion",
+        "scaled_error": "1.7337602e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.55 sigma divisor",
+        "scaled_error": "2.8843657e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.55 Abel increment 1",
+        "scaled_error": "6.7407548e-34",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.55 Abel increment 2",
+        "scaled_error": "6.0089014e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.55 weighted U",
+        "scaled_error": "6.973389e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.55 weighted V",
+        "scaled_error": "8.263791e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.55 Hamiltonian",
+        "scaled_error": "1.4018389e-29",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.55 raw sigma mode power 1",
+        "scaled_error": "5.045815e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.55 paired raw sigma mode rates 1",
+        "scaled_error": "5.7109482e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.55 holomorphic discrepancy 1",
+        "scaled_error": "2.5065601e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.55 reconstructed log rate 1",
+        "scaled_error": "1.8121787e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.55 canonical u 1",
+        "scaled_error": "2.4804615e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.55 canonical v 1",
+        "scaled_error": "1.045126e-29",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.55 polynomial gauge integral 1",
+        "scaled_error": "4.2370459e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.55 third-kind primitive 1",
+        "scaled_error": "6.4720417e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.55 paired third-kind sigma identity 1",
+        "scaled_error": "1.0368709e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.55 split integral equals point primitive 1",
+        "scaled_error": "6.7481243e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.55 raw sigma mode power 2",
+        "scaled_error": "8.4441126e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.55 paired raw sigma mode rates 2",
+        "scaled_error": "7.902484e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.55 holomorphic discrepancy 2",
+        "scaled_error": "7.0492632e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.55 reconstructed log rate 2",
+        "scaled_error": "4.2857833e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.55 canonical u 2",
+        "scaled_error": "3.6720245e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.55 canonical v 2",
+        "scaled_error": "3.4310102e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.55 polynomial gauge integral 2",
+        "scaled_error": "7.2222373e-34",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.55 third-kind primitive 2",
+        "scaled_error": "1.8529008e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.55 paired third-kind sigma identity 2",
+        "scaled_error": "1.1659241e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.55 split integral equals point primitive 2",
+        "scaled_error": "1.7457724e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.55 raw sigma mode power 3",
+        "scaled_error": "5.0971667e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.55 paired raw sigma mode rates 3",
+        "scaled_error": "8.772711e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.55 holomorphic discrepancy 3",
+        "scaled_error": "9.3258228e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.55 reconstructed log rate 3",
+        "scaled_error": "5.7384245e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.55 canonical u 3",
+        "scaled_error": "3.5825321e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.55 canonical v 3",
+        "scaled_error": "5.6563435e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.55 polynomial gauge integral 3",
+        "scaled_error": "7.4148303e-33",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.55 third-kind primitive 3",
+        "scaled_error": "3.0233248e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.55 paired third-kind sigma identity 3",
+        "scaled_error": "3.0079489e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.55 split integral equals point primitive 3",
+        "scaled_error": "3.2496277e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.55 raw sigma mode power 4",
+        "scaled_error": "5.7755573e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.55 paired raw sigma mode rates 4",
+        "scaled_error": "5.9414183e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.55 holomorphic discrepancy 4",
+        "scaled_error": "6.7402185e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.55 reconstructed log rate 4",
+        "scaled_error": "4.7046479e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.55 canonical u 4",
+        "scaled_error": "5.285644e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.55 canonical v 4",
+        "scaled_error": "3.4729492e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.55 polynomial gauge integral 4",
+        "scaled_error": "5.3926038e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.55 third-kind primitive 4",
+        "scaled_error": "2.8081829e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.55 paired third-kind sigma identity 4",
+        "scaled_error": "1.2593799e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.55 split integral equals point primitive 4",
+        "scaled_error": "2.6242674e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.55 raw sigma mode power 5",
+        "scaled_error": "7.847952e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.55 paired raw sigma mode rates 5",
+        "scaled_error": "3.8778515e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.55 holomorphic discrepancy 5",
+        "scaled_error": "5.0928799e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.55 reconstructed log rate 5",
+        "scaled_error": "6.4977037e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.55 canonical u 5",
+        "scaled_error": "9.5564071e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.55 canonical v 5",
+        "scaled_error": "9.3026236e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.55 polynomial gauge integral 5",
+        "scaled_error": "6.625199e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.55 third-kind primitive 5",
+        "scaled_error": "1.938431e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.55 paired third-kind sigma identity 5",
+        "scaled_error": "1.2895033e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.55 split integral equals point primitive 5",
+        "scaled_error": "1.9688091e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.6 inversion",
+        "scaled_error": "1.714915e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.6 sigma divisor",
+        "scaled_error": "2.4036156e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.6 Abel increment 1",
+        "scaled_error": "2.1185229e-33",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.6 Abel increment 2",
+        "scaled_error": "6.9333478e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.6 weighted U",
+        "scaled_error": "7.6964958e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.6 weighted V",
+        "scaled_error": "8.6828423e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.6 Hamiltonian",
+        "scaled_error": "2.0834179e-28",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.6 raw sigma mode power 1",
+        "scaled_error": "7.060343e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.6 paired raw sigma mode rates 1",
+        "scaled_error": "8.9567769e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.6 holomorphic discrepancy 1",
+        "scaled_error": "9.5842537e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.6 reconstructed log rate 1",
+        "scaled_error": "1.0642315e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.6 canonical u 1",
+        "scaled_error": "2.127073e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.6 canonical v 1",
+        "scaled_error": "1.1822103e-29",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.6 polynomial gauge integral 1",
+        "scaled_error": "4.8533435e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.6 third-kind primitive 1",
+        "scaled_error": "1.27053e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.6 paired third-kind sigma identity 1",
+        "scaled_error": "1.3798231e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.6 split integral equals point primitive 1",
+        "scaled_error": "1.0903417e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.6 raw sigma mode power 2",
+        "scaled_error": "5.120032e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.6 paired raw sigma mode rates 2",
+        "scaled_error": "7.6634283e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.6 holomorphic discrepancy 2",
+        "scaled_error": "6.3210452e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.6 reconstructed log rate 2",
+        "scaled_error": "1.7720337e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.6 canonical u 2",
+        "scaled_error": "3.0970505e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.6 canonical v 2",
+        "scaled_error": "5.8778255e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.6 polynomial gauge integral 2",
+        "scaled_error": "2.1185229e-33",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.6 third-kind primitive 2",
+        "scaled_error": "2.2220925e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.6 paired third-kind sigma identity 2",
+        "scaled_error": "7.6617224e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.6 split integral equals point primitive 2",
+        "scaled_error": "2.0528932e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.6 raw sigma mode power 3",
+        "scaled_error": "3.5066171e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.6 paired raw sigma mode rates 3",
+        "scaled_error": "9.6478838e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.6 holomorphic discrepancy 3",
+        "scaled_error": "1.2919394e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.6 reconstructed log rate 3",
+        "scaled_error": "1.1288036e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.6 canonical u 3",
+        "scaled_error": "2.7474458e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.6 canonical v 3",
+        "scaled_error": "7.5317446e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.6 polynomial gauge integral 3",
+        "scaled_error": "6.7407548e-33",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.6 third-kind primitive 3",
+        "scaled_error": "2.3773934e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.6 paired third-kind sigma identity 3",
+        "scaled_error": "2.1690354e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.6 split integral equals point primitive 3",
+        "scaled_error": "2.3585967e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.6 raw sigma mode power 4",
+        "scaled_error": "1.0345332e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.6 paired raw sigma mode rates 4",
+        "scaled_error": "7.6641348e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.6 holomorphic discrepancy 4",
+        "scaled_error": "1.2572428e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.6 reconstructed log rate 4",
+        "scaled_error": "3.6679926e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.6 canonical u 4",
+        "scaled_error": "5.7973799e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.6 canonical v 4",
+        "scaled_error": "3.9179428e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.6 polynomial gauge integral 4",
+        "scaled_error": "6.240013e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.6 third-kind primitive 4",
+        "scaled_error": "1.6177078e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.6 paired third-kind sigma identity 4",
+        "scaled_error": "9.2095902e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.6 split integral equals point primitive 4",
+        "scaled_error": "1.8632175e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.6 raw sigma mode power 5",
+        "scaled_error": "6.6385038e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.6 paired raw sigma mode rates 5",
+        "scaled_error": "7.5108091e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.6 holomorphic discrepancy 5",
+        "scaled_error": "1.0018424e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.6 reconstructed log rate 5",
+        "scaled_error": "3.7199714e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.6 canonical u 5",
+        "scaled_error": "9.1999738e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.6 canonical v 5",
+        "scaled_error": "1.0646084e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.6 polynomial gauge integral 5",
+        "scaled_error": "7.395571e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.6 third-kind primitive 5",
+        "scaled_error": "2.4949112e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.6 paired third-kind sigma identity 5",
+        "scaled_error": "1.1614759e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.6 split integral equals point primitive 5",
+        "scaled_error": "2.5375075e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.65 inversion",
+        "scaled_error": "3.3929501e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.65 sigma divisor",
+        "scaled_error": "3.5084752e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.65 Abel increment 1",
+        "scaled_error": "1.9259299e-33",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.65 Abel increment 2",
+        "scaled_error": "3.5437111e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.65 weighted U",
+        "scaled_error": "8.775074e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.65 weighted V",
+        "scaled_error": "5.0925866e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.65 Hamiltonian",
+        "scaled_error": "5.4926305e-29",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.65 raw sigma mode power 1",
+        "scaled_error": "8.1562911e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.65 paired raw sigma mode rates 1",
+        "scaled_error": "6.5863319e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.65 holomorphic discrepancy 1",
+        "scaled_error": "4.9059955e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.65 reconstructed log rate 1",
+        "scaled_error": "1.169235e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.65 canonical u 1",
+        "scaled_error": "3.1410604e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.65 canonical v 1",
+        "scaled_error": "8.1787623e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.65 polynomial gauge integral 1",
+        "scaled_error": "2.4651903e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.65 third-kind primitive 1",
+        "scaled_error": "8.0118686e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.65 paired third-kind sigma identity 1",
+        "scaled_error": "6.6983136e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.65 split integral equals point primitive 1",
+        "scaled_error": "8.2584451e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.65 raw sigma mode power 2",
+        "scaled_error": "8.3448471e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.65 paired raw sigma mode rates 2",
+        "scaled_error": "6.5234714e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.65 holomorphic discrepancy 2",
+        "scaled_error": "6.438618e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.65 reconstructed log rate 2",
+        "scaled_error": "1.53243e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.65 canonical u 2",
+        "scaled_error": "3.5232023e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.65 canonical v 2",
+        "scaled_error": "4.3110507e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.65 polynomial gauge integral 2",
+        "scaled_error": "9.6296497e-35",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.65 third-kind primitive 2",
+        "scaled_error": "1.60267e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.65 paired third-kind sigma identity 2",
+        "scaled_error": "5.7114966e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.65 split integral equals point primitive 2",
+        "scaled_error": "1.1405669e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.65 raw sigma mode power 3",
+        "scaled_error": "6.6612308e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.65 paired raw sigma mode rates 3",
+        "scaled_error": "8.416954e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.65 holomorphic discrepancy 3",
+        "scaled_error": "1.0260551e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.65 reconstructed log rate 3",
+        "scaled_error": "1.4907499e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.65 canonical u 3",
+        "scaled_error": "3.9030805e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.65 canonical v 3",
+        "scaled_error": "5.8827261e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.65 polynomial gauge integral 3",
+        "scaled_error": "5.0074179e-33",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.65 third-kind primitive 3",
+        "scaled_error": "3.3870094e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.65 paired third-kind sigma identity 3",
+        "scaled_error": "1.6581933e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.65 split integral equals point primitive 3",
+        "scaled_error": "3.3870094e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.65 raw sigma mode power 4",
+        "scaled_error": "1.1758956e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.65 paired raw sigma mode rates 4",
+        "scaled_error": "7.5777508e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.65 holomorphic discrepancy 4",
+        "scaled_error": "1.021478e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.65 reconstructed log rate 4",
+        "scaled_error": "2.839969e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.65 canonical u 4",
+        "scaled_error": "8.9257686e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.65 canonical v 4",
+        "scaled_error": "3.2989543e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.65 polynomial gauge integral 4",
+        "scaled_error": "3.2355623e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.65 third-kind primitive 4",
+        "scaled_error": "1.8414952e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.65 paired third-kind sigma identity 4",
+        "scaled_error": "8.6744773e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.65 split integral equals point primitive 4",
+        "scaled_error": "1.7761377e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.65 raw sigma mode power 5",
+        "scaled_error": "9.7755336e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.65 paired raw sigma mode rates 5",
+        "scaled_error": "7.3416753e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.65 holomorphic discrepancy 5",
+        "scaled_error": "1.0653257e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.65 reconstructed log rate 5",
+        "scaled_error": "2.9945205e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.65 canonical u 5",
+        "scaled_error": "9.7016302e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.65 canonical v 5",
+        "scaled_error": "1.0634661e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.65 polynomial gauge integral 5",
+        "scaled_error": "4.1600087e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.65 third-kind primitive 5",
+        "scaled_error": "3.3510384e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.65 paired third-kind sigma identity 5",
+        "scaled_error": "1.7074616e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=4.65 split integral equals point primitive 5",
+        "scaled_error": "3.4918847e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 scalar quadrature inversion",
+        "scaled_error": "2.1055151e-33",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 mode 1 from prescribed z",
+        "scaled_error": "0.0",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 mode 2 from prescribed z",
+        "scaled_error": "0.0",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 mode 3 from prescribed z",
+        "scaled_error": "0.0",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 mode 4 from prescribed z",
+        "scaled_error": "0.0",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 mode 5 from prescribed z",
+        "scaled_error": "0.0",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 mode 6 from prescribed z",
+        "scaled_error": "0.0",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 mode 7 from prescribed z",
+        "scaled_error": "0.0",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 mode 8 from prescribed z",
+        "scaled_error": "0.0",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 mode 9 from prescribed z",
+        "scaled_error": "0.0",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 mode 10 from prescribed z",
+        "scaled_error": "0.0",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 RK4 16 Hamiltonian",
+        "scaled_error": "3.060407e-12",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 RK4 16 invariant 1",
+        "scaled_error": "3.0233889e-14",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 RK4 16 invariant 2",
+        "scaled_error": "1.8077406e-14",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 RK4 16 invariant 3",
+        "scaled_error": "2.185961e-14",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 RK4 16 invariant 4",
+        "scaled_error": "1.6347068e-15",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 RK4 32 Hamiltonian",
+        "scaled_error": "1.9131015e-13",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 RK4 32 invariant 1",
+        "scaled_error": "1.8935016e-15",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 RK4 32 invariant 2",
+        "scaled_error": "1.1320129e-15",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 RK4 32 invariant 3",
+        "scaled_error": "1.3689607e-15",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 RK4 32 invariant 4",
+        "scaled_error": "1.0238063e-16",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 RK4 64 Hamiltonian",
+        "scaled_error": "1.1957947e-14",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 RK4 64 invariant 1",
+        "scaled_error": "1.1846531e-16",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 RK4 64 invariant 2",
+        "scaled_error": "7.0818743e-17",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 RK4 64 invariant 3",
+        "scaled_error": "8.5645484e-17",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 RK4 64 invariant 4",
+        "scaled_error": "6.4053412e-18",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 RK4 finest agreement",
+        "scaled_error": "1.7339112e-16",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 RK4 fourth-order ratio 1",
+        "scaled_error": "0.00074818883",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 RK4 fourth-order ratio 2",
+        "scaled_error": "0.00037296459",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.55 inversion",
+        "scaled_error": "1.7337602e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.55 sigma divisor",
+        "scaled_error": "6.8794514e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.55 Abel increment 1",
+        "scaled_error": "6.846681e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.55 Abel increment 2",
+        "scaled_error": "3.8518599e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.55 weighted U",
+        "scaled_error": "1.1436179e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.55 weighted V",
+        "scaled_error": "7.9730503e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.55 Hamiltonian",
+        "scaled_error": "7.0877678e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.55 raw sigma mode power 1",
+        "scaled_error": "7.8519673e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.55 paired raw sigma mode rates 1",
+        "scaled_error": "5.7072745e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.55 holomorphic discrepancy 1",
+        "scaled_error": "5.1674061e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.55 reconstructed log rate 1",
+        "scaled_error": "1.9917936e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.55 canonical u 1",
+        "scaled_error": "1.5644986e-29",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.55 canonical v 1",
+        "scaled_error": "2.9367605e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.55 polynomial gauge integral 1",
+        "scaled_error": "5.3926038e-33",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.55 third-kind primitive 1",
+        "scaled_error": "2.1205529e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.55 paired third-kind sigma identity 1",
+        "scaled_error": "8.5009835e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.55 split integral equals point primitive 1",
+        "scaled_error": "2.0157412e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.55 raw sigma mode power 2",
+        "scaled_error": "5.2628255e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.55 paired raw sigma mode rates 2",
+        "scaled_error": "3.3973739e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.55 holomorphic discrepancy 2",
+        "scaled_error": "7.989165e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.55 reconstructed log rate 2",
+        "scaled_error": "7.0878635e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.55 canonical u 2",
+        "scaled_error": "7.7266586e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.55 canonical v 2",
+        "scaled_error": "4.4948742e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.55 polynomial gauge integral 2",
+        "scaled_error": "3.2885254e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.55 third-kind primitive 2",
+        "scaled_error": "2.0343218e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.55 paired third-kind sigma identity 2",
+        "scaled_error": "6.7151214e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.55 split integral equals point primitive 2",
+        "scaled_error": "2.1337218e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.55 raw sigma mode power 3",
+        "scaled_error": "5.3262928e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.55 paired raw sigma mode rates 3",
+        "scaled_error": "6.566748e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.55 holomorphic discrepancy 3",
+        "scaled_error": "7.1589323e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.55 reconstructed log rate 3",
+        "scaled_error": "2.1928745e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.55 canonical u 3",
+        "scaled_error": "7.2621484e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.55 canonical v 3",
+        "scaled_error": "3.0272988e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.55 polynomial gauge integral 3",
+        "scaled_error": "3.245192e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.55 third-kind primitive 3",
+        "scaled_error": "1.1410871e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.55 paired third-kind sigma identity 3",
+        "scaled_error": "5.6215391e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.55 split integral equals point primitive 3",
+        "scaled_error": "1.4259375e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.55 raw sigma mode power 4",
+        "scaled_error": "8.6433796e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.55 paired raw sigma mode rates 4",
+        "scaled_error": "3.9304399e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.55 holomorphic discrepancy 4",
+        "scaled_error": "8.9219128e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.55 reconstructed log rate 4",
+        "scaled_error": "1.334907e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.55 canonical u 4",
+        "scaled_error": "4.8719735e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.55 canonical v 4",
+        "scaled_error": "7.5703371e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.55 polynomial gauge integral 4",
+        "scaled_error": "4.0829715e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.55 third-kind primitive 4",
+        "scaled_error": "1.4906648e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.55 paired third-kind sigma identity 4",
+        "scaled_error": "6.5660373e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.55 split integral equals point primitive 4",
+        "scaled_error": "1.6892415e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.55 raw sigma mode power 5",
+        "scaled_error": "6.2284679e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.55 paired raw sigma mode rates 5",
+        "scaled_error": "3.815456e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.55 holomorphic discrepancy 5",
+        "scaled_error": "3.9304374e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.55 reconstructed log rate 5",
+        "scaled_error": "4.0505692e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.55 canonical u 5",
+        "scaled_error": "3.8453541e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.55 canonical v 5",
+        "scaled_error": "1.4680954e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.55 polynomial gauge integral 5",
+        "scaled_error": "3.4281553e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.55 third-kind primitive 5",
+        "scaled_error": "1.132473e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.55 paired third-kind sigma identity 5",
+        "scaled_error": "1.1378328e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.55 split integral equals point primitive 5",
+        "scaled_error": "1.1757451e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.6 inversion",
+        "scaled_error": "1.714915e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.6 sigma divisor",
+        "scaled_error": "7.3926482e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.6 Abel increment 1",
+        "scaled_error": "6.5674211e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.6 Abel increment 2",
+        "scaled_error": "2.9274135e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.6 weighted U",
+        "scaled_error": "1.4363444e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.6 weighted V",
+        "scaled_error": "1.0052076e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.6 Hamiltonian",
+        "scaled_error": "2.0199162e-28",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.6 raw sigma mode power 1",
+        "scaled_error": "6.4472373e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.6 paired raw sigma mode rates 1",
+        "scaled_error": "9.000789e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.6 holomorphic discrepancy 1",
+        "scaled_error": "1.5184511e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.6 reconstructed log rate 1",
+        "scaled_error": "7.2234601e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.6 canonical u 1",
+        "scaled_error": "2.2344641e-29",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.6 canonical v 1",
+        "scaled_error": "1.8153105e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.6 polynomial gauge integral 1",
+        "scaled_error": "1.0785208e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.6 third-kind primitive 1",
+        "scaled_error": "5.4104908e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.6 paired third-kind sigma identity 1",
+        "scaled_error": "3.7321496e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.6 split integral equals point primitive 1",
+        "scaled_error": "5.1548881e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.6 raw sigma mode power 2",
+        "scaled_error": "6.7320066e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.6 paired raw sigma mode rates 2",
+        "scaled_error": "7.6852281e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.6 holomorphic discrepancy 2",
+        "scaled_error": "5.5439234e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.6 reconstructed log rate 2",
+        "scaled_error": "2.5486452e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.6 canonical u 2",
+        "scaled_error": "9.8337694e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.6 canonical v 2",
+        "scaled_error": "3.8493299e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.6 polynomial gauge integral 2",
+        "scaled_error": "3.1585251e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.6 third-kind primitive 2",
+        "scaled_error": "3.7782171e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.6 paired third-kind sigma identity 2",
+        "scaled_error": "3.3444823e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.6 split integral equals point primitive 2",
+        "scaled_error": "3.6993901e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.6 raw sigma mode power 3",
+        "scaled_error": "3.1598051e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.6 paired raw sigma mode rates 3",
+        "scaled_error": "4.3206571e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.6 holomorphic discrepancy 3",
+        "scaled_error": "2.3650156e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.6 reconstructed log rate 3",
+        "scaled_error": "2.8852548e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.6 canonical u 3",
+        "scaled_error": "1.2429637e-29",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.6 canonical v 3",
+        "scaled_error": "3.1751707e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.6 polynomial gauge integral 3",
+        "scaled_error": "3.1777844e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.6 third-kind primitive 3",
+        "scaled_error": "4.2999732e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.6 paired third-kind sigma identity 3",
+        "scaled_error": "2.649611e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.6 split integral equals point primitive 3",
+        "scaled_error": "4.4816319e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.6 raw sigma mode power 4",
+        "scaled_error": "9.4046746e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.6 paired raw sigma mode rates 4",
+        "scaled_error": "1.1501768e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.6 holomorphic discrepancy 4",
+        "scaled_error": "1.7434821e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.6 reconstructed log rate 4",
+        "scaled_error": "2.3408587e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.6 canonical u 4",
+        "scaled_error": "7.124812e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.6 canonical v 4",
+        "scaled_error": "4.6234757e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.6 polynomial gauge integral 4",
+        "scaled_error": "3.3125995e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.6 third-kind primitive 4",
+        "scaled_error": "3.4550131e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.6 paired third-kind sigma identity 4",
+        "scaled_error": "1.7165218e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.6 split integral equals point primitive 4",
+        "scaled_error": "3.8891503e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.6 raw sigma mode power 5",
+        "scaled_error": "7.8694376e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.6 paired raw sigma mode rates 5",
+        "scaled_error": "9.3601925e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.6 holomorphic discrepancy 5",
+        "scaled_error": "1.4772243e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.6 reconstructed log rate 5",
+        "scaled_error": "1.6401243e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.6 canonical u 5",
+        "scaled_error": "6.3119547e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.6 canonical v 5",
+        "scaled_error": "1.0353983e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.6 polynomial gauge integral 5",
+        "scaled_error": "2.6192647e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.6 third-kind primitive 5",
+        "scaled_error": "4.5607062e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.6 paired third-kind sigma identity 5",
+        "scaled_error": "2.1166707e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.6 split integral equals point primitive 5",
+        "scaled_error": "4.6162705e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.65 inversion",
+        "scaled_error": "3.3929501e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.65 sigma divisor",
+        "scaled_error": "1.049107e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.65 Abel increment 1",
+        "scaled_error": "2.6577833e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.65 Abel increment 2",
+        "scaled_error": "6.3170502e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.65 weighted U",
+        "scaled_error": "2.0132335e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.65 weighted V",
+        "scaled_error": "1.6346796e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.65 Hamiltonian",
+        "scaled_error": "2.5293481e-28",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.65 raw sigma mode power 1",
+        "scaled_error": "8.0411854e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.65 paired raw sigma mode rates 1",
+        "scaled_error": "7.6857717e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.65 holomorphic discrepancy 1",
+        "scaled_error": "1.5991589e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.65 reconstructed log rate 1",
+        "scaled_error": "5.7846014e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.65 canonical u 1",
+        "scaled_error": "2.6736766e-29",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.65 canonical v 1",
+        "scaled_error": "2.8594186e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.65 polynomial gauge integral 1",
+        "scaled_error": "3.2355623e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.65 third-kind primitive 1",
+        "scaled_error": "5.6486708e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.65 paired third-kind sigma identity 1",
+        "scaled_error": "3.8200891e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.65 split integral equals point primitive 1",
+        "scaled_error": "5.4117192e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.65 raw sigma mode power 2",
+        "scaled_error": "7.0546399e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.65 paired raw sigma mode rates 2",
+        "scaled_error": "7.5074416e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.65 holomorphic discrepancy 2",
+        "scaled_error": "7.0518197e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.65 reconstructed log rate 2",
+        "scaled_error": "1.4701247e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.65 canonical u 2",
+        "scaled_error": "1.3245534e-29",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.65 canonical v 2",
+        "scaled_error": "6.1176978e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.65 polynomial gauge integral 2",
+        "scaled_error": "1.3385213e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.65 third-kind primitive 2",
+        "scaled_error": "3.6497424e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.65 paired third-kind sigma identity 2",
+        "scaled_error": "2.8282805e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.65 split integral equals point primitive 2",
+        "scaled_error": "3.2989555e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.65 raw sigma mode power 3",
+        "scaled_error": "3.8398819e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.65 paired raw sigma mode rates 3",
+        "scaled_error": "5.271227e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.65 holomorphic discrepancy 3",
+        "scaled_error": "3.5254215e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.65 reconstructed log rate 3",
+        "scaled_error": "2.5739205e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.65 canonical u 3",
+        "scaled_error": "1.5352615e-29",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.65 canonical v 3",
+        "scaled_error": "5.4906959e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.65 polynomial gauge integral 3",
+        "scaled_error": "6.5481618e-33",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.65 third-kind primitive 3",
+        "scaled_error": "3.3456857e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.65 paired third-kind sigma identity 3",
+        "scaled_error": "1.8372776e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.65 split integral equals point primitive 3",
+        "scaled_error": "3.3485226e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.65 raw sigma mode power 4",
+        "scaled_error": "1.3004916e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.65 paired raw sigma mode rates 4",
+        "scaled_error": "1.3169299e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.65 holomorphic discrepancy 4",
+        "scaled_error": "1.921291e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.65 reconstructed log rate 4",
+        "scaled_error": "2.3020998e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.65 canonical u 4",
+        "scaled_error": "1.0440715e-29",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.65 canonical v 4",
+        "scaled_error": "9.1568931e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.65 polynomial gauge integral 4",
+        "scaled_error": "5.7007526e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.65 third-kind primitive 4",
+        "scaled_error": "6.2429607e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.65 paired third-kind sigma identity 4",
+        "scaled_error": "2.0876379e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.65 split integral equals point primitive 4",
+        "scaled_error": "6.1324706e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.65 raw sigma mode power 5",
+        "scaled_error": "1.3311289e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.65 paired raw sigma mode rates 5",
+        "scaled_error": "1.1013697e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.65 holomorphic discrepancy 5",
+        "scaled_error": "1.9261055e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.65 reconstructed log rate 5",
+        "scaled_error": "1.6149436e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.65 canonical u 5",
+        "scaled_error": "8.3659617e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.65 canonical v 5",
+        "scaled_error": "1.7116771e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.65 polynomial gauge integral 5",
+        "scaled_error": "6.1629758e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.65 third-kind primitive 5",
+        "scaled_error": "4.9571985e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.65 paired third-kind sigma identity 5",
+        "scaled_error": "1.8703046e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=4.65 split integral equals point primitive 5",
+        "scaled_error": "5.0853187e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 scalar quadrature inversion",
+        "scaled_error": "2.1055151e-33",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 mode 1 from prescribed z",
+        "scaled_error": "0.0",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 mode 2 from prescribed z",
+        "scaled_error": "0.0",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 mode 3 from prescribed z",
+        "scaled_error": "0.0",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 mode 4 from prescribed z",
+        "scaled_error": "0.0",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 mode 5 from prescribed z",
+        "scaled_error": "0.0",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 mode 6 from prescribed z",
+        "scaled_error": "0.0",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 mode 7 from prescribed z",
+        "scaled_error": "0.0",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 mode 8 from prescribed z",
+        "scaled_error": "0.0",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 mode 9 from prescribed z",
+        "scaled_error": "0.0",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 mode 10 from prescribed z",
+        "scaled_error": "0.0",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 RK4 16 Hamiltonian",
+        "scaled_error": "3.060407e-12",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 RK4 16 invariant 1",
+        "scaled_error": "3.0233889e-14",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 RK4 16 invariant 2",
+        "scaled_error": "1.8077406e-14",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 RK4 16 invariant 3",
+        "scaled_error": "2.185961e-14",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 RK4 16 invariant 4",
+        "scaled_error": "1.6347068e-15",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 RK4 32 Hamiltonian",
+        "scaled_error": "1.9131015e-13",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 RK4 32 invariant 1",
+        "scaled_error": "1.8935016e-15",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 RK4 32 invariant 2",
+        "scaled_error": "1.1320129e-15",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 RK4 32 invariant 3",
+        "scaled_error": "1.3689607e-15",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 RK4 32 invariant 4",
+        "scaled_error": "1.0238063e-16",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 RK4 64 Hamiltonian",
+        "scaled_error": "1.1957947e-14",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 RK4 64 invariant 1",
+        "scaled_error": "1.1846531e-16",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 RK4 64 invariant 2",
+        "scaled_error": "7.0818743e-17",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 RK4 64 invariant 3",
+        "scaled_error": "8.5645484e-17",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 RK4 64 invariant 4",
+        "scaled_error": "6.4053412e-18",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 RK4 finest agreement",
+        "scaled_error": "1.7339112e-16",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 RK4 fourth-order ratio 1",
+        "scaled_error": "0.00074818883",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 RK4 fourth-order ratio 2",
+        "scaled_error": "0.00037296459",
+        "passed": true
+      },
+      {
+        "check": "polynomial field finite at a zero mode",
+        "scaled_error": "0",
+        "passed": true
+      }
+    ],
+    "trajectories": [
+      {
+        "sheet": 1,
+        "z_length": "0.00220375381532",
+        "steps": [
+          16,
+          32,
+          64
+        ],
+        "errors": [
+          "4.4338373e-14",
+          "2.7732232e-15",
+          "1.7339112e-16"
+        ],
+        "ratios": [
+          "15.988029",
+          "15.994033"
+        ]
+      },
+      {
+        "sheet": -1,
+        "z_length": "-0.00220375381532",
+        "steps": [
+          16,
+          32,
+          64
+        ],
+        "errors": [
+          "4.4338373e-14",
+          "2.7732232e-15",
+          "1.7339112e-16"
+        ],
+        "ratios": [
+          "15.988029",
+          "15.994033"
+        ]
+      }
+    ],
+    "scope": "Fresh genus-2 degenerate 5-pair example, two sheets, regular short paths; no turning-point or global continuation claim."
+  },
+  "genus_three": {
+    "passed": true,
+    "dps": 30,
+    "genus": 3,
+    "rows": [
+      {
+        "check": "h_1,1: fixed-point sigma versus reference formula",
+        "scaled_error": "1.0785208e-31",
+        "passed": true
+      },
+      {
+        "check": "h_1,1: fixed-point sigma versus second-kind Abel integral",
+        "scaled_error": "8.4449777e-32",
+        "passed": true
+      },
+      {
+        "check": "h_1,2: fixed-point sigma versus reference formula",
+        "scaled_error": "1.1575995e-30",
+        "passed": true
+      },
+      {
+        "check": "h_1,2: fixed-point sigma versus second-kind Abel integral",
+        "scaled_error": "6.1156202e-32",
+        "passed": true
+      },
+      {
+        "check": "h_1,3: fixed-point sigma versus reference formula",
+        "scaled_error": "2.1225483e-30",
+        "passed": true
+      },
+      {
+        "check": "h_1,3: fixed-point sigma versus second-kind Abel integral",
+        "scaled_error": "1.2236401e-32",
+        "passed": true
+      },
+      {
+        "check": "h_2,1: fixed-point sigma versus reference formula",
+        "scaled_error": "4.952e-32",
+        "passed": true
+      },
+      {
+        "check": "h_2,1: fixed-point sigma versus second-kind Abel integral",
+        "scaled_error": "8.8243748e-32",
+        "passed": true
+      },
+      {
+        "check": "h_2,2: fixed-point sigma versus reference formula",
+        "scaled_error": "9.3294614e-31",
+        "passed": true
+      },
+      {
+        "check": "h_2,2: fixed-point sigma versus second-kind Abel integral",
+        "scaled_error": "1.4525251e-31",
+        "passed": true
+      },
+      {
+        "check": "h_2,3: fixed-point sigma versus reference formula",
+        "scaled_error": "1.048465e-30",
+        "passed": true
+      },
+      {
+        "check": "h_2,3: fixed-point sigma versus second-kind Abel integral",
+        "scaled_error": "2.4467412e-32",
+        "passed": true
+      },
+      {
+        "check": "h_3,1: fixed-point sigma versus reference formula",
+        "scaled_error": "2.2234275e-31",
+        "passed": true
+      },
+      {
+        "check": "h_3,1: fixed-point sigma versus second-kind Abel integral",
+        "scaled_error": "3.6207483e-32",
+        "passed": true
+      },
+      {
+        "check": "h_3,2: fixed-point sigma versus reference formula",
+        "scaled_error": "5.4347726e-31",
+        "passed": true
+      },
+      {
+        "check": "h_3,2: fixed-point sigma versus second-kind Abel integral",
+        "scaled_error": "2.0279002e-32",
+        "passed": true
+      },
+      {
+        "check": "h_3,3: fixed-point sigma versus reference formula",
+        "scaled_error": "3.7053853e-30",
+        "passed": true
+      },
+      {
+        "check": "h_3,3: fixed-point sigma versus second-kind Abel integral",
+        "scaled_error": "2.1360394e-31",
+        "passed": true
+      },
+      {
+        "check": "h_4,1: fixed-point sigma versus reference formula",
+        "scaled_error": "2.6349875e-31",
+        "passed": true
+      },
+      {
+        "check": "h_4,1: fixed-point sigma versus second-kind Abel integral",
+        "scaled_error": "1.27053e-31",
+        "passed": true
+      },
+      {
+        "check": "h_4,2: fixed-point sigma versus reference formula",
+        "scaled_error": "8.2744375e-31",
+        "passed": true
+      },
+      {
+        "check": "h_4,2: fixed-point sigma versus second-kind Abel integral",
+        "scaled_error": "3.1341667e-32",
+        "passed": true
+      },
+      {
+        "check": "h_4,3: fixed-point sigma versus reference formula",
+        "scaled_error": "3.5107382e-30",
+        "passed": true
+      },
+      {
+        "check": "h_4,3: fixed-point sigma versus second-kind Abel integral",
+        "scaled_error": "2.4342589e-32",
+        "passed": true
+      },
+      {
+        "check": "h_5,1: fixed-point sigma versus reference formula",
+        "scaled_error": "2.032848e-31",
+        "passed": true
+      },
+      {
+        "check": "h_5,1: fixed-point sigma versus second-kind Abel integral",
+        "scaled_error": "7.89246e-32",
+        "passed": true
+      },
+      {
+        "check": "h_5,2: fixed-point sigma versus reference formula",
+        "scaled_error": "1.2227076e-30",
+        "passed": true
+      },
+      {
+        "check": "h_5,2: fixed-point sigma versus second-kind Abel integral",
+        "scaled_error": "1.244634e-31",
+        "passed": true
+      },
+      {
+        "check": "h_5,3: fixed-point sigma versus reference formula",
+        "scaled_error": "1.2463501e-29",
+        "passed": true
+      },
+      {
+        "check": "h_5,3: fixed-point sigma versus second-kind Abel integral",
+        "scaled_error": "1.9508908e-31",
+        "passed": true
+      },
+      {
+        "check": "h_6,1: fixed-point sigma versus reference formula",
+        "scaled_error": "1.1024666e-31",
+        "passed": true
+      },
+      {
+        "check": "h_6,1: fixed-point sigma versus second-kind Abel integral",
+        "scaled_error": "1.0477059e-31",
+        "passed": true
+      },
+      {
+        "check": "h_6,2: fixed-point sigma versus reference formula",
+        "scaled_error": "8.881902e-31",
+        "passed": true
+      },
+      {
+        "check": "h_6,2: fixed-point sigma versus second-kind Abel integral",
+        "scaled_error": "1.3060208e-31",
+        "passed": true
+      },
+      {
+        "check": "h_6,3: fixed-point sigma versus reference formula",
+        "scaled_error": "3.0991116e-30",
+        "passed": true
+      },
+      {
+        "check": "h_6,3: fixed-point sigma versus second-kind Abel integral",
+        "scaled_error": "5.7932988e-33",
+        "passed": true
+      },
+      {
+        "check": "h_7,1: fixed-point sigma versus reference formula",
+        "scaled_error": "2.0954118e-31",
+        "passed": true
+      },
+      {
+        "check": "h_7,1: fixed-point sigma versus second-kind Abel integral",
+        "scaled_error": "3.6977855e-32",
+        "passed": true
+      },
+      {
+        "check": "h_7,2: fixed-point sigma versus reference formula",
+        "scaled_error": "1.4433474e-30",
+        "passed": true
+      },
+      {
+        "check": "h_7,2: fixed-point sigma versus second-kind Abel integral",
+        "scaled_error": "1.1024666e-31",
+        "passed": true
+      },
+      {
+        "check": "h_7,3: fixed-point sigma versus reference formula",
+        "scaled_error": "5.8263879e-31",
+        "passed": true
+      },
+      {
+        "check": "h_7,3: fixed-point sigma versus second-kind Abel integral",
+        "scaled_error": "1.3053202e-32",
+        "passed": true
+      },
+      {
+        "check": "h_1,1: finite sigma jets at rho=0.0",
+        "scaled_error": "9.8706869e-32",
+        "passed": true
+      },
+      {
+        "check": "h_1,2: finite sigma jets at rho=0.0",
+        "scaled_error": "9.5817247e-31",
+        "passed": true
+      },
+      {
+        "check": "h_1,3: finite sigma jets at rho=0.0",
+        "scaled_error": "1.4050565e-30",
+        "passed": true
+      },
+      {
+        "check": "h_2,1: finite sigma jets at rho=0.0",
+        "scaled_error": "6.9183521e-32",
+        "passed": true
+      },
+      {
+        "check": "h_2,2: finite sigma jets at rho=0.0",
+        "scaled_error": "9.1403528e-31",
+        "passed": true
+      },
+      {
+        "check": "h_2,3: finite sigma jets at rho=0.0",
+        "scaled_error": "2.1747456e-30",
+        "passed": true
+      },
+      {
+        "check": "h_3,1: finite sigma jets at rho=0.0",
+        "scaled_error": "1.880481e-31",
+        "passed": true
+      },
+      {
+        "check": "h_3,2: finite sigma jets at rho=0.0",
+        "scaled_error": "7.1022844e-31",
+        "passed": true
+      },
+      {
+        "check": "h_3,3: finite sigma jets at rho=0.0",
+        "scaled_error": "2.2516866e-30",
+        "passed": true
+      },
+      {
+        "check": "h_4,1: finite sigma jets at rho=0.0",
+        "scaled_error": "2.5884498e-31",
+        "passed": true
+      },
+      {
+        "check": "h_4,2: finite sigma jets at rho=0.0",
+        "scaled_error": "1.0034229e-30",
+        "passed": true
+      },
+      {
+        "check": "h_4,3: finite sigma jets at rho=0.0",
+        "scaled_error": "7.4918249e-30",
+        "passed": true
+      },
+      {
+        "check": "h_5,1: finite sigma jets at rho=0.0",
+        "scaled_error": "1.578492e-31",
+        "passed": true
+      },
+      {
+        "check": "h_5,2: finite sigma jets at rho=0.0",
+        "scaled_error": "1.641059e-31",
+        "passed": true
+      },
+      {
+        "check": "h_5,3: finite sigma jets at rho=0.0",
+        "scaled_error": "2.7208167e-30",
+        "passed": true
+      },
+      {
+        "check": "h_6,1: finite sigma jets at rho=0.0",
+        "scaled_error": "5.5123332e-32",
+        "passed": true
+      },
+      {
+        "check": "h_6,2: finite sigma jets at rho=0.0",
+        "scaled_error": "2.9203514e-31",
+        "passed": true
+      },
+      {
+        "check": "h_6,3: finite sigma jets at rho=0.0",
+        "scaled_error": "4.5011247e-30",
+        "passed": true
+      },
+      {
+        "check": "h_7,1: finite sigma jets at rho=0.0",
+        "scaled_error": "2.0990339e-31",
+        "passed": true
+      },
+      {
+        "check": "h_7,2: finite sigma jets at rho=0.0",
+        "scaled_error": "8.1313921e-31",
+        "passed": true
+      },
+      {
+        "check": "h_7,3: finite sigma jets at rho=0.0",
+        "scaled_error": "9.4344498e-31",
+        "passed": true
+      },
+      {
+        "check": "h_1,1: finite sigma jets at rho=5.5",
+        "scaled_error": "4.2433201e-28",
+        "passed": true
+      },
+      {
+        "check": "h_1,2: finite sigma jets at rho=5.5",
+        "scaled_error": "1.0197573e-28",
+        "passed": true
+      },
+      {
+        "check": "h_1,3: finite sigma jets at rho=5.5",
+        "scaled_error": "5.9493705e-30",
+        "passed": true
+      },
+      {
+        "check": "h_2,1: finite sigma jets at rho=5.5",
+        "scaled_error": "5.9539645e-28",
+        "passed": true
+      },
+      {
+        "check": "h_2,2: finite sigma jets at rho=5.5",
+        "scaled_error": "1.4742065e-28",
+        "passed": true
+      },
+      {
+        "check": "h_2,3: finite sigma jets at rho=5.5",
+        "scaled_error": "1.0389759e-29",
+        "passed": true
+      },
+      {
+        "check": "h_3,1: finite sigma jets at rho=5.5",
+        "scaled_error": "6.0792816e-28",
+        "passed": true
+      },
+      {
+        "check": "h_3,2: finite sigma jets at rho=5.5",
+        "scaled_error": "1.5797614e-28",
+        "passed": true
+      },
+      {
+        "check": "h_3,3: finite sigma jets at rho=5.5",
+        "scaled_error": "1.2774264e-29",
+        "passed": true
+      },
+      {
+        "check": "h_4,1: finite sigma jets at rho=5.5",
+        "scaled_error": "9.7102689e-28",
+        "passed": true
+      },
+      {
+        "check": "h_4,2: finite sigma jets at rho=5.5",
+        "scaled_error": "2.5536759e-28",
+        "passed": true
+      },
+      {
+        "check": "h_4,3: finite sigma jets at rho=5.5",
+        "scaled_error": "2.3216655e-29",
+        "passed": true
+      },
+      {
+        "check": "h_5,1: finite sigma jets at rho=5.5",
+        "scaled_error": "4.8479308e-28",
+        "passed": true
+      },
+      {
+        "check": "h_5,2: finite sigma jets at rho=5.5",
+        "scaled_error": "1.0778031e-28",
+        "passed": true
+      },
+      {
+        "check": "h_5,3: finite sigma jets at rho=5.5",
+        "scaled_error": "9.2959925e-30",
+        "passed": true
+      },
+      {
+        "check": "h_6,1: finite sigma jets at rho=5.5",
+        "scaled_error": "5.7551133e-28",
+        "passed": true
+      },
+      {
+        "check": "h_6,2: finite sigma jets at rho=5.5",
+        "scaled_error": "1.700367e-28",
+        "passed": true
+      },
+      {
+        "check": "h_6,3: finite sigma jets at rho=5.5",
+        "scaled_error": "1.5477848e-29",
+        "passed": true
+      },
+      {
+        "check": "h_7,1: finite sigma jets at rho=5.5",
+        "scaled_error": "1.6140659e-27",
+        "passed": true
+      },
+      {
+        "check": "h_7,2: finite sigma jets at rho=5.5",
+        "scaled_error": "7.1252672e-28",
+        "passed": true
+      },
+      {
+        "check": "h_7,3: finite sigma jets at rho=5.5",
+        "scaled_error": "4.1000806e-29",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 inversion",
+        "scaled_error": "4.264113e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 sigma divisor",
+        "scaled_error": "1.242243e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 sigma_3 one-point constraint",
+        "scaled_error": "2.9252807e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 Abel increment 1",
+        "scaled_error": "4.2129718e-34",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 Abel increment 2",
+        "scaled_error": "3.5629704e-33",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 Abel increment 3",
+        "scaled_error": "8.4740918e-33",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 weighted U",
+        "scaled_error": "9.7109611e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 weighted V",
+        "scaled_error": "8.6963394e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 Hamiltonian",
+        "scaled_error": "6.272477e-28",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 raw sigma mode power 1",
+        "scaled_error": "5.4216231e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 paired raw sigma mode rates 1",
+        "scaled_error": "1.6671865e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 holomorphic discrepancy 1",
+        "scaled_error": "6.8543468e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 reconstructed log rate 1",
+        "scaled_error": "2.0300889e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 canonical u 1",
+        "scaled_error": "6.7210261e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 canonical v 1",
+        "scaled_error": "1.402882e-29",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 polynomial gauge integral 1",
+        "scaled_error": "2.3111159e-33",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 third-kind primitive 1",
+        "scaled_error": "5.249264e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 paired third-kind sigma identity 1",
+        "scaled_error": "2.3362989e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 split integral equals point primitive 1",
+        "scaled_error": "5.2231106e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 raw sigma mode power 2",
+        "scaled_error": "8.3349603e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 paired raw sigma mode rates 2",
+        "scaled_error": "1.5096492e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 holomorphic discrepancy 2",
+        "scaled_error": "3.9137543e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 reconstructed log rate 2",
+        "scaled_error": "1.6258175e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 canonical u 2",
+        "scaled_error": "5.397614e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 canonical v 2",
+        "scaled_error": "1.9190937e-29",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 polynomial gauge integral 2",
+        "scaled_error": "2.3111159e-33",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 third-kind primitive 2",
+        "scaled_error": "5.7714488e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 paired third-kind sigma identity 2",
+        "scaled_error": "2.9210575e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 split integral equals point primitive 2",
+        "scaled_error": "5.5486145e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 raw sigma mode power 3",
+        "scaled_error": "1.9569837e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 paired raw sigma mode rates 3",
+        "scaled_error": "2.4202125e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 holomorphic discrepancy 3",
+        "scaled_error": "1.1783143e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 reconstructed log rate 3",
+        "scaled_error": "2.2518588e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 canonical u 3",
+        "scaled_error": "6.5809467e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 canonical v 3",
+        "scaled_error": "1.0342984e-29",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 polynomial gauge integral 3",
+        "scaled_error": "1.9259299e-34",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 third-kind primitive 3",
+        "scaled_error": "1.6085839e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 paired third-kind sigma identity 3",
+        "scaled_error": "6.51249e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 split integral equals point primitive 3",
+        "scaled_error": "1.5055994e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 raw sigma mode power 4",
+        "scaled_error": "4.4060453e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 paired raw sigma mode rates 4",
+        "scaled_error": "5.1407992e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 holomorphic discrepancy 4",
+        "scaled_error": "3.3442548e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 reconstructed log rate 4",
+        "scaled_error": "5.0136223e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 canonical u 4",
+        "scaled_error": "9.3102772e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 canonical v 4",
+        "scaled_error": "7.4017092e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 polynomial gauge integral 4",
+        "scaled_error": "1.8296334e-33",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 third-kind primitive 4",
+        "scaled_error": "1.099367e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 paired third-kind sigma identity 4",
+        "scaled_error": "1.5301568e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 split integral equals point primitive 4",
+        "scaled_error": "1.3221029e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 raw sigma mode power 5",
+        "scaled_error": "1.7738035e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 paired raw sigma mode rates 5",
+        "scaled_error": "2.3768015e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 holomorphic discrepancy 5",
+        "scaled_error": "1.7736354e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 reconstructed log rate 5",
+        "scaled_error": "4.3035228e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 canonical u 5",
+        "scaled_error": "1.3405784e-29",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 canonical v 5",
+        "scaled_error": "5.2314171e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 polynomial gauge integral 5",
+        "scaled_error": "6.3555688e-33",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 third-kind primitive 5",
+        "scaled_error": "4.5158585e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 paired third-kind sigma identity 5",
+        "scaled_error": "1.946522e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 split integral equals point primitive 5",
+        "scaled_error": "4.3227136e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 raw sigma mode power 6",
+        "scaled_error": "3.7608947e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 paired raw sigma mode rates 6",
+        "scaled_error": "3.9783921e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 holomorphic discrepancy 6",
+        "scaled_error": "3.0337016e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 reconstructed log rate 6",
+        "scaled_error": "1.2039173e-29",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 canonical u 6",
+        "scaled_error": "2.0328336e-29",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 canonical v 6",
+        "scaled_error": "5.2066727e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 polynomial gauge integral 6",
+        "scaled_error": "8.8592777e-33",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 third-kind primitive 6",
+        "scaled_error": "5.9965826e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 paired third-kind sigma identity 6",
+        "scaled_error": "2.5945728e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 split integral equals point primitive 6",
+        "scaled_error": "5.9007325e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 raw sigma mode power 7",
+        "scaled_error": "5.5220268e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 paired raw sigma mode rates 7",
+        "scaled_error": "6.4860805e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 holomorphic discrepancy 7",
+        "scaled_error": "5.0549791e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 reconstructed log rate 7",
+        "scaled_error": "3.557301e-29",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 canonical u 7",
+        "scaled_error": "5.210461e-29",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 canonical v 7",
+        "scaled_error": "1.2377612e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 polynomial gauge integral 7",
+        "scaled_error": "1.0785208e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 third-kind primitive 7",
+        "scaled_error": "4.0436898e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 paired third-kind sigma identity 7",
+        "scaled_error": "2.2636539e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.55 split integral equals point primitive 7",
+        "scaled_error": "3.9702942e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 inversion",
+        "scaled_error": "1.4086802e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 sigma divisor",
+        "scaled_error": "1.2517757e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 sigma_3 one-point constraint",
+        "scaled_error": "2.9165115e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 Abel increment 1",
+        "scaled_error": "1.6851887e-34",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 Abel increment 2",
+        "scaled_error": "6.1629758e-33",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 Abel increment 3",
+        "scaled_error": "1.9259299e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 weighted U",
+        "scaled_error": "4.6679534e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 weighted V",
+        "scaled_error": "6.7538786e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 Hamiltonian",
+        "scaled_error": "4.4002576e-28",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 raw sigma mode power 1",
+        "scaled_error": "6.7633664e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 paired raw sigma mode rates 1",
+        "scaled_error": "2.087926e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 holomorphic discrepancy 1",
+        "scaled_error": "1.0010758e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 reconstructed log rate 1",
+        "scaled_error": "1.1194358e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 canonical u 1",
+        "scaled_error": "2.9315307e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 canonical v 1",
+        "scaled_error": "1.4706e-29",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 polynomial gauge integral 1",
+        "scaled_error": "4.6222319e-33",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 third-kind primitive 1",
+        "scaled_error": "6.3501085e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 paired third-kind sigma identity 1",
+        "scaled_error": "4.0737183e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 split integral equals point primitive 1",
+        "scaled_error": "6.3074414e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 raw sigma mode power 2",
+        "scaled_error": "1.1077689e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 paired raw sigma mode rates 2",
+        "scaled_error": "1.9075158e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 holomorphic discrepancy 2",
+        "scaled_error": "6.3591537e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 reconstructed log rate 2",
+        "scaled_error": "6.0958286e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 canonical u 2",
+        "scaled_error": "3.1672793e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 canonical v 2",
+        "scaled_error": "1.6506378e-29",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 polynomial gauge integral 2",
+        "scaled_error": "5.3926038e-33",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 third-kind primitive 2",
+        "scaled_error": "3.6120835e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 paired third-kind sigma identity 2",
+        "scaled_error": "1.9277682e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 split integral equals point primitive 2",
+        "scaled_error": "3.788758e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 raw sigma mode power 3",
+        "scaled_error": "1.8037764e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 paired raw sigma mode rates 3",
+        "scaled_error": "2.7512874e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 holomorphic discrepancy 3",
+        "scaled_error": "1.5415181e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 reconstructed log rate 3",
+        "scaled_error": "1.6154051e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 canonical u 3",
+        "scaled_error": "3.5922887e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 canonical v 3",
+        "scaled_error": "9.29182e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 polynomial gauge integral 3",
+        "scaled_error": "1.9259299e-33",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 third-kind primitive 3",
+        "scaled_error": "2.2904806e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 paired third-kind sigma identity 3",
+        "scaled_error": "9.2967353e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 split integral equals point primitive 3",
+        "scaled_error": "7.7037198e-33",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 raw sigma mode power 4",
+        "scaled_error": "4.6212825e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 paired raw sigma mode rates 4",
+        "scaled_error": "5.4787954e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 holomorphic discrepancy 4",
+        "scaled_error": "3.7131387e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 reconstructed log rate 4",
+        "scaled_error": "4.6188265e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 canonical u 4",
+        "scaled_error": "4.0801512e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 canonical v 4",
+        "scaled_error": "1.1137249e-29",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 polynomial gauge integral 4",
+        "scaled_error": "1.9259299e-33",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 third-kind primitive 4",
+        "scaled_error": "1.5045741e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 paired third-kind sigma identity 4",
+        "scaled_error": "7.5174297e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 split integral equals point primitive 4",
+        "scaled_error": "1.1464833e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 raw sigma mode power 5",
+        "scaled_error": "1.9034938e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 paired raw sigma mode rates 5",
+        "scaled_error": "2.3024543e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 holomorphic discrepancy 5",
+        "scaled_error": "1.7156208e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 reconstructed log rate 5",
+        "scaled_error": "3.5766773e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 canonical u 5",
+        "scaled_error": "8.324854e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 canonical v 5",
+        "scaled_error": "3.2666178e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 polynomial gauge integral 5",
+        "scaled_error": "1.2325952e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 third-kind primitive 5",
+        "scaled_error": "3.7310189e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 paired third-kind sigma identity 5",
+        "scaled_error": "2.5332457e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 split integral equals point primitive 5",
+        "scaled_error": "3.7858747e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 raw sigma mode power 6",
+        "scaled_error": "3.7266579e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 paired raw sigma mode rates 6",
+        "scaled_error": "4.0316605e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 holomorphic discrepancy 6",
+        "scaled_error": "2.8438858e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 reconstructed log rate 6",
+        "scaled_error": "9.353251e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 canonical u 6",
+        "scaled_error": "7.9589409e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 canonical v 6",
+        "scaled_error": "6.3013524e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 polynomial gauge integral 6",
+        "scaled_error": "1.9259299e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 third-kind primitive 6",
+        "scaled_error": "4.7915155e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 paired third-kind sigma identity 6",
+        "scaled_error": "2.2826013e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 split integral equals point primitive 6",
+        "scaled_error": "4.6814282e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 raw sigma mode power 7",
+        "scaled_error": "5.9367529e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 paired raw sigma mode rates 7",
+        "scaled_error": "6.9655011e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 holomorphic discrepancy 7",
+        "scaled_error": "5.6686321e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 reconstructed log rate 7",
+        "scaled_error": "3.3315556e-29",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 canonical u 7",
+        "scaled_error": "2.8393404e-29",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 canonical v 7",
+        "scaled_error": "2.0507065e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 polynomial gauge integral 7",
+        "scaled_error": "2.1570415e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 third-kind primitive 7",
+        "scaled_error": "4.5760095e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 paired third-kind sigma identity 7",
+        "scaled_error": "2.1010383e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.6 split integral equals point primitive 7",
+        "scaled_error": "4.5781101e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 inversion",
+        "scaled_error": "5.584856e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 sigma divisor",
+        "scaled_error": "1.2627513e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 sigma_3 one-point constraint",
+        "scaled_error": "2.8965696e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 Abel increment 1",
+        "scaled_error": "1.4444475e-34",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 Abel increment 2",
+        "scaled_error": "2.3111159e-33",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 Abel increment 3",
+        "scaled_error": "1.540744e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 weighted U",
+        "scaled_error": "1.8557591e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 weighted V",
+        "scaled_error": "2.0360655e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 Hamiltonian",
+        "scaled_error": "8.0268294e-28",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 raw sigma mode power 1",
+        "scaled_error": "1.1461759e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 paired raw sigma mode rates 1",
+        "scaled_error": "2.2563852e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 holomorphic discrepancy 1",
+        "scaled_error": "1.0045815e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 reconstructed log rate 1",
+        "scaled_error": "1.8293906e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 canonical u 1",
+        "scaled_error": "8.5866059e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 canonical v 1",
+        "scaled_error": "3.2267402e-29",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 polynomial gauge integral 1",
+        "scaled_error": "8.4740918e-33",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 third-kind primitive 1",
+        "scaled_error": "7.8248559e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 paired third-kind sigma identity 1",
+        "scaled_error": "1.057107e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 split integral equals point primitive 1",
+        "scaled_error": "7.7121738e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 raw sigma mode power 2",
+        "scaled_error": "1.040852e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 paired raw sigma mode rates 2",
+        "scaled_error": "2.0240727e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 holomorphic discrepancy 2",
+        "scaled_error": "1.1436626e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 reconstructed log rate 2",
+        "scaled_error": "1.9025991e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 canonical u 2",
+        "scaled_error": "8.5447748e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 canonical v 2",
+        "scaled_error": "3.7055407e-29",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 polynomial gauge integral 2",
+        "scaled_error": "1.0785208e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 third-kind primitive 2",
+        "scaled_error": "3.2850742e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 paired third-kind sigma identity 2",
+        "scaled_error": "3.5311143e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 split integral equals point primitive 2",
+        "scaled_error": "3.4267268e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 raw sigma mode power 3",
+        "scaled_error": "1.6867056e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 paired raw sigma mode rates 3",
+        "scaled_error": "2.5302812e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 holomorphic discrepancy 3",
+        "scaled_error": "1.5501368e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 reconstructed log rate 3",
+        "scaled_error": "2.1392528e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 canonical u 3",
+        "scaled_error": "9.3965376e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 canonical v 3",
+        "scaled_error": "2.9336889e-29",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 polynomial gauge integral 3",
+        "scaled_error": "6.9333478e-33",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 third-kind primitive 3",
+        "scaled_error": "3.7059937e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 paired third-kind sigma identity 3",
+        "scaled_error": "3.1765744e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 split integral equals point primitive 3",
+        "scaled_error": "3.6998392e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 raw sigma mode power 4",
+        "scaled_error": "4.3926589e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 paired raw sigma mode rates 4",
+        "scaled_error": "5.4650099e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 holomorphic discrepancy 4",
+        "scaled_error": "3.8066688e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 reconstructed log rate 4",
+        "scaled_error": "5.7556731e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 canonical u 4",
+        "scaled_error": "1.073517e-29",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 canonical v 4",
+        "scaled_error": "2.4558853e-29",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 polynomial gauge integral 4",
+        "scaled_error": "2.3111159e-33",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 third-kind primitive 4",
+        "scaled_error": "6.2013748e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 paired third-kind sigma identity 4",
+        "scaled_error": "4.2220723e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 split integral equals point primitive 4",
+        "scaled_error": "5.9912755e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 raw sigma mode power 5",
+        "scaled_error": "2.1957246e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 paired raw sigma mode rates 5",
+        "scaled_error": "2.3642588e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 holomorphic discrepancy 5",
+        "scaled_error": "1.9519153e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 reconstructed log rate 5",
+        "scaled_error": "6.16643e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 canonical u 5",
+        "scaled_error": "1.5067318e-29",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 canonical v 5",
+        "scaled_error": "1.5900943e-29",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 polynomial gauge integral 5",
+        "scaled_error": "6.1629758e-33",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 third-kind primitive 5",
+        "scaled_error": "8.3257219e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 paired third-kind sigma identity 5",
+        "scaled_error": "3.9224458e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 split integral equals point primitive 5",
+        "scaled_error": "8.4796926e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 raw sigma mode power 6",
+        "scaled_error": "3.8024737e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 paired raw sigma mode rates 6",
+        "scaled_error": "4.3140371e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 holomorphic discrepancy 6",
+        "scaled_error": "3.2154557e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 reconstructed log rate 6",
+        "scaled_error": "1.4131461e-29",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 canonical u 6",
+        "scaled_error": "3.2381864e-29",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 canonical v 6",
+        "scaled_error": "1.1354557e-29",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 polynomial gauge integral 6",
+        "scaled_error": "1.2325952e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 third-kind primitive 6",
+        "scaled_error": "3.7636121e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 paired third-kind sigma identity 6",
+        "scaled_error": "2.515281e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 split integral equals point primitive 6",
+        "scaled_error": "3.7020522e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 raw sigma mode power 7",
+        "scaled_error": "5.5705712e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 paired raw sigma mode rates 7",
+        "scaled_error": "6.7525864e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 holomorphic discrepancy 7",
+        "scaled_error": "5.6260705e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 reconstructed log rate 7",
+        "scaled_error": "3.7172163e-29",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 canonical u 7",
+        "scaled_error": "5.6172241e-29",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 canonical v 7",
+        "scaled_error": "4.0291347e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 polynomial gauge integral 7",
+        "scaled_error": "1.8488927e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 third-kind primitive 7",
+        "scaled_error": "5.4964623e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 paired third-kind sigma identity 7",
+        "scaled_error": "2.719747e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1, rho=5.65 split integral equals point primitive 7",
+        "scaled_error": "5.4691853e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 scalar quadrature inversion",
+        "scaled_error": "5.4813905e-33",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 mode 1 from prescribed z",
+        "scaled_error": "0.0",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 mode 2 from prescribed z",
+        "scaled_error": "0.0",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 mode 3 from prescribed z",
+        "scaled_error": "0.0",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 mode 4 from prescribed z",
+        "scaled_error": "0.0",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 mode 5 from prescribed z",
+        "scaled_error": "0.0",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 mode 6 from prescribed z",
+        "scaled_error": "0.0",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 mode 7 from prescribed z",
+        "scaled_error": "0.0",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 mode 8 from prescribed z",
+        "scaled_error": "0.0",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 mode 9 from prescribed z",
+        "scaled_error": "0.0",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 mode 10 from prescribed z",
+        "scaled_error": "0.0",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 mode 11 from prescribed z",
+        "scaled_error": "0.0",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 mode 12 from prescribed z",
+        "scaled_error": "0.0",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 mode 13 from prescribed z",
+        "scaled_error": "0.0",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 mode 14 from prescribed z",
+        "scaled_error": "0.0",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 RK4 16 Hamiltonian",
+        "scaled_error": "6.9050904e-11",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 RK4 16 invariant 1",
+        "scaled_error": "2.6963982e-14",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 RK4 16 invariant 2",
+        "scaled_error": "4.3638084e-15",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 RK4 16 invariant 3",
+        "scaled_error": "5.4088894e-14",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 RK4 16 invariant 4",
+        "scaled_error": "8.444093e-14",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 RK4 16 invariant 5",
+        "scaled_error": "8.2507354e-14",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 RK4 16 invariant 6",
+        "scaled_error": "3.4392808e-14",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 RK4 32 Hamiltonian",
+        "scaled_error": "4.3170668e-12",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 RK4 32 invariant 1",
+        "scaled_error": "1.6903593e-15",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 RK4 32 invariant 2",
+        "scaled_error": "2.7316647e-16",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 RK4 32 invariant 3",
+        "scaled_error": "3.3906102e-15",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 RK4 32 invariant 4",
+        "scaled_error": "5.2930857e-15",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 RK4 32 invariant 5",
+        "scaled_error": "5.1719096e-15",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 RK4 32 invariant 6",
+        "scaled_error": "2.1561177e-15",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 RK4 64 Hamiltonian",
+        "scaled_error": "2.6985864e-13",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 RK4 64 invariant 1",
+        "scaled_error": "1.0580673e-16",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 RK4 64 invariant 2",
+        "scaled_error": "1.7086682e-17",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 RK4 64 invariant 3",
+        "scaled_error": "2.1222691e-16",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 RK4 64 invariant 4",
+        "scaled_error": "3.3130259e-16",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 RK4 64 invariant 5",
+        "scaled_error": "3.237187e-16",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 RK4 64 invariant 6",
+        "scaled_error": "1.3496213e-16",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 RK4 finest agreement",
+        "scaled_error": "5.0804761e-16",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 RK4 fourth-order ratio 1",
+        "scaled_error": "0.0016341875",
+        "passed": true
+      },
+      {
+        "check": "sheet 1 RK4 fourth-order ratio 2",
+        "scaled_error": "0.00081432682",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 inversion",
+        "scaled_error": "1.8477823e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 sigma divisor",
+        "scaled_error": "1.0645242e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 sigma_3 one-point constraint",
+        "scaled_error": "2.6330733e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 Abel increment 1",
+        "scaled_error": "4.9713067e-33",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 Abel increment 2",
+        "scaled_error": "2.6000054e-33",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 Abel increment 3",
+        "scaled_error": "9.0133521e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 weighted U",
+        "scaled_error": "1.8947249e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 weighted V",
+        "scaled_error": "1.8232834e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 Hamiltonian",
+        "scaled_error": "7.7973582e-28",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 raw sigma mode power 1",
+        "scaled_error": "5.7562967e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 paired raw sigma mode rates 1",
+        "scaled_error": "1.4877043e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 holomorphic discrepancy 1",
+        "scaled_error": "1.1283077e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 reconstructed log rate 1",
+        "scaled_error": "2.7329201e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 canonical u 1",
+        "scaled_error": "3.4481937e-29",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 canonical v 1",
+        "scaled_error": "8.8260565e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 polynomial gauge integral 1",
+        "scaled_error": "3.7363041e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 third-kind primitive 1",
+        "scaled_error": "2.5838832e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 paired third-kind sigma identity 1",
+        "scaled_error": "3.5149529e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 split integral equals point primitive 1",
+        "scaled_error": "2.6146498e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 raw sigma mode power 2",
+        "scaled_error": "8.868248e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 paired raw sigma mode rates 2",
+        "scaled_error": "9.0162044e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 holomorphic discrepancy 2",
+        "scaled_error": "1.1373506e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 reconstructed log rate 2",
+        "scaled_error": "4.5619659e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 canonical u 2",
+        "scaled_error": "4.2297232e-29",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 canonical v 2",
+        "scaled_error": "7.7717628e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 polynomial gauge integral 2",
+        "scaled_error": "4.8148249e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 third-kind primitive 2",
+        "scaled_error": "2.1648686e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 paired third-kind sigma identity 2",
+        "scaled_error": "2.23668e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 split integral equals point primitive 2",
+        "scaled_error": "2.1961007e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 raw sigma mode power 3",
+        "scaled_error": "1.3888298e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 paired raw sigma mode rates 3",
+        "scaled_error": "1.2018236e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 holomorphic discrepancy 3",
+        "scaled_error": "1.3470621e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 reconstructed log rate 3",
+        "scaled_error": "3.5317977e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 canonical u 3",
+        "scaled_error": "2.9113556e-29",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 canonical v 3",
+        "scaled_error": "9.073379e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 polynomial gauge integral 3",
+        "scaled_error": "2.6963019e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 third-kind primitive 3",
+        "scaled_error": "1.2077408e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 paired third-kind sigma identity 3",
+        "scaled_error": "1.5396397e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 split integral equals point primitive 3",
+        "scaled_error": "1.2727002e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 raw sigma mode power 4",
+        "scaled_error": "3.4766145e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 paired raw sigma mode rates 4",
+        "scaled_error": "3.6241131e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 holomorphic discrepancy 4",
+        "scaled_error": "2.300352e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 reconstructed log rate 4",
+        "scaled_error": "2.6481994e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 canonical u 4",
+        "scaled_error": "2.2146265e-29",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 canonical v 4",
+        "scaled_error": "1.1713476e-29",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 polynomial gauge integral 4",
+        "scaled_error": "9.7259462e-33",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 third-kind primitive 4",
+        "scaled_error": "3.8864026e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 paired third-kind sigma identity 4",
+        "scaled_error": "2.9444546e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 split integral equals point primitive 4",
+        "scaled_error": "3.7399794e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 raw sigma mode power 5",
+        "scaled_error": "3.6432552e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 paired raw sigma mode rates 5",
+        "scaled_error": "3.3880674e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 holomorphic discrepancy 5",
+        "scaled_error": "1.6778793e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 reconstructed log rate 5",
+        "scaled_error": "2.3530025e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 canonical u 5",
+        "scaled_error": "1.5956796e-29",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 canonical v 5",
+        "scaled_error": "1.4757859e-29",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 polynomial gauge integral 5",
+        "scaled_error": "4.1985273e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 third-kind primitive 5",
+        "scaled_error": "4.531071e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 paired third-kind sigma identity 5",
+        "scaled_error": "4.0736949e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 split integral equals point primitive 5",
+        "scaled_error": "4.2179326e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 raw sigma mode power 6",
+        "scaled_error": "3.0662629e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 paired raw sigma mode rates 6",
+        "scaled_error": "2.7711452e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 holomorphic discrepancy 6",
+        "scaled_error": "1.993025e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 reconstructed log rate 6",
+        "scaled_error": "1.2800776e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 canonical u 6",
+        "scaled_error": "9.7618321e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 canonical v 6",
+        "scaled_error": "3.561922e-29",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 polynomial gauge integral 6",
+        "scaled_error": "7.6652012e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 third-kind primitive 6",
+        "scaled_error": "1.8800865e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 paired third-kind sigma identity 6",
+        "scaled_error": "1.8243079e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 split integral equals point primitive 6",
+        "scaled_error": "1.759908e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 raw sigma mode power 7",
+        "scaled_error": "5.24117e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 paired raw sigma mode rates 7",
+        "scaled_error": "5.6764726e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 holomorphic discrepancy 7",
+        "scaled_error": "4.4319021e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 reconstructed log rate 7",
+        "scaled_error": "3.0372618e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 canonical u 7",
+        "scaled_error": "7.9114316e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 canonical v 7",
+        "scaled_error": "4.1743562e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 polynomial gauge integral 7",
+        "scaled_error": "1.0245947e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 third-kind primitive 7",
+        "scaled_error": "1.8177024e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 paired third-kind sigma identity 7",
+        "scaled_error": "1.8794947e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.55 split integral equals point primitive 7",
+        "scaled_error": "1.7883253e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 inversion",
+        "scaled_error": "1.6904162e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 sigma divisor",
+        "scaled_error": "1.0606753e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 sigma_3 one-point constraint",
+        "scaled_error": "2.6423622e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 Abel increment 1",
+        "scaled_error": "2.912969e-33",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 Abel increment 2",
+        "scaled_error": "0.0",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 Abel increment 3",
+        "scaled_error": "7.9348314e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 weighted U",
+        "scaled_error": "1.4676099e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 weighted V",
+        "scaled_error": "1.4525796e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 Hamiltonian",
+        "scaled_error": "7.1222673e-28",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 raw sigma mode power 1",
+        "scaled_error": "5.5529638e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 paired raw sigma mode rates 1",
+        "scaled_error": "1.5834362e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 holomorphic discrepancy 1",
+        "scaled_error": "1.2838914e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 reconstructed log rate 1",
+        "scaled_error": "3.8566563e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 canonical u 1",
+        "scaled_error": "2.7797494e-29",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 canonical v 1",
+        "scaled_error": "6.9374678e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 polynomial gauge integral 1",
+        "scaled_error": "3.6207483e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 third-kind primitive 1",
+        "scaled_error": "1.8308292e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 paired third-kind sigma identity 1",
+        "scaled_error": "3.6356226e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 split integral equals point primitive 1",
+        "scaled_error": "1.8630264e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 raw sigma mode power 2",
+        "scaled_error": "9.2068253e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 paired raw sigma mode rates 2",
+        "scaled_error": "7.6660002e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 holomorphic discrepancy 2",
+        "scaled_error": "1.1077203e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 reconstructed log rate 2",
+        "scaled_error": "4.7654294e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 canonical u 2",
+        "scaled_error": "3.1163439e-29",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 canonical v 2",
+        "scaled_error": "6.633049e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 polynomial gauge integral 2",
+        "scaled_error": "4.5451947e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 third-kind primitive 2",
+        "scaled_error": "1.9155482e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 paired third-kind sigma identity 2",
+        "scaled_error": "1.3418302e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 split integral equals point primitive 2",
+        "scaled_error": "2.0554356e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 raw sigma mode power 3",
+        "scaled_error": "1.375327e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 paired raw sigma mode rates 3",
+        "scaled_error": "1.3788673e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 holomorphic discrepancy 3",
+        "scaled_error": "1.2455707e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 reconstructed log rate 3",
+        "scaled_error": "3.0904977e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 canonical u 3",
+        "scaled_error": "2.3978114e-29",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 canonical v 3",
+        "scaled_error": "7.5014496e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 polynomial gauge integral 3",
+        "scaled_error": "2.5807461e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 third-kind primitive 3",
+        "scaled_error": "7.717574e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 paired third-kind sigma identity 3",
+        "scaled_error": "1.199362e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 split integral equals point primitive 3",
+        "scaled_error": "6.1107545e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 raw sigma mode power 4",
+        "scaled_error": "3.6877526e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 paired raw sigma mode rates 4",
+        "scaled_error": "3.4452162e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 holomorphic discrepancy 4",
+        "scaled_error": "2.2667699e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 reconstructed log rate 4",
+        "scaled_error": "4.4501164e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 canonical u 4",
+        "scaled_error": "1.7928331e-29",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 canonical v 4",
+        "scaled_error": "9.5478447e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 polynomial gauge integral 4",
+        "scaled_error": "1.0592615e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 third-kind primitive 4",
+        "scaled_error": "1.8054995e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 paired third-kind sigma identity 4",
+        "scaled_error": "1.8217334e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 split integral equals point primitive 4",
+        "scaled_error": "2.059762e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 raw sigma mode power 5",
+        "scaled_error": "3.7399864e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 paired raw sigma mode rates 5",
+        "scaled_error": "3.5818653e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 holomorphic discrepancy 5",
+        "scaled_error": "1.6105126e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 reconstructed log rate 5",
+        "scaled_error": "1.7232663e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 canonical u 5",
+        "scaled_error": "1.2370222e-29",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 canonical v 5",
+        "scaled_error": "1.1301291e-29",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 polynomial gauge integral 5",
+        "scaled_error": "3.6207483e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 third-kind primitive 5",
+        "scaled_error": "4.3735965e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 paired third-kind sigma identity 5",
+        "scaled_error": "4.3699034e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 split integral equals point primitive 5",
+        "scaled_error": "4.454056e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 raw sigma mode power 6",
+        "scaled_error": "3.0365034e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 paired raw sigma mode rates 6",
+        "scaled_error": "2.9411745e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 holomorphic discrepancy 6",
+        "scaled_error": "2.0307863e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 reconstructed log rate 6",
+        "scaled_error": "2.1098815e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 canonical u 6",
+        "scaled_error": "7.7338283e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 canonical v 6",
+        "scaled_error": "2.8769042e-29",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 polynomial gauge integral 6",
+        "scaled_error": "6.625199e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 third-kind primitive 6",
+        "scaled_error": "1.4248342e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 paired third-kind sigma identity 6",
+        "scaled_error": "1.8836437e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 split integral equals point primitive 6",
+        "scaled_error": "1.3358348e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 raw sigma mode power 7",
+        "scaled_error": "5.5076723e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 paired raw sigma mode rates 7",
+        "scaled_error": "5.5096508e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 holomorphic discrepancy 7",
+        "scaled_error": "4.4936238e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 reconstructed log rate 7",
+        "scaled_error": "3.9508238e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 canonical u 7",
+        "scaled_error": "6.4440926e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 canonical v 7",
+        "scaled_error": "3.4625683e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 polynomial gauge integral 7",
+        "scaled_error": "9.0903893e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 third-kind primitive 7",
+        "scaled_error": "1.9555313e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 paired third-kind sigma identity 7",
+        "scaled_error": "2.218288e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.6 split integral equals point primitive 7",
+        "scaled_error": "1.9919144e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 inversion",
+        "scaled_error": "1.1169712e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 sigma divisor",
+        "scaled_error": "1.0832969e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 sigma_3 one-point constraint",
+        "scaled_error": "2.6022193e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 Abel increment 1",
+        "scaled_error": "5.9222346e-33",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 Abel increment 2",
+        "scaled_error": "3.8518599e-33",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 Abel increment 3",
+        "scaled_error": "3.3896367e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 weighted U",
+        "scaled_error": "1.4066678e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 weighted V",
+        "scaled_error": "1.4207659e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 Hamiltonian",
+        "scaled_error": "7.5934654e-28",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 raw sigma mode power 1",
+        "scaled_error": "4.7899974e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 paired raw sigma mode rates 1",
+        "scaled_error": "5.4133933e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 holomorphic discrepancy 1",
+        "scaled_error": "1.3005046e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 reconstructed log rate 1",
+        "scaled_error": "3.2797566e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 canonical u 1",
+        "scaled_error": "1.9852359e-29",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 canonical v 1",
+        "scaled_error": "8.5584258e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 polynomial gauge integral 1",
+        "scaled_error": "2.0800043e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 third-kind primitive 1",
+        "scaled_error": "9.2457476e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 paired third-kind sigma identity 1",
+        "scaled_error": "1.6852662e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 split integral equals point primitive 1",
+        "scaled_error": "1.0014836e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 raw sigma mode power 2",
+        "scaled_error": "1.0345658e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 paired raw sigma mode rates 2",
+        "scaled_error": "8.7725758e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 holomorphic discrepancy 2",
+        "scaled_error": "1.1103707e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 reconstructed log rate 2",
+        "scaled_error": "1.1017034e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 canonical u 2",
+        "scaled_error": "2.6639057e-29",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 canonical v 2",
+        "scaled_error": "7.3701487e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 polynomial gauge integral 2",
+        "scaled_error": "2.5422275e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 third-kind primitive 2",
+        "scaled_error": "4.8654342e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 paired third-kind sigma identity 2",
+        "scaled_error": "5.2491411e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 split integral equals point primitive 2",
+        "scaled_error": "4.9187391e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 raw sigma mode power 3",
+        "scaled_error": "1.6889824e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 paired raw sigma mode rates 3",
+        "scaled_error": "1.300835e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 holomorphic discrepancy 3",
+        "scaled_error": "5.9220652e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 reconstructed log rate 3",
+        "scaled_error": "1.3136965e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 canonical u 3",
+        "scaled_error": "1.9132087e-29",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 canonical v 3",
+        "scaled_error": "8.1484143e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 polynomial gauge integral 3",
+        "scaled_error": "1.540744e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 third-kind primitive 3",
+        "scaled_error": "4.6212046e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 paired third-kind sigma identity 3",
+        "scaled_error": "4.9112494e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 split integral equals point primitive 3",
+        "scaled_error": "4.6689627e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 raw sigma mode power 4",
+        "scaled_error": "3.9399379e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 paired raw sigma mode rates 4",
+        "scaled_error": "3.7637447e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 holomorphic discrepancy 4",
+        "scaled_error": "2.4706526e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 reconstructed log rate 4",
+        "scaled_error": "2.5705115e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 canonical u 4",
+        "scaled_error": "1.6176317e-29",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 canonical v 4",
+        "scaled_error": "8.761981e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 polynomial gauge integral 4",
+        "scaled_error": "1.0400022e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 third-kind primitive 4",
+        "scaled_error": "3.7673947e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 paired third-kind sigma identity 4",
+        "scaled_error": "3.9224393e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 split integral equals point primitive 4",
+        "scaled_error": "3.8771988e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 raw sigma mode power 5",
+        "scaled_error": "2.5871301e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 paired raw sigma mode rates 5",
+        "scaled_error": "2.1709212e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 holomorphic discrepancy 5",
+        "scaled_error": "1.347596e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 reconstructed log rate 5",
+        "scaled_error": "1.5792834e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 canonical u 5",
+        "scaled_error": "9.2919664e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 canonical v 5",
+        "scaled_error": "1.6545823e-29",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 polynomial gauge integral 5",
+        "scaled_error": "1.4251882e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 third-kind primitive 5",
+        "scaled_error": "8.6843852e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 paired third-kind sigma identity 5",
+        "scaled_error": "1.3310028e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 split integral equals point primitive 5",
+        "scaled_error": "8.2684997e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 raw sigma mode power 6",
+        "scaled_error": "3.3186454e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 paired raw sigma mode rates 6",
+        "scaled_error": "2.8757755e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 holomorphic discrepancy 6",
+        "scaled_error": "1.9081289e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 reconstructed log rate 6",
+        "scaled_error": "1.0883625e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 canonical u 6",
+        "scaled_error": "9.2964989e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 canonical v 6",
+        "scaled_error": "2.0256992e-29",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 polynomial gauge integral 6",
+        "scaled_error": "3.0814879e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 third-kind primitive 6",
+        "scaled_error": "1.7182577e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 paired third-kind sigma identity 6",
+        "scaled_error": "1.8471788e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 split integral equals point primitive 6",
+        "scaled_error": "1.5405128e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 raw sigma mode power 7",
+        "scaled_error": "5.572822e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 paired raw sigma mode rates 7",
+        "scaled_error": "5.8564781e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 holomorphic discrepancy 7",
+        "scaled_error": "4.7144122e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 reconstructed log rate 7",
+        "scaled_error": "3.4377677e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 canonical u 7",
+        "scaled_error": "9.1757039e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 canonical v 7",
+        "scaled_error": "2.3728978e-30",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 polynomial gauge integral 7",
+        "scaled_error": "4.0059343e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 third-kind primitive 7",
+        "scaled_error": "2.172886e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 paired third-kind sigma identity 7",
+        "scaled_error": "5.1488323e-32",
+        "passed": true
+      },
+      {
+        "check": "sheet -1, rho=5.65 split integral equals point primitive 7",
+        "scaled_error": "2.1859568e-31",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 scalar quadrature inversion",
+        "scaled_error": "5.4813905e-33",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 mode 1 from prescribed z",
+        "scaled_error": "0.0",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 mode 2 from prescribed z",
+        "scaled_error": "0.0",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 mode 3 from prescribed z",
+        "scaled_error": "0.0",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 mode 4 from prescribed z",
+        "scaled_error": "0.0",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 mode 5 from prescribed z",
+        "scaled_error": "0.0",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 mode 6 from prescribed z",
+        "scaled_error": "0.0",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 mode 7 from prescribed z",
+        "scaled_error": "0.0",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 mode 8 from prescribed z",
+        "scaled_error": "0.0",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 mode 9 from prescribed z",
+        "scaled_error": "0.0",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 mode 10 from prescribed z",
+        "scaled_error": "0.0",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 mode 11 from prescribed z",
+        "scaled_error": "0.0",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 mode 12 from prescribed z",
+        "scaled_error": "0.0",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 mode 13 from prescribed z",
+        "scaled_error": "0.0",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 mode 14 from prescribed z",
+        "scaled_error": "0.0",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 RK4 16 Hamiltonian",
+        "scaled_error": "6.9050904e-11",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 RK4 16 invariant 1",
+        "scaled_error": "2.6963982e-14",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 RK4 16 invariant 2",
+        "scaled_error": "4.3638084e-15",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 RK4 16 invariant 3",
+        "scaled_error": "5.4088894e-14",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 RK4 16 invariant 4",
+        "scaled_error": "8.444093e-14",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 RK4 16 invariant 5",
+        "scaled_error": "8.2507354e-14",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 RK4 16 invariant 6",
+        "scaled_error": "3.4392808e-14",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 RK4 32 Hamiltonian",
+        "scaled_error": "4.3170668e-12",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 RK4 32 invariant 1",
+        "scaled_error": "1.6903593e-15",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 RK4 32 invariant 2",
+        "scaled_error": "2.7316647e-16",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 RK4 32 invariant 3",
+        "scaled_error": "3.3906102e-15",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 RK4 32 invariant 4",
+        "scaled_error": "5.2930857e-15",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 RK4 32 invariant 5",
+        "scaled_error": "5.1719096e-15",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 RK4 32 invariant 6",
+        "scaled_error": "2.1561177e-15",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 RK4 64 Hamiltonian",
+        "scaled_error": "2.6985864e-13",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 RK4 64 invariant 1",
+        "scaled_error": "1.0580673e-16",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 RK4 64 invariant 2",
+        "scaled_error": "1.7086682e-17",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 RK4 64 invariant 3",
+        "scaled_error": "2.1222691e-16",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 RK4 64 invariant 4",
+        "scaled_error": "3.3130259e-16",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 RK4 64 invariant 5",
+        "scaled_error": "3.237187e-16",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 RK4 64 invariant 6",
+        "scaled_error": "1.3496213e-16",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 RK4 finest agreement",
+        "scaled_error": "4.7761254e-16",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 RK4 fourth-order ratio 1",
+        "scaled_error": "0.0044528547",
+        "passed": true
+      },
+      {
+        "check": "sheet -1 RK4 fourth-order ratio 2",
+        "scaled_error": "0.0022254446",
+        "passed": true
+      },
+      {
+        "check": "polynomial field finite at a zero mode",
+        "scaled_error": "0",
+        "passed": true
+      }
+    ],
+    "trajectories": [
+      {
+        "sheet": 1,
+        "z_length": "0.000321459836681",
+        "steps": [
+          16,
+          32,
+          64
+        ],
+        "errors": [
+          "1.2974191e-13",
+          "8.1221423e-15",
+          "5.0804761e-16"
+        ],
+        "ratios": [
+          "15.973853",
+          "15.986971"
+        ]
+      },
+      {
+        "sheet": -1,
+        "z_length": "-0.000321459836681",
+        "steps": [
+          16,
+          32,
+          64
+        ],
+        "errors": [
+          "1.2145348e-13",
+          "7.6247943e-15",
+          "4.7761254e-16"
+        ],
+        "ratios": [
+          "15.928754",
+          "15.964393"
+        ]
+      }
+    ],
+    "scope": "Fresh genus-3 degenerate 7-pair example, two sheets, regular short paths; no turning-point or global continuation claim."
+  },
+  "passed": true
+}
