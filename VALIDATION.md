@@ -25,6 +25,8 @@ Added the project repository URL near the end of the paper and Generapy/mpmath r
 
 The introduction's literature review was subsequently revised to explain the roles of hyperelliptic Kleinian functions, inversion on strata, prime forms and interpolation determinants. Added the Eilbeck--Enolskii--Previato (2003) addition-formula reference. The updated PDF was rebuilt and the affected pages visually checked; paper verification and manifest checks pass.
 
+The ``Our contribution'' subsection was also rewritten to retain the Hamiltonian with explicit definitions of its complex modes, paired powers, integer weights and polynomial, while describing the reduction and reconstruction in words. The rebuilt introduction was visually checked, and paper verification and manifest checks pass.
+
 ## Original packaging record
 
 - Rebuilt `paper/main.pdf` from the copied LaTeX and five figure assets within this bundle.
