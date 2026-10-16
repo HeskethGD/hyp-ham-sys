@@ -35,6 +35,8 @@ Applied MIT to the software with exact coverage and exclusions in `LICENSE_SCOPE
 
 Rebuilt the 35-page PDF, checked the affected rendered pages, and reran paper verification and the checksum checks. The earlier full notebook execution results remain applicable to the unchanged numerical code.
 
+The abstract and introduction were subsequently revised to emphasize the association of determinant identities with conservation laws as a central contribution extending the author's genus-one nonlinear-optics work. Repeated explanations were consolidated into the contribution subsection, and the review response was aligned with that framing. Rebuilt and visually checked the revised introduction; paper verification and checksum checks pass.
+
 ## Original packaging record
 
 - Rebuilt `paper/main.pdf` from the copied LaTeX and five figure assets within this bundle.

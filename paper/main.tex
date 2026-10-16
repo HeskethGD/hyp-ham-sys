@@ -11,11 +11,11 @@
 \graphicspath{{../code/hyperelliptic_scalar_first/}}
 \title{Hyperelliptic sigma solutions of polynomial Hamiltonian systems}
 \author{Graham Hesketh}
-\date{Working draft: October 2026}
+\date{October 2026}
 \begin{document}
 \maketitle
 \begin{abstract}
-We study polynomial Hamiltonian systems whose Hamiltonians consist of two weighted products of canonical modes minus a polynomial in their powers. This class extends the structure of familiar genus-one coupled-mode systems from nonlinear optics. We construct local analytic solutions in terms of sigma functions and Abelian integrals on smooth odd-degree hyperelliptic curves, subject to stated degree and regularity conditions. The paired powers and complete weighted mode products are related to \^Onishi's determinant identities, extending the Frobenius--Stickelberger structure of the elliptic case. Explicit genus-two and genus-three examples include bounded oscillatory scalar motion. We evaluate the solutions using Generapy, a purpose-built Python package for algebraic curves and Abelian functions, and validate them against independent fourth-order Runge--Kutta integration.
+We study polynomial Hamiltonian systems whose Hamiltonians consist of two weighted products of canonical modes minus a polynomial in their powers. This class extends the structure of familiar genus-one coupled-mode systems from nonlinear optics. We construct local analytic solutions in terms of sigma functions and Abelian integrals on smooth odd-degree hyperelliptic curves, subject to stated degree and regularity conditions. We associate \^Onishi's determinant identities with the conservation-law structure of these systems, extending the connection previously identified between Frobenius--Stickelberger determinants and conserved quantities in genus-one nonlinear optics. Explicit genus-two and genus-three examples include bounded oscillatory scalar motion. We evaluate the solutions using Generapy, a purpose-built Python package for algebraic curves and Abelian functions, and validate them against independent fourth-order Runge--Kutta integration.
 \end{abstract}
 
 \section{Introduction}
@@ -24,15 +24,15 @@ Many algebraic coupled-mode systems in nonlinear optics admit genus-one elliptic
 
 The same viewpoint includes the polynomial differential systems defining Jacobi, lemniscatic and Dixon elliptic functions~\cite{dixon}. The coupled-mode systems also admit projections onto the unforced, undamped Duffing oscillator, the Euler top and the Lagrange top. These connections link optical models to the classical and geometric mechanics of integrable systems; background accounts are given in~\cite{holm,holm-rigid,whittaker-dynamics,mechanics,duffing}.
 
-Optical solutions commonly express modal powers through Jacobi or Weierstrass elliptic functions and recover phases through elliptic integrals. In~\cite{envelopes,fourwave,coupler}, the full complex amplitudes were instead expressed as shifted Weierstrass sigma ratios with exponential factors. Their conservation laws have a common determinant origin: the $2\times2$ Frobenius--Stickelberger identity gives paired-mode powers, while higher-order determinants give the complete products entering the Hamiltonian~\cite{frobenius-stickelberger,fourwave,coupler}.
+Optical solutions commonly express modal powers through Jacobi or Weierstrass elliptic functions and recover phases through elliptic integrals. In~\cite{envelopes,fourwave,coupler}, we expressed the full complex amplitudes as shifted Weierstrass sigma ratios with exponential factors. In the genus-one setting, we also associated the Frobenius--Stickelberger determinant identities~\cite{frobenius-stickelberger} with the intermodal power laws and the conserved Hamiltonian~\cite{fourwave,coupler}.
 
 The mode count and interaction multiplicities are integer parameters; in optics, the interaction degree is related to the material nonlinearity. Increasing these parameters can produce scalar curves of genus greater than one. What then replaces the elliptic sigma solutions and their determinant conservation laws?
 
-\^Onishi's identities~\cite{onishi} generalize the Frobenius--Stickelberger determinant to hyperelliptic curves of arbitrary genus. Their $2\times2$ specialization expresses a difference of curve coordinates as a product of oppositely shifted sigma factors, matching the affine dependence of paired-mode powers on a common scalar coordinate. Eliminating that coordinate between two such powers gives a conserved weighted difference, the higher-genus counterpart of a Manley--Rowe-like intermodal power law. The multipoint identity suggests the corresponding complete mode products. This raises the question of whether these sigma factors and determinants provide the mode solutions and conservation laws for higher-genus canonical systems.
+\^Onishi's identities~\cite{onishi} generalize the Frobenius--Stickelberger determinant to hyperelliptic curves of arbitrary genus. They provide a natural setting in which to ask whether the association between sigma solutions, determinant identities and conservation laws extends to higher-genus canonical systems.
 
 The theory of hyperelliptic and, more broadly, Abelian functions has its roots in the nineteenth-century work of Abel, Jacobi, G\"opel, Rosenhain, Weierstrass, Riemann, Klein and Poincar\'e, among others. Baker's books at the turn of the twentieth century brought together and substantially enhanced much of this theory~\cite{baker-abelian,baker-periodic}. A renewed connection with nonlinear integrable equations emerged in the 1970s through finite-gap integration and algebro-geometric solutions, in work by Novikov, Dubrovin, Its, Matveev, Krichever and others~\cite{krichever,finite-gap}. For historical background and introductions to sigma functions, we refer the reader to Baker's books, the review by Buchstaber, Enolski and Leykin~\cite{bel-sigma}, Matsutani's monograph~\cite{matsutani-book} and the references therein.
 
-Hyperelliptic Kleinian functions provide an algebraic framework for Jacobi inversion and integrable equations, as developed by Buchstaber, Enolskii and Leykin~\cite{bel-kleinian}. For the scalar motion considered here, the relevant inversion takes place on the one-point Abel image rather than at a general point of the Jacobian. Matsutani and Previato~\cite{mp-strata,mp-strata-ii} study inversion and sigma-derivative identities on these lower-dimensional strata for cyclic curves, including the odd-degree hyperelliptic family. Enolski and collaborators~\cite{enolski,thirdkind} develop sigma-based inversion methods and apply them to relativistic particle motion, including black-hole space-times. Their third-kind integral formulas, together with the hyperelliptic prime-form representation of Gibbons, Matsutani and \^Onishi~\cite{primeform}, provide tools relevant to individual-mode reconstruction.
+Buchstaber, Enolskii and Leykin~\cite{bel-kleinian} give a modern treatment of hyperelliptic Kleinian functions, including algebraic Jacobi inversion and applications to integrable equations. For the scalar motion considered here, the relevant inversion takes place on the one-point Abel image rather than at a general point of the Jacobian. Matsutani and Previato~\cite{mp-strata,mp-strata-ii} study inversion and sigma-derivative identities on these lower-dimensional strata for cyclic curves, including the odd-degree hyperelliptic family. Enolski and collaborators~\cite{enolski,thirdkind} develop sigma-based inversion methods and apply them to relativistic particle motion, including black-hole space-times. Their third-kind integral formulas, together with the hyperelliptic prime-form representation of Gibbons, Matsutani and \^Onishi~\cite{primeform}, provide tools relevant to individual-mode reconstruction.
 
 The complete mode products also connect with algebraic interpolation and addition laws. Bernatska~\cite{bernatska-fields} constructs curve functions with prescribed zeros through normalized interpolation determinants, while Bernatska and Kopeliovich~\cite{divisor-addition} use hyperelliptic interpolation to describe divisor addition and reduction. These constructions clarify the relation between the determinants, their complementary zeros and the polynomial interpolation used herein. Beyond arguments restricted to individual curve points, Eilbeck, Enolskii and Previato~\cite{eep-addition} derive a genus-two Frobenius--Stickelberger addition formula for three general Jacobian arguments.
 
@@ -48,9 +48,9 @@ where $I_j(z)=u_j(z)v_j(z)$ are generally complex quantities, the weights $\beta
 
 This reduction connects the systems to Martin Kummer's resonant Hamiltonians~\cite{kummer,holm} and the Kummer shape algebras of Odzijewicz and Wawreniuk~\cite{shapes}.\footnote{Here Kummer refers to Martin Kummer, distinct from Ernst Eduard Kummer of algebraic number theory and algebraic geometry.} The conserved weighted differences arise from symmetries of the canonical modes, while the products entering the Hamiltonian describe their collective interaction.
 
-Our main contribution is a construction of local solutions for the individual complex modes using hyperelliptic sigma functions and Abelian integrals. We connect both the paired modal powers and the complete weighted products in the Hamiltonian to \^Onishi's determinant identities. In particular, we identify how the individual mode factors combine into these determinants and why their exponential corrections cancel in the complete products. Explicit genus-two and genus-three examples illustrate the construction, including bounded oscillatory scalar motion in genus three. We evaluate the sigma solutions numerically and compare them with independent integration of the full canonical equations.
+We construct local solutions for the individual complex modes using hyperelliptic sigma functions and Abelian integrals. To our knowledge, this is the first identification of \^Onishi's hyperelliptic determinant identities with the Manley--Rowe-like conservation laws and Hamiltonian structure of polynomial canonical mode systems, extending our earlier genus-one results in nonlinear optics. The two-point identity yields the paired-power relations underlying these conservation laws, while the multipoint identities represent the complete weighted products entering the conserved Hamiltonian. We identify the individual mode factors within these determinants and explain the cancellation of their exponential corrections. Genus-two and genus-three examples illustrate the construction, including bounded oscillatory scalar motion in genus three, and are checked against independent integration of the full canonical equations.
 
-We evaluate the analytic solutions using Generapy~\cite{generapy}, a purpose-built Python library for algebraic curves and Abelian functions, which supplies periods, Abelian integrals and sigma functions. Generapy is built on mpmath~\cite{mpmath} for arbitrary-precision numerical arithmetic. During its development, we tested Generapy by reproducing several examples from the literature, including the period and Kleinian-function computations for Bernatska's genus-three trigonal curve~\cite{bernatska-computation}; the reproduced examples are described in the Generapy documentation~\cite{generapy}.
+For numerical evaluation we use Generapy~\cite{generapy}, a purpose-built Python library for algebraic curves and Abelian functions, which supplies periods, Abelian integrals and sigma functions. Generapy is built on mpmath~\cite{mpmath} for arbitrary-precision numerical arithmetic. During its development, we tested Generapy by reproducing several examples from the literature, including the period and Kleinian-function computations for Bernatska's genus-three trigonal curve~\cite{bernatska-computation}; the reproduced examples are described in the Generapy documentation~\cite{generapy}.
 
 Sections~\ref{sec:setup}--\ref{sec:modes} develop scalar reduction, inversion and mode reconstruction; Section~\ref{sec:onishi-products} establishes the determinant connection. Sections~\ref{sec:examples} and~\ref{sec:numerical} present the examples and comparisons with independent fourth-order Runge--Kutta integration. The solutions are local and apply to smooth odd-degree hyperelliptic curves, subject to the degree and regularity conditions stated in the main results.
 
@@ -104,7 +104,7 @@ are conserved. These are the Manley--Rowe-like intermodal power laws of the cano
 The conserved differences allow all powers to be written using a single scalar coordinate. Fix the additive freedom in the scalar coordinate by defining
 
 \[
-\rho=-\frac{\sum_{j=1}^{N} I_j}{\sum_{j=1}^{N}\beta_j},\qquad
+\rho(z)=-\frac{\sum_{j=1}^{N} I_j(z)}{\sum_{j=1}^{N}\beta_j},\qquad
 \gamma_j=I_j+\beta_j\rho.
 \]
 
@@ -162,7 +162,7 @@ It also follows directly by differentiating $\rho'=U-V$ with Hamilton's equation
 
 \subsection{Separated equations for the individual modes}
 
-Knowing the powers does not yet determine the individual modes. On a chart where $I_j\ne0$, divide the canonical equations by $u_j,v_j$ and substitute the product formulas above:
+Knowing the powers does not yet determine the individual modes. On a chart where $I_j\ne0$, divide the canonical equations by $u_j,v_j$ and substitute the product formulas \eqref{eq:products}:
 
 \begin{equation}\label{eq:mode-log}
 \begin{aligned}
@@ -184,7 +184,7 @@ The constants $\gamma_j/\beta_j$ and $q(\gamma_j/\beta_j)$ can be expressed as c
 \rho'(\mu_j)=q(\rho(\mu_j)).
 \end{equation}
 
-Here $y$ denotes the independent ordinate on the curve $y^2=F(\rho)$; along the moving trajectory it is $\rho'(z)$. The notation $\mu_j$ labels the fixed point with the displayed coordinates, which lies on the curve because $r(\rho(\mu_j))=0$. Adding and subtracting the fixed polynomial value gives
+The notation $\mu_j$ labels the fixed point with the displayed coordinates, which lies on the scalar curve because $r(\rho(\mu_j))=0$. Adding and subtracting the fixed polynomial value gives
 
 \begin{equation}\label{eq:split-log}
 \begin{aligned}
@@ -221,7 +221,7 @@ The first condition gives a smooth compactified hyperelliptic curve of genus $g$
 B_j(\rho)=\sum_{k=1}^g c_{jk}\rho^{k-1},\qquad \deg B_j\le g-1,
 \end{equation}
 
-we have $dz=d\rho/y$ along the trajectory, so each term integrates through $\rho^{k-1}d\rho/y$. The remaining rational point terms will be integrated using shifted sigma ratios with exponential corrections.
+we have $dz=d\rho/\rho'$ along regular trajectory segments, so each term integrates through $\rho^{k-1}d\rho/\rho'$. The remaining rational point terms will be integrated using shifted sigma ratios with exponential corrections.
 
 The degree condition holds automatically if $\deg Q\le g$. For higher-degree $Q$, form $B_j$ and check that every coefficient of $\rho^g$ and higher vanishes. Both worked examples satisfy this test through cancellation of leading terms.
 
@@ -239,7 +239,7 @@ Let the smooth compactification of
 \begin{equation}\label{eq:curve}
 y^2=F(\rho)=4\rho^{2g+1}+\cdots
 \end{equation}
-have genus $g\ge2$, with its unique point at infinity. Choose an initial finite curve point $(\rho(z_0),\rho'(z_0))$. The scalar solution is determined locally by
+have genus $g\ge2$, with its unique point at infinity. The variable $y$ denotes the curve ordinate; along the moving trajectory, $y=\rho'(z)$. Choose an initial finite curve point $(\rho(z_0),\rho'(z_0))$. The scalar solution is determined locally by
 \begin{equation}\label{eq:scalar-inverse-integral}
 z-z_0=\int_{(\rho(z_0),\rho'(z_0))}^{(\rho(z),\rho'(z))}\frac{d\rho}{y}.
 \end{equation}
@@ -260,7 +260,7 @@ Choose paths from infinity to the initial moving point and the fixed mode points
 \begin{equation}\label{eq:w-derivatives}
 w_1(z)=w_1(z_0)+z-z_0,\qquad w_k'(z)=\rho(z)^{k-1}.
 \end{equation}
-The initial offset is retained because the Abel map is based at infinity, whereas $z_0$ is an arbitrary propagation origin. Only $w_1$ is linear in propagation. For genus one this sole coordinate is enough to evaluate the familiar elliptic solution directly. For $g\ge2$, the additional coordinates must lie with $w_1$ on the one-dimensional Abel image $W_1$ of the curve. They cannot be replaced by independently chosen linear functions of $z$.
+The initial offset is retained because the Abel map is based at infinity, whereas $z_0$ is an arbitrary propagation origin. Only $w_1$ is linear in propagation. For genus one this sole coordinate is enough to evaluate the familiar elliptic solution directly. For $g\ge2$, the remaining coordinates are constrained by the requirement that the full Abel vector represent a single curve point. They cannot be replaced by independently chosen linear functions of $z$.
 
 \subsection{Sigma and second-kind normalization}
 
@@ -275,7 +275,7 @@ Together with \eqref{eq:holomorphic-diffs}, this fixes the Kleinian sigma expone
 \theta[\delta]\bigl((2\omega)^{-1}w;\tau\bigr),\quad
 \kappa=\eta\omega^{-1},\quad \tau=\omega^{-1}\omega',
 \end{equation}
-where $\delta$ is the characteristic of the Riemann constant based at infinity. The constant $C$ fixes the leading Schur--Weierstrass polynomial. We use \^Onishi's sigma normalization \cite{onishi}, as implemented in generapy:
+where $\theta[\delta]$ is the Riemann theta function with $\delta$ chosen as the characteristic of the Riemann constant based at infinity. The constant $C$ fixes the leading Schur--Weierstrass polynomial. We use \^Onishi's sigma normalization \cite{onishi}, as implemented in generapy:
 \begin{align}
 \sigma(w)&=w_1-\tfrac13w_2^3+\text{higher-weight terms},&&g=2,\label{eq:sigma-leading-g2}\\
 \sigma(w)&=w_1w_3-w_2^2-\tfrac13w_2w_3^3+\tfrac1{45}w_3^6
