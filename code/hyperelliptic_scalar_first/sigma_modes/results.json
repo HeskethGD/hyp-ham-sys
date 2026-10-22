@@ -1,0 +1,4055 @@
+{
+  "environment": {
+    "generapy": "0.1.1.dev4+gaed252bd5",
+    "sympy": "1.15.0.dev0",
+    "mpmath": "1.4.1",
+    "marimo": "0.25.1"
+  },
+  "scope": "Short paths on both sheets; independently reconstructed u and v; analytic sigma-jet first and second derivatives. No new determinant or global monodromy claims.",
+  "all_passed": true,
+  "check_count": 680,
+  "examples": [
+    {
+      "name": "constant_weighted_g2",
+      "dps": 35,
+      "genus": 2,
+      "beta": [
+        2,
+        1,
+        1,
+        1
+      ],
+      "original_F": "16*rho**5 - 124*rho**3 - 108*rho**2 + 108*rho + 109",
+      "normalized_F": "4*rho**5 - 31*rho**3 - 27*rho**2 + 27*rho + 109/4",
+      "scale": "2",
+      "convention": "t=s*z, Y=y/s, dw_k/dz=s*rho**(k-1); original canonical amplitudes unchanged",
+      "exact_normalization_checks": {
+        "positive leading coefficient": true,
+        "leading four": true,
+        "ordinate scaling": true,
+        "normalized curve norm": true,
+        "special corrections": true,
+        "smooth odd degree": true,
+        "mode 1 physical potential scaling": true,
+        "mode 2 physical potential scaling": true,
+        "mode 3 physical potential scaling": true,
+        "mode 4 physical potential scaling": true
+      },
+      "fixed_paths": [
+        {
+          "sheet_sign": 1,
+          "height": "1.0",
+          "endpoint_ordinate_error": "2.25707677256e-36"
+        },
+        {
+          "sheet_sign": -1,
+          "height": "1.0",
+          "endpoint_ordinate_error": "2.6236058078e-36"
+        },
+        {
+          "sheet_sign": -1,
+          "height": "1.0",
+          "endpoint_ordinate_error": "5.4052287247e-35"
+        },
+        {
+          "sheet_sign": 1,
+          "height": "1.0",
+          "endpoint_ordinate_error": "6.57158849486e-34"
+        }
+      ],
+      "tolerance": "1.0e-23",
+      "check_count": 220,
+      "maximum_scaled_error": "1.24471889972e-33",
+      "all_passed": true,
+      "checks": [
+        {
+          "check": "mode 1 fixed-point sigma divisor",
+          "scaled_error": "1.76613824238e-36",
+          "passed": true
+        },
+        {
+          "check": "mode 1 h_1: sigma versus prescribed-path second-kind integral",
+          "scaled_error": "1.68601134659e-35",
+          "passed": true
+        },
+        {
+          "check": "mode 1 h_2: sigma versus prescribed-path second-kind integral",
+          "scaled_error": "2.25694915358e-36",
+          "passed": true
+        },
+        {
+          "check": "mode 2 fixed-point sigma divisor",
+          "scaled_error": "1.83820032302e-36",
+          "passed": true
+        },
+        {
+          "check": "mode 2 h_1: sigma versus prescribed-path second-kind integral",
+          "scaled_error": "4.79846589789e-37",
+          "passed": true
+        },
+        {
+          "check": "mode 2 h_2: sigma versus prescribed-path second-kind integral",
+          "scaled_error": "8.67972020136e-37",
+          "passed": true
+        },
+        {
+          "check": "mode 3 fixed-point sigma divisor",
+          "scaled_error": "9.66369894295e-37",
+          "passed": true
+        },
+        {
+          "check": "mode 3 h_1: sigma versus prescribed-path second-kind integral",
+          "scaled_error": "2.73864561301e-36",
+          "passed": true
+        },
+        {
+          "check": "mode 3 h_2: sigma versus prescribed-path second-kind integral",
+          "scaled_error": "0.0",
+          "passed": true
+        },
+        {
+          "check": "mode 4 fixed-point sigma divisor",
+          "scaled_error": "1.5066187435e-37",
+          "passed": true
+        },
+        {
+          "check": "mode 4 h_1: sigma versus prescribed-path second-kind integral",
+          "scaled_error": "1.63335377727e-37",
+          "passed": true
+        },
+        {
+          "check": "mode 4 h_2: sigma versus prescribed-path second-kind integral",
+          "scaled_error": "6.23567197603e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.01 continued versus direct Abel lift 1",
+          "scaled_error": "4.70197740329e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.01 continued versus direct Abel lift 2",
+          "scaled_error": "0.0",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.01 physical propagation normalization",
+          "scaled_error": "0.0",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.01 sigma coordinate inversion",
+          "scaled_error": "0.0",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.01 sigma one-point divisor",
+          "scaled_error": "1.38448637574e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.01 u_1 sigma versus quadrature",
+          "scaled_error": "1.77705940609e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.01 v_1 sigma versus quadrature",
+          "scaled_error": "2.56990167951e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.01 mode 1 raw sigma product",
+          "scaled_error": "3.42173226467e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.01 mode 1 independently reconstructed product",
+          "scaled_error": "2.74760762012e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.01 u_1 physical log derivative",
+          "scaled_error": "7.95542384788e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.01 v_1 physical log derivative",
+          "scaled_error": "8.56375961682e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.01 u_1 canonical equation",
+          "scaled_error": "1.00986372593e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.01 v_1 canonical equation",
+          "scaled_error": "8.55169771151e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.01 mode 1 physical Wronskian",
+          "scaled_error": "6.57494987754e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.01 u_1 sigma second derivative potential",
+          "scaled_error": "8.02145931696e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.01 v_1 sigma second derivative potential",
+          "scaled_error": "1.02970446858e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.01 u_2 sigma versus quadrature",
+          "scaled_error": "9.31876187309e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.01 v_2 sigma versus quadrature",
+          "scaled_error": "1.41637227901e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.01 mode 2 raw sigma product",
+          "scaled_error": "2.86077142016e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.01 mode 2 independently reconstructed product",
+          "scaled_error": "1.46677475777e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.01 u_2 physical log derivative",
+          "scaled_error": "6.34421326619e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.01 v_2 physical log derivative",
+          "scaled_error": "6.19840422894e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.01 u_2 canonical equation",
+          "scaled_error": "6.66250577804e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.01 v_2 canonical equation",
+          "scaled_error": "5.09560293038e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.01 mode 2 physical Wronskian",
+          "scaled_error": "4.81703140756e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.01 u_2 sigma second derivative potential",
+          "scaled_error": "4.88352056898e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.01 v_2 sigma second derivative potential",
+          "scaled_error": "5.89717286742e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.01 u_3 sigma versus quadrature",
+          "scaled_error": "1.50799404121e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.01 v_3 sigma versus quadrature",
+          "scaled_error": "1.01053349683e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.01 mode 3 raw sigma product",
+          "scaled_error": "3.61774894015e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.01 mode 3 independently reconstructed product",
+          "scaled_error": "2.01740057673e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.01 u_3 physical log derivative",
+          "scaled_error": "3.07300468088e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.01 v_3 physical log derivative",
+          "scaled_error": "2.49812935065e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.01 u_3 canonical equation",
+          "scaled_error": "4.49109736939e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.01 v_3 canonical equation",
+          "scaled_error": "2.73598114541e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.01 mode 3 physical Wronskian",
+          "scaled_error": "2.28581757104e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.01 u_3 sigma second derivative potential",
+          "scaled_error": "4.29732737205e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.01 v_3 sigma second derivative potential",
+          "scaled_error": "5.1340348657e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.01 u_4 sigma versus quadrature",
+          "scaled_error": "1.00921285534e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.01 v_4 sigma versus quadrature",
+          "scaled_error": "1.14887555049e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.01 mode 4 raw sigma product",
+          "scaled_error": "2.9988236785e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.01 mode 4 independently reconstructed product",
+          "scaled_error": "1.48973606957e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.01 u_4 physical log derivative",
+          "scaled_error": "1.27481556441e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.01 v_4 physical log derivative",
+          "scaled_error": "1.58112708034e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.01 u_4 canonical equation",
+          "scaled_error": "7.99522564755e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.01 v_4 canonical equation",
+          "scaled_error": "1.68736581327e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.01 mode 4 physical Wronskian",
+          "scaled_error": "1.23727980292e-33",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.01 u_4 sigma second derivative potential",
+          "scaled_error": "4.70125539464e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.01 v_4 sigma second derivative potential",
+          "scaled_error": "2.82118330794e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.01 weighted U",
+          "scaled_error": "2.71334635369e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.01 weighted V",
+          "scaled_error": "3.66984414832e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.01 Hamiltonian",
+          "scaled_error": "1.51940117703e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.02 continued versus direct Abel lift 1",
+          "scaled_error": "0.0",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.02 continued versus direct Abel lift 2",
+          "scaled_error": "0.0",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.02 physical propagation normalization",
+          "scaled_error": "0.0",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.02 sigma coordinate inversion",
+          "scaled_error": "1.49714703388e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.02 sigma one-point divisor",
+          "scaled_error": "2.60946395098e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.02 u_1 sigma versus quadrature",
+          "scaled_error": "9.66795444152e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.02 v_1 sigma versus quadrature",
+          "scaled_error": "8.96982603264e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.02 mode 1 raw sigma product",
+          "scaled_error": "4.95335665149e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.02 mode 1 independently reconstructed product",
+          "scaled_error": "3.4402376244e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.02 u_1 physical log derivative",
+          "scaled_error": "9.02768256191e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.02 v_1 physical log derivative",
+          "scaled_error": "1.18167563013e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.02 u_1 canonical equation",
+          "scaled_error": "9.21303563162e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.02 v_1 canonical equation",
+          "scaled_error": "1.33759624734e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.02 mode 1 physical Wronskian",
+          "scaled_error": "7.01405307185e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.02 u_1 sigma second derivative potential",
+          "scaled_error": "8.05649215909e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.02 v_1 sigma second derivative potential",
+          "scaled_error": "1.23605497685e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.02 u_2 sigma versus quadrature",
+          "scaled_error": "2.17710563107e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.02 v_2 sigma versus quadrature",
+          "scaled_error": "2.42395432968e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.02 mode 2 raw sigma product",
+          "scaled_error": "2.42340718076e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.02 mode 2 independently reconstructed product",
+          "scaled_error": "1.25495077201e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.02 u_2 physical log derivative",
+          "scaled_error": "1.32830089083e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.02 v_2 physical log derivative",
+          "scaled_error": "8.81028443063e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.02 u_2 canonical equation",
+          "scaled_error": "1.14965379093e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.02 v_2 canonical equation",
+          "scaled_error": "7.42865711011e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.02 mode 2 physical Wronskian",
+          "scaled_error": "5.74215046121e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.02 u_2 sigma second derivative potential",
+          "scaled_error": "1.29226890601e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.02 v_2 sigma second derivative potential",
+          "scaled_error": "1.24652062209e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.02 u_3 sigma versus quadrature",
+          "scaled_error": "1.55830587619e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.02 v_3 sigma versus quadrature",
+          "scaled_error": "2.0391642688e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.02 mode 3 raw sigma product",
+          "scaled_error": "3.04169072553e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.02 mode 3 independently reconstructed product",
+          "scaled_error": "2.28307943569e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.02 u_3 physical log derivative",
+          "scaled_error": "4.93905821322e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.02 v_3 physical log derivative",
+          "scaled_error": "3.51186230388e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.02 u_3 canonical equation",
+          "scaled_error": "5.02705534128e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.02 v_3 canonical equation",
+          "scaled_error": "2.30963008642e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.02 mode 3 physical Wronskian",
+          "scaled_error": "2.31953929428e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.02 u_3 sigma second derivative potential",
+          "scaled_error": "6.61793235058e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.02 v_3 sigma second derivative potential",
+          "scaled_error": "8.22620839145e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.02 u_4 sigma versus quadrature",
+          "scaled_error": "1.99916051008e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.02 v_4 sigma versus quadrature",
+          "scaled_error": "1.48981078231e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.02 mode 4 raw sigma product",
+          "scaled_error": "4.43833848207e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.02 mode 4 independently reconstructed product",
+          "scaled_error": "1.47513275874e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.02 u_4 physical log derivative",
+          "scaled_error": "1.27494238976e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.02 v_4 physical log derivative",
+          "scaled_error": "1.58170349507e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.02 u_4 canonical equation",
+          "scaled_error": "1.26555580907e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.02 v_4 canonical equation",
+          "scaled_error": "1.66145907128e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.02 mode 4 physical Wronskian",
+          "scaled_error": "1.24471889972e-33",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.02 u_4 sigma second derivative potential",
+          "scaled_error": "4.67068561105e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.02 v_4 sigma second derivative potential",
+          "scaled_error": "5.60493376917e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.02 weighted U",
+          "scaled_error": "2.07109439901e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.02 weighted V",
+          "scaled_error": "1.13409840467e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=4.02 Hamiltonian",
+          "scaled_error": "1.19079265022e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.01 continued versus direct Abel lift 1",
+          "scaled_error": "0.0",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.01 continued versus direct Abel lift 2",
+          "scaled_error": "0.0",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.01 physical propagation normalization",
+          "scaled_error": "0.0",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.01 sigma coordinate inversion",
+          "scaled_error": "0.0",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.01 sigma one-point divisor",
+          "scaled_error": "2.44937583373e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.01 u_1 sigma versus quadrature",
+          "scaled_error": "9.28171831707e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.01 v_1 sigma versus quadrature",
+          "scaled_error": "2.71659581691e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.01 mode 1 raw sigma product",
+          "scaled_error": "3.80352586659e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.01 mode 1 independently reconstructed product",
+          "scaled_error": "2.24039720061e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.01 u_1 physical log derivative",
+          "scaled_error": "8.1466091227e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.01 v_1 physical log derivative",
+          "scaled_error": "7.77162632934e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.01 u_1 canonical equation",
+          "scaled_error": "8.1523234812e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.01 v_1 canonical equation",
+          "scaled_error": "7.29111374679e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.01 mode 1 physical Wronskian",
+          "scaled_error": "6.65650250498e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.01 u_1 sigma second derivative potential",
+          "scaled_error": "9.39212214782e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.01 v_1 sigma second derivative potential",
+          "scaled_error": "8.32265763771e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.01 u_2 sigma versus quadrature",
+          "scaled_error": "1.11137818504e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.01 v_2 sigma versus quadrature",
+          "scaled_error": "1.20624385764e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.01 mode 2 raw sigma product",
+          "scaled_error": "2.70552068212e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.01 mode 2 independently reconstructed product",
+          "scaled_error": "1.201415647e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.01 u_2 physical log derivative",
+          "scaled_error": "6.93002660396e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.01 v_2 physical log derivative",
+          "scaled_error": "1.02297365124e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.01 u_2 canonical equation",
+          "scaled_error": "1.07302873638e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.01 v_2 canonical equation",
+          "scaled_error": "8.66789868275e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.01 mode 2 physical Wronskian",
+          "scaled_error": "5.18618927966e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.01 u_2 sigma second derivative potential",
+          "scaled_error": "8.21671661201e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.01 v_2 sigma second derivative potential",
+          "scaled_error": "1.04001959153e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.01 u_3 sigma versus quadrature",
+          "scaled_error": "1.53690251176e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.01 v_3 sigma versus quadrature",
+          "scaled_error": "2.48561770911e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.01 mode 3 raw sigma product",
+          "scaled_error": "1.41421290398e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.01 mode 3 independently reconstructed product",
+          "scaled_error": "1.15270155775e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.01 u_3 physical log derivative",
+          "scaled_error": "2.63325954592e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.01 v_3 physical log derivative",
+          "scaled_error": "6.65666134781e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.01 u_3 canonical equation",
+          "scaled_error": "7.37514217502e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.01 v_3 canonical equation",
+          "scaled_error": "6.4024533278e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.01 mode 3 physical Wronskian",
+          "scaled_error": "3.40604610115e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.01 u_3 sigma second derivative potential",
+          "scaled_error": "6.67922790521e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.01 v_3 sigma second derivative potential",
+          "scaled_error": "6.81902658692e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.01 u_4 sigma versus quadrature",
+          "scaled_error": "1.49712264572e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.01 v_4 sigma versus quadrature",
+          "scaled_error": "1.00921285534e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.01 mode 4 raw sigma product",
+          "scaled_error": "1.04336937728e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.01 mode 4 independently reconstructed product",
+          "scaled_error": "2.97947115714e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.01 u_4 physical log derivative",
+          "scaled_error": "1.14051391618e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.01 v_4 physical log derivative",
+          "scaled_error": "1.50109669153e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.01 u_4 canonical equation",
+          "scaled_error": "2.03269186167e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.01 v_4 canonical equation",
+          "scaled_error": "1.37682029576e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.01 mode 4 physical Wronskian",
+          "scaled_error": "1.14365003166e-33",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.01 u_4 sigma second derivative potential",
+          "scaled_error": "2.82118330794e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.01 v_4 sigma second derivative potential",
+          "scaled_error": "4.70125539464e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.01 weighted U",
+          "scaled_error": "1.17667932502e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.01 weighted V",
+          "scaled_error": "5.67543864081e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.01 Hamiltonian",
+          "scaled_error": "2.91844543735e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.02 continued versus direct Abel lift 1",
+          "scaled_error": "0.0",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.02 continued versus direct Abel lift 2",
+          "scaled_error": "7.52316384526e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.02 physical propagation normalization",
+          "scaled_error": "0.0",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.02 sigma coordinate inversion",
+          "scaled_error": "0.0",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.02 sigma one-point divisor",
+          "scaled_error": "1.88321231153e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.02 u_1 sigma versus quadrature",
+          "scaled_error": "1.17256062323e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.02 v_1 sigma versus quadrature",
+          "scaled_error": "8.92315026369e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.02 mode 1 raw sigma product",
+          "scaled_error": "4.12405976233e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.02 mode 1 independently reconstructed product",
+          "scaled_error": "1.36763006304e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.02 u_1 physical log derivative",
+          "scaled_error": "1.18167563013e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.02 v_1 physical log derivative",
+          "scaled_error": "1.0414684377e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.02 u_1 canonical equation",
+          "scaled_error": "1.01288206628e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.02 v_1 canonical equation",
+          "scaled_error": "1.16352128778e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.02 mode 1 physical Wronskian",
+          "scaled_error": "6.76891594223e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.02 u_1 sigma second derivative potential",
+          "scaled_error": "1.37662669401e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.02 v_1 sigma second derivative potential",
+          "scaled_error": "1.01763419497e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.02 u_2 sigma versus quadrature",
+          "scaled_error": "2.02439668379e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.02 v_2 sigma versus quadrature",
+          "scaled_error": "2.03063280193e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.02 mode 2 raw sigma product",
+          "scaled_error": "4.06689571101e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.02 mode 2 independently reconstructed product",
+          "scaled_error": "1.3748478898e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.02 u_2 physical log derivative",
+          "scaled_error": "8.81028443063e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.02 v_2 physical log derivative",
+          "scaled_error": "8.90494940418e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.02 u_2 canonical equation",
+          "scaled_error": "9.32026596281e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.02 v_2 canonical equation",
+          "scaled_error": "1.16815366871e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.02 mode 2 physical Wronskian",
+          "scaled_error": "3.66978179812e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.02 u_2 sigma second derivative potential",
+          "scaled_error": "1.03093893019e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.02 v_2 sigma second derivative potential",
+          "scaled_error": "1.019886747e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.02 u_3 sigma versus quadrature",
+          "scaled_error": "1.52114576682e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.02 v_3 sigma versus quadrature",
+          "scaled_error": "1.09084843521e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.02 mode 3 raw sigma product",
+          "scaled_error": "3.19378295414e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.02 mode 3 independently reconstructed product",
+          "scaled_error": "1.21287887966e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.02 u_3 physical log derivative",
+          "scaled_error": "3.51186230388e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.02 v_3 physical log derivative",
+          "scaled_error": "5.98948785417e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.02 u_3 canonical equation",
+          "scaled_error": "5.12759745445e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.02 v_3 canonical equation",
+          "scaled_error": "9.13069652534e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.02 mode 3 physical Wronskian",
+          "scaled_error": "3.00884098702e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.02 u_3 sigma second derivative potential",
+          "scaled_error": "8.18249545715e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.02 v_3 sigma second derivative potential",
+          "scaled_error": "6.90399428305e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.02 u_4 sigma versus quadrature",
+          "scaled_error": "2.27574741616e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.02 v_4 sigma versus quadrature",
+          "scaled_error": "1.49011405249e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.02 mode 4 raw sigma product",
+          "scaled_error": "1.03314669199e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.02 mode 4 independently reconstructed product",
+          "scaled_error": "1.47513275874e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.02 u_4 physical log derivative",
+          "scaled_error": "1.36069402035e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.02 v_4 physical log derivative",
+          "scaled_error": "1.38804547747e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.02 u_4 canonical equation",
+          "scaled_error": "1.52211549238e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.02 v_4 canonical equation",
+          "scaled_error": "8.11398367514e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.02 mode 4 physical Wronskian",
+          "scaled_error": "1.19564461586e-33",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.02 u_4 sigma second derivative potential",
+          "scaled_error": "4.67086206145e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.02 v_4 sigma second derivative potential",
+          "scaled_error": "6.53889251593e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.02 weighted U",
+          "scaled_error": "4.49859949019e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.02 weighted V",
+          "scaled_error": "2.69900371884e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=4.02 Hamiltonian",
+          "scaled_error": "2.19384965169e-34",
+          "passed": true
+        }
+      ],
+      "samples": [
+        {
+          "sheet": 1,
+          "rho": "4.01",
+          "physical_z": "0.0001168015100705216",
+          "modes": [
+            {
+              "real": "6.5713932033748359",
+              "imag": "1.16777561032031513e-37"
+            },
+            {
+              "real": "1.00098782040007213",
+              "imag": "9.32796713617659505e-38"
+            },
+            {
+              "real": "1.00164581331655024",
+              "imag": "1.32731792775076899e-37"
+            },
+            {
+              "real": "1.00492916283703818",
+              "imag": "1.01418742983831305e-38"
+            },
+            {
+              "real": "-1.67696554732724203",
+              "imag": "-4.30963657655665716e-37"
+            },
+            {
+              "real": "-5.00505590367484855",
+              "imag": "-3.74586742888570531e-36"
+            },
+            {
+              "real": "-3.00505424171203455",
+              "imag": "-4.07328150935705073e-37"
+            },
+            {
+              "real": "-1.00504596478088686",
+              "imag": "1.15467273605109227e-38"
+            }
+          ]
+        },
+        {
+          "sheet": 1,
+          "rho": "4.02",
+          "physical_z": "0.0002325075260881645",
+          "modes": [
+            {
+              "real": "6.57728465497068569",
+              "imag": "-2.05249871021549377e-36"
+            },
+            {
+              "real": "1.00197475337684261",
+              "imag": "-1.57943264213888563e-36"
+            },
+            {
+              "real": "1.00328904538037844",
+              "imag": "4.247321439868366e-37"
+            },
+            {
+              "real": "1.00983424504785771",
+              "imag": "2.01882074442942484e-38"
+            },
+            {
+              "real": "-1.67850421247264753",
+              "imag": "5.36535401251594047e-38"
+            },
+            {
+              "real": "-5.01010627571369401",
+              "imag": "-1.61009298039169247e-36"
+            },
+            {
+              "real": "-3.01009964566594366",
+              "imag": "1.20557189648309586e-36"
+            },
+            {
+              "real": "-1.01006675600673507",
+              "imag": "2.29865681013064064e-38"
+            }
+          ]
+        },
+        {
+          "sheet": -1,
+          "rho": "4.01",
+          "physical_z": "-0.0001168015100705216",
+          "modes": [
+            {
+              "real": "3.43855141216050487e-37",
+              "imag": "6.49485963696201417"
+            },
+            {
+              "real": "1.00101118073496971",
+              "imag": "1.11250198924970763e-37"
+            },
+            {
+              "real": "1.00168474723734485",
+              "imag": "3.25753349848075892e-37"
+            },
+            {
+              "real": "1.00504596478088686",
+              "imag": "-1.15467273604932741e-38"
+            },
+            {
+              "real": "-9.33033867396065237e-37",
+              "imag": "1.69672642920342322"
+            },
+            {
+              "real": "-5.00493910200036063",
+              "imag": "4.74120674120481926e-37"
+            },
+            {
+              "real": "-3.00493743994965072",
+              "imag": "-7.46912571549604092e-37"
+            },
+            {
+              "real": "-1.00492916283703818",
+              "imag": "-1.01418742983713768e-38"
+            }
+          ]
+        },
+        {
+          "sheet": -1,
+          "rho": "4.02",
+          "physical_z": "-0.0002325075260881645",
+          "modes": [
+            {
+              "real": "-4.67775359694787796e-36",
+              "imag": "6.50081886144555947"
+            },
+            {
+              "real": "1.0020212551427388",
+              "imag": "-1.3604579557108094e-36"
+            },
+            {
+              "real": "1.00336654855531455",
+              "imag": "2.56067388812425108e-37"
+            },
+            {
+              "real": "1.01006675600673507",
+              "imag": "-2.29865681013071281e-38"
+            },
+            {
+              "real": "-1.8008905515811478e-37",
+              "imag": "1.69824759546447078"
+            },
+            {
+              "real": "-5.00987376688421307",
+              "imag": "-1.01732140045861317e-35"
+            },
+            {
+              "real": "-3.00986713614113531",
+              "imag": "-1.31317857229330082e-36"
+            },
+            {
+              "real": "-1.00983424504785771",
+              "imag": "-2.01882074442867698e-38"
+            }
+          ]
+        }
+      ],
+      "seconds": 3.626
+    },
+    {
+      "name": "constant_weighted_g3",
+      "dps": 35,
+      "genus": 3,
+      "beta": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "original_F": "16*rho**7 - 460*rho**5 - 500*rho**4 + 3144*rho**3 + 5000*rho**2 - 2700*rho - 4499",
+      "normalized_F": "4*rho**7 - 115*rho**5 - 125*rho**4 + 786*rho**3 + 1250*rho**2 - 675*rho - 4499/4",
+      "scale": "2",
+      "convention": "t=s*z, Y=y/s, dw_k/dz=s*rho**(k-1); original canonical amplitudes unchanged",
+      "exact_normalization_checks": {
+        "positive leading coefficient": true,
+        "leading four": true,
+        "ordinate scaling": true,
+        "normalized curve norm": true,
+        "special corrections": true,
+        "smooth odd degree": true,
+        "mode 1 physical potential scaling": true,
+        "mode 2 physical potential scaling": true,
+        "mode 3 physical potential scaling": true,
+        "mode 4 physical potential scaling": true,
+        "mode 5 physical potential scaling": true,
+        "mode 6 physical potential scaling": true
+      },
+      "fixed_paths": [
+        {
+          "sheet_sign": -1,
+          "height": "1.02400641854795146",
+          "endpoint_ordinate_error": "1.58021071043e-35"
+        },
+        {
+          "sheet_sign": -1,
+          "height": "1.02400641854795146",
+          "endpoint_ordinate_error": "2.56961131678e-34"
+        },
+        {
+          "sheet_sign": 1,
+          "height": "1.02400641854795146",
+          "endpoint_ordinate_error": "2.29535671385e-34"
+        },
+        {
+          "sheet_sign": -1,
+          "height": "1.02400641854795146",
+          "endpoint_ordinate_error": "1.13886361321e-33"
+        },
+        {
+          "sheet_sign": -1,
+          "height": "1.02400641854795146",
+          "endpoint_ordinate_error": "1.22888845667e-32"
+        },
+        {
+          "sheet_sign": 1,
+          "height": "1.02400641854795146",
+          "endpoint_ordinate_error": "9.28847500797e-32"
+        }
+      ],
+      "tolerance": "1.0e-23",
+      "check_count": 334,
+      "maximum_scaled_error": "1.74415117447e-31",
+      "all_passed": true,
+      "checks": [
+        {
+          "check": "mode 1 fixed-point sigma divisor",
+          "scaled_error": "8.86718905033e-37",
+          "passed": true
+        },
+        {
+          "check": "mode 1 fixed-point sigma_3 stratum",
+          "scaled_error": "4.1675791452e-36",
+          "passed": true
+        },
+        {
+          "check": "mode 1 h_1: sigma versus prescribed-path second-kind integral",
+          "scaled_error": "3.34879827287e-35",
+          "passed": true
+        },
+        {
+          "check": "mode 1 h_2: sigma versus prescribed-path second-kind integral",
+          "scaled_error": "8.55363388706e-36",
+          "passed": true
+        },
+        {
+          "check": "mode 1 h_3: sigma versus prescribed-path second-kind integral",
+          "scaled_error": "1.55627052475e-36",
+          "passed": true
+        },
+        {
+          "check": "mode 2 fixed-point sigma divisor",
+          "scaled_error": "1.32910133005e-37",
+          "passed": true
+        },
+        {
+          "check": "mode 2 fixed-point sigma_3 stratum",
+          "scaled_error": "7.23020301031e-38",
+          "passed": true
+        },
+        {
+          "check": "mode 2 h_1: sigma versus prescribed-path second-kind integral",
+          "scaled_error": "1.37192098274e-34",
+          "passed": true
+        },
+        {
+          "check": "mode 2 h_2: sigma versus prescribed-path second-kind integral",
+          "scaled_error": "1.38771277796e-35",
+          "passed": true
+        },
+        {
+          "check": "mode 2 h_3: sigma versus prescribed-path second-kind integral",
+          "scaled_error": "1.06193928041e-35",
+          "passed": true
+        },
+        {
+          "check": "mode 3 fixed-point sigma divisor",
+          "scaled_error": "5.29560626618e-37",
+          "passed": true
+        },
+        {
+          "check": "mode 3 fixed-point sigma_3 stratum",
+          "scaled_error": "1.83960155003e-36",
+          "passed": true
+        },
+        {
+          "check": "mode 3 h_1: sigma versus prescribed-path second-kind integral",
+          "scaled_error": "5.93608407569e-36",
+          "passed": true
+        },
+        {
+          "check": "mode 3 h_2: sigma versus prescribed-path second-kind integral",
+          "scaled_error": "2.56714492111e-36",
+          "passed": true
+        },
+        {
+          "check": "mode 3 h_3: sigma versus prescribed-path second-kind integral",
+          "scaled_error": "9.55603421359e-37",
+          "passed": true
+        },
+        {
+          "check": "mode 4 fixed-point sigma divisor",
+          "scaled_error": "2.33599492844e-37",
+          "passed": true
+        },
+        {
+          "check": "mode 4 fixed-point sigma_3 stratum",
+          "scaled_error": "6.40075009853e-37",
+          "passed": true
+        },
+        {
+          "check": "mode 4 h_1: sigma versus prescribed-path second-kind integral",
+          "scaled_error": "2.29137927901e-36",
+          "passed": true
+        },
+        {
+          "check": "mode 4 h_2: sigma versus prescribed-path second-kind integral",
+          "scaled_error": "1.8422190582e-36",
+          "passed": true
+        },
+        {
+          "check": "mode 4 h_3: sigma versus prescribed-path second-kind integral",
+          "scaled_error": "2.87954127811e-36",
+          "passed": true
+        },
+        {
+          "check": "mode 5 fixed-point sigma divisor",
+          "scaled_error": "2.46851761353e-37",
+          "passed": true
+        },
+        {
+          "check": "mode 5 fixed-point sigma_3 stratum",
+          "scaled_error": "8.56022162493e-37",
+          "passed": true
+        },
+        {
+          "check": "mode 5 h_1: sigma versus prescribed-path second-kind integral",
+          "scaled_error": "2.36855724065e-35",
+          "passed": true
+        },
+        {
+          "check": "mode 5 h_2: sigma versus prescribed-path second-kind integral",
+          "scaled_error": "2.31510057061e-36",
+          "passed": true
+        },
+        {
+          "check": "mode 5 h_3: sigma versus prescribed-path second-kind integral",
+          "scaled_error": "3.30109373273e-36",
+          "passed": true
+        },
+        {
+          "check": "mode 6 fixed-point sigma divisor",
+          "scaled_error": "1.06960246468e-37",
+          "passed": true
+        },
+        {
+          "check": "mode 6 fixed-point sigma_3 stratum",
+          "scaled_error": "3.88744682813e-37",
+          "passed": true
+        },
+        {
+          "check": "mode 6 h_1: sigma versus prescribed-path second-kind integral",
+          "scaled_error": "1.24922772962e-35",
+          "passed": true
+        },
+        {
+          "check": "mode 6 h_2: sigma versus prescribed-path second-kind integral",
+          "scaled_error": "4.12254340833e-36",
+          "passed": true
+        },
+        {
+          "check": "mode 6 h_3: sigma versus prescribed-path second-kind integral",
+          "scaled_error": "5.38631495379e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 continued versus direct Abel lift 1",
+          "scaled_error": "1.79911998049e-50",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 continued versus direct Abel lift 2",
+          "scaled_error": "2.12729315504e-49",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 continued versus direct Abel lift 3",
+          "scaled_error": "1.84200327172e-48",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 physical propagation normalization",
+          "scaled_error": "0.0",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 sigma coordinate inversion",
+          "scaled_error": "1.22604046725e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 sigma one-point divisor",
+          "scaled_error": "4.61070278434e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 sigma_3 one-point stratum",
+          "scaled_error": "3.29526803896e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 u_1 sigma versus quadrature",
+          "scaled_error": "3.183354579e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 v_1 sigma versus quadrature",
+          "scaled_error": "1.58674321822e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 mode 1 raw sigma product",
+          "scaled_error": "9.34122037902e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 mode 1 independently reconstructed product",
+          "scaled_error": "1.85441417716e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 u_1 physical log derivative",
+          "scaled_error": "7.71464778643e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 v_1 physical log derivative",
+          "scaled_error": "9.95784301424e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 u_1 canonical equation",
+          "scaled_error": "6.28705595811e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 v_1 canonical equation",
+          "scaled_error": "1.17556953706e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 mode 1 physical Wronskian",
+          "scaled_error": "1.28143881037e-32",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 u_1 sigma second derivative potential",
+          "scaled_error": "9.28808922657e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 v_1 sigma second derivative potential",
+          "scaled_error": "1.24367679738e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 u_2 sigma versus quadrature",
+          "scaled_error": "1.10505724147e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 v_2 sigma versus quadrature",
+          "scaled_error": "6.25825883691e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 mode 2 raw sigma product",
+          "scaled_error": "6.14888230196e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 mode 2 independently reconstructed product",
+          "scaled_error": "7.36331607838e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 u_2 physical log derivative",
+          "scaled_error": "1.48290919117e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 v_2 physical log derivative",
+          "scaled_error": "3.45313927348e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 u_2 canonical equation",
+          "scaled_error": "4.93298412822e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 v_2 canonical equation",
+          "scaled_error": "2.57437469299e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 mode 2 physical Wronskian",
+          "scaled_error": "1.6227683347e-32",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 u_2 sigma second derivative potential",
+          "scaled_error": "8.42256629934e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 v_2 sigma second derivative potential",
+          "scaled_error": "2.1913762702e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 u_3 sigma versus quadrature",
+          "scaled_error": "3.5331636976e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 v_3 sigma versus quadrature",
+          "scaled_error": "8.80219568012e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 mode 3 raw sigma product",
+          "scaled_error": "1.06465263839e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 mode 3 independently reconstructed product",
+          "scaled_error": "3.99761378532e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 u_3 physical log derivative",
+          "scaled_error": "1.81013554675e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 v_3 physical log derivative",
+          "scaled_error": "5.7133180206e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 u_3 canonical equation",
+          "scaled_error": "5.76831310295e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 v_3 canonical equation",
+          "scaled_error": "1.23267914603e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 mode 3 physical Wronskian",
+          "scaled_error": "1.06875189017e-32",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 u_3 sigma second derivative potential",
+          "scaled_error": "2.66995691897e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 v_3 sigma second derivative potential",
+          "scaled_error": "4.94738605936e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 u_4 sigma versus quadrature",
+          "scaled_error": "7.54919153172e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 v_4 sigma versus quadrature",
+          "scaled_error": "2.48233708829e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 mode 4 raw sigma product",
+          "scaled_error": "2.52687811386e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 mode 4 independently reconstructed product",
+          "scaled_error": "2.49979653403e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 u_4 physical log derivative",
+          "scaled_error": "1.47786941278e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 v_4 physical log derivative",
+          "scaled_error": "2.22341461286e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 u_4 canonical equation",
+          "scaled_error": "4.85698709069e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 v_4 canonical equation",
+          "scaled_error": "1.26183698747e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 mode 4 physical Wronskian",
+          "scaled_error": "7.77448931935e-33",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 u_4 sigma second derivative potential",
+          "scaled_error": "1.78274014802e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 v_4 sigma second derivative potential",
+          "scaled_error": "2.27250061204e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 u_5 sigma versus quadrature",
+          "scaled_error": "7.23333447286e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 v_5 sigma versus quadrature",
+          "scaled_error": "8.94370968149e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 mode 5 raw sigma product",
+          "scaled_error": "5.16539404038e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 mode 5 independently reconstructed product",
+          "scaled_error": "9.27642159384e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 u_5 physical log derivative",
+          "scaled_error": "3.96320236664e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 v_5 physical log derivative",
+          "scaled_error": "3.7446810851e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 u_5 canonical equation",
+          "scaled_error": "4.75562946892e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 v_5 canonical equation",
+          "scaled_error": "3.21779712807e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 mode 5 physical Wronskian",
+          "scaled_error": "1.82076150901e-32",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 u_5 sigma second derivative potential",
+          "scaled_error": "3.95214985062e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 v_5 sigma second derivative potential",
+          "scaled_error": "3.81860740355e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 u_6 sigma versus quadrature",
+          "scaled_error": "4.49875189242e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 v_6 sigma versus quadrature",
+          "scaled_error": "2.69859588895e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 mode 6 raw sigma product",
+          "scaled_error": "2.60779578727e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 mode 6 independently reconstructed product",
+          "scaled_error": "5.95896013814e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 u_6 physical log derivative",
+          "scaled_error": "1.25581108696e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 v_6 physical log derivative",
+          "scaled_error": "1.82852838713e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 u_6 canonical equation",
+          "scaled_error": "9.28334018378e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 v_6 canonical equation",
+          "scaled_error": "1.75497877373e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 mode 6 physical Wronskian",
+          "scaled_error": "1.62657335933e-31",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 u_6 sigma second derivative potential",
+          "scaled_error": "7.00772732461e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 v_6 sigma second derivative potential",
+          "scaled_error": "3.5215386382e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 weighted U",
+          "scaled_error": "1.35043433228e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 weighted V",
+          "scaled_error": "3.74755677161e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.01 Hamiltonian",
+          "scaled_error": "2.63368617569e-32",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 continued versus direct Abel lift 1",
+          "scaled_error": "5.57582066739e-49",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 continued versus direct Abel lift 2",
+          "scaled_error": "2.35098870164e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 continued versus direct Abel lift 3",
+          "scaled_error": "1.9844247681e-47",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 physical propagation normalization",
+          "scaled_error": "0.0",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 sigma coordinate inversion",
+          "scaled_error": "1.58674833028e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 sigma one-point divisor",
+          "scaled_error": "4.44530884378e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 sigma_3 one-point stratum",
+          "scaled_error": "3.26638618408e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 u_1 sigma versus quadrature",
+          "scaled_error": "3.12714572876e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 v_1 sigma versus quadrature",
+          "scaled_error": "2.19060817464e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 mode 1 raw sigma product",
+          "scaled_error": "1.02915582847e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 mode 1 independently reconstructed product",
+          "scaled_error": "3.14755311703e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 u_1 physical log derivative",
+          "scaled_error": "7.87131126167e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 v_1 physical log derivative",
+          "scaled_error": "1.05738697253e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 u_1 canonical equation",
+          "scaled_error": "6.9013568092e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 v_1 canonical equation",
+          "scaled_error": "1.24868024164e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 mode 1 physical Wronskian",
+          "scaled_error": "1.49447014638e-32",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 u_1 sigma second derivative potential",
+          "scaled_error": "9.69435488899e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 v_1 sigma second derivative potential",
+          "scaled_error": "1.23104409189e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 u_2 sigma versus quadrature",
+          "scaled_error": "5.67612546627e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 v_2 sigma versus quadrature",
+          "scaled_error": "1.37955758138e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 mode 2 raw sigma product",
+          "scaled_error": "6.86094537515e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 mode 2 independently reconstructed product",
+          "scaled_error": "9.11666325544e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 u_2 physical log derivative",
+          "scaled_error": "5.87894123438e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 v_2 physical log derivative",
+          "scaled_error": "2.62421626985e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 u_2 canonical equation",
+          "scaled_error": "5.9464722808e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 v_2 canonical equation",
+          "scaled_error": "3.20696119705e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 mode 2 physical Wronskian",
+          "scaled_error": "1.40095526093e-32",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 u_2 sigma second derivative potential",
+          "scaled_error": "4.34946340902e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 v_2 sigma second derivative potential",
+          "scaled_error": "1.23534007792e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 u_3 sigma versus quadrature",
+          "scaled_error": "1.52604106552e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 v_3 sigma versus quadrature",
+          "scaled_error": "7.93649455516e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 mode 3 raw sigma product",
+          "scaled_error": "1.38679803722e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 mode 3 independently reconstructed product",
+          "scaled_error": "3.46433058918e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 u_3 physical log derivative",
+          "scaled_error": "2.83754671176e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 v_3 physical log derivative",
+          "scaled_error": "1.26661178444e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 u_3 canonical equation",
+          "scaled_error": "5.70778427246e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 v_3 canonical equation",
+          "scaled_error": "9.76230508393e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 mode 3 physical Wronskian",
+          "scaled_error": "7.264826417e-33",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 u_3 sigma second derivative potential",
+          "scaled_error": "1.59145068109e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 v_3 sigma second derivative potential",
+          "scaled_error": "1.59562234156e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 u_4 sigma versus quadrature",
+          "scaled_error": "1.50174268673e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 v_4 sigma versus quadrature",
+          "scaled_error": "5.42298337603e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 mode 4 raw sigma product",
+          "scaled_error": "2.18286991492e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 mode 4 independently reconstructed product",
+          "scaled_error": "4.39837802587e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 u_4 physical log derivative",
+          "scaled_error": "1.32127297747e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 v_4 physical log derivative",
+          "scaled_error": "1.30629660109e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 u_4 canonical equation",
+          "scaled_error": "6.53470530276e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 v_4 canonical equation",
+          "scaled_error": "1.96105448327e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 mode 4 physical Wronskian",
+          "scaled_error": "8.24286749839e-33",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 u_4 sigma second derivative potential",
+          "scaled_error": "1.59973271602e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 v_4 sigma second derivative potential",
+          "scaled_error": "1.6469856358e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 u_5 sigma versus quadrature",
+          "scaled_error": "1.0216788674e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 v_5 sigma versus quadrature",
+          "scaled_error": "5.52392788244e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 mode 5 raw sigma product",
+          "scaled_error": "4.73117929019e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 mode 5 independently reconstructed product",
+          "scaled_error": "6.86422408154e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 u_5 physical log derivative",
+          "scaled_error": "3.45269204324e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 v_5 physical log derivative",
+          "scaled_error": "3.61114162151e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 u_5 canonical equation",
+          "scaled_error": "6.33375489579e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 v_5 canonical equation",
+          "scaled_error": "4.37030842379e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 mode 5 physical Wronskian",
+          "scaled_error": "1.89749241502e-32",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 u_5 sigma second derivative potential",
+          "scaled_error": "3.28819638199e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 v_5 sigma second derivative potential",
+          "scaled_error": "3.28153427239e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 u_6 sigma versus quadrature",
+          "scaled_error": "1.57298605309e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 v_6 sigma versus quadrature",
+          "scaled_error": "3.022949732e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 mode 6 raw sigma product",
+          "scaled_error": "2.58953386908e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 mode 6 independently reconstructed product",
+          "scaled_error": "4.42539388909e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 u_6 physical log derivative",
+          "scaled_error": "1.26722717861e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 v_6 physical log derivative",
+          "scaled_error": "1.79851069252e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 u_6 canonical equation",
+          "scaled_error": "7.82558608715e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 v_6 canonical equation",
+          "scaled_error": "1.83924333053e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 mode 6 physical Wronskian",
+          "scaled_error": "1.63434955131e-31",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 u_6 sigma second derivative potential",
+          "scaled_error": "5.84020672449e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 v_6 sigma second derivative potential",
+          "scaled_error": "3.07934330222e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 weighted U",
+          "scaled_error": "5.62508763519e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 weighted V",
+          "scaled_error": "5.66556830906e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=6.02 Hamiltonian",
+          "scaled_error": "2.85052390895e-32",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 continued versus direct Abel lift 1",
+          "scaled_error": "1.79911998049e-50",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 continued versus direct Abel lift 2",
+          "scaled_error": "9.40395480658e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 continued versus direct Abel lift 3",
+          "scaled_error": "1.84200327172e-48",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 physical propagation normalization",
+          "scaled_error": "0.0",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 sigma coordinate inversion",
+          "scaled_error": "9.13954803064e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 sigma one-point divisor",
+          "scaled_error": "1.70547604015e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 sigma_3 one-point stratum",
+          "scaled_error": "3.46674894253e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 u_1 sigma versus quadrature",
+          "scaled_error": "4.28309523465e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 v_1 sigma versus quadrature",
+          "scaled_error": "1.20932551264e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 mode 1 raw sigma product",
+          "scaled_error": "9.69108445842e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 mode 1 independently reconstructed product",
+          "scaled_error": "1.15554617239e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 u_1 physical log derivative",
+          "scaled_error": "6.31743607875e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 v_1 physical log derivative",
+          "scaled_error": "2.83193278644e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 u_1 canonical equation",
+          "scaled_error": "7.30338427192e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 v_1 canonical equation",
+          "scaled_error": "2.62770410184e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 mode 1 physical Wronskian",
+          "scaled_error": "1.17932167135e-31",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 u_1 sigma second derivative potential",
+          "scaled_error": "6.47647452221e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 v_1 sigma second derivative potential",
+          "scaled_error": "3.04347259315e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 u_2 sigma versus quadrature",
+          "scaled_error": "1.5078137827e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 v_2 sigma versus quadrature",
+          "scaled_error": "1.47212518412e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 mode 2 raw sigma product",
+          "scaled_error": "2.54223619904e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 mode 2 independently reconstructed product",
+          "scaled_error": "2.76899921823e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 u_2 physical log derivative",
+          "scaled_error": "1.04087517516e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 v_2 physical log derivative",
+          "scaled_error": "1.04262169563e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 u_2 canonical equation",
+          "scaled_error": "1.15665197957e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 v_2 canonical equation",
+          "scaled_error": "9.36019821317e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 mode 2 physical Wronskian",
+          "scaled_error": "6.03053381244e-32",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 u_2 sigma second derivative potential",
+          "scaled_error": "1.04178047717e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 v_2 sigma second derivative potential",
+          "scaled_error": "1.02251283654e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 u_3 sigma versus quadrature",
+          "scaled_error": "1.92743736068e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 v_3 sigma versus quadrature",
+          "scaled_error": "2.95114047343e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 mode 3 raw sigma product",
+          "scaled_error": "3.17113321574e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 mode 3 independently reconstructed product",
+          "scaled_error": "2.58605113027e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 u_3 physical log derivative",
+          "scaled_error": "8.44721363118e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 v_3 physical log derivative",
+          "scaled_error": "4.86384465591e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 u_3 canonical equation",
+          "scaled_error": "1.054860843e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 v_3 canonical equation",
+          "scaled_error": "3.94720370873e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 mode 3 physical Wronskian",
+          "scaled_error": "1.89016742828e-32",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 u_3 sigma second derivative potential",
+          "scaled_error": "9.45757502242e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 v_3 sigma second derivative potential",
+          "scaled_error": "5.31343965604e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 u_4 sigma versus quadrature",
+          "scaled_error": "2.13050335475e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 v_4 sigma versus quadrature",
+          "scaled_error": "6.91493387471e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 mode 4 raw sigma product",
+          "scaled_error": "1.2297941344e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 mode 4 independently reconstructed product",
+          "scaled_error": "7.01746635934e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 u_4 physical log derivative",
+          "scaled_error": "2.53195672614e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 v_4 physical log derivative",
+          "scaled_error": "7.37517764136e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 u_4 canonical equation",
+          "scaled_error": "4.9678891809e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 v_4 canonical equation",
+          "scaled_error": "6.2872577361e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 mode 4 physical Wronskian",
+          "scaled_error": "1.50855448581e-32",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 u_4 sigma second derivative potential",
+          "scaled_error": "2.18197429204e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 v_4 sigma second derivative potential",
+          "scaled_error": "7.03904941403e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 u_5 sigma versus quadrature",
+          "scaled_error": "1.54481062237e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 v_5 sigma versus quadrature",
+          "scaled_error": "7.49744243746e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 mode 5 raw sigma product",
+          "scaled_error": "5.45309285788e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 mode 5 independently reconstructed product",
+          "scaled_error": "1.07281303135e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 u_5 physical log derivative",
+          "scaled_error": "2.88605711532e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 v_5 physical log derivative",
+          "scaled_error": "2.31875347556e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 u_5 canonical equation",
+          "scaled_error": "1.06808085613e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 v_5 canonical equation",
+          "scaled_error": "3.52802165096e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 mode 5 physical Wronskian",
+          "scaled_error": "4.67163586277e-33",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 u_5 sigma second derivative potential",
+          "scaled_error": "1.11456072062e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 v_5 sigma second derivative potential",
+          "scaled_error": "6.10174439198e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 u_6 sigma versus quadrature",
+          "scaled_error": "3.00226480723e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 v_6 sigma versus quadrature",
+          "scaled_error": "4.49921562789e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 mode 6 raw sigma product",
+          "scaled_error": "1.34091644711e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 mode 6 independently reconstructed product",
+          "scaled_error": "5.95910977578e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 u_6 physical log derivative",
+          "scaled_error": "1.59451145281e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 v_6 physical log derivative",
+          "scaled_error": "1.70785502568e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 u_6 canonical equation",
+          "scaled_error": "1.37078121479e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 v_6 canonical equation",
+          "scaled_error": "1.65598616773e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 mode 6 physical Wronskian",
+          "scaled_error": "1.74415117447e-31",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 u_6 sigma second derivative potential",
+          "scaled_error": "6.17529563963e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 v_6 sigma second derivative potential",
+          "scaled_error": "1.55216730564e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 weighted U",
+          "scaled_error": "1.02574582875e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 weighted V",
+          "scaled_error": "2.06161491166e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.01 Hamiltonian",
+          "scaled_error": "1.58827027247e-32",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 continued versus direct Abel lift 1",
+          "scaled_error": "5.57582066739e-49",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 continued versus direct Abel lift 2",
+          "scaled_error": "3.32514144219e-48",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 continued versus direct Abel lift 3",
+          "scaled_error": "1.9844247681e-47",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 physical propagation normalization",
+          "scaled_error": "0.0",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 sigma coordinate inversion",
+          "scaled_error": "6.33885895751e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 sigma one-point divisor",
+          "scaled_error": "1.67072899058e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 sigma_3 one-point stratum",
+          "scaled_error": "3.45582678234e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 u_1 sigma versus quadrature",
+          "scaled_error": "2.10889328531e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 v_1 sigma versus quadrature",
+          "scaled_error": "2.14639602635e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 mode 1 raw sigma product",
+          "scaled_error": "1.11415060505e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 mode 1 independently reconstructed product",
+          "scaled_error": "4.65401300615e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 u_1 physical log derivative",
+          "scaled_error": "5.19150948467e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 v_1 physical log derivative",
+          "scaled_error": "2.39184700452e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 u_1 canonical equation",
+          "scaled_error": "5.51754386492e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 v_1 canonical equation",
+          "scaled_error": "2.57637671742e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 mode 1 physical Wronskian",
+          "scaled_error": "1.05488748209e-31",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 u_1 sigma second derivative potential",
+          "scaled_error": "5.1132580666e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 v_1 sigma second derivative potential",
+          "scaled_error": "2.79152553285e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 u_2 sigma versus quadrature",
+          "scaled_error": "3.15600847265e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 v_2 sigma versus quadrature",
+          "scaled_error": "2.99526609419e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 mode 2 raw sigma product",
+          "scaled_error": "2.2898052979e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 mode 2 independently reconstructed product",
+          "scaled_error": "7.06271966096e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 u_2 physical log derivative",
+          "scaled_error": "8.05885204841e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 v_2 physical log derivative",
+          "scaled_error": "1.02204132724e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 u_2 canonical equation",
+          "scaled_error": "7.85298136008e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 v_2 canonical equation",
+          "scaled_error": "1.06722011798e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 mode 2 physical Wronskian",
+          "scaled_error": "6.14871349453e-32",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 u_2 sigma second derivative potential",
+          "scaled_error": "8.73750005327e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 v_2 sigma second derivative potential",
+          "scaled_error": "9.98786083574e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 u_3 sigma versus quadrature",
+          "scaled_error": "3.44084412596e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 v_3 sigma versus quadrature",
+          "scaled_error": "1.718650983e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 mode 3 raw sigma product",
+          "scaled_error": "2.53336390828e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 mode 3 independently reconstructed product",
+          "scaled_error": "3.84935499866e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 u_3 physical log derivative",
+          "scaled_error": "7.86931947003e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 v_3 physical log derivative",
+          "scaled_error": "3.71491112669e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 u_3 canonical equation",
+          "scaled_error": "7.47859633807e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 v_3 canonical equation",
+          "scaled_error": "4.80546906306e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 mode 3 physical Wronskian",
+          "scaled_error": "2.20067589496e-32",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 u_3 sigma second derivative potential",
+          "scaled_error": "8.8040662696e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 v_3 sigma second derivative potential",
+          "scaled_error": "3.93554868496e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 u_4 sigma versus quadrature",
+          "scaled_error": "1.52795136848e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 v_4 sigma versus quadrature",
+          "scaled_error": "2.55576468983e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 mode 4 raw sigma product",
+          "scaled_error": "1.92135358042e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 mode 4 independently reconstructed product",
+          "scaled_error": "2.3090851763e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 u_4 physical log derivative",
+          "scaled_error": "1.15993072747e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 v_4 physical log derivative",
+          "scaled_error": "1.05826413183e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 u_4 canonical equation",
+          "scaled_error": "1.32537231491e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 v_4 canonical equation",
+          "scaled_error": "4.65878083399e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 mode 4 physical Wronskian",
+          "scaled_error": "1.17514170403e-32",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 u_4 sigma second derivative potential",
+          "scaled_error": "5.48000607779e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 v_4 sigma second derivative potential",
+          "scaled_error": "1.25796974053e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 u_5 sigma versus quadrature",
+          "scaled_error": "4.54020770123e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 v_5 sigma versus quadrature",
+          "scaled_error": "3.5164667623e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 mode 5 raw sigma product",
+          "scaled_error": "5.95916514244e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 mode 5 independently reconstructed product",
+          "scaled_error": "8.33858212112e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 u_5 physical log derivative",
+          "scaled_error": "3.61114162151e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 v_5 physical log derivative",
+          "scaled_error": "3.06493277059e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 u_5 canonical equation",
+          "scaled_error": "4.35313854183e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 v_5 canonical equation",
+          "scaled_error": "2.19481762189e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 mode 5 physical Wronskian",
+          "scaled_error": "4.37752695182e-33",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 u_5 sigma second derivative potential",
+          "scaled_error": "2.04572242649e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 v_5 sigma second derivative potential",
+          "scaled_error": "6.78888726154e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 u_6 sigma versus quadrature",
+          "scaled_error": "8.95024516945e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 v_6 sigma versus quadrature",
+          "scaled_error": "5.2092837446e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 mode 6 raw sigma product",
+          "scaled_error": "1.49002373564e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 mode 6 independently reconstructed product",
+          "scaled_error": "8.85104058032e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 u_6 physical log derivative",
+          "scaled_error": "1.5647061846e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 v_6 physical log derivative",
+          "scaled_error": "1.66393146128e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 u_6 canonical equation",
+          "scaled_error": "1.62833185191e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 v_6 canonical equation",
+          "scaled_error": "1.73822762262e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 mode 6 physical Wronskian",
+          "scaled_error": "1.72343829932e-31",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 u_6 sigma second derivative potential",
+          "scaled_error": "6.40280909838e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 v_6 sigma second derivative potential",
+          "scaled_error": "2.36948519284e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 weighted U",
+          "scaled_error": "1.74463801248e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 weighted V",
+          "scaled_error": "1.88753177912e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=6.02 Hamiltonian",
+          "scaled_error": "9.24460280804e-33",
+          "passed": true
+        }
+      ],
+      "samples": [
+        {
+          "sheet": 1,
+          "rho": "6.01",
+          "physical_z": "9.519522879500205e-6",
+          "modes": [
+            {
+              "real": "22.8847011699142128",
+              "imag": "9.54298594988808185e-36"
+            },
+            {
+              "real": "1.00055487245753357",
+              "imag": "1.10567040730057753e-37"
+            },
+            {
+              "real": "1.00071335082785129",
+              "imag": "1.85617425229859279e-36"
+            },
+            {
+              "real": "1.00099854854610079",
+              "imag": "-7.55672976595084509e-38"
+            },
+            {
+              "real": "1.00166369349818702",
+              "imag": "7.24536852438910615e-37"
+            },
+            {
+              "real": "1.00498280234176196",
+              "imag": "-2.56290311708268535e-37"
+            },
+            {
+              "real": "-0.743728304496090667",
+              "imag": "-1.47588937500761129e-36"
+            },
+            {
+              "real": "-9.00500337164907497",
+              "imag": "-5.63556419269867701e-36"
+            },
+            {
+              "real": "-7.0050029753284487",
+              "imag": "-1.34018965547031778e-36"
+            },
+            {
+              "real": "-5.00500226226778136",
+              "imag": "3.07692438939890076e-36"
+            },
+            {
+              "real": "-3.0050006000396659",
+              "imag": "-1.19477199186374566e-35"
+            },
+            {
+              "real": "-1.00499232190495918",
+              "imag": "-2.71206814831469663e-37"
+            }
+          ]
+        },
+        {
+          "sheet": 1,
+          "rho": "6.02",
+          "physical_z": "1.894382496487832e-5",
+          "modes": [
+            {
+              "real": "22.8981303209037408",
+              "imag": "5.3001277143893724e-35"
+            },
+            {
+              "real": "1.00110944207421519",
+              "imag": "-5.68242279867734677e-37"
+            },
+            {
+              "real": "1.00142619934008628",
+              "imag": "2.67449005733616022e-37"
+            },
+            {
+              "real": "1.0019961095979092",
+              "imag": "-1.79913917023046858e-38"
+            },
+            {
+              "real": "1.00332463889095892",
+              "imag": "1.025075580694421e-36"
+            },
+            {
+              "real": "1.00994102180863454",
+              "imag": "-5.09709443499477707e-37"
+            },
+            {
+              "real": "-0.744165561170038235",
+              "imag": "-1.97162012039046807e-36"
+            },
+            {
+              "real": "-9.01000392255946861",
+              "imag": "3.09992589762092619e-36"
+            },
+            {
+              "real": "-7.01000233928970173",
+              "imag": "-5.5634845397405316e-37"
+            },
+            {
+              "real": "-5.00999949192864104",
+              "imag": "1.25936064096506318e-35"
+            },
+            {
+              "real": "-3.00999286067389486",
+              "imag": "-7.07563445730470675e-36"
+            },
+            {
+              "real": "-1.00995996595261723",
+              "imag": "-5.15252700244459518e-37"
+            }
+          ]
+        },
+        {
+          "sheet": -1,
+          "rho": "6.01",
+          "physical_z": "-9.519522879500205e-6",
+          "modes": [
+            {
+              "real": "1.77775535754277676e-35",
+              "imag": "22.862841958266149"
+            },
+            {
+              "real": "1.00055593018323055",
+              "imag": "-1.10050685791274059e-37"
+            },
+            {
+              "real": "1.00071471076120696",
+              "imag": "1.20681698256014006e-36"
+            },
+            {
+              "real": "1.00100045245355627",
+              "imag": "-2.13263482205763539e-37"
+            },
+            {
+              "real": "1.00166686667988863",
+              "imag": "-3.61223579000800997e-37"
+            },
+            {
+              "real": "1.00499232190495918",
+              "imag": "2.19401612267601533e-37"
+            },
+            {
+              "real": "1.16445450379278066e-36",
+              "imag": "0.74443938470415543"
+            },
+            {
+              "real": "-9.00499385211780215",
+              "imag": "5.55367894911047973e-36"
+            },
+            {
+              "real": "-7.00499345579495903",
+              "imag": "1.00676160584707543e-35"
+            },
+            {
+              "real": "-5.00499274273050393",
+              "imag": "1.70946889914114699e-35"
+            },
+            {
+              "real": "-3.00499108049456107",
+              "imag": "-2.25297476510990661e-36"
+            },
+            {
+              "real": "-1.00498280234176196",
+              "imag": "2.64384355452000329e-37"
+            }
+          ]
+        },
+        {
+          "sheet": -1,
+          "rho": "6.02",
+          "physical_z": "-1.894382496487832e-5",
+          "modes": [
+            {
+              "real": "3.03233261685569849e-36",
+              "imag": "22.876283601096233"
+            },
+            {
+              "real": "1.00111154695105207",
+              "imag": "-9.62738587653882622e-37"
+            },
+            {
+              "real": "1.00142890561281453",
+              "imag": "1.67856730207691809e-36"
+            },
+            {
+              "real": "1.00199989838572821",
+              "imag": "2.82954094130257818e-37"
+            },
+            {
+              "real": "1.00333095355796495",
+              "imag": "6.12994195440330263e-37"
+            },
+            {
+              "real": "1.00995996595261723",
+              "imag": "4.57654156433840875e-37"
+            },
+            {
+              "real": "-1.53071752201817382e-36",
+              "imag": "0.744876235018499338"
+            },
+            {
+              "real": "-9.00998497866793673",
+              "imag": "1.21963533907793958e-35"
+            },
+            {
+              "real": "-7.00998339538060398",
+              "imag": "-5.06525343992390179e-37"
+            },
+            {
+              "real": "-5.00998054798954599",
+              "imag": "1.13016895111731515e-35"
+            },
+            {
+              "real": "-3.00997391667287677",
+              "imag": "-5.52539246736186152e-36"
+            },
+            {
+              "real": "-1.00994102180863454",
+              "imag": "5.26106934791509845e-37"
+            }
+          ]
+        }
+      ],
+      "seconds": 31.502
+    },
+    {
+      "name": "nonconstant_weighted_g2",
+      "dps": 35,
+      "genus": 2,
+      "beta": [
+        5,
+        5
+      ],
+      "original_F": "12500*rho**5 + 3125*rho**4/2 - 1250*rho**3 - 2375*rho**2/16 + 75*rho/2 + 5",
+      "normalized_F": "4*rho**5 + rho**4/2 - 2*rho**3/5 - 19*rho**2/400 + 3*rho/250 + 1/625",
+      "scale": "25*sqrt(5)",
+      "convention": "t=s*z, Y=y/s, dw_k/dz=s*rho**(k-1); original canonical amplitudes unchanged",
+      "exact_normalization_checks": {
+        "positive leading coefficient": true,
+        "leading four": true,
+        "ordinate scaling": true,
+        "normalized curve norm": true,
+        "special corrections": true,
+        "smooth odd degree": true,
+        "mode 1 physical potential scaling": true,
+        "mode 2 physical potential scaling": true
+      },
+      "fixed_paths": [
+        {
+          "sheet_sign": 1,
+          "height": "1.05598086821269057",
+          "endpoint_ordinate_error": "2.92036597239e-38"
+        },
+        {
+          "sheet_sign": -1,
+          "height": "1.05598086821269057",
+          "endpoint_ordinate_error": "4.73089700346e-38"
+        }
+      ],
+      "tolerance": "1.0e-23",
+      "check_count": 126,
+      "maximum_scaled_error": "9.2633334348e-33",
+      "all_passed": true,
+      "checks": [
+        {
+          "check": "mode 1 fixed-point sigma divisor",
+          "scaled_error": "1.99329457727e-35",
+          "passed": true
+        },
+        {
+          "check": "mode 1 h_1: sigma versus prescribed-path second-kind integral",
+          "scaled_error": "9.6848179871e-37",
+          "passed": true
+        },
+        {
+          "check": "mode 1 h_2: sigma versus prescribed-path second-kind integral",
+          "scaled_error": "1.46894469961e-36",
+          "passed": true
+        },
+        {
+          "check": "mode 2 fixed-point sigma divisor",
+          "scaled_error": "5.7285007156e-35",
+          "passed": true
+        },
+        {
+          "check": "mode 2 h_1: sigma versus prescribed-path second-kind integral",
+          "scaled_error": "1.45988637253e-36",
+          "passed": true
+        },
+        {
+          "check": "mode 2 h_2: sigma versus prescribed-path second-kind integral",
+          "scaled_error": "3.76158192263e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.01 continued versus direct Abel lift 1",
+          "scaled_error": "3.76158192263e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.01 continued versus direct Abel lift 2",
+          "scaled_error": "7.17464813734e-43",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.01 physical propagation normalization",
+          "scaled_error": "0.0",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.01 sigma coordinate inversion",
+          "scaled_error": "7.76386554502e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.01 sigma one-point divisor",
+          "scaled_error": "5.91146400796e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.01 u_1 sigma versus quadrature",
+          "scaled_error": "1.22197094879e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.01 v_1 sigma versus quadrature",
+          "scaled_error": "1.22954624997e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.01 mode 1 raw sigma product",
+          "scaled_error": "1.75764627156e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.01 mode 1 independently reconstructed product",
+          "scaled_error": "1.99493305483e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.01 u_1 physical log derivative",
+          "scaled_error": "5.66400511862e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.01 v_1 physical log derivative",
+          "scaled_error": "1.37894397981e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.01 u_1 canonical equation",
+          "scaled_error": "2.01832288444e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.01 v_1 canonical equation",
+          "scaled_error": "2.07212542199e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.01 mode 1 physical Wronskian",
+          "scaled_error": "1.88795710416e-33",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.01 u_1 sigma second derivative potential",
+          "scaled_error": "1.09894607931e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.01 v_1 sigma second derivative potential",
+          "scaled_error": "2.07181000634e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.01 u_2 sigma versus quadrature",
+          "scaled_error": "3.66926486878e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.01 v_2 sigma versus quadrature",
+          "scaled_error": "3.07468135424e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.01 mode 2 raw sigma product",
+          "scaled_error": "2.28454763655e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.01 mode 2 independently reconstructed product",
+          "scaled_error": "3.16297724257e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.01 u_2 physical log derivative",
+          "scaled_error": "8.48274158882e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.01 v_2 physical log derivative",
+          "scaled_error": "9.10414682274e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.01 u_2 canonical equation",
+          "scaled_error": "1.81315825243e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.01 v_2 canonical equation",
+          "scaled_error": "1.80973459676e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.01 mode 2 physical Wronskian",
+          "scaled_error": "2.6295522104e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.01 u_2 sigma second derivative potential",
+          "scaled_error": "1.53302881258e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.01 v_2 sigma second derivative potential",
+          "scaled_error": "1.74643365251e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.01 weighted U",
+          "scaled_error": "7.25086127738e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.01 weighted V",
+          "scaled_error": "1.61990294373e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.01 Hamiltonian",
+          "scaled_error": "1.06504818134e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.02 continued versus direct Abel lift 1",
+          "scaled_error": "3.76158192263e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.02 continued versus direct Abel lift 2",
+          "scaled_error": "7.17464813734e-43",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.02 physical propagation normalization",
+          "scaled_error": "1.17549435082e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.02 sigma coordinate inversion",
+          "scaled_error": "7.738098913e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.02 sigma one-point divisor",
+          "scaled_error": "5.59643139443e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.02 u_1 sigma versus quadrature",
+          "scaled_error": "1.21396472838e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.02 v_1 sigma versus quadrature",
+          "scaled_error": "1.23370319883e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.02 mode 1 raw sigma product",
+          "scaled_error": "1.69321551476e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.02 mode 1 independently reconstructed product",
+          "scaled_error": "9.95114574542e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.02 u_1 physical log derivative",
+          "scaled_error": "7.63297596424e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.02 v_1 physical log derivative",
+          "scaled_error": "1.31910331754e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.02 u_1 canonical equation",
+          "scaled_error": "4.04125717099e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.02 v_1 canonical equation",
+          "scaled_error": "3.89238364083e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.02 mode 1 physical Wronskian",
+          "scaled_error": "1.56077412579e-33",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.02 u_1 sigma second derivative potential",
+          "scaled_error": "1.16044462576e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.02 v_1 sigma second derivative potential",
+          "scaled_error": "2.01642847122e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.02 u_2 sigma versus quadrature",
+          "scaled_error": "1.50893399151e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.02 v_2 sigma versus quadrature",
+          "scaled_error": "3.02691489941e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.02 mode 2 raw sigma product",
+          "scaled_error": "2.03921729024e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.02 mode 2 independently reconstructed product",
+          "scaled_error": "3.05219241562e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.02 u_2 physical log derivative",
+          "scaled_error": "9.57902036195e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.02 v_2 physical log derivative",
+          "scaled_error": "9.26617314056e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.02 u_2 canonical equation",
+          "scaled_error": "3.13252065252e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.02 v_2 canonical equation",
+          "scaled_error": "9.87602756233e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.02 mode 2 physical Wronskian",
+          "scaled_error": "3.36220457e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.02 u_2 sigma second derivative potential",
+          "scaled_error": "1.48272930464e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.02 v_2 sigma second derivative potential",
+          "scaled_error": "1.56721272031e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.02 weighted U",
+          "scaled_error": "5.97820009821e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.02 weighted V",
+          "scaled_error": "7.327438627e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, rho=1.02 Hamiltonian",
+          "scaled_error": "3.3448792875e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.01 continued versus direct Abel lift 1",
+          "scaled_error": "0.0",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.01 continued versus direct Abel lift 2",
+          "scaled_error": "0.0",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.01 physical propagation normalization",
+          "scaled_error": "0.0",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.01 sigma coordinate inversion",
+          "scaled_error": "3.06792595101e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.01 sigma one-point divisor",
+          "scaled_error": "1.70824604849e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.01 u_1 sigma versus quadrature",
+          "scaled_error": "1.61802342046e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.01 v_1 sigma versus quadrature",
+          "scaled_error": "8.5827103535e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.01 mode 1 raw sigma product",
+          "scaled_error": "5.86217222803e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.01 mode 1 independently reconstructed product",
+          "scaled_error": "1.38759520235e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.01 u_1 physical log derivative",
+          "scaled_error": "8.01980573169e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.01 v_1 physical log derivative",
+          "scaled_error": "6.87229215146e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.01 u_1 canonical equation",
+          "scaled_error": "2.51358172024e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.01 v_1 canonical equation",
+          "scaled_error": "2.62787505466e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.01 mode 1 physical Wronskian",
+          "scaled_error": "2.67265521595e-33",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.01 u_1 sigma second derivative potential",
+          "scaled_error": "1.25826650961e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.01 v_1 sigma second derivative potential",
+          "scaled_error": "1.11502921221e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.01 u_2 sigma versus quadrature",
+          "scaled_error": "1.52082824879e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.01 v_2 sigma versus quadrature",
+          "scaled_error": "2.9938195937e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.01 mode 2 raw sigma product",
+          "scaled_error": "9.57777467396e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.01 mode 2 independently reconstructed product",
+          "scaled_error": "4.47698122522e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.01 u_2 physical log derivative",
+          "scaled_error": "6.01550150458e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.01 v_2 physical log derivative",
+          "scaled_error": "6.28103697927e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.01 u_2 canonical equation",
+          "scaled_error": "2.68707801865e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.01 v_2 canonical equation",
+          "scaled_error": "2.96019939372e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.01 mode 2 physical Wronskian",
+          "scaled_error": "2.71893144316e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.01 u_2 sigma second derivative potential",
+          "scaled_error": "1.18600630728e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.01 v_2 sigma second derivative potential",
+          "scaled_error": "1.16680519946e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.01 weighted U",
+          "scaled_error": "1.07634460971e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.01 weighted V",
+          "scaled_error": "1.52555439035e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.01 Hamiltonian",
+          "scaled_error": "3.10351802424e-33",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.02 continued versus direct Abel lift 1",
+          "scaled_error": "6.60166347307e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.02 continued versus direct Abel lift 2",
+          "scaled_error": "0.0",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.02 physical propagation normalization",
+          "scaled_error": "1.17549435082e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.02 sigma coordinate inversion",
+          "scaled_error": "3.10349990544e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.02 sigma one-point divisor",
+          "scaled_error": "1.67347526199e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.02 u_1 sigma versus quadrature",
+          "scaled_error": "9.30250889074e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.02 v_1 sigma versus quadrature",
+          "scaled_error": "1.37624336144e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.02 mode 1 raw sigma product",
+          "scaled_error": "5.7193056354e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.02 mode 1 independently reconstructed product",
+          "scaled_error": "1.08276337852e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.02 u_1 physical log derivative",
+          "scaled_error": "7.17609560809e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.02 v_1 physical log derivative",
+          "scaled_error": "6.73794660326e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.02 u_1 canonical equation",
+          "scaled_error": "3.47491306483e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.02 v_1 canonical equation",
+          "scaled_error": "3.62960364928e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.02 mode 1 physical Wronskian",
+          "scaled_error": "1.45997500178e-33",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.02 u_1 sigma second derivative potential",
+          "scaled_error": "1.18188721762e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.02 v_1 sigma second derivative potential",
+          "scaled_error": "1.12007176734e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.02 u_2 sigma versus quadrature",
+          "scaled_error": "1.34413958531e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.02 v_2 sigma versus quadrature",
+          "scaled_error": "9.96091850731e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.02 mode 2 raw sigma product",
+          "scaled_error": "9.32648317536e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.02 mode 2 independently reconstructed product",
+          "scaled_error": "2.76251961131e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.02 u_2 physical log derivative",
+          "scaled_error": "6.02362175845e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.02 v_2 physical log derivative",
+          "scaled_error": "6.5757651025e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.02 u_2 canonical equation",
+          "scaled_error": "2.79075633052e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.02 v_2 canonical equation",
+          "scaled_error": "3.58179259478e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.02 mode 2 physical Wronskian",
+          "scaled_error": "4.09500588933e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.02 u_2 sigma second derivative potential",
+          "scaled_error": "1.19074653544e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.02 v_2 sigma second derivative potential",
+          "scaled_error": "1.23787144918e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.02 weighted U",
+          "scaled_error": "2.06944348118e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.02 weighted V",
+          "scaled_error": "1.41596484478e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, rho=1.02 Hamiltonian",
+          "scaled_error": "9.2633334348e-33",
+          "passed": true
+        }
+      ],
+      "samples": [
+        {
+          "sheet": 1,
+          "rho": "1.01",
+          "physical_z": "8.75961894628021e-5",
+          "modes": [
+            {
+              "real": "4.93899406696828471",
+              "imag": "-4.49685979803699966e-37"
+            },
+            {
+              "real": "1.00613478420662147",
+              "imag": "3.6917750169514848e-37"
+            },
+            {
+              "real": "-1.22494579219320401",
+              "imag": "6.708421736528655e-38"
+            },
+            {
+              "real": "-4.02530561866379667",
+              "imag": "-2.87883350066680706e-36"
+            }
+          ]
+        },
+        {
+          "sheet": 1,
+          "rho": "1.02",
+          "physical_z": "0.0001730118406336845",
+          "modes": [
+            {
+              "real": "4.95931755744172399",
+              "imag": "-1.51461009889289806e-37"
+            },
+            {
+              "real": "1.01223360772748766",
+              "imag": "-2.62700854814258704e-37"
+            },
+            {
+              "real": "-1.23000794551795143",
+              "imag": "-1.969250066539337e-37"
+            },
+            {
+              "real": "-4.05044840311585187",
+              "imag": "2.32929738968588178e-36"
+            }
+          ]
+        },
+        {
+          "sheet": -1,
+          "rho": "1.01",
+          "physical_z": "-8.75961894628021e-5",
+          "modes": [
+            {
+              "real": "4.89978316877281603",
+              "imag": "5.16041622714614566e-36"
+            },
+            {
+              "real": "1.00632640466594917",
+              "imag": "2.79921919519002814e-37"
+            },
+            {
+              "real": "-1.23474851674207118",
+              "imag": "1.0597488878615817e-37"
+            },
+            {
+              "real": "-4.02453913682648588",
+              "imag": "-5.30442920037766221e-37"
+            }
+          ]
+        },
+        {
+          "sheet": -1,
+          "rho": "1.02",
+          "physical_z": "-0.0001730118406336845",
+          "modes": [
+            {
+              "real": "4.92003178207180572",
+              "imag": "-4.57686393954632612e-36"
+            },
+            {
+              "real": "1.01261210077896297",
+              "imag": "1.36109200922099553e-36"
+            },
+            {
+              "real": "-1.239829389360431",
+              "imag": "-1.70630696642987142e-36"
+            },
+            {
+              "real": "-4.04893443090995063",
+              "imag": "-4.03311059077418286e-36"
+            }
+          ]
+        }
+      ],
+      "seconds": 6.179
+    }
+  ]
+}

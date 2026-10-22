@@ -15,7 +15,7 @@
 \begin{document}
 \maketitle
 \begin{abstract}
-We study polynomial Hamiltonian systems whose Hamiltonians consist of two weighted products of canonical modes minus a polynomial in their powers. This class extends the structure of familiar genus-one coupled-mode systems from nonlinear optics. We construct local analytic solutions in terms of sigma functions and Abelian integrals on smooth odd-degree hyperelliptic curves, subject to stated degree and regularity conditions. We associate \^Onishi's determinant identities with the conservation-law structure of these systems, extending the connection previously identified between Frobenius--Stickelberger determinants and conserved quantities in genus-one nonlinear optics. Explicit genus-two and genus-three examples include bounded oscillatory scalar motion. We evaluate the solutions using Generapy, a purpose-built Python package for algebraic curves and Abelian functions, and validate them against independent fourth-order Runge--Kutta integration.
+We study polynomial Hamiltonian systems whose Hamiltonians consist of two weighted products of canonical modes minus a polynomial in their powers. This class extends the structure of familiar genus-one coupled-mode systems from nonlinear optics. We construct local analytic solutions in terms of sigma functions and Abelian integrals on smooth odd-degree hyperelliptic curves, subject to stated degree and regularity conditions. We associate \^Onishi's determinant identities with the conservation-law structure of these systems, extending the connection previously identified between Frobenius--Stickelberger determinants and conserved quantities in genus-one nonlinear optics. Explicit genus-two and genus-three examples include bounded oscillatory scalar motion. We also classify the Hamiltonian polynomials that eliminate the additional mode exponentials and show that their elementary modes solve second-order equations with self-generating polynomial potentials. We evaluate the solutions using Generapy, a purpose-built Python package for algebraic curves and Abelian functions, and validate them against independent fourth-order Runge--Kutta integration.
 \end{abstract}
 
 \section{Introduction}
@@ -32,7 +32,7 @@ The mode count and interaction multiplicities are integer parameters; in optics,
 
 The theory of hyperelliptic and, more broadly, Abelian functions has its roots in the nineteenth-century work of Abel, Jacobi, G\"opel, Rosenhain, Weierstrass, Riemann, Klein and Poincar\'e, among others. Baker's books at the turn of the twentieth century brought together and substantially enhanced much of this theory~\cite{baker-abelian,baker-periodic}. A renewed connection with nonlinear integrable equations emerged in the 1970s through finite-gap integration and algebro-geometric solutions, in work by Novikov, Dubrovin, Its, Matveev, Krichever and others~\cite{krichever,finite-gap}. For historical background and introductions to sigma functions, we refer the reader to Baker's books, the review by Buchstaber, Enolski and Leykin~\cite{bel-sigma}, Matsutani's monograph~\cite{matsutani-book} and the references therein.
 
-Buchstaber, Enolskii and Leykin~\cite{bel-kleinian} give a modern treatment of hyperelliptic Kleinian functions, including algebraic Jacobi inversion and applications to integrable equations. For the scalar motion considered here, the relevant inversion takes place on the one-point Abel image rather than at a general point of the Jacobian. Matsutani and Previato~\cite{mp-strata,mp-strata-ii} study inversion and sigma-derivative identities on these lower-dimensional strata for cyclic curves, including the odd-degree hyperelliptic family. Enolski and collaborators~\cite{enolski,thirdkind} develop sigma-based inversion methods and apply them to relativistic particle motion, including black-hole space-times. Their third-kind integral formulas, together with the hyperelliptic prime-form representation of Gibbons, Matsutani and \^Onishi~\cite{primeform}, provide tools relevant to individual-mode reconstruction.
+Buchstaber, Enolskii and Leykin~\cite{bel-kleinian} give a modern treatment of hyperelliptic Kleinian functions, which generalise the Weierstrass elliptic functions to higher genus, including algebraic Jacobi inversion and applications to integrable equations. For the scalar motion considered here, the relevant inversion takes place on the one-point Abel image rather than at a general point of the Jacobian. Matsutani and Previato~\cite{mp-strata,mp-strata-ii} study inversion and sigma-derivative identities on these lower-dimensional strata for cyclic curves, including the odd-degree hyperelliptic family. Enolski and collaborators~\cite{enolski,thirdkind} develop sigma-based inversion methods and apply them to relativistic particle motion, including black-hole space-times. Their third-kind integral formulas, together with the hyperelliptic prime-form representation of Gibbons, Matsutani and \^Onishi~\cite{primeform}, provide tools relevant to individual-mode reconstruction.
 
 The complete mode products also connect with algebraic interpolation and addition laws. Bernatska~\cite{bernatska-fields} constructs curve functions with prescribed zeros through normalized interpolation determinants, while Bernatska and Kopeliovich~\cite{divisor-addition} use hyperelliptic interpolation to describe divisor addition and reduction. These constructions clarify the relation between the determinants, their complementary zeros and the polynomial interpolation used herein. Beyond arguments restricted to individual curve points, Eilbeck, Enolskii and Previato~\cite{eep-addition} derive a genus-two Frobenius--Stickelberger addition formula for three general Jacobian arguments.
 
@@ -46,13 +46,15 @@ H(u,v)=\prod_{j=1}^{N}u_j^{\beta_j}
 \]
 where $I_j(z)=u_j(z)v_j(z)$ are generally complex quantities, the weights $\beta_j$ are positive integers, and $Q$ is a polynomial in the $I_j$. We call these paired products modal powers, without assuming that they are real or positive. Manley--Rowe-like conservation laws relate their evolution through conserved weighted differences, stated in \eqref{eq:weighted-invariants}. Together with the Hamiltonian, these laws reduce the power dynamics to a single scalar equation on a hyperelliptic curve. Recovering the individual modes requires further integration, since their paired products alone do not determine them.
 
-This reduction connects the systems to Martin Kummer's resonant Hamiltonians~\cite{kummer,holm} and the Kummer shape algebras of Odzijewicz and Wawreniuk~\cite{shapes}.\footnote{Here Kummer refers to Martin Kummer, distinct from Ernst Eduard Kummer of algebraic number theory and algebraic geometry.} The conserved weighted differences arise from symmetries of the canonical modes, while the products entering the Hamiltonian describe their collective interaction.
+This reduction relates our systems to the resonant Hamiltonians studied by Martin Kummer~\cite{kummer,holm} and their subsequent treatment through classical and quantum Kummer shape algebras by Odzijewicz and Wawreniuk~\cite{shapes}.\footnote{Here Kummer refers to Martin Kummer, distinct from Ernst Eduard Kummer of algebraic number theory and algebraic geometry.} The conserved weighted differences arise from symmetries of the canonical modes, while the products entering the Hamiltonian describe their collective interaction.
 
 We construct local solutions for the individual complex modes using hyperelliptic sigma functions and Abelian integrals. To our knowledge, this is the first identification of \^Onishi's hyperelliptic determinant identities with the Manley--Rowe-like conservation laws and Hamiltonian structure of polynomial canonical mode systems, extending our earlier genus-one results in nonlinear optics. The two-point identity yields the paired-power relations underlying these conservation laws, while the multipoint identities represent the complete weighted products entering the conserved Hamiltonian. We identify the individual mode factors within these determinants and explain the cancellation of their exponential corrections. Genus-two and genus-three examples illustrate the construction, including bounded oscillatory scalar motion in genus three, and are checked against independent integration of the full canonical equations.
 
+We also classify all polynomials $Q$ for which the additional correction vanishes for every invariant tuple. The nonconstant generators are specific Chan--Chyan--Srivastava multivariable Lagrange polynomials. Their mode pairs have constant Wronskians and solve second-order equations with polynomial potentials; polynomiality fixes the squared Wronskian under a prescribed-product constraint.
+
 For numerical evaluation we use Generapy~\cite{generapy}, a purpose-built Python library for algebraic curves and Abelian functions, which supplies periods, Abelian integrals and sigma functions. Generapy is built on mpmath~\cite{mpmath} for arbitrary-precision numerical arithmetic. During its development, we tested Generapy by reproducing several examples from the literature, including the period and Kleinian-function computations for Bernatska's genus-three trigonal curve~\cite{bernatska-computation}; the reproduced examples are described in the Generapy documentation~\cite{generapy}.
 
-Sections~\ref{sec:setup}--\ref{sec:modes} develop scalar reduction, inversion and mode reconstruction; Section~\ref{sec:onishi-products} establishes the determinant connection. Sections~\ref{sec:examples} and~\ref{sec:numerical} present the examples and comparisons with independent fourth-order Runge--Kutta integration. The solutions are local and apply to smooth odd-degree hyperelliptic curves, subject to the degree and regularity conditions stated in the main results.
+Sections~\ref{sec:setup}--\ref{sec:modes} develop scalar reduction, the sigma representation of the scalar coordinate and mode reconstruction; Section~\ref{sec:onishi-products} establishes the determinant connection, and Section~\ref{sec:polynomial-potentials} derives the second-order polynomial potentials. Sections~\ref{sec:examples} and~\ref{sec:numerical} present the examples and comparisons with independent fourth-order Runge--Kutta integration. The solutions are local and apply to smooth odd-degree hyperelliptic curves, subject to the degree and regularity conditions stated in the main results.
 
 \section{Scalar reduction and separated mode equations}\label{sec:setup}
 
@@ -223,29 +225,23 @@ B_j(\rho)=\sum_{k=1}^g c_{jk}\rho^{k-1},\qquad \deg B_j\le g-1,
 
 we have $dz=d\rho/\rho'$ along regular trajectory segments, so each term integrates through $\rho^{k-1}d\rho/\rho'$. The remaining rational point terms will be integrated using shifted sigma ratios with exponential corrections.
 
-The degree condition holds automatically if $\deg Q\le g$. For higher-degree $Q$, form $B_j$ and check that every coefficient of $\rho^g$ and higher vanishes. Both worked examples satisfy this test through cancellation of leading terms.
+The degree condition holds automatically if $\deg Q\le g$. For higher-degree $Q$, form $B_j$ and check that every coefficient of $\rho^g$ and higher vanishes. The first two worked examples satisfy this test through cancellation of leading terms; the special examples in Section~\ref{sec:special-examples} have $B_j=0$.
 
 These restrictions define the initial scope of the analytic construction, rather than limits of the Hamiltonian reduction. Higher-degree corrections lead to meromorphic Abelian differentials; even-degree models, singular curves and coincident or branch fixed points require corresponding changes to the curve representation or limiting arguments. We do not develop those extensions here.
 
-The reduction has now supplied the scalar curve, its fixed mode points and the two terms in every mode integral. The following sections first recover the scalar trajectory and then integrate these separated equations. The logarithmic chart excludes modal zeros, but the original polynomial canonical equations remain the equations for continuation of a finite solution through such points.
+The reduction has now supplied the scalar curve, its fixed mode points and the two terms in every mode integral. The following sections express the scalar coordinate through hyperelliptic sigma functions and then integrate the separated mode equations.
 
-\section{Scalar inversion and its hyperelliptic sigma representation}\label{sec:scalar}
+\section{Hyperelliptic representation of the scalar coordinate \texorpdfstring{$\rho$}{rho}}\label{sec:scalar}
 
-Section~\ref{sec:setup} reduced the modal powers to $(\rho')^2=F(\rho)$. Its local analytic solution is the inverse of a hyperelliptic Abelian integral. We first describe that inverse and its Abel coordinates, then give a sigma-derivative representation of the scalar coordinate. The same Abel coordinates and sigma conventions will be used to reconstruct the individual modes.
+We express the scalar coordinate $\rho$ through derivatives of the hyperelliptic sigma function restricted to the one-point Abel image. We first specify the curve, Abel coordinates and sigma conventions, then state the coordinate representation and its low-genus forms. Finally we describe their evaluation at prescribed propagation. The same Abel coordinates and sigma conventions will be used to reconstruct the individual modes.
 
-\subsection{The scalar solution as an inverse Abelian integral}
+\subsection{The scalar curve}
 
 Let the smooth compactification of
 \begin{equation}\label{eq:curve}
 y^2=F(\rho)=4\rho^{2g+1}+\cdots
 \end{equation}
-have genus $g\ge2$, with its unique point at infinity. The variable $y$ denotes the curve ordinate; along the moving trajectory, $y=\rho'(z)$. Choose an initial finite curve point $(\rho(z_0),\rho'(z_0))$. The scalar solution is determined locally by
-\begin{equation}\label{eq:scalar-inverse-integral}
-z-z_0=\int_{(\rho(z_0),\rho'(z_0))}^{(\rho(z),\rho'(z))}\frac{d\rho}{y}.
-\end{equation}
-The integral is taken along the continued curve path, so its sheet is fixed by the initial point. The differential $d\rho/y$ is nonzero at every finite curve point, including branch points when written in a regular local parameter. Its integral therefore has a local analytic inverse. At a finite turning point, where $\rho'=0$, the equation $\rho''=F_\rho/2$ continues the signed trajectory through the point. At infinity the differential has a zero of order $2g-2$, so no global single-valued inverse in $z$ is asserted.
-
-This inverse integral defines the scalar analytic solution. The sigma formulas below represent its coordinate on the Abel image; evaluating them at prescribed $z$ still requires determining the corresponding point of that image.
+have genus $g\ge2$, with its unique point at infinity. The variable $y$ denotes the curve ordinate; along a nonconstant scalar trajectory, $y=\rho'(z)$. Choose an initial finite curve point $(\rho(z_0),\rho'(z_0))$ satisfying the scalar equation~\eqref{eq:scalar}. The moving point determines a one-point Abel image on which the coordinate can be recovered by sigma derivatives.
 
 \subsection{Abel coordinates and propagation}
 
@@ -295,11 +291,11 @@ An empty product takes no derivative: $(\sigma_\sharp,\sigma_\flat)=(\sigma_2,\s
 
 \subsection{From Abel inversion to a sigma coordinate ratio for \texorpdfstring{$\rho(z)$}{rho(z)}}
 
-The inverse integral \eqref{eq:scalar-inverse-integral} determines the moving curve point. We now express its coordinate through sigma functions evaluated at its Abel vector. This is the one-point restriction of Jacobi inversion: the arguments lie on $W_1$, rather than being arbitrary points of the Jacobian.
+We now express the coordinate of the moving curve point through sigma functions evaluated at its Abel vector. This is the one-point restriction of Jacobi inversion: the arguments lie on $W_1$, rather than being arbitrary points of the Jacobian. The resulting formula is an analytic representation on that constrained image; evaluation at a given $z$ also requires finding the corresponding Abel vector, as discussed in Section~\ref{sec:scalar-evaluation}.
 
-Ordinary Jacobi inversion starts with the summed Abel vector of $g$ curve points and recovers their coordinates. Our trajectory contains only one moving point, so we use a limiting restriction of that problem. Sending $g-1$ divisor points to infinity leaves a single finite point. Ordinary sigma quotients can then have vanishing numerators and denominators, so one must expand in local coordinates at infinity and retain the first nonzero derivatives. Hyperelliptic addition and determinant identities control these limits. The resulting derivative indices are determined by the gap sequence at infinity, not by a guess made separately for each genus.
+Ordinary Jacobi inversion starts with the summed Abel vector of $g$ curve points and recovers their coordinates. Our trajectory contains only one moving point, so we use a limiting restriction of that problem. Sending $g-1$ divisor points to infinity leaves a single finite point. Ordinary sigma quotients can then have vanishing numerators and denominators, so one must expand in local coordinates at infinity and retain the first nonzero derivatives. Hyperelliptic addition and determinant identities control these limits. The resulting derivative indices are determined by the gap sequence at infinity.
 
-For the differential ordering \eqref{eq:holomorphic-diffs}, the general result is particularly simple. Define
+For the differential ordering \eqref{eq:holomorphic-diffs}, the general result is particularly concise. Define
 \begin{equation}\label{eq:inversion-operator}
 \mathcal D_g=\prod_{\substack{4\le k\le g\\k\ {\rm even}}}\partial_{w_k}.
 \end{equation}
@@ -339,9 +335,19 @@ All are evaluated on the one-point image, with nonzero displayed denominators. I
 
 For genus two, differentiating $\sigma(w(z))=0$ gives $\sigma_1+\rho\sigma_2=0$. In genus three $\sigma_3=0$ removes the last term when differentiating $\sigma=0$, giving the same first-derivative ratio; differentiating $\sigma_3=0$ and using $\sigma_{33}=0$ gives the displayed alternative \eqref{eq:inversion-g3}. Such identities explain why different derivative orders can represent the same coordinate.
 
-\subsection{Evaluation at prescribed propagation}
+\subsection{Evaluation at prescribed propagation}\label{sec:scalar-evaluation}
 
-The sigma ratio represents $\rho$ on the one-point Abel image, where only $w_1$ is linear in propagation. Evaluation at prescribed $z$ therefore also requires determining the constrained Abel vector. In our computations, numerical inversion of \eqref{eq:scalar-inverse-integral} supplies $\rho(z)$, after which Abelian integrals and sigma evaluations reconstruct the individual modes. The scalar sigma ratio serves as a consistency check.
+The sigma ratios above give exact coordinate identities on $W_1$. For $g\ge2$, however, only $w_1$ is linear in propagation. Computing $\rho(z)$ directly from these formulas requires determining the remaining Abel coordinates while enforcing the one-point-image constraints and compatible path lifts. This is a constrained inversion problem in addition to the evaluation of sigma functions.
+
+Our numerical implementation uses the scalar quadrature
+\begin{equation}\label{eq:scalar-inverse-integral}
+z-z_0=\int_{(\rho(z_0),\rho'(z_0))}^{(\rho(z),\rho'(z))}\frac{d\rho}{y}.
+\end{equation}
+The integration path and sheet are continued from the initial curve point. We invert this relation numerically to obtain the moving point, calculate its Abel lift using~\eqref{eq:abel-map}, and evaluate the individual-mode sigma formulas with Generapy~\cite{generapy}. We also evaluate the scalar sigma ratios at the computed Abel vectors as consistency checks. These checks verify the coordinate identities on the recovered image; they do not provide an independent sigma-based inversion at prescribed propagation. Thus the formulas are analytic, while the reported evaluations use numerical quadrature, inversion and special-function computation.
+
+\section{Individual mode solutions}\label{sec:modes}
+
+Once the scalar trajectory is known, the remaining task is to recover the individual modes rather than just their products. We integrate the fixed-point contribution by sigma functions, determine its exponential correction, and then combine it with the polynomial correction to obtain the full canonical solution.
 
 \subsection{Fixed mode points and the mode differential}
 
@@ -352,11 +358,7 @@ The mode differential is
 \omega_j^{\rm mode}
 =\frac{\rho'(\mu_j)-y}{2[\rho(\mu_j)-\rho]}\frac{d\rho}{y}.
 \end{equation}
-It has residue $+1$ at $(\rho(\mu_j),-\rho'(\mu_j))$ and residue $-1$ at infinity, with a removable singularity at the fixed point of \eqref{eq:mode-points}. Along the moving point it is exactly the rational term of $u_j'/u_j$ in \eqref{eq:split-log} times $dz$. The next section integrates this differential through the sharp/flat sigma factors and combines it with the polynomial correction $B_j$.
-
-\section{Individual mode solutions}\label{sec:modes}
-
-Once the scalar trajectory is known, the remaining task is to recover the individual amplitudes rather than just their products. We integrate the fixed-point contribution by sigma functions, determine its exponential correction, and then combine it with the polynomial correction to obtain the full canonical solution.
+It has residue $+1$ at $(\rho(\mu_j),-\rho'(\mu_j))$ and residue $-1$ at infinity, with a removable singularity at the fixed point of \eqref{eq:mode-points}. Along the moving point it is exactly the rational term of $u_j'/u_j$ in \eqref{eq:split-log} times $dz$. The following subsections integrate this differential through the sharp/flat sigma factors and combine it with the polynomial correction $B_j$.
 
 \subsection{The fixed-point second-kind coefficients}
 
@@ -499,6 +501,144 @@ The initial product condition therefore gives $U=(q+\rho')/2$. Since $UV=r$, it 
 The nonzero-power and nonvanishing-factor conditions specify a chart for the logarithmic proof, rather than singularities of the polynomial canonical equations. At a modal zero, those equations can continue a finite solution even though its logarithmic derivative is undefined; the sigma expressions must then be interpreted by continuation or limits. Finite turning points likewise do not obstruct scalar continuation. Continuation around curve cycles is a separate issue and can introduce multipliers, as discussed in Section~\ref{sec:discussion}.
 
 Substitution of \eqref{eq:point-factor-sigma} into \eqref{eq:mode-solutions} gives a sigma ratio normalized at $z_0$, with coefficients $c_{jk}-h_{jk}$ in the $u_j$ exponential and their negatives in the $v_j$ exponential.
+
+
+\subsection{Polynomials with vanishing mode correction}\label{sec:special-Q}
+
+Recall from~\eqref{eq:B-def} that, with $a_j=\gamma_j/\beta_j$,
+\[
+ B_j(\rho)=\frac{q(\rho)-q(a_j)}{2(a_j-\rho)}
+             -Q_j(I(\rho)),\qquad
+ q(\rho)=Q(I(\rho)),\quad I_i(\rho)=\gamma_i-\beta_i\rho.
+\]
+Here $Q_j=\partial Q/\partial I_j$ is taken before restriction to the power
+line. We call $Q$ universally special if every $B_j$ vanishes identically
+for every invariant tuple
+$\boldsymbol\gamma$ satisfying $\sum_{j=1}^{N}\gamma_j=0$.
+Then $c_{jk}=0$ in~\eqref{eq:mode-solutions}: only the exponential
+intrinsic to the point factor remains.
+
+The elementary mode factors arise as regularized restrictions of
+Baker--Akhiezer functions to the one-point Abel image. Matsutani's sigma
+representation~\cite[Section~4.2.2.3, Eq.~(4.42)]{matsutani-book} uses the
+same $\sigma_\sharp$ normalization, while \^Onishi's stratum
+limits~\cite[Proposition~6.6]{onishi} yield the
+$\sigma_\flat/\sigma_\sharp$ quotient appearing here. For special $Q$,
+these factors, normalized by their initial values, give the complete modes.
+
+The following classification is algebraic and does not require the
+odd-degree curve assumptions.
+
+We use the Chan--Chyan--Srivastava multivariable Lagrange
+polynomials~\cite{ccs,ccs-umbral} with parameters
+$-\boldsymbol\beta/2=(-\beta_1/2,\ldots,-\beta_N/2)$, defined by
+the ordinary generating function
+\begin{equation}\label{eq:special-ccs}
+ \prod_{j=1}^{N}(1-x_jt)^{\beta_j/2}
+ =\sum_{n=0}^{\infty}g_n^{(-\boldsymbol\beta/2)}(x)t^n.
+\end{equation}
+(These multivariable polynomials are distinct from the Weierstrass
+invariants $g_2,g_3$.)
+
+\begin{theorem}[Universally special polynomials]\label{thm:special-Q}
+Let $M=\sum_{j=1}^{N}\beta_j$. If $M$ is odd, the universally special
+polynomials are precisely the constants. If $M=2m$, they are precisely
+\begin{equation}\label{eq:special-Q}
+ Q(I)=\kappa g_m^{(-\boldsymbol\beta/2)}
+                  (I_1/\beta_1,\ldots,I_N/\beta_N)+E,
+\end{equation}
+where $\kappa,E$ are arbitrary constants.
+No symmetry assumption on $Q$ is required.
+\end{theorem}
+
+\begin{proof}
+Put $x_j=I_j/\beta_j$ and
+$T(x)=Q(\beta_1x_1,\ldots,\beta_Nx_N)$.
+At a point of the power line, $x_j=\gamma_j/\beta_j-\rho$, so
+vanishing of~\eqref{eq:B-def} is equivalent to
+\begin{equation}\label{eq:special-identity}
+ T(x)-T(x-x_j\mathbf1)
+ =\frac{2x_j}{\beta_j}\partial_jT(x),\qquad j=1,\ldots,N,
+\end{equation}
+where $\mathbf1=(1,\ldots,1)$. This identity holds for arbitrary $x$:
+choose $\rho=-\sum_{i=1}^{N}\beta_i x_i/M$ and
+$\gamma_i=\beta_i(x_i+\rho)$. Conversely it implies $B_j=0$, including
+$x_j=0$ by polynomial continuation.
+
+Each homogeneous part of $T$ satisfies~\eqref{eq:special-identity}
+separately, since the substitutions are linear and $x_j\partial_j$
+preserves degree. Consider a nonzero homogeneous solution of degree $d>0$.
+We first show that $T(\mathbf1)\ne0$. Adding the same scalar $s$ to every
+variable gives a polynomial in $s$,
+\[
+ T(x+s\mathbf1)=\sum_{k=0}^r A_k(x)s^k,\qquad A_r\ne0,\quad r\le d.
+\]
+Apply~\eqref{eq:special-identity} at $x+s\mathbf1$ and clear its denominator:
+\[
+ 2(x_j+s)\partial_jT(x+s\mathbf1)
+ =\beta_j\{T(x+s\mathbf1)-T(x-x_j\mathbf1)\}.
+\]
+The coefficient of $s^{r+1}$ gives $\partial_jA_r=0$ for every $j$.
+Thus $A_r$ is a nonzero constant. It is homogeneous of degree $d-r$,
+so $r=d$ and $A_d=T(\mathbf1)\ne0$.
+
+At $x=\mathbf1$, equation~\eqref{eq:special-identity} gives
+$2\partial_jT(\mathbf1)=\beta_jT(\mathbf1)$, since $T(0)=0$.
+Summing and using Euler's homogeneous identity yields
+$2dT(\mathbf1)=MT(\mathbf1)$, hence $2d=M$.
+Two solutions of this degree are proportional: subtract a multiple to
+make their difference vanish at $\mathbf1$, then apply the preceding
+argument. This proves necessity and uniqueness up to scale and constants.
+
+For existence when $M=2m$, let $\Phi_x(t)$ denote the generating
+function in~\eqref{eq:special-ccs}. Differentiation gives
+\[
+ \partial_jg_m^{(-\boldsymbol\beta/2)}(x)=-\frac{\beta_j}{2}
+             \sum_{k=0}^{m-1}x_j^{m-1-k}g_k^{(-\boldsymbol\beta/2)}(x).
+\]
+Also
+\[
+ \begin{aligned}
+ \Phi_{x-x_j\mathbf1}(t)
+ &=(1+x_jt)^m\Phi_x\!\left(\frac{t}{1+x_jt}\right),\\
+ g_m^{(-\boldsymbol\beta/2)}(x-x_j\mathbf1)
+ &=\sum_{k=0}^m x_j^{m-k}g_k^{(-\boldsymbol\beta/2)}(x).
+ \end{aligned}
+\]
+The last identity follows by taking the coefficient of $t^m$.
+Together these formulas give~\eqref{eq:special-identity} for
+$g_m^{(-\boldsymbol\beta/2)}(x)$.
+Finally $g_m^{(-\boldsymbol\beta/2)}(s\mathbf1)=(-s)^m$,
+so the solution is nonzero.
+\end{proof}
+
+Theorem~\ref{thm:special-Q} selects the degree-$m$ member of this
+established polynomial family with parameters $-\boldsymbol\beta/2$.
+Here
+``Lagrange polynomial'' refers to this generating function, rather than
+to the cardinal polynomials of Lagrange interpolation.
+
+The theorem requires the same $Q$ to cancel every $B_j$ for every invariant
+tuple. On a single power line, additional polynomials can give the same
+dynamics: if $L$ is affine linear and vanishes on that line, adding
+$L^2R$ to $Q$ changes neither its value nor its first partial derivatives
+there, for any polynomial $R$. Such additions generally change the
+dynamics on other power lines.
+
+The parity condition concerns the total weight $M=\sum_{j=1}^{N}\beta_j$.
+For unit weights $M=N$; with unequal weights, an odd number of mode pairs
+can have even total weight and admit a nonconstant special $Q$.
+
+For constant $Q=E$, our convention $H=0$ gives the energy level $U+V=E$.
+The constant does not change Hamilton's equations, but it enters the scalar
+curve:
+\begin{equation}\label{eq:special-constant-F}
+ F(\rho)=E^2-4r(\rho).
+\end{equation}
+Here $\deg F=\deg r=M$, so odd $M=2g+1$ gives genus $g$ when $F$ is
+squarefree. For nonconstant special $Q$, cancellation in $q^2-4r$ can
+instead lower the degree; the total-weight-ten example in
+Section~\ref{sec:special-examples} has a degree-five, genus-two curve.
 
 \section{Onishi determinants for the complete products}\label{sec:onishi-products}
 
@@ -755,17 +895,151 @@ The initial product conditions fix these as $(q+\rho')/2$ and $(q-\rho')/2$. Ste
 U(z)=\varepsilon\frac{D_n^*(z)}{\Delta_A},\qquad
 V(z)=-\varepsilon\frac{D_n(z)}{\Delta_A}.
 \end{equation}
-For both worked examples $\varepsilon=-1$, hence $U=-D_n^*/\Delta_A$ and $V=D_n/\Delta_A$. This completes the connection between the Hamiltonian products, the elementary sigma solutions and \^Onishi's determinant.
+For the two determinant examples below $\varepsilon=-1$, hence $U=-D_n^*/\Delta_A$ and $V=D_n/\Delta_A$. This completes the connection between the Hamiltonian products, the elementary sigma solutions and \^Onishi's determinant.
 
 The balanced fixed lifts make the cancellation visible in the explicit exponent. Other compatible lifts can redistribute an exponential between the raw sigma product and its correction, but the normalized initial-value solutions, and therefore their determinant products, are unchanged. The construction here uses the two stated polynomial column spaces and internally distinct main and residual lists, which both examples satisfy. Higher scalar degree requires longer column lists; repeated rows within a list require derivative limits rather than duplicating a row. Bernatska and Kopeliovich treat the corresponding rational interpolation and repeated-point constructions in~\cite[Sections~3.3--3.5]{divisor-addition}. Extending the present sigma-factor proof to those cases is outside our scope.
 
+
+\section{Elementary modes and polynomial second-order potentials}
+\label{sec:polynomial-potentials}
+
+Baker--Akhiezer functions and their relation to generalized Lam\'e
+equations are discussed by Matsutani~\cite[Section~4.2.2.3]{matsutani-book}.
+Here the restriction to the one-point Abel image and the prescribed mode
+products lead to second-order equations with self-generating polynomial
+potentials.
+
+Write $a_j=\rho(\mu_j)=\gamma_j/\beta_j$ and
+$b_j=\rho'(\mu_j)=q(a_j)$, so $I_j=\beta_j(a_j-\rho)$.
+The equations in this section follow from the scalar reduction and apply
+independently of the leading-four normalisation used for sigma evaluation.
+
+\begin{theorem}[Vanishing correction and constant Wronskian]
+\label{thm:special-W}
+On a nonconstant scalar trajectory, the Wronskian
+$W_j=u_jv_j'-v_ju_j'$ satisfies
+\begin{equation}\label{eq:special-W}
+ W_j=-\beta_j\{b_j+2(a_j-\rho)B_j(\rho)\}.
+\end{equation}
+It is constant if and only if $B_j=0$ on that power line.
+In this case $W_j=-\beta_jb_j$; when $b_j\ne0$, the modes form a
+fundamental pair for a common equation $\psi''=G_j(\rho(z))\psi$,
+by the converse of Abel's Wronskian identity.
+\end{theorem}
+
+\begin{proof}
+Multiply the difference of the logarithmic equations~\eqref{eq:split-log}
+by $u_jv_j$ to obtain~\eqref{eq:special-W}.
+If $W_j$ is constant, the polynomial $(a_j-\rho)B_j(\rho)$ is constant
+on the nonconstant trajectory, hence identically constant. Its value at
+$\rho=a_j$ is zero, so $B_j=0$. The converse follows immediately.
+Finally $W_j'=u_jv_j''-v_ju_j''=0$ implies
+$u_j''/u_j=v_j''/v_j$ on a regular chart, and a nonzero Wronskian gives
+independence.
+\end{proof}
+
+\begin{theorem}[Polynomiality for a prescribed product]
+\label{thm:special-potential}
+Let a nonconstant analytic trajectory satisfy $(\rho')^2=F(\rho)$,
+$\rho''=F_\rho/2$, with $F$ polynomial. Suppose
+\[
+ uv=\beta(a-\rho),\qquad uv'-vu'=\beta c,
+\]
+where $\beta\ne0$ and $a,c$ are constant. On a regular chart both modes
+solve
+\begin{equation}\label{eq:special-potential}
+ \psi''=G_{a,c}(\rho)\psi,\qquad
+ G_{a,c}(\rho)=\frac14\frac{d}{d\rho}
+                    \frac{F(\rho)-c^2}{\rho-a}.
+\end{equation}
+This potential is polynomial if and only if $c^2=F(a)$.
+For $\deg F=D\ge2$, its polynomial degree is $D-2$.
+The pair is independent if and only if $c\ne0$.
+\end{theorem}
+
+\begin{proof}
+The prescribed product and Wronskian give
+\[
+ \frac{u'}u=\frac{-c-\rho'}{2(a-\rho)},\qquad
+ \frac{v'}v=\frac{c-\rho'}{2(a-\rho)}.
+\]
+Differentiation using the scalar equations gives~\eqref{eq:special-potential}.
+Polynomial division then isolates its only obstruction:
+\begin{equation}\label{eq:special-pole}
+ G_{a,c}(\rho)=\frac14\frac{d}{d\rho}
+                 \frac{F(\rho)-F(a)}{\rho-a}
+              +\frac{c^2-F(a)}{4(\rho-a)^2}.
+\end{equation}
+The first term is polynomial; the double pole disappears precisely when
+$c^2=F(a)$. If $F$ has leading coefficient $f_D$, the polynomial term
+has leading coefficient $(D-1)f_D/4$ and degree $D-2$.
+Independence follows from the Wronskian.
+\end{proof}
+
+For the special canonical modes, $c=-b_j$ and $b_j^2=F(a_j)$, so the
+potential is automatically polynomial. Substitution of
+$\rho=a_j-I_j/\beta_j$ expresses it as a polynomial in the paired power:
+\begin{equation}\label{eq:special-self-generating}
+ \begin{aligned}
+ \mathcal P_j(I)&=G_{a_j,-b_j}(a_j-I/\beta_j),\\
+ u_j''&=\mathcal P_j(u_jv_j)u_j,\qquad
+ v_j''=\mathcal P_j(u_jv_j)v_j.
+ \end{aligned}
+\end{equation}
+Its coefficients are fixed by the conserved curve and mode point.
+The uniqueness in Theorem~\ref{thm:special-potential} concerns the squared
+normalised Wronskian for the prescribed product, with its two signs
+interchanging $u,v$. The Hamiltonian solutions also satisfy the
+complete-product constraints~\eqref{eq:products}.
+
+For completeness, the second-order coefficients of the general modes are
+also explicit. Suppressing the index $j$, put $d=a-\rho$, $y=\rho'$ and
+$G_b=G_{a,b}$. Differentiating~\eqref{eq:split-log} gives
+\begin{equation}\label{eq:special-general-second}
+ \begin{aligned}
+ u''/u&=G_b+B^2+bB/d+y(B_\rho-B/d),\\
+ v''/v&=G_b+B^2+bB/d-y(B_\rho-B/d).
+ \end{aligned}
+\end{equation}
+If $F$ is nonsquare, $1$ and $y$ are independent over $\mathbb C(\rho)$.
+Polynomiality in $\rho$ of either coefficient therefore forces
+$(a-\rho)B_\rho-B=0$. The polynomial $(a-\rho)B$ is then constant and
+zero at $a$, giving $B=0$. Conversely $B=0$ gives the polynomial $G_b$.
+
+For constant $Q=E$, the energy cancels explicitly from the potential:
+\begin{equation}\label{eq:special-constant-potential}
+ G_j(\rho)=\frac{d}{d\rho}\frac{r(\rho)}{a_j-\rho}.
+\end{equation}
+Since $\beta_j$ is a positive integer, the quotient is polynomial.
+Equivalently, define a polynomial in all the modal powers by
+\begin{equation}\label{eq:special-global-potential}
+ \mathcal V_j(I_1,\ldots,I_N)
+ =-\beta_j\sum_k\beta_k\partial_{I_k}
+          \left(I_j^{\beta_j-1}\prod_{\ell\ne j}I_\ell^{\beta_\ell}\right).
+\end{equation}
+Then $u_j''=\mathcal V_j(I)u_j$ and $v_j''=\mathcal V_j(I)v_j$.
+This also follows directly by differentiating~\eqref{eq:canonical} with
+$Q_j=0$, so it holds globally as a polynomial identity in the canonical
+variables. For unit weights it reduces to
+$\mathcal V_j=-\sum_{k\ne j}\prod_{\ell\ne j,k}I_\ell$.
+When $E\ne0$, every Wronskian $-\beta_jE$ is nonzero; at $E=0$ each
+pair is proportional, though the polynomial second-order equation remains.
+
+Finally, for $F(\rho)=4\rho^3-g_2\rho-g_3$, the potential is
+$G_{a,c}=2\rho+a$ when $c^2=F(a)$, recovering the $n=1$ Lam\'e equation.
+For higher degrees, the mode point generally enters nonconstant
+coefficients as well; the resulting equations need not be a single
+shared potential with different additive spectral parameters.
+
 \section{Worked examples}\label{sec:examples}
 
-We now apply the construction to two explicit Hamiltonian systems and give their analytic mode solutions: a five-pair genus-two example and a seven-pair genus-three example.
+We first give analytic mode solutions for a five-pair genus-two system and a seven-pair genus-three system with nonzero corrections. We then give three special-polynomial examples illustrating the classification and second-order potentials.
 
 \subsection{Genus-two example with repeated mode}
 
-We construct a five-pair system on a smooth genus-two curve, including a double mode and affine polynomial corrections.
+This example demonstrates the mode-solution Theorem~\ref{thm:mode-solutions}
+for a five-pair system on a smooth genus-two curve, including a double
+mode and affine polynomial corrections.
 
 \subsubsection{Polynomial data}
 
@@ -900,7 +1174,9 @@ with $H=0$ and $I_j-\beta_j I_5=\gamma_j-\beta_j\gamma_5$ for $j<5$.
 
 \subsection{Genus-three example with quadratic corrections}
 
-We now construct a seven-pair system on a smooth genus-three curve with quadratic polynomial corrections.
+This example demonstrates the mode-solution Theorem~\ref{thm:mode-solutions}
+for a seven-pair system on a smooth genus-three curve with quadratic
+polynomial corrections.
 
 \subsubsection{Polynomial data}
 
@@ -1019,6 +1295,99 @@ v_j(z) &= v_j(z_0)\frac{\widehat{v}_j(z)}{\widehat{v}_j(z_0)}\exp\!\left[-\sum_{
 
 These solve the canonical system for the seven-pair Hamiltonian with quadratic mode corrections.
 
+\subsection{Special polynomials and second-order mode equations}\label{sec:special-examples}
+
+These examples demonstrate the special-polynomial classification in
+Theorem~\ref{thm:special-Q} and the second-order equations in
+Theorems~\ref{thm:special-W}--\ref{thm:special-potential}.
+In each case $B_j=0$, so the modes are the elementary point factors of
+Theorem~\ref{thm:mode-solutions}, normalised by their initial values.
+Each pair has a nonzero constant Wronskian and solves a common equation
+with polynomial potential. Below, $\psi_j$ denotes either $u_j$ or $v_j$,
+and primes refer to the Hamiltonian propagation variable $z$.
+
+\paragraph{Constant energy in genus two.}
+
+Take
+\begin{equation}
+ \boldsymbol\beta=(2,1,1,1),\qquad
+ \boldsymbol\gamma=(-3,-1,1,3),\qquad Q=1.
+\end{equation}
+The fixed coordinates are $(-3/2,-1,1,3)$ and all original ordinates are
+$b_j=1$. The scalar polynomial is
+\begin{equation}\label{eq:g2-F}
+ F(\rho)=16\rho^5-124\rho^3-108\rho^2+108\rho+109.
+\end{equation}
+It defines a smooth genus-two curve. The Wronskians are $(-2,-1,-1,-1)$.
+The first pair solves $\psi_1''=G_1(\rho)\psi_1$, where
+\begin{equation}\label{eq:g2-potential}
+ G_1(\rho)=16\rho^3-18\rho^2-44\rho+6.
+\end{equation}
+Since $I_1=u_1v_1=-3-2\rho$, its self-generating form is explicitly
+\begin{equation}\label{eq:special-g2-self}
+ \psi_1''=-\left(2I_1^3+\frac{45}{2}I_1^2+59I_1+\frac{45}{2}\right)\psi_1.
+\end{equation}
+
+\paragraph{Constant energy in genus three.}
+
+Take
+\begin{equation}
+ \boldsymbol\beta=(2,1,1,1,1,1),\qquad
+ \boldsymbol\gamma=(-5,-3,-1,1,3,5),\qquad Q=1.
+\end{equation}
+The fixed coordinates are $(-5/2,-3,-1,1,3,5)$ and again $b_j=1$.
+Here
+\begin{equation}\label{eq:g3-F}
+ \begin{aligned}
+ F(\rho)={}&16\rho^7-460\rho^5-500\rho^4+3144\rho^3\\
+          &+5000\rho^2-2700\rho-4499.
+ \end{aligned}
+\end{equation}
+This is a smooth genus-three curve. The first Wronskian is $-2$ and the
+others are $-1$. The first pair solves $\psi_1''=G_1(\rho)\psi_1$, with
+the degree-five potential
+\begin{equation}\label{eq:special-g3-potential}
+ G_1(\rho)=24\rho^5-50\rho^4-360\rho^3+300\rho^2+1072\rho-90.
+\end{equation}
+Its polynomial in the paired power is obtained by substituting
+$\rho=-(I_1+5)/2$, since $I_1=u_1v_1=-5-2\rho$.
+
+\paragraph{A nonconstant special polynomial in genus two.}
+
+Take $\boldsymbol\beta=(5,5)$, $\boldsymbol\gamma=(-1,1)$ and
+\begin{equation}\label{eq:nonconstant-Q}
+ Q(I_1,I_2)=6250g_5^{(-5/2,-5/2)}(I_1/5,I_2/5)+1.
+\end{equation}
+The total weight is ten. The coefficient $\kappa=6250=2\cdot5^5$
+cancels the degree-ten terms in $q^2-4r$. Direct restriction gives
+\begin{equation}\label{eq:nonconstant-q}
+ q(\rho)=6250\rho^5-625\rho^3+\frac{75}{4}\rho+1,
+\end{equation}
+and the scalar curve is
+\begin{equation}\label{eq:nonconstant-F}
+ F(\rho)=12500\rho^5+\frac{3125}{2}\rho^4-1250\rho^3
+               -\frac{2375}{16}\rho^2+\frac{75}{2}\rho+5.
+\end{equation}
+It is squarefree of degree five and hence has genus two. The fixed points
+have coordinates $a_1=-1/5$, $a_2=1/5$ and ordinates $b_1=1/4$,
+$b_2=7/4$, respectively. Their Wronskians are $-5/4$ and $-35/4$.
+Both correction polynomials vanish identically, despite the quintic $Q$.
+Both pairs solve $\psi_j''=G_j(\rho)\psi_j$, $j=1,2$, with
+\begin{equation}\label{eq:special-nonconstant-potentials}
+ \begin{aligned}
+ G_1(\rho)&=12500\rho^3-\frac{5625}{8}\rho^2
+                         -\frac{2125}{4}\rho+\frac{1025}{64},\\
+ G_2(\rho)&=12500\rho^3+\frac{24375}{8}\rho^2
+                         -\frac{875}{4}\rho-\frac{3775}{64}.
+ \end{aligned}
+\end{equation}
+Substituting $\rho=a_j-I_j/5$ expresses each cubic in its paired power
+$I_j=u_jv_j$. The odd-degree individual-mode
+construction applies, but $\deg q=5>g+1$ places its determinant
+factorisation beyond the column families treated in
+Section~\ref{sec:onishi-products}.
+
+
 \section{Numerical validation}\label{sec:numerical}
 
 We compare the sigma solutions with independent numerical integration of the full polynomial canonical equations, first on an exterior genus-two branch and then over three oscillations of a bounded genus-three branch. Numerous symbolic and numerical checks were carried out in Python; the code is provided in the repository identified in the code availability statement.
@@ -1076,13 +1445,9 @@ For the finest grid, the maximum scaled Hamiltonian and weighted-invariant drift
 
 The scalar coordinate at each observation is obtained by inversion of its signed quadrature, and the modes are then evaluated from their sigma expressions.
 
-\begin{figure}[p]
-\centering\includegraphics[width=\linewidth]{genus_two_example/modes_combined.png}
+\begin{figure}[!htbp]
+\centering\includegraphics[width=\linewidth,height=0.75\textheight,keepaspectratio]{genus_two_example/modes_combined.png}
 \caption{Real parts of all five genus-two $u_j$ and $v_j$ modes, ordered across rows with the $u_j$ group first, on the positive-sheet trajectory $4.5\le\rho\le10$, $0\le z-z_0\le0.02960303$. Thin dashed black lines show full-system RK4 with 131,072 steps; black markers show 33 evaluations of the respective sigma mode formulas. Actual amplitudes are shown without individual rescaling.}\label{fig:g2-modes}\label{fig:g2-v-modes}
-\end{figure}
-\begin{figure}[htbp]
-\centering\includegraphics[width=0.85\linewidth]{genus_two_example/rk4_refinement.png}
-\caption{Maximum scaled discrepancy over the ten genus-two mode components at each noninitial observation time. The three RK4 grids are compared with the same 33 sigma evaluations; the initial discrepancy is omitted from the logarithmic plot.}\label{fig:g2-refinement}
 \end{figure}
 
 \FloatBarrier
@@ -1115,7 +1480,7 @@ For continuation, we follow the signed curve point $(\rho(z),\rho'(z))$ through 
 
 Figures~\ref{fig:g3-scalar}--\ref{fig:g3-v-modes} show the scalar coordinate, periodic powers and individual modes. The modes can have growing or decaying envelopes even when their products repeat: the sigma expressions acquire reciprocal cycle multipliers for $u_j$ and $v_j$. After three scalar cycles, for example, $u_6(z_0+3T)/u_6(z_0)\approx-1.0997562$ and $u_7(z_0+3T)/u_7(z_0)\approx-0.025748382$. The plots retain these envelopes and sign reversals.
 
-Independent full-system RK4 integrations are compared with 97 equally spaced sigma evaluations on common grid nodes. Table~\ref{tab:g3-oscillatory} reports the maximum scaled mode discrepancy over all fourteen components and all 97 observations; Figure~\ref{fig:g3-refinement} shows its evolution along the trajectory.
+Independent full-system RK4 integrations are compared with 97 equally spaced sigma evaluations on common grid nodes. Table~\ref{tab:g3-oscillatory} reports the maximum scaled mode discrepancy over all fourteen components and all 97 observations.
 
 \begin{table}[htbp]
 \centering\small
@@ -1130,10 +1495,6 @@ Steps & Step size & Maximum mode error & Reduction factor\\\midrule
 
 The step-halving factors are close to 16, as expected for fourth-order RK4. On the finest grid, the maximum scaled Hamiltonian and weighted-invariant drifts are $1.5017527\times10^{-17}$ and $3.6848896\times10^{-18}$, with the same scaling conventions as above and $C_j=I_j-\beta_jI_7$. The mode discrepancy of approximately $10^{-15}$ measures finite-step integration error over three cycles, separately from the precision of the sigma evaluations.
 
-\begin{figure}[htbp]
-\centering\includegraphics[width=\linewidth]{genus_three_example/rk4_refinement.png}
-\caption{Scaled mode discrepancies over three genus-three scalar cycles for the three uniform RK4 grids. Each curve is the maximum over fourteen components at the same noninitial sigma observation times. Step halving reduces the maximum discrepancy by approximately 16.}\label{fig:g3-refinement}
-\end{figure}
 \begin{figure}[p]
 \centering\includegraphics[width=\linewidth]{genus_three_example/scalar_powers_combined.png}
 \caption{Genus-three scalar coordinate $\rho$ (top) and all seven signed powers $I_j$ over three cycles, $0\le z-z_0\le19.87366825$. Their common oscillations show the affine relations $I_j=\gamma_j-\beta_j\rho$; the sixth and seventh powers cross zero. Thin dashed black lines show full-system RK4 with 98,304 steps; black markers show 97 sigma observations, using the coordinate ratio for $\rho$ and the mode products for $I_j$.}\label{fig:g3-scalar}\label{fig:g3-powers}
@@ -1145,13 +1506,34 @@ The step-halving factors are close to 16, as expected for fourth-order RK4. On t
 
 \FloatBarrier
 
+\subsection{Special-polynomial examples}
+
+The three examples in Section~\ref{sec:special-examples} were checked
+by exact algebra, independent integration of the Hamiltonian and
+second-order equations, and sigma reconstruction of both modes with
+analytic first and second derivatives. The verification records 154 exact
+algebra checks, 30 exact normalisation checks and 680 numerical sigma
+checks. At 35-digit working precision on the tested short regular paths,
+the maximum scaled sigma discrepancies are respectively
+$1.25\times10^{-33}$, $1.75\times10^{-31}$ and $9.27\times10^{-33}$.
+
+For sigma evaluation, the curve ordinate is rescaled so that the
+coefficient of the highest power of $\rho$ is four. For the first two
+examples, use $\tau=2z$ and $Y=\rho'/2$, giving $Y^2=F/4$.
+For the third, use $\tau=25\sqrt5\,z$ and $Y=\rho'/(25\sqrt5)$,
+giving $Y^2=F/3125$. The fixed ordinates are divided by the same factors,
+and derivatives are converted back to $z$. These changes apply to the
+curve evaluation; the modes, Wronskians and second-order equations
+displayed in Section~\ref{sec:special-examples} retain the original
+Hamiltonian normalisation.
+
 \section{Discussion}\label{sec:discussion}
 
 The explicit solutions raise two further questions: what the conserved quantities establish about integrability, and how the local formulas behave beyond a chosen chart. We separate the general analytic construction from the scope of the examples and identify the remaining continuation and spectral problems.
 
 \subsection{Scope of the construction}
 
-The construction combines scalar reduction with individual-mode integration for the polynomial Hamiltonian class considered here. It requires a smooth odd-degree curve of leading coefficient four, distinct nonbranch fixed mode points, a regular mode chart, and $\deg B_j\le g-1$. A polynomial $Q$ of degree at most $g$ automatically satisfies the last condition; higher-degree polynomials may do so by cancellation, as both examples show. Integer weights, including a double-weight mode, enter through the power line and weighted products.
+The construction combines scalar reduction with individual-mode integration for the polynomial Hamiltonian class considered here. It requires a smooth odd-degree curve of leading coefficient four, distinct nonbranch fixed mode points, a regular mode chart, and $\deg B_j\le g-1$. A polynomial $Q$ of degree at most $g$ automatically satisfies the last condition; higher-degree polynomials may do so by cancellation, as the first two examples show. Universally special polynomials are classified in Theorem~\ref{thm:special-Q}; their correction is identically zero, independently of degree. When $b_j\ne0$, each elementary mode pair forms a fundamental pair for a second-order equation with a self-generating polynomial potential, as established in Section~\ref{sec:polynomial-potentials}. This recovers the $n=1$ Lam\'e equation in genus one and gives higher-degree polynomial potentials in the higher-genus examples. Integer weights, including a double-weight mode, enter through the power line and weighted products.
 
 Regularized second-kind integrals define the exponential coefficients in arbitrary genus. The short fixed-point sigma expressions and full canonical trajectory checks in this paper cover genera two and three. Scalar coordinate recovery is given by the arbitrary-genus derivative ratio, with an additional genus-four formula and a separate check at regular curve points. Finite sigma-based coefficient extraction is available in every genus; uniform short fixed-point expressions remain a separate question. Singular curves and even-degree models require further treatment.
 
@@ -1170,7 +1552,7 @@ On the open set where every $I_j\ne0$, the differentials $dI_j$ are independent 
 
 \subsection{Continuation and spectral questions}
 
-The complete mode expressions resemble Baker--Akhiezer formulas, but here they are local functions on chosen Abel lifts. Exponentials of Abel integrals and sigma quasi-periods can produce multipliers under continuation; global meromorphicity on the compact curve is not asserted. Determining their monodromy, period structure, and a corresponding spectral problem or Lax representation remains open. The scalar system is regular at finite turning points. The three-cycle calculation in Section~\ref{sec:g3-oscillatory} illustrates the resulting mode multipliers on one real oval; their structure on all cycles of the curve remains to be determined.
+The elementary Baker--Akhiezer restrictions and the complete modes are evaluated locally on chosen Abel lifts. Exponentials of Abel integrals and sigma quasi-periods can produce multipliers under continuation; global meromorphicity on the compact curve is not asserted. Determining their monodromy, period structure, and a corresponding spectral problem or Lax representation remains open. The scalar system is regular at finite turning points. The three-cycle calculation in Section~\ref{sec:g3-oscillatory} illustrates the resulting mode multipliers on one real oval; their structure on all cycles of the curve remains to be determined.
 
 For repeated weights, the number of coordinate pairs $N$ differs from the total weight $\sum_{j=1}^{N}\beta_j=\deg r$; the examples exploit that distinction and polynomial cancellation. It would be useful to characterize the most economical mode counts compatible with the smoothness, fixed-point, and correction-degree assumptions required here.
 
@@ -1212,6 +1594,17 @@ The software is distributed under the MIT license, with its scope specified in t
 \bibitem{mechanics}A. J. Brizard, \emph{A primer on elliptic functions with applications in classical mechanics}, arXiv:0711.4064.
 
 \bibitem{duffing}A. V. Tsiganov, \emph{Duffing oscillator and elliptic curve cryptography}, arXiv:1801.01255.
+
+\bibitem{ccs}W.-C. C. Chan, C.-J. Chyan and H. M. Srivastava,
+\emph{The Lagrange polynomials in several variables},
+Integral Transforms and Special Functions \textbf{12} (2001), 139--148.
+\href{https://doi.org/10.1080/10652460108819340}{doi:10.1080/10652460108819340}.
+
+\bibitem{ccs-umbral}H. M. Srivastava, K. S. Nisar and M. A. Khan,
+\emph{Some umbral calculus presentations of the Chan--Chyan--Srivastava
+polynomials and the Erku\c{s}--Srivastava polynomials},
+Proyecciones Journal of Mathematics \textbf{33} (2014), 77--90.
+\url{https://www.scielo.cl/pdf/proy/v33n1/art06.pdf}.
 
 \bibitem{onishi}Y. \^Onishi, \emph{Determinant expressions for hyperelliptic functions}, Proc. Edinburgh Math. Soc. \textbf{48} (2005) 705--742; arXiv:math/0105189, version 8, with the author's \href{https://math-meijo-u.heteml.net/research/pub/correct_pem.pdf}{published errata}.
 

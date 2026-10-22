@@ -1,5 +1,58 @@
 # Repository validation
 
+## Consolidated computational material: 22 October 2026
+
+Moved the special-polynomial and sigma-mode packages into
+`code/hyperelliptic_scalar_first/special_q/` and
+`code/hyperelliptic_scalar_first/sigma_modes/`, alongside the general
+worked examples and determinant notebook. Updated imports, notebook
+bootstrap paths, CLI commands, README navigation and paper-verification
+paths. The packages retain their models, proof/normalisation notes,
+executed HTML walkthroughs and saved numerical reports.
+
+Both marimo notebooks pass static checks and were executed to regenerate
+their HTML and reports from the new locations. The runs pass 154 exact
+algebra checks, the independent Hamiltonian/second-order comparisons,
+30 exact normalisation checks and 680 numerical sigma checks. The paper
+verifier passes with the consolidated paths, including isolated Python
+execution; both CLI entry points and Python compilation checks pass.
+No numerical algorithms were changed.
+
+Added `/part_2/` to `.gitignore` and removed its previously staged files
+from Git's index. Historical notes and the separate draft remain locally;
+the paper and public code have no dependency on that folder.
+
+## Clarified worked examples: 22 October 2026
+
+Rewrote the opening sentences of Sections 7.1--7.3 to identify the
+theorems being demonstrated. Section 7.3 now displays the second-order
+mode equations, explicit cubic and quintic potentials, and a polynomial
+equation in the paired power for the first example. Numerical curve
+normalisation and verification summaries are in Section 8.3; example
+prose no longer uses unexplained `LC` notation or implementation paths.
+Extended `paper/verify_paper.py` to check all newly printed potentials
+and the paired-power equation against exact symbolic expressions.
+Verification passes, the 41-page PDF builds without LaTeX warnings, and
+the revised examples and validation subsection were visually checked.
+
+## Integration of special-polynomial results: 22 October 2026
+
+Integrated the weighted special-polynomial classification into Section 4 of
+`paper/main.tex`, using the common-translation uniqueness proof and a direct
+generating-function existence proof. Added the Chan--Chyan--Srivastava
+identification and its references. A new Section 6 combines constant
+Wronskians, prescribed-product polynomiality and explicit self-generating
+potentials. Section 7.3 adds the three verified special-polynomial examples
+from Part 2 without repeating the sigma construction.
+
+Extended `paper/verify_paper.py` to compare the new printed curves and
+potential with their exact models, check squarefreeness and validate the
+reported counts and sigma error bounds against the saved Part 2 results.
+The verification passes. Rebuilt the paper from 35 to 40 pages with no
+LaTeX warnings or overfull/underfull boxes, and visually checked the added
+material, introduction and references. Existing numerical algorithms and
+saved computations were not changed or rerun.
+
 ## Audit: 15 October 2026
 
 - Python 3.14.7 on macOS; installed dependencies match every recorded version and both pinned Git commits. `python -m pip check` passes. A fresh network installation was not performed during this audit.

@@ -2,7 +2,7 @@
 
 Paper and computational examples by Graham Hesketh. This directory is self-contained and can be used as the root of a separate repository.
 
-The paper derives scalar hyperelliptic motion from polynomial canonical Hamiltonians, reconstructs individual modes with sigma functions and Abelian integrals, and relates their weighted products to Ōnishi determinants. Worked examples cover genus two and a genus-three oscillatory trajectory.
+The paper derives scalar hyperelliptic motion from polynomial canonical Hamiltonians, reconstructs individual modes with sigma functions and Abelian integrals, and relates their weighted products to Ōnishi determinants. It also classifies special Hamiltonian polynomials and derives self-generating second-order polynomial potentials. Worked examples cover genera two and three, including an oscillatory trajectory.
 
 ## Contents
 
@@ -12,6 +12,8 @@ The paper derives scalar hyperelliptic motion from polynomial canonical Hamilton
 - `code/hyperelliptic_scalar_first/genus_two_example/`: the five-pair genus-two example.
 - `code/hyperelliptic_scalar_first/genus_three_example/`: the seven-pair oscillatory genus-three example.
 - `code/hyperelliptic_scalar_first/onishi_products/`: determinant construction and product-factorization notebook.
+- `code/hyperelliptic_scalar_first/special_q/`: weighted special-polynomial classification, exact checks and independent Hamiltonian/second-order integration.
+- `code/hyperelliptic_scalar_first/sigma_modes/`: sigma reconstruction and analytic derivative checks for the three special-polynomial examples.
 - `code/hyperelliptic_scalar_first/notebook.py`: supporting analytic derivations, including alternative coefficient formulas and short checks on both sheets.
 - `code/hyperelliptic_scalar_first/model.py`, `sigma_jets.py`, `verification.py`: shared algebra, sigma coefficient calculations and verification.
 - `code/hyperelliptic_scalar_first/paper_plots.py`: publication layouts, regenerated from saved plot data.
@@ -43,6 +45,8 @@ After setup, from the repository root:
 python -m marimo edit code/hyperelliptic_scalar_first/genus_two_example/notebook.py
 python -m marimo edit code/hyperelliptic_scalar_first/genus_three_example/notebook.py
 python -m marimo edit code/hyperelliptic_scalar_first/onishi_products/notebook.py
+python -m marimo edit code/hyperelliptic_scalar_first/special_q/notebook.py
+python -m marimo edit code/hyperelliptic_scalar_first/sigma_modes/notebook.py
 ```
 
 Launch one notebook at a time. The supporting derivation notebook can be opened in the same way at `code/hyperelliptic_scalar_first/notebook.py`.
@@ -53,7 +57,7 @@ To execute and export a notebook, for example:
 python -m marimo export html code/hyperelliptic_scalar_first/genus_two_example/notebook.py -o code/hyperelliptic_scalar_first/genus_two_example/notebook.html --force
 ```
 
-Full runs recompute periods, sigma samples and fine-grid RK4 comparisons and may take several minutes. They overwrite generated artifacts in their own directories. The supplied settings use 30-digit working precision; achieved RK4 accuracy is reported separately in the results.
+Full runs recompute periods, sigma samples and RK4 comparisons and may take several minutes. They overwrite generated artifacts in their own directories. The general-mode examples use 30-digit working precision; the special-polynomial quadrature checks use 50 digits and their sigma reconstruction uses 35 digits. Observed discrepancies are reported separately from working precision.
 
 The scalar coordinate is obtained by numerical inversion of its Abelian integral. Generapy evaluates the Abel vectors and sigma mode formulas; an independent full-system RK4 calculation supplies the comparison. No mode or exponential coefficients are fitted to trajectory data. The scalar sigma ratio is a coordinate-representation check.
 
@@ -78,6 +82,16 @@ PYTHONPATH=code python -m hyperelliptic_scalar_first.verification --dps 30
 ```
 
 The worked-example and determinant notebooks execute their own checks. Saved numerical reports describe the scope of each calculation; the short-path verification complements the longer trajectories.
+
+Recompute the special-polynomial and second-order checks:
+
+```sh
+PYTHONPATH=code python -m hyperelliptic_scalar_first.special_q.verification
+PYTHONPATH=code python -m hyperelliptic_scalar_first.sigma_modes.verification
+```
+
+Each package has a README describing its checks and command options. Both
+commands write `results.json` in their own package directory.
 
 ## Rebuild the paper
 

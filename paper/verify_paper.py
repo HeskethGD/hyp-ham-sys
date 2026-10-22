@@ -71,6 +71,59 @@ def equal(actual, expected):
     assert sp.cancel(actual - expected) == 0, (actual, expected)
 
 
+def check_special_examples():
+    from hyperelliptic_scalar_first.special_q.model import example_models
+
+    models = example_models()
+    for label, data, expected in (
+        ('eq:g2-F', models[0], models[0]['F']),
+        ('eq:g3-F', models[1], models[1]['F']),
+        ('eq:nonconstant-q', models[2], models[2]['q']),
+        ('eq:nonconstant-F', models[2], models[2]['F']),
+    ):
+        actual = polynomial(equation(label).split('=', 1)[1], {'rho': data['rho']})
+        equal(actual, expected)
+        if label != 'eq:nonconstant-q':
+            assert sp.degree(sp.gcd(expected, sp.diff(expected, data['rho'])), data['rho']) == 0
+    data = models[0]
+    rho = data['rho']
+    quotient, remainder = sp.div(data['F'] - data['ordinate'][0]**2,
+                                 rho - data['a'][0], rho)
+    assert remainder == 0
+    equal(polynomial(equation('eq:g2-potential').split('=', 1)[1], {'rho': rho}),
+          sp.diff(quotient, rho)/4)
+    power = sp.Symbol('I1')
+    self_coefficient = equation('eq:special-g2-self').split('=', 1)[1].split(r'\psi_1', 1)[0]
+    equal(polynomial(self_coefficient.replace('I_1', 'I1'), {'I1': power}),
+          (sp.diff(quotient, rho)/4).subs(rho, data['a'][0] - power/data['beta'][0]))
+    data = models[1]
+    rho = data['rho']
+    quotient, remainder = sp.div(data['F'] - data['ordinate'][0]**2,
+                                 rho - data['a'][0], rho)
+    assert remainder == 0
+    equal(polynomial(equation('eq:special-g3-potential').split('=', 1)[1], {'rho': rho}),
+          sp.diff(quotient, rho)/4)
+    data = models[2]
+    rho = data['rho']
+    body = re.sub(r'\\(?:begin|end)\{aligned\}', '', equation('eq:special-nonconstant-potentials'))
+    rows = body.split(r'\\')
+    assert len(rows) == 2
+    for j, row in enumerate(rows):
+        quotient, remainder = sp.div(data['F'] - data['ordinate'][j]**2,
+                                     rho - data['a'][j], rho)
+        assert remainder == 0
+        equal(polynomial(row.split('=', 1)[1], {'rho': rho}), sp.diff(quotient, rho)/4)
+    algebra = json.loads((ROOT / 'code/hyperelliptic_scalar_first/special_q/results.json').read_text())
+    sigma = json.loads((ROOT / 'code/hyperelliptic_scalar_first/sigma_modes/results.json').read_text())
+    assert algebra['exact']['all_passed'] and algebra['numerical']['all_passed']
+    assert algebra['exact']['check_count'] == 154
+    assert sigma['all_passed'] and sigma['check_count'] == 680
+    assert sum(len(row['exact_normalization_checks']) for row in sigma['examples']) == 30
+    bounds = (sp.Rational('1.25e-33'), sp.Rational('1.75e-31'), sp.Rational('9.27e-33'))
+    for row, bound in zip(sigma['examples'], bounds):
+        assert sp.Rational(row['maximum_scaled_error']) <= bound
+
+
 def check_examples():
     for tag, data in (('g2', example()), ('g3', genus_three_example())):
         rho = data['rho']
@@ -125,7 +178,7 @@ def check_results():
         assert f"{row['steps']:,}" in SOURCE
         mantissa, exponent = f"{float(row['max_mode_error']):.7e}".split('e')
         assert mantissa + r'\times10^{' + str(int(exponent)) + '}' in SOURCE
-    for artifact in ('modes_combined.png', 'rk4_refinement.png'):
+    for artifact in ('modes_combined.png',):
         assert 'genus_two_example/' + artifact in SOURCE
         assert (ROOT / 'code/hyperelliptic_scalar_first/genus_two_example' / artifact).is_file()
     oscillatory = json.loads((ROOT / 'code/hyperelliptic_scalar_first/genus_three_example/results.json').read_text())
@@ -142,7 +195,7 @@ def check_results():
         for key in ('step', 'max_mode_error'):
             mantissa, exponent = f"{float(row[key]):.7e}".split('e')
             assert mantissa + r'\times10^{' + str(int(exponent)) + '}' in SOURCE
-    for artifact in ('scalar_powers_combined.png', 'modes_combined.png', 'rk4_refinement.png'):
+    for artifact in ('scalar_powers_combined.png', 'modes_combined.png'):
         assert 'genus_three_example/' + artifact in SOURCE
         assert (ROOT / 'code/hyperelliptic_scalar_first/genus_three_example' / artifact).is_file()
     determinants = json.loads((ROOT / 'code/hyperelliptic_scalar_first/onishi_products/results.json').read_text())
@@ -173,6 +226,7 @@ def check_results():
 
 if __name__ == '__main__':
     check_examples()
+    check_special_examples()
     check_results()
     assert symbolic_checks()['passed']
     assert r"\frac{\beta_jV}{I_j}-Q_j(I)" in equation('eq:mode-log')
@@ -195,4 +249,4 @@ if __name__ == '__main__':
     for group_text in re.findall(r'\\cite(?:\[[^]]*\])?\{([^}]+)\}', SOURCE):
         cited.update(group_text.split(','))
     assert cited == bibkeys, (cited - bibkeys, bibkeys - cited)
-    print('PASS: printed Hamiltonians, coupled-system polynomials, curve and gauge data, numerical tables, inversion report and references')
+    print('PASS: printed Hamiltonians, coupled-system polynomials, curve and gauge data, numerical tables, special-polynomial examples and saved sigma checks, inversion report and references')
