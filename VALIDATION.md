@@ -1,5 +1,28 @@
 # Repository validation
 
+## Readable coefficient table: 22 October 2026
+
+Transposed the genus-three correction table so modes are columns and
+polynomial coefficients are rows. Enlarged the entries and used display
+fractions with increased row spacing. Updated the paper verifier to read
+the transposed table and display fractions; all 21 coefficients still
+reconstruct the exact symbolic corrections. Rebuilt and visually checked
+the 39-page manuscript; paper verification and checksums pass.
+
+## Mode-factor exposition: 22 October 2026
+
+Moved the Baker--Akhiezer interpretation beside the corrected point-factor
+definition in Section 4.4 and the polynomial-correction integral to Section
+4.5. Section 4.6 now links back briefly to the normalized Baker--Akhiezer
+factors. Removed the redundant substitution sentence and made the barred
+uncorrected-factor terminology consistent in the determinant argument and
+worked examples. Corrected the paragraph boundary around the genus-three
+coefficient table so it no longer splits a sentence.
+
+The rebuilt manuscript remains 39 pages. Paper verification, reference
+resolution, visual checks of the affected sections and checksum checks pass.
+No mathematical formulas or computational algorithms were changed.
+
 ## Simple branch fixed points: 22 October 2026
 
 Extended the main manuscript's local sigma mode construction to simple

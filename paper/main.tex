@@ -419,8 +419,10 @@ The product identity is \^Onishi's two-point addition formula \cite[Lemma~7.1]{o
 These identities also hold at a finite branch fixed point $(a,0)$.
 By \cite[Proposition~6.6(1)]{onishi}, $\sigma_\sharp$ has no zeros on
 the one-point Abel image except at infinity. In a local curve coordinate
-$t$ with $\rho-a=t^2$ and $y=t s(t^2)$, $s(0)\ne0$, both kinds of
-Abelian differential are holomorphic. Hence the fixed Abel lift, the
+$t$ with $\rho-a=t^2$, write $y=t s(t^2)$, where
+$s(\xi)=\sqrt{F(a+\xi)/\xi}$ is a locally chosen holomorphic square
+root with $s(0)^2=F'(a)\ne0$. Both kinds of Abelian differential
+are therefore holomorphic. Hence the fixed Abel lift, the
 coefficients~\eqref{eq:h-general}, and the sigma quotients extend
 holomorphically as the fixed point approaches $(a,0)$. Away from the
 moving zeros, \eqref{eq:kernel-product} ensures nonzero factors, so their
@@ -431,7 +433,7 @@ shifted sigma ratios or their exponential factors.
 
 Alternatively, in any genus, the coefficients $h_{jk}$ can be recovered directly from the sigma kernel. Subtracting the rational term in \eqref{eq:kernel-log} from its left-hand side leaves a polynomial in $\rho$ of degree at most $g-1$. Its coefficients are determined by evaluations at $g$ regular curve points with distinct $\rho$-coordinates, or by its first $g$ Taylor coefficients in $\rho$ at one regular nonbranch point. The points must avoid poles and zero sigma denominators, and all evaluations use compatible Abel lifts. This is coefficient extraction from an exact polynomial identity, rather than a fit to the mode trajectory; the low-genus formulas above give shorter evaluations of the same constants.
 
-\subsection{Point factors and polynomial corrections}
+\subsection{Corrected point factors as regularized restrictions of Baker--Akhiezer functions}\label{sec:corrected-point-factors}
 
 Put $\Delta w_k(z)=w_k(z)-w_k(z_0)$. The corrected point factors are
 \begin{equation}\label{eq:point-factor-sigma}
@@ -442,6 +444,15 @@ Put $\Delta w_k(z)=w_k(z)-w_k(z_0)$. The corrected point factors are
 \exp\!\left[\sum_{k=1}^g h_{jk}\Delta w_k(z)\right].
 \end{aligned}
 \end{equation}
+The corrected point factors $\widehat u_j,\widehat v_j$
+in~\eqref{eq:point-factor-sigma} arise as regularized restrictions of
+Baker--Akhiezer functions to the one-point Abel image. Matsutani's sigma
+representation~\cite[Section~4.2.2.3, Eq.~(4.42)]{matsutani-book} uses the
+same $\sigma_\sharp$ normalization, while \^Onishi's stratum
+limits~\cite[Proposition~6.6]{onishi} yield the
+$\sigma_\flat/\sigma_\sharp$ quotient appearing here. When $B_j=0$,
+these factors, normalized by their initial values, give the complete modes.
+
 Lemma~\ref{lem:kernel} gives
 \begin{equation}\label{eq:point-factors}
 \begin{aligned}
@@ -460,13 +471,15 @@ Consequently, with continued logarithms,
 \int_{(\rho(z_0),\rho'(z_0))}^{(\rho(z),\rho'(z))}\omega_j^{\rm mode}
 =\log\frac{\widehat u_j(z)}{\widehat u_j(z_0)}.
 \end{equation}
-The remaining integral follows directly from \eqref{eq:w-derivatives}:
+\subsection{The mode-solution theorem}
+
+To obtain the complete modes, we also integrate the polynomial correction
+$B_j$. Equations~\eqref{eq:degree-condition} and~\eqref{eq:w-derivatives} give
 \begin{equation}\label{eq:B-integral}
 \int_{z_0}^z B_j(\rho(s))\,ds=\sum_{k=1}^g c_{jk}\Delta w_k(z).
 \end{equation}
-The degree bound is precisely what makes holomorphic differentials sufficient; higher powers require meromorphic differentials as well.
-
-\subsection{The mode-solution theorem}
+The degree bound is precisely what makes holomorphic differentials sufficient;
+higher powers require meromorphic differentials as well.
 
 \begin{theorem}[Local hyperelliptic mode solutions]\label{thm:mode-solutions}
 Let $\beta_j$ be positive integers, $\sum_{j=1}^{N}\gamma_j=0$, and $Q$ a polynomial in independent powers. Define $q,r,F$ by \eqref{eq:qr-defs}--\eqref{eq:scalar}. Assume that $F$ is squarefree of degree $2g+1$ with leading coefficient $4$, $g\ge2$, and that the fixed coordinates $\gamma_j/\beta_j$ are distinct. Let $[\rho'(z)]^2=F(\rho(z))$, $\rho''(z)=F_\rho(\rho(z))/2$ define a nonconstant scalar trajectory on a simply connected local chart with $I_j\ne0$ and nonvanishing displayed sigma normalizers and point factors. Use compatible infinity-based lifts and \eqref{eq:h-general}. Suppose the polynomial corrections \eqref{eq:B-def} satisfy $\deg B_j\le g-1$.
@@ -512,8 +525,6 @@ The initial product condition therefore gives $U=(q+\rho')/2$. Since $UV=r$, it 
 
 The nonzero-power and nonvanishing-factor conditions specify a chart for the logarithmic proof, rather than singularities of the polynomial canonical equations. At a modal zero, those equations can continue a finite solution even though its logarithmic derivative is undefined; the sigma expressions must then be interpreted by continuation or limits. Finite turning points likewise do not obstruct scalar continuation. Continuation around curve cycles is a separate issue and can introduce multipliers, as discussed in Section~\ref{sec:discussion}.
 
-Substitution of \eqref{eq:point-factor-sigma} into \eqref{eq:mode-solutions} gives a sigma ratio normalized at $z_0$, with coefficients $c_{jk}-h_{jk}$ in the $u_j$ exponential and their negatives in the $v_j$ exponential.
-
 
 \subsection{Polynomials with vanishing mode correction}\label{sec:special-Q}
 
@@ -527,16 +538,9 @@ Here $Q_j=\partial Q/\partial I_j$ is taken before restriction to the power
 line. We call $Q$ universally special if every $B_j$ vanishes identically
 for every invariant tuple
 $\boldsymbol\gamma$ satisfying $\sum_{j=1}^{N}\gamma_j=0$.
-Then $c_{jk}=0$ in~\eqref{eq:mode-solutions}: only the exponential
-intrinsic to the point factor remains.
-
-The elementary mode factors arise as regularized restrictions of
-Baker--Akhiezer functions to the one-point Abel image. Matsutani's sigma
-representation~\cite[Section~4.2.2.3, Eq.~(4.42)]{matsutani-book} uses the
-same $\sigma_\sharp$ normalization, while \^Onishi's stratum
-limits~\cite[Proposition~6.6]{onishi} yield the
-$\sigma_\flat/\sigma_\sharp$ quotient appearing here. For special $Q$,
-these factors, normalized by their initial values, give the complete modes.
+Then $c_{jk}=0$ in~\eqref{eq:mode-solutions}, so the complete modes
+are the normalized Baker--Akhiezer factors of
+Section~\ref{sec:corrected-point-factors}.
 
 The following classification is algebraic and does not require the
 odd-degree curve assumptions.
@@ -659,7 +663,7 @@ We have already established the Hamiltonian product identities
 U(z)=\prod_{j=1}^{N} u_j(z)^{\beta_j}=\frac{q(\rho(z))+\rho'(z)}2,\qquad
 V(z)=\prod_{j=1}^{N} v_j(z)^{\beta_j}=\frac{q(\rho(z))-\rho'(z)}2.
 \]
-Representing these products by \^Onishi determinants connects the reconstructed modes to the same addition identities that give their paired powers. The essential step is to account for every elementary mode factor in the determinant's sigma expression, including those contained in its composite factor; this will also explain why the exponential corrections disappear from the complete products.
+Representing these products by \^Onishi determinants connects the reconstructed modes to the same addition identities that give their paired powers. The essential step is to account for every uncorrected point factor in the determinant's sigma expression, including those contained in its composite factor; this will also explain why the exponential corrections disappear from the complete products.
 
 We know the number $N$ of mode pairs, the genus $g$ of the scalar curve and the polynomial $q$. We now ask whether the two curve functions on the right can be represented by \^Onishi determinants. The size $n$ of the required matrix has yet to be determined. We choose it from the columns available for this genus and the degree of $q$. We begin with that choice, before relating the determinant's sigma expression to the mode solutions.
 
@@ -793,18 +797,18 @@ D_5(z)=-\frac{
 \prod_{i=1}^4\sigma\!\left(w(\mu_i)-w(z)\right)}{
 \displaystyle\sigma_2(w(z))^5\prod_{i=1}^4\sigma_2(w(\mu_i))^5}.
 \end{equation}
-The right side contains two kinds of moving sigma arguments: differences with individual fixed points, and a sum involving all four fixed points. The fixed--fixed differences are constants. Grouping the four individual moving factors with their normalizers gives the factors $\bar v_i$ defined in Lemma~\ref{lem:kernel}; we call these \emph{elementary point factors} because each is attached to one fixed point. What remains, apart from a fixed constant, is
+The right side contains two kinds of moving sigma arguments: differences with individual fixed points, and a sum involving all four fixed points. The fixed--fixed differences are constants. Grouping the four individual moving factors with their normalizers gives the uncorrected point factors $\bar v_i$ defined in Lemma~\ref{lem:kernel}. What remains, apart from a fixed constant, is
 \[
 \frac{\sigma(w(z)+w(\mu_1)+\cdots+w(\mu_4))}{\sigma_2(w(z))}.
 \]
-We call this the \emph{composite factor} because its shift combines the fixed Abel vectors. We will show that it supplies the additional elementary factors required by the complete mode product. The same grouping applies to the two determinant families above in any genus.
+We call this the \emph{composite factor} because its shift combines the fixed Abel vectors. We will show that it supplies the additional uncorrected point factors required by the complete mode product. The same grouping applies to the two determinant families above in any genus.
 
 The determinant vanishes when the moving point satisfies $\rho'=q(\rho)$. The identity
 \[
 (q-\rho')(q+\rho')=4r(\rho)
  =4\prod_{j=1}^{N}[\gamma_j-\beta_j\rho]^{\beta_j}
 \]
-locates every such zero, including its multiplicity. At a nonbranch fixed point $P_j$, the other factor is $q+\rho'=2q(\rho(\mu_j))\ne0$, so the zero of $q-\rho'$ has order $\beta_j$. At a branch fixed point $a_j=\rho(\mu_j)$, smoothness gives $\beta_j=1$. With $\rho-a_j=t^2$ and $y=t s(t^2)$, $s(0)\ne0$, we have $q=O(t^2)$, so both $q-y$ and $q+y$ have simple zeros in $t$. Thus $q-\rho'$ has order $\beta_j$ in both cases. Their total multiplicity is $M=\sum_{j=1}^{N}\beta_j$. This count is algebraic: with the fixed rows held constant, the determinant is proportional to the meromorphic curve function $q(\rho)-y$. We count its zeros and poles on the compact curve, not in the propagation variable $z$ or on the full Jacobian. Its only pole is at infinity; in a local curve parameter $t$ there, $\rho=t^{-2}$ and $y\sim\pm2t^{-(2g+1)}$, so their pole orders are $2$ and $2g+1$. If $\deg q\le g$, the $y$ term gives pole order $2g+1$; if $\deg q=g+1$, the leading term of $q$ gives pole order $2g+2$. A meromorphic function has equal total zero and pole orders, so $M=2g+1$ or $2g+2$, respectively. Removing the $n-1$ occurrences represented by the fixed rows leaves $M-(n-1)=g$ further occurrences. These are the remaining intersections of $y=q(\rho)$ with the curve, called the complementary intersection divisor in~\cite[Sections~3.1--3.2]{divisor-addition}. The count identifies the residual points but does not yet prove their sigma factorization. \^Onishi's identity applies with the moving argument constrained to the Abel image of this same curve; below, an auxiliary determinant and the two-point identity establish how the composite factor supplies the residual elementary factors. No global meromorphicity in $z$, or of each individual sigma factor, is required.
+locates every such zero, including its multiplicity. At a nonbranch fixed point $P_j$, the other factor is $q+\rho'=2q(\rho(\mu_j))\ne0$, so the zero of $q-\rho'$ has order $\beta_j$. At a branch fixed point $a_j=\rho(\mu_j)$, smoothness gives $\beta_j=1$. Write $F(\rho)=(\rho-a_j)F_j(\rho)$, where $F_j(a_j)=F'(a_j)\ne0$. In the local coordinate $\rho-a_j=t^2$, we may write $y=t s(t^2)$, where $s(\xi)=\sqrt{F_j(a_j+\xi)}$ is a locally chosen holomorphic square root and $s(0)\ne0$. Since $q(a_j)=0$, we have $q=O(t^2)$, so both $q-y$ and $q+y$ have simple zeros in $t$. Thus $q-\rho'$ has order $\beta_j$ in both cases. Their total multiplicity is $M=\sum_{j=1}^{N}\beta_j$. This count is algebraic: with the fixed rows held constant, the determinant is proportional to the meromorphic curve function $q(\rho)-y$. We count its zeros and poles on the compact curve, not in the propagation variable $z$ or on the full Jacobian. Its only pole is at infinity; in a local curve parameter $t$ there, $\rho=t^{-2}$ and $y\sim\pm2t^{-(2g+1)}$, so their pole orders are $2$ and $2g+1$. If $\deg q\le g$, the $y$ term gives pole order $2g+1$; if $\deg q=g+1$, the leading term of $q$ gives pole order $2g+2$. A meromorphic function has equal total zero and pole orders, so $M=2g+1$ or $2g+2$, respectively. Removing the $n-1$ occurrences represented by the fixed rows leaves $M-(n-1)=g$ further occurrences. These are the remaining intersections of $y=q(\rho)$ with the curve, called the complementary intersection divisor in~\cite[Sections~3.1--3.2]{divisor-addition}. The count identifies the residual points but does not yet prove their sigma factorization. \^Onishi's identity applies with the moving argument constrained to the Abel image of this same curve; below, an auxiliary determinant and the two-point identity establish how the composite factor supplies the residual uncorrected point factors. No global meromorphicity in $z$, or of each individual sigma factor, is required.
 
 In the genus-two example the complete list is $P_1,P_1,P_2,P_3,P_4,P_5$. The repetition of $P_1$ records $\beta_1=2$; in general a point occurs more than once precisely when $\beta_j>1$. The fixed rows of \eqref{eq:onishi-g2-matrix} account for $P_1,P_2,P_3,P_4$, leaving $P_1,P_5$. The determinant's sigma expression must account for these two further point factors, one for mode 1 and one for mode 5. We now identify where they occur and prove their factorization.
 
@@ -830,7 +834,7 @@ Both examples have unit-weight points, so the period vector can be absorbed into
 D_n(z)=K_A\frac{\sigma(w(z)+E)}{\sigma_\sharp(w(z))}
                   \prod_{j\in A}\bar v_j(z),
 \end{equation}
-Here $K_A$ is a nonzero scalar constant formed from the fixed-point sigma values and normalizers in the identity; it is independent of $z$. Their nonvanishing follows from the two-point identity and the distinct fixed coordinates. The $n-1$ factors $\bar v_j$ are the familiar elementary factors of Lemma~\ref{lem:kernel}. The additional ratio $\sigma(w+E)/\sigma_\sharp(w)$ has a summed fixed argument, and is the composite factor we must resolve. The fixed constants use the sign corrected by \^Onishi in his published errata to the determinant identity, $c_n=(-1)^{(n-g-1)(n+g^2+2g)/2}$ for $n\ge g$.
+Here $K_A$ is a nonzero scalar constant formed from the fixed-point sigma values and normalizers in the identity; it is independent of $z$. Their nonvanishing follows from the two-point identity and the distinct fixed coordinates. The $n-1$ factors $\bar v_j$ are the uncorrected point factors of Lemma~\ref{lem:kernel}. The additional ratio $\sigma(w+E)/\sigma_\sharp(w)$ has a summed fixed argument, and is the composite factor we must resolve. The fixed constants use the sign corrected by \^Onishi in his published errata to the determinant identity, $c_n=(-1)^{(n-g-1)(n+g^2+2g)/2}$ for $n\ge g$.
 
 For genus two, apply the sheet involution to the residual points, using $P_1^*=\iota(P_1),P_5^*=\iota(P_5)$ and the moving point in an auxiliary three-row identity. Its columns are purely polynomial, so
 \begin{equation}\label{eq:onishi-g2-auxiliary}
@@ -869,7 +873,7 @@ We cancel on a regular chart and extend the resulting identity wherever the cont
 \prod_{j=1}^{N}\bar u_j^{\beta_j}=K_+[q(\rho)+\rho'],\qquad
 \prod_{j=1}^{N}\bar v_j^{\beta_j}=K_-[q(\rho)-\rho'],
 \end{equation}
-where $K_+,K_-$ are nonzero fixed constants. All the weighted elementary factors have now been recovered from the determinant identity.
+where $K_+,K_-$ are nonzero fixed constants. All the weighted uncorrected point factors have now been recovered from the determinant identity.
 
 \subsection{Step 3: deduce cancellation of the exponential corrections}
 
@@ -907,7 +911,7 @@ The initial product conditions fix these as $(q+\rho')/2$ and $(q-\rho')/2$. Ste
 U(z)=\varepsilon\frac{D_n^*(z)}{\Delta_A},\qquad
 V(z)=-\varepsilon\frac{D_n(z)}{\Delta_A}.
 \end{equation}
-For the two determinant examples below $\varepsilon=-1$, hence $U=-D_n^*/\Delta_A$ and $V=D_n/\Delta_A$. This completes the connection between the Hamiltonian products, the elementary sigma solutions and \^Onishi's determinant.
+For the two determinant examples below $\varepsilon=-1$, hence $U=-D_n^*/\Delta_A$ and $V=D_n/\Delta_A$. This completes the connection between the Hamiltonian products, the sigma mode solutions and \^Onishi's determinant.
 
 The balanced fixed lifts make the cancellation visible in the explicit exponent. Other compatible lifts can redistribute an exponential between the raw sigma product and its correction, but the normalized initial-value solutions, and therefore their determinant products, are unchanged. The construction here uses the two stated polynomial column spaces and internally distinct main and residual lists, which both examples satisfy. Higher scalar degree requires longer column lists; repeated rows within a list require derivative limits rather than duplicating a row. Bernatska and Kopeliovich treat the corresponding rational interpolation and repeated-point constructions in~\cite[Sections~3.3--3.5]{divisor-addition}. Extending the present sigma-factor proof to those cases is outside our scope.
 
@@ -928,7 +932,8 @@ independently of the leading-four normalisation used for sigma evaluation.
 
 \begin{theorem}[Vanishing correction and constant Wronskian]
 \label{thm:special-W}
-On a nonconstant scalar trajectory, the Wronskian
+For modes satisfying~\eqref{eq:split-log} on a nonconstant scalar trajectory,
+with correction $B_j$ defined by~\eqref{eq:B-def}, the Wronskian
 $W_j=u_jv_j'-v_ju_j'$ satisfies
 \begin{equation}\label{eq:special-W}
  W_j=-\beta_j\{b_j+2(a_j-\rho)B_j(\rho)\}.
@@ -1261,21 +1266,23 @@ Exact squarefreeness gives a smooth genus-three curve with leading coefficient $
 \subsubsection{Polynomial corrections}
 
 Write $B_j(\rho)=c_{j1}+c_{j2}\rho+c_{j3}\rho^2$. The exact coefficients are listed in Table~\ref{tab:g3-gauges}.
+
 \begin{table}[htbp]
 \centering
-\renewcommand{\arraystretch}{1.35}
-\begin{tabular}{rrrr}\toprule
-$j$ & $c_{j1}$ & $c_{j2}$ & $c_{j3}$\\\midrule
-1 & $- \frac{112129}{224000}$ & $\frac{1551}{2800}$ & $\frac{261}{560}$\\
-2 & $- \frac{19673}{44800}$ & $\frac{191}{280}$ & $\frac{65}{112}$\\
-3 & $- \frac{12343}{32000}$ & $\frac{263}{400}$ & $\frac{27}{80}$\\
-4 & $- \frac{8151}{32000}$ & $\frac{277}{400}$ & $\frac{11}{80}$\\
-5 & $\frac{4233}{32000}$ & $\frac{223}{400}$ & $- \frac{37}{80}$\\
-6 & $\frac{8489}{32000}$ & $\frac{107}{400}$ & $- \frac{69}{80}$\\
-7 & $\frac{7397}{32000}$ & $- \frac{11}{200}$ & $- \frac{93}{80}$\\
+\begingroup
+\large
+\renewcommand{\arraystretch}{2.5}
+\setlength{\tabcolsep}{7pt}
+\begin{tabular}{lrrrrrrr}\toprule
+$j$ & 1 & 2 & 3 & 4 & 5 & 6 & 7\\\midrule
+$c_{j1}$ & $- \dfrac{112129}{224000}$ & $- \dfrac{19673}{44800}$ & $- \dfrac{12343}{32000}$ & $- \dfrac{8151}{32000}$ & $\dfrac{4233}{32000}$ & $\dfrac{8489}{32000}$ & $\dfrac{7397}{32000}$\\
+$c_{j2}$ & $\dfrac{1551}{2800}$ & $\dfrac{191}{280}$ & $\dfrac{263}{400}$ & $\dfrac{277}{400}$ & $\dfrac{223}{400}$ & $\dfrac{107}{400}$ & $- \dfrac{11}{200}$\\
+$c_{j3}$ & $\dfrac{261}{560}$ & $\dfrac{65}{112}$ & $\dfrac{27}{80}$ & $\dfrac{11}{80}$ & $- \dfrac{37}{80}$ & $- \dfrac{69}{80}$ & $- \dfrac{93}{80}$\\
 \bottomrule\end{tabular}
+\endgroup
 \caption{Genus-three polynomial corrections, generated by restriction of the full partial derivatives of $Q$.}\label{tab:g3-gauges}
 \end{table}
+
 The cubic terms cancel, leaving $\deg B_j=2<g=3$, although $Q$ is quartic. All three coordinates contribute through $\sum_{k=1}^3c_{jk}\Delta w_k$. As in genus two, the term vanishing on the power line changes the individual corrections without changing $q$ or the scalar curve.
 \FloatBarrier
 
@@ -1312,8 +1319,9 @@ These solve the canonical system for the seven-pair Hamiltonian with quadratic m
 These examples demonstrate the special-polynomial classification in
 Theorem~\ref{thm:special-Q} and the second-order equations in
 Theorems~\ref{thm:special-W}--\ref{thm:special-potential}.
-In each case $B_j=0$, so the modes are the elementary point factors of
-Theorem~\ref{thm:mode-solutions}, normalised by their initial values.
+In each case $B_j=0$, so the modes are the corrected point factors
+in~\eqref{eq:point-factor-sigma}, normalised by their initial values
+as in Theorem~\ref{thm:mode-solutions}.
 Each pair has a nonzero constant Wronskian and solves a common equation
 with polynomial potential. Below, $\psi_j$ denotes either $u_j$ or $v_j$,
 and primes refer to the Hamiltonian propagation variable $z$.

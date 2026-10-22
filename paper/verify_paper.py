@@ -34,6 +34,7 @@ def group(text, pos):
 
 
 def fractions(text):
+    text = text.replace(r'\dfrac', r'\frac')
     result = ''
     while text:
         if text.startswith(r'\frac'):
@@ -156,12 +157,21 @@ def check_examples():
                 text = SOURCE.split(rf'B_{j}(\rho)&=', 1)[1].split(r'\label', 1)[0]
                 equal(polynomial(text, symbols), expected)
         else:
-            table = SOURCE.split('$j$ & $c_{j1}$ & $c_{j2}$ & $c_{j3}$', 1)[1]
+            label_pos = SOURCE.index(r'\label{tab:g3-gauges}')
+            table_start = SOURCE.rfind(r'\begin{table}', 0, label_pos)
+            table = SOURCE[table_start:]
             table = table.split(r'\bottomrule', 1)[0]
+            header = re.search(r'^\s*\$j\$ & (.*?)\\\\', table, re.M).group(1)
+            modes = [int(cell.strip()) for cell in header.split('&')]
+            assert modes == list(range(1, len(data['B']) + 1))
+            coefficients = []
+            for k in range(1, 4):
+                row = re.search(rf'^\s*\$c_{{j{k}}}\$ & (.*?)\\\\', table, re.M).group(1)
+                cells = [polynomial(cell, symbols) for cell in row.split('&')]
+                assert len(cells) == len(modes)
+                coefficients.append(cells)
             for j, expected in enumerate(data['B'], 1):
-                row = re.search(rf'^\s*{j} & (.*?)\\\\', table, re.M).group(1)
-                coefficients = [polynomial(cell, symbols) for cell in row.split('&')]
-                equal(sum(c * rho**k for k, c in enumerate(coefficients)), expected)
+                equal(sum(row[j-1] * rho**k for k, row in enumerate(coefficients)), expected)
 
 
 def check_results():
