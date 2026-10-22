@@ -1,5 +1,26 @@
 # Repository validation
 
+## Simple branch fixed points: 22 October 2026
+
+Extended the main manuscript's local sigma mode construction to simple
+branch fixed points. Added the arbitrary-genus continuation argument using
+Onishi's nonvanishing theorem, clarified weights as multiplicities after a
+compatible degenerate-mode reduction, and revised the determinant divisor
+count and opposite-lift convention. Smoothness forces unit weight at a
+branch fixed point; nonzero Wronskians remain necessary for independence.
+
+The exploratory work had passed 1,003 mode/turning-point checks and 292
+additional determinant checks, including exact interpolation in genera
+two through six and full numerical sigma identities in genera two and
+three. Those calculations remain local exploratory material; the manuscript
+extension is justified analytically and does not depend on their files.
+
+Rebuilt the 39-page manuscript, visually checked the affected assumptions,
+kernel proof, mode theorem, determinant argument and discussion, and reran
+`paper/verify_paper.py`. All checks pass; the LaTeX log has no undefined
+references or overfull/underfull box warnings. Refreshed the manuscript and
+validation entries in the checksum manifest.
+
 ## Consolidated computational material: 22 October 2026
 
 Moved the special-polynomial and sigma-mode packages into
