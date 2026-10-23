@@ -174,6 +174,28 @@ def check_examples():
                 equal(sum(row[j-1] * rho**k for k, row in enumerate(coefficients)), expected)
 
 
+def check_longer_determinants():
+    """Check both printed prefactors against independent exact matrices."""
+    assert r'(-1)^{1+m(m+1)/2}(\pm q_d/2)^m' in equation('eq:onishi-longer-signs')
+    x, y = sp.symbols('x y')
+    for genus, degree in ((2, 3), (2, 4), (2, 5), (2, 6), (3, 4), (3, 5)):
+        q = 3*x**degree + 2*x + 1
+        ordered = sorted([(2*k, x**k) for k in range(degree+1)] +
+                         [(2*genus+1+2*k, x**k*y/2) for k in range(degree-genus)])
+        basis = [entry[1] for entry in ordered]
+        fixed = list(range(len(basis)-1))
+        delta = sp.prod(b-a for i, a in enumerate(fixed) for b in fixed[i+1:])
+        moving = {x: sp.Rational(17, 5), y: sp.Rational(11, 7)}
+        m = degree-genus-1
+        for sheet in (1, -1):
+            matrix = sp.Matrix([[f.subs({x: a, y: sheet*q.subs(x, a)}, simultaneous=True)
+                                 for f in basis] for a in fixed] +
+                               [[f.subs(moving, simultaneous=True) for f in basis]])
+            prefactor = (-1)**(1+m*(m+1)//2)*(sheet*sp.Rational(3, 2))**m
+            expected = prefactor*delta*(moving[y]-sheet*q.subs(x, moving[x]))/2
+            equal(matrix.det(method='domain-ge'), expected)
+
+
 def check_results():
     report = json.loads((ROOT / 'code/hyperelliptic_scalar_first/verification_results.json').read_text())
     assert report['passed']
@@ -223,7 +245,8 @@ def check_results():
     assert r'\prod_{1\le i<j\le4}' in equation('eq:onishi-g2-full-sigma')
     assert r'\sigma_2(w(z))^5' in equation('eq:onishi-g2-full-sigma')
     assert r'\sum_{j=1}^{N}\beta_j(c_{jk}-h_{jk})=0' in equation('eq:onishi-weighted-gauge')
-    assert r'U(z)=\varepsilon\frac{D_n^*(z)}{\Delta_A}' in equation('eq:onishi-mode-products')
+    assert r'U(z)=\frac{D_n^*(z)}{\varepsilon_-\Delta_A}' in equation('eq:onishi-mode-products')
+    assert r'V(z)=-\frac{D_n(z)}{\varepsilon_+\Delta_A}' in equation('eq:onishi-mode-products')
     assert '320 & ' not in SOURCE and '1280 & ' not in SOURCE
     assert 'numerical checks do not test passage through them' not in SOURCE
     coordinate_report = json.loads((ROOT / 'paper/scalar_inversion_checks.json').read_text())
@@ -237,6 +260,7 @@ def check_results():
 if __name__ == '__main__':
     check_examples()
     check_special_examples()
+    check_longer_determinants()
     check_results()
     assert symbolic_checks()['passed']
     assert r"\frac{\beta_jV}{I_j}-Q_j(I)" in equation('eq:mode-log')

@@ -1,5 +1,32 @@
 # Repository validation
 
+## Polynomial correction integrals and longer determinants: 23 October 2026
+
+Integrated arbitrary polynomial correction integrals into the mode-solution
+theorem, using a unique exact/first-kind/second-kind differential decomposition.
+Added the derivative interpretation from the scalar curve equation and retained
+the first-kind-only formula as a simplification. The theorem proof uses the
+general correction primitive directly.
+
+Preserved the genus-two column-subtraction example, the short-list lemma and
+the Schur-complement explanation. Added a subsection deriving the longer
+pole-ordered lists, both fixed-sheet prefactors and a seven-column example.
+Extended the residual divisor count and exponential-cancellation proof.
+Updated scope statements and explained that the two-coordinate, weight-five
+special example requires confluent determinants despite the general column
+formula.
+
+`paper/verify_paper.py` passes, including 12 additional exact determinant
+checks covering both fixed-sheet choices and multiple column-list lengths.
+The preceding exploratory notebook passed 57 exact and 572 numerical checks;
+those files remain in the ignored exploration folder and are not required by
+the manuscript or its verifier. No trajectory algorithms or saved numerical
+data were changed.
+
+Rebuilt the manuscript from 39 to 42 pages with no LaTeX warnings, unresolved
+references or overfull/underfull boxes. Reviewed all page layouts and inspected
+the new mode and determinant arguments at full size. Refreshed checksums.
+
 ## Readable coefficient table: 22 October 2026
 
 Transposed the genus-three correction table so modes are columns and

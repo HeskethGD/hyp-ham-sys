@@ -120,4 +120,4 @@ The refinement figures are separate. Layout changes do not alter the Hamiltonian
 
 ## Scope
 
-The paper treats smooth odd-degree hyperelliptic curves, with the fixed-point and polynomial-correction conditions stated in the manuscript. Local formulas and continuation on the genus-three example do not assert global single-valued meromorphicity in propagation for arbitrary curves.
+The paper treats smooth odd-degree hyperelliptic curves with polynomial mode corrections, using algebraic endpoint terms and first- and second-kind integrals. The fixed-point, local regularity and determinant-partition assumptions are stated in the manuscript. Local formulas and continuation on the genus-three example do not assert global single-valued meromorphicity in propagation for arbitrary curves.

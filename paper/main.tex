@@ -15,7 +15,7 @@
 \begin{document}
 \maketitle
 \begin{abstract}
-We study polynomial Hamiltonian systems whose Hamiltonians consist of two weighted products of canonical modes minus a polynomial in their powers. This class extends the structure of familiar genus-one coupled-mode systems from nonlinear optics. We construct local analytic solutions in terms of sigma functions and Abelian integrals on smooth odd-degree hyperelliptic curves, subject to stated degree and regularity conditions. We associate \^Onishi's determinant identities with the conservation-law structure of these systems, extending the connection previously identified between Frobenius--Stickelberger determinants and conserved quantities in genus-one nonlinear optics. Explicit genus-two and genus-three examples include bounded oscillatory scalar motion. We also classify the Hamiltonian polynomials that eliminate the additional mode exponentials and show that their elementary modes solve second-order equations with self-generating polynomial potentials. We evaluate the solutions using Generapy, a purpose-built Python package for algebraic curves and Abelian functions, and validate them against independent fourth-order Runge--Kutta integration.
+We study polynomial Hamiltonian systems whose Hamiltonians consist of two weighted products of canonical modes minus a polynomial in their powers. This class extends the structure of familiar genus-one coupled-mode systems from nonlinear optics. We construct local analytic solutions in terms of sigma functions and Abelian integrals on smooth odd-degree hyperelliptic curves, subject to stated regularity conditions. We associate \^Onishi's determinant identities with the conservation-law structure of these systems, extending the connection previously identified between Frobenius--Stickelberger determinants and conserved quantities in genus-one nonlinear optics. Explicit genus-two and genus-three examples include bounded oscillatory scalar motion. We also classify the Hamiltonian polynomials that eliminate the additional mode exponentials and show that their elementary modes solve second-order equations with self-generating polynomial potentials. We evaluate the solutions using Generapy, a purpose-built Python package for algebraic curves and Abelian functions, and validate them against independent fourth-order Runge--Kutta integration.
 \end{abstract}
 
 \section{Introduction}
@@ -54,7 +54,7 @@ We also classify all polynomials $Q$ for which the additional correction vanishe
 
 For numerical evaluation we use Generapy~\cite{generapy}, a purpose-built Python library for algebraic curves and Abelian functions, which supplies periods, Abelian integrals and sigma functions. Generapy is built on mpmath~\cite{mpmath} for arbitrary-precision numerical arithmetic. During its development, we tested Generapy by reproducing several examples from the literature, including the period and Kleinian-function computations for Bernatska's genus-three trigonal curve~\cite{bernatska-computation}; the reproduced examples are described in the Generapy documentation~\cite{generapy}.
 
-Sections~\ref{sec:setup}--\ref{sec:modes} develop scalar reduction, the sigma representation of the scalar coordinate and mode reconstruction; Section~\ref{sec:onishi-products} establishes the determinant connection, and Section~\ref{sec:polynomial-potentials} derives the second-order polynomial potentials. Sections~\ref{sec:examples} and~\ref{sec:numerical} present the examples and comparisons with independent fourth-order Runge--Kutta integration. The solutions are local and apply to smooth odd-degree hyperelliptic curves, subject to the degree and regularity conditions stated in the main results.
+Sections~\ref{sec:setup}--\ref{sec:modes} develop scalar reduction, the sigma representation of the scalar coordinate and mode reconstruction; Section~\ref{sec:onishi-products} establishes the determinant connection, and Section~\ref{sec:polynomial-potentials} derives the second-order polynomial potentials. Sections~\ref{sec:examples} and~\ref{sec:numerical} present the examples and comparisons with independent fourth-order Runge--Kutta integration. The solutions are local and apply to smooth odd-degree hyperelliptic curves, subject to the regularity conditions stated in the main results.
 
 \section{Scalar reduction and separated mode equations}\label{sec:setup}
 
@@ -209,31 +209,20 @@ The divided difference is polynomial because its numerator vanishes at $\rho=\rh
 
 \subsection{Hyperelliptic scope of this paper}
 
-The Hamiltonian reduction above is algebraic and does not require a smooth hyperelliptic curve or a degree bound on $B_j$. To express its separated integrals in a manageable hyperelliptic form, we initially focus on the following setting:
+We express the separated mode integrals using sigma functions and Abelian differentials in the following setting:
 
 \begin{itemize}
 \item $F$ is squarefree of odd degree $2g+1$, with $g\ge2$ and leading coefficient $4$.
 \item The fixed coordinates $\rho(\mu_j)$ are distinct.
-\item Every polynomial correction satisfies $\deg B_j\le g-1$.
 \end{itemize}
 
-The first condition gives a smooth compactified hyperelliptic curve of genus $g$ with one point at infinity. The leading coefficient can always be normalized to $4$ by rescaling $z$ and the modes $u_j,v_j$; we use this normalization throughout. The weights encode the multiplicities of coincident mode points after a compatible degenerate-mode reduction; distinctness refers to the resulting weighted list, rather than to each occurrence in its divisor. At a branch fixed point $a_j=\rho(\mu_j)$, we have $q(a_j)=0$ and $F'(a_j)=-4r'(a_j)\ne0$, so smoothness forces $\beta_j=1$. The third condition makes holomorphic Abel differentials sufficient for the polynomial corrections: writing
+The first condition gives a smooth compactified hyperelliptic curve of genus $g$ with one point at infinity. The leading coefficient can always be normalized to $4$ by rescaling $z$ and the modes $u_j,v_j$; we use this normalization throughout. The weights $\beta_j$ encode the multiplicities of coincident mode points after a compatible degenerate-mode reduction; distinctness refers to the resulting weighted list, rather than to each occurrence in its divisor. At a branch fixed point $a_j=\rho(\mu_j)$, we have $q(a_j)=0$ and $F'(a_j)=-4r'(a_j)\ne0$, so smoothness forces $\beta_j=1$.
 
-\begin{equation}\label{eq:degree-condition}
-B_j(\rho)=\sum_{k=1}^g c_{jk}\rho^{k-1},\qquad \deg B_j\le g-1,
-\end{equation}
-
-we have $dz=d\rho/\rho'$ along regular trajectory segments, so each term integrates through $\rho^{k-1}d\rho/\rho'$. The remaining rational point terms will be integrated using shifted sigma ratios with exponential corrections.
-
-The degree condition holds automatically if $\deg Q\le g$. For higher-degree $Q$, form $B_j$ and check that every coefficient of $\rho^g$ and higher vanishes. The first two worked examples satisfy this test through cancellation of leading terms; the special examples in Section~\ref{sec:special-examples} have $B_j=0$.
-
-These restrictions define the initial scope of the analytic construction, rather than limits of the Hamiltonian reduction. Higher-degree corrections lead to meromorphic Abelian differentials; even-degree models and singular curves require corresponding changes to the curve representation. We do not develop those extensions here.
-
-The reduction has now supplied the scalar curve, its fixed mode points and the two terms in every mode integral. The following sections express the scalar coordinate through hyperelliptic sigma functions and then integrate the separated mode equations.
+Even-degree models and singular curves require corresponding changes to the curve representation and are not treated here.
 
 \section{Hyperelliptic representation of the scalar coordinate \texorpdfstring{$\rho$}{rho}}\label{sec:scalar}
 
-We express the scalar coordinate $\rho$ through derivatives of the hyperelliptic sigma function restricted to the one-point Abel image. We first specify the curve, Abel coordinates and sigma conventions, then state the coordinate representation and its low-genus forms. Finally we describe their evaluation at prescribed propagation. The same Abel coordinates and sigma conventions will be used to reconstruct the individual modes.
+The scalar reduction supplies the curve, its fixed mode points and the separated mode equations. We first express the scalar coordinate $\rho$ through derivatives of the hyperelliptic sigma function restricted to the one-point Abel image; Section~\ref{sec:modes} then reconstructs the individual modes. We specify the curve, Abel coordinates and sigma conventions, state the coordinate representation and its low-genus forms, and finally describe their evaluation at prescribed propagation.
 
 \subsection{The scalar curve}
 
@@ -471,18 +460,40 @@ Consequently, with continued logarithms,
 \int_{(\rho(z_0),\rho'(z_0))}^{(\rho(z),\rho'(z))}\omega_j^{\rm mode}
 =\log\frac{\widehat u_j(z)}{\widehat u_j(z_0)}.
 \end{equation}
-\subsection{The mode-solution theorem}
+\subsection{The mode-solution theorem}\label{sec:mode-solutions}
 
-To obtain the complete modes, we also integrate the polynomial correction
-$B_j$. Equations~\eqref{eq:degree-condition} and~\eqref{eq:w-derivatives} give
-\begin{equation}\label{eq:B-integral}
-\int_{z_0}^z B_j(\rho(s))\,ds=\sum_{k=1}^g c_{jk}\Delta w_k(z).
+The polynomial correction in each mode is integrated by the unique decomposition
+\begin{equation}\label{eq:B-reduction}
+\frac{B_j(\rho)}y\,d\rho=d\bigl(P_j(\rho)y\bigr)
++\sum_{k=1}^g c_{jk}\omega_k+\sum_{k=1}^g d_{jk}\,dr_k,
 \end{equation}
-The degree bound is precisely what makes holomorphic differentials sufficient;
-higher powers require meromorphic differentials as well.
+where $P_j$ is polynomial and the coefficients are constant on the chosen power line. To construct it, observe that
+\begin{equation}\label{eq:exact-polynomial-differential}
+d(\rho^\ell y)=\left(\ell\rho^{\ell-1}F+\tfrac12\rho^\ell F_\rho\right)\frac{d\rho}{y},\qquad \ell\ge0.
+\end{equation}
+Its numerator has degree $\ell+2g$ and leading coefficient $4\ell+4g+2$. If the remaining numerator has leading term $a\rho^h$, $h\ge2g$, take $\ell=h-2g$ and subtract $a/(4\ell+4g+2)$ times this exact differential. The leading term cancels, lowering the degree. Repetition leaves degree at most $2g-1$. The numerators of $dr_k$ in \eqref{eq:second-kind-diffs} have successive degrees $2g-k$ and leading coefficients $2g+1-2k$, $k=1,\ldots,g$; subtracting their multiples cancels degrees $2g-1,\ldots,g$. The remainder is a linear combination of $\omega_1,\ldots,\omega_g$. These distinct leading degrees also prove uniqueness.
+
+Along the scalar trajectory, \eqref{eq:exact-polynomial-differential} is the identity
+$d(\rho^\ell\rho')/dz=\ell\rho^{\ell-1}F+\rho^\ell F_\rho/2$.
+Thus the relation $(\rho')^2=F(\rho)$ expresses higher powers of $\rho$ as derivatives of $\rho^\ell\rho'$ plus lower powers; integration records the derivative terms explicitly and reduces the remainder to a finite differential basis.
+
+Let $R_k$ be a primitive of $dr_k$, continued along the moving path, and write $\Delta R_k(z)=R_k(z)-R_k(z_0)$. Since $\rho'=y$, integration gives
+\begin{equation}\label{eq:B-integral}
+\mathcal C_j(z):=\int_{z_0}^z B_j(\rho(s))\,ds
+=\bigl[P_j(\rho)\rho'\bigr]_{z_0}^z
++\sum_{k=1}^g c_{jk}\Delta w_k(z)+\sum_{k=1}^g d_{jk}\Delta R_k(z).
+\end{equation}
+The increments use compatible lifts and may be evaluated directly from the finite initial point. Polynomial differentials $B_j\,d\rho/y$ have only a possible pole at infinity and zero residue there. Their primitives therefore consist of the algebraic, first-kind and second-kind terms displayed above.
+
+When $\deg B_j\le g-1$, uniqueness gives $P_j=0$ and $d_{jk}=0$ for every $k=1,\ldots,g$, so
+\begin{equation}\label{eq:degree-condition}
+B_j(\rho)=\sum_{k=1}^g c_{jk}\rho^{k-1},\qquad
+\mathcal C_j(z)=\sum_{k=1}^g c_{jk}\Delta w_k(z).
+\end{equation}
+Only first-kind differentials are then needed. This occurs automatically for $\deg Q\le g$ and can also occur through cancellation for higher-degree $Q$.
 
 \begin{theorem}[Local hyperelliptic mode solutions]\label{thm:mode-solutions}
-Let $\beta_j$ be positive integers, $\sum_{j=1}^{N}\gamma_j=0$, and $Q$ a polynomial in independent powers. Define $q,r,F$ by \eqref{eq:qr-defs}--\eqref{eq:scalar}. Assume that $F$ is squarefree of degree $2g+1$ with leading coefficient $4$, $g\ge2$, and that the fixed coordinates $\gamma_j/\beta_j$ are distinct. Let $[\rho'(z)]^2=F(\rho(z))$, $\rho''(z)=F_\rho(\rho(z))/2$ define a nonconstant scalar trajectory on a simply connected local chart with $I_j\ne0$ and nonvanishing displayed sigma normalizers and point factors. Use compatible infinity-based lifts and \eqref{eq:h-general}. Suppose the polynomial corrections \eqref{eq:B-def} satisfy $\deg B_j\le g-1$.
+Let $\beta_j$ be positive integers, $\sum_{j=1}^{N}\gamma_j=0$, and $Q$ a polynomial in independent powers. Define $q,r,F$ by \eqref{eq:qr-defs}--\eqref{eq:scalar}. Assume that $F$ is squarefree of degree $2g+1$ with leading coefficient $4$, $g\ge2$, and that the fixed coordinates $\gamma_j/\beta_j$ are distinct. Let $[\rho'(z)]^2=F(\rho(z))$, $\rho''(z)=F_\rho(\rho(z))/2$ define a nonconstant scalar trajectory on a simply connected local chart with $I_j\ne0$ and nonvanishing displayed sigma normalizers and point factors. Use compatible infinity-based lifts and \eqref{eq:h-general}.
 
 Choose initial modes with
 \[
@@ -493,9 +504,9 @@ Then the local canonical solutions are
 \begin{equation}\label{eq:mode-solutions}
 \begin{aligned}
 u_j(z)&=u_j(z_0)\frac{\widehat u_j(z)}{\widehat u_j(z_0)}
-\exp\!\left[\sum_{k=1}^g c_{jk}\Delta w_k(z)\right],\\
+\exp\!\left[\mathcal C_j(z)\right],\\
 v_j(z)&=v_j(z_0)\frac{\widehat v_j(z)}{\widehat v_j(z_0)}
-\exp\!\left[-\sum_{k=1}^g c_{jk}\Delta w_k(z)\right].
+\exp\!\left[-\mathcal C_j(z)\right].
 \end{aligned}
 \end{equation}
 They satisfy $u_jv_j=I_j$, the product identities \eqref{eq:products}, $H=0$, and the weighted invariants \eqref{eq:weighted-invariants}.
@@ -538,7 +549,7 @@ Here $Q_j=\partial Q/\partial I_j$ is taken before restriction to the power
 line. We call $Q$ universally special if every $B_j$ vanishes identically
 for every invariant tuple
 $\boldsymbol\gamma$ satisfying $\sum_{j=1}^{N}\gamma_j=0$.
-Then $c_{jk}=0$ in~\eqref{eq:mode-solutions}, so the complete modes
+Then $\mathcal C_j=0$ in~\eqref{eq:mode-solutions}, so the complete modes
 are the normalized Baker--Akhiezer factors of
 Section~\ref{sec:corrected-point-factors}.
 
@@ -680,10 +691,11 @@ To obtain $q\pm\rho'$, the matrix must contain the ordinate column and enough po
 \begin{array}{c|c|c}
 \text{known scalar degree}&\text{required columns}&\text{chosen size }n\\\hline
 \deg q\le g &(1,\rho,\ldots,\rho^g,\rho'/2)&g+2\\
-\deg q=g+1 &(1,\rho,\ldots,\rho^g,\rho'/2,\rho^{g+1})&g+3.
+\deg q=g+1 &(1,\rho,\ldots,\rho^g,\rho'/2,\rho^{g+1})&g+3\\
+d=\deg q>g+1 &\text{initial list through }\rho^d&2d-g+1.
 \end{array}
 \]
-These two column arrangements also occur in the interpolation determinants used by Bernatska and Kopeliovich for hyperelliptic divisor reduction~\cite[Sections~3.1--3.2]{divisor-addition}, up to the ordinate normalization and row order. Here we use them to represent the Hamiltonian products.
+The first two column arrangements also occur in the interpolation determinants used by Bernatska and Kopeliovich for hyperelliptic divisor reduction~\cite[Sections~3.1--3.2]{divisor-addition}, up to the ordinate normalization and row order. We first explain the product construction for these two arrangements, including the column operation in the genus-two example, then give the calculation for the longer lists in Section~\ref{sec:longer-columns}.
 
 Even when $\deg q<g$, we need $g+2$ columns to reach the ordinate. For $\deg q=g+1$, we add the next polynomial column. Thus $n$ is determined here by $g$ and the scalar degree, whereas $N$ was determined by the number of canonical pairs in the Hamiltonian. For the two worked examples presented later in Section~\ref{sec:examples}, these choices give
 \begin{center}
@@ -694,7 +706,7 @@ Known genus $g$ & Known degree $\deg q$ & Known mode count $N$ & Chosen size $n$
 \bottomrule\end{tabular}
 \end{center}
 
-These choices also explain why the determinant contains the ordinate alone, without a polynomial multiplier. There is exactly one ordinate column, $\rho'/2$, and every other column is a power of $\rho$. Expanding in the moving row gives a constant coefficient of $\rho'/2$, because its cofactor contains only fixed rows. The calculation below identifies that nonzero coefficient as a Vandermonde minor. By contrast, the next column in \eqref{eq:onishi-pole-columns} is $\rho\rho'/2$. Including it would generally give an ordinate term of the form $(a_0+a_1\rho)\rho'/2$. A restriction with $\deg q>g+1$ cannot be fitted by the $n=g+2$ or $n=g+3$ column arrangements; it requires a longer \^Onishi list and a separate argument about these additional ordinate coefficients.
+For these first two arrangements there is exactly one ordinate column, $\rho'/2$, and every other column is a power of $\rho$. Expanding in the moving row gives a constant coefficient of $\rho'/2$, because its cofactor contains only fixed rows. The calculation below identifies that nonzero coefficient as a Vandermonde minor. For higher scalar degree the initial list also contains mixed columns such as $\rho\rho'/2$; at the fixed points, substituting $\rho'(\mu_j)=q(\rho(\mu_j))$ makes these entries polynomial in the fixed coordinates.
 
 We can now choose $n-1$ fixed points for the matrix and append the moving point as its last row. The fixed mode points are
 \[
@@ -749,7 +761,7 @@ Subtract $q/2$ from the ordinate column and expand its sole nonzero entry, as ab
 
 The same determinant reduction can be expressed as a Schur complement. This makes the role of interpolation explicit: the fixed ordinates determine the polynomial part of the moving row through the inverse of the fixed-coordinate matrix.
 
-First move the ordinate column to the last position. For $n=g+2$ it is already there; for $n=g+3$ this requires one column interchange. The resulting matrix has the block form
+For the two column arrangements just considered, first move the ordinate column to the last position. For $n=g+2$ it is already there; for $n=g+3$ this requires one column interchange. The resulting matrix has the block form
 \begin{equation}\label{eq:onishi-schur-block}
 \mathcal M_n(z)=\begin{pmatrix}
 \mathsf W_A & \boldsymbol{\rho}'_A/2\\
@@ -787,6 +799,39 @@ Block elimination gives $\det\mathcal M_n=\det\mathsf W_A\,\mathcal S$, and henc
 \]
 For the later worked examples $\varepsilon=-1$, so $D_n/\Delta_A=-\mathcal S=V$. Applying the sheet involution only to the fixed points negates $\boldsymbol{\rho}'_A$ and leaves $\mathsf W_A$ unchanged. The corresponding Schur complement is $[\rho'(z)+q(\rho(z))]/2=U$, so $U=\varepsilon D_n^*/\Delta_A$. In the original $n=g+3$ column order, the upper-left block is not the Vandermonde matrix; the column interchange and its sign are essential to this interpretation.
 
+\subsection{Higher scalar degree and mixed ordinate columns}\label{sec:longer-columns}
+
+For $d=\deg q\ge g+1$, let $q_d$ be the leading coefficient and put $m=d-g-1$. The initial list ending at $\rho^d$ contains
+\[
+1,\rho,\ldots,\rho^d,\qquad y/2,\rho y/2,\ldots,\rho^m y/2,
+\]
+interleaved by pole order. There are $d+1$ polynomial columns and $d-g$ ordinate columns, giving $n=2d-g+1$. Choose $n-1$ distinct fixed coordinates on $y=q(\rho)$ and append the moving row as before. Subtracting $q/2$ from the $y/2$ column again makes all its fixed entries zero. Expansion along this column leaves a fixed-row minor. On these fixed rows, the remaining mixed entries satisfy $\rho^k y/2=\rho^k q(\rho)/2$, so the minor has the polynomial columns
+\begin{equation}\label{eq:onishi-longer-minor}
+1,\rho,\ldots,\rho^d,\rho q/2,\ldots,\rho^m q/2,
+\end{equation}
+after reordering. Their successive degrees are $0,\ldots,d+m=n-2$. The leading coefficients are one for the first $d+1$ columns and $q_d/2$ for the last $m$; triangular column elimination therefore gives the minor $(q_d/2)^m\Delta_A$.
+
+The $y/2$ column has position $g+2$, so its cofactor sign is $(-1)^{n+g+2}=-1$. Moving the remaining $m$ ordinate columns past the polynomial columns requires $m(m+1)/2$ interchanges, giving the combined sign $(-1)^{1+m(m+1)/2}$. Reversing the fixed sheets replaces $q_d$ by $-q_d$. Thus, defining
+\begin{equation}\label{eq:onishi-longer-signs}
+\varepsilon_\pm=(-1)^{1+m(m+1)/2}(\pm q_d/2)^m,\qquad m=d-g-1,
+\end{equation}
+we obtain
+\begin{equation}\label{eq:onishi-longer-interpolation}
+D_n=\varepsilon_+\Delta_A\frac{y-q(\rho)}2,\qquad
+D_n^*=\varepsilon_-\Delta_A\frac{y+q(\rho)}2.
+\end{equation}
+In particular $\varepsilon_-=(-1)^m\varepsilon_+$. When $d=g+1$, $m=0$ and both constants equal $-1$, agreeing with Lemma~\ref{lem:onishi-interpolation}. For $d\le g$, put $\varepsilon_+=\varepsilon_-=1$ so \eqref{eq:onishi-longer-interpolation} also includes the $n=g+2$ case.
+
+For example, a quartic $q$ on a genus-two curve requires the seven columns
+\[
+1,\rho,\rho^2,y/2,\rho^3,\rho y/2,\rho^4.
+\]
+After subtraction and expansion in the fourth column, the fixed minor has columns
+\[
+1,\rho,\rho^2,\rho^3,\rho q/2,\rho^4.
+\]
+Interchanging the last two gives successive degrees zero through five and leading-coefficient product $q_4/2$. Together with the cofactor sign $(-1)^{7+4}=-1$, this yields $\varepsilon_+=q_4/2$ and $\varepsilon_-=-q_4/2$. The mixed ordinate column has contributed a constant prefactor; the moving factor is still $(y-q)/2$.
+
 \subsection{Step 2: relate the sigma factors to the modes}
 
 Before counting the mode factors, we display the sigma side of the identity. For the genus-two five-row determinant \eqref{eq:onishi-g2-matrix}, \^Onishi's formula \cite[Theorem~7.2]{onishi}, with its corrected sign, reads
@@ -801,14 +846,14 @@ The right side contains two kinds of moving sigma arguments: differences with in
 \[
 \frac{\sigma(w(z)+w(\mu_1)+\cdots+w(\mu_4))}{\sigma_2(w(z))}.
 \]
-We call this the \emph{composite factor} because its shift combines the fixed Abel vectors. We will show that it supplies the additional uncorrected point factors required by the complete mode product. The same grouping applies to the two determinant families above in any genus.
+We call this the \emph{composite factor} because its shift combines the fixed Abel vectors. We will show that it supplies the additional uncorrected point factors required by the complete mode product. The same grouping applies to all the initial column lists above in any genus.
 
 The determinant vanishes when the moving point satisfies $\rho'=q(\rho)$. The identity
 \[
 (q-\rho')(q+\rho')=4r(\rho)
  =4\prod_{j=1}^{N}[\gamma_j-\beta_j\rho]^{\beta_j}
 \]
-locates every such zero, including its multiplicity. At a nonbranch fixed point $P_j$, the other factor is $q+\rho'=2q(\rho(\mu_j))\ne0$, so the zero of $q-\rho'$ has order $\beta_j$. At a branch fixed point $a_j=\rho(\mu_j)$, smoothness gives $\beta_j=1$. Write $F(\rho)=(\rho-a_j)F_j(\rho)$, where $F_j(a_j)=F'(a_j)\ne0$. In the local coordinate $\rho-a_j=t^2$, we may write $y=t s(t^2)$, where $s(\xi)=\sqrt{F_j(a_j+\xi)}$ is a locally chosen holomorphic square root and $s(0)\ne0$. Since $q(a_j)=0$, we have $q=O(t^2)$, so both $q-y$ and $q+y$ have simple zeros in $t$. Thus $q-\rho'$ has order $\beta_j$ in both cases. Their total multiplicity is $M=\sum_{j=1}^{N}\beta_j$. This count is algebraic: with the fixed rows held constant, the determinant is proportional to the meromorphic curve function $q(\rho)-y$. We count its zeros and poles on the compact curve, not in the propagation variable $z$ or on the full Jacobian. Its only pole is at infinity; in a local curve parameter $t$ there, $\rho=t^{-2}$ and $y\sim\pm2t^{-(2g+1)}$, so their pole orders are $2$ and $2g+1$. If $\deg q\le g$, the $y$ term gives pole order $2g+1$; if $\deg q=g+1$, the leading term of $q$ gives pole order $2g+2$. A meromorphic function has equal total zero and pole orders, so $M=2g+1$ or $2g+2$, respectively. Removing the $n-1$ occurrences represented by the fixed rows leaves $M-(n-1)=g$ further occurrences. These are the remaining intersections of $y=q(\rho)$ with the curve, called the complementary intersection divisor in~\cite[Sections~3.1--3.2]{divisor-addition}. The count identifies the residual points but does not yet prove their sigma factorization. \^Onishi's identity applies with the moving argument constrained to the Abel image of this same curve; below, an auxiliary determinant and the two-point identity establish how the composite factor supplies the residual uncorrected point factors. No global meromorphicity in $z$, or of each individual sigma factor, is required.
+locates every such zero, including its multiplicity. At a nonbranch fixed point $P_j$, the other factor is $q+\rho'=2q(\rho(\mu_j))\ne0$, so the zero of $q-\rho'$ has order $\beta_j$. At a branch fixed point $a_j=\rho(\mu_j)$, smoothness gives $\beta_j=1$. Write $F(\rho)=(\rho-a_j)F_j(\rho)$, where $F_j(a_j)=F'(a_j)\ne0$. In the local coordinate $\rho-a_j=t^2$, we may write $y=t s(t^2)$, where $s(\xi)=\sqrt{F_j(a_j+\xi)}$ is a locally chosen holomorphic square root and $s(0)\ne0$. Since $q(a_j)=0$, we have $q=O(t^2)$, so both $q-y$ and $q+y$ have simple zeros in $t$. Thus $q-\rho'$ has order $\beta_j$ in both cases. Their total multiplicity is $M=\sum_{j=1}^{N}\beta_j$. This count is algebraic: with the fixed rows held constant, the determinant is proportional to the meromorphic curve function $q(\rho)-y$. We count its zeros and poles on the compact curve, not in the propagation variable $z$ or on the full Jacobian. Its only pole is at infinity; in a local curve parameter $t$ there, $\rho=t^{-2}$ and $y\sim\pm2t^{-(2g+1)}$, so their pole orders are $2$ and $2g+1$. If $d=\deg q\le g$, the $y$ term gives pole order $2g+1$; if $d\ge g+1$, the leading term of $q$ gives pole order $2d$. A meromorphic function has equal total zero and pole orders, so $M=2g+1$ or $2d$, respectively. The chosen size is $n=g+2$ in the first case and $n=2d-g+1$ in the second. Removing the $n-1$ occurrences represented by the fixed rows therefore leaves $M-(n-1)=g$ further occurrences in either case. These are the remaining intersections of $y=q(\rho)$ with the curve, called the complementary intersection divisor in~\cite[Sections~3.1--3.2]{divisor-addition}. The count identifies the residual points but does not yet prove their sigma factorization. \^Onishi's identity applies with the moving argument constrained to the Abel image of this same curve; below, an auxiliary determinant and the two-point identity establish how the composite factor supplies the residual uncorrected point factors. No global meromorphicity in $z$, or of each individual sigma factor, is required.
 
 In the genus-two example the complete list is $P_1,P_1,P_2,P_3,P_4,P_5$. The repetition of $P_1$ records $\beta_1=2$; in general a point occurs more than once precisely when $\beta_j>1$. The fixed rows of \eqref{eq:onishi-g2-matrix} account for $P_1,P_2,P_3,P_4$, leaving $P_1,P_5$. The determinant's sigma expression must account for these two further point factors, one for mode 1 and one for mode 5. We now identify where they occur and prove their factorization.
 
@@ -822,7 +867,7 @@ Genus & Fixed points indexed by $A$ & Residual points indexed by $B$\\\midrule
 \end{center}
 There is no repeated row inside either determinant. The repeated factor will appear when the two lists are combined.
 
-The complete zero list also fixes the summed Abel argument. Abel's theorem says that the weighted sum of the Abel vectors of the zeros of $q-\rho'$, whose poles are all at infinity, is a period vector. Choose their integration paths so that this sum is zero, and put
+The complete zero list also fixes the summed Abel argument. Abel's theorem says that the weighted sum of the Abel vectors of the zeros of $q-\rho'$, whose poles are all at infinity, is a period vector. For the sigma factorization below, assume compatible fixed lifts have been chosen with this sum zero, and put
 \[
 \sum_{j=1}^{N}\beta_jw(\mu_j)=0,\qquad
 E=\sum_{j\in A}w(\mu_j)=-\sum_{j\in B}w(\mu_j).
@@ -877,12 +922,16 @@ where $K_+,K_-$ are nonzero fixed constants. All the weighted uncorrected point 
 
 \subsection{Step 3: deduce cancellation of the exponential corrections}
 
-The cancellation is a consequence of the complete factorization established in Step 2 together with the differential identities for the modes. We now derive that consequence explicitly. The full modes include both the point factors and exponential corrections. Multiplying their normalized sigma expressions gives
+The cancellation is a consequence of the complete factorization established in Step 2 together with the differential identities for the modes. The full modes include both the point factors and exponential corrections. Multiplying their normalized sigma expressions gives
 \begin{equation}\label{eq:onishi-product-exponential}
-U(z)=U(z_0)\prod_{j=1}^{N}\left[\frac{\bar u_j(z)}{\bar u_j(z_0)}\right]^{\beta_j}
-\exp\!\left[\sum_{k=1}^g\left\{\sum_{j=1}^{N}\beta_j(c_{jk}-h_{jk})\right\}\Delta w_k\right].
+\begin{aligned}
+U(z)&=U(z_0)\prod_{j=1}^{N}\left[\frac{\bar u_j(z)}{\bar u_j(z_0)}\right]^{\beta_j}\exp\bigl[\mathcal E(z)\bigr],\\
+\mathcal E(z)&=\left[y\sum_{j=1}^{N}\beta_jP_j(\rho)\right]_{z_0}^z
++\sum_{k=1}^g\left(\sum_{j=1}^{N}\beta_jd_{jk}\right)\Delta R_k\\
+&\quad+\sum_{k=1}^g\left\{\sum_{j=1}^{N}\beta_j(c_{jk}-h_{jk})\right\}\Delta w_k.
+\end{aligned}
 \end{equation}
-The corresponding $V$ formula uses $\bar v_j$ and the negative exponent. We must therefore show that the weighted coefficients in braces vanish.
+The corresponding $V$ formula uses $\bar v_j$ and the negative exponent. We show that each weighted contribution to $\mathcal E$ vanishes.
 
 Step 2 identifies $\prod_{j=1}^{N}\bar u_j^{\beta_j}$ with a constant times $q+\rho'$. Their logarithmic derivatives are equal. Using the kernel differential on one side and the scalar chain rule on the other gives two expressions for this same derivative:
 \[
@@ -892,14 +941,23 @@ Step 2 identifies $\prod_{j=1}^{N}\bar u_j^{\beta_j}$ with a constant times $q+\
    +\sum_{k=1}^g\left(\sum_{j=1}^{N}\beta_jh_{jk}\right)\rho^{k-1},\\
 \frac{d}{dz}\log(q+\rho')
  &=\sum_{j=1}^{N}\beta_j\frac{\rho'(\mu_j)-\rho'}{2[\rho(\mu_j)-\rho]}
-   +\sum_{k=1}^g\left(\sum_{j=1}^{N}\beta_jc_{jk}\right)\rho^{k-1}.
+   +\sum_{j=1}^{N}\beta_j B_j(\rho).
 \end{aligned}
 \]
-The rational point terms are identical and cancel on subtraction. The remaining polynomial vanishes for every $z$ in the regular local domain. Since $\rho(z)$ is nonconstant, its values contain infinitely many distinct coordinates with an accumulation point, so this polynomial is identically zero. Each coefficient therefore vanishes:
+The rational point terms cancel, giving
+\[
+\sum_{j=1}^{N}\beta_j B_j(\rho)
+=\sum_{k=1}^g\left(\sum_{j=1}^{N}\beta_jh_{jk}\right)\rho^{k-1}.
+\]
+Since $\rho$ is nonconstant, this is a polynomial identity. Multiplication by $d\rho/y$ shows that the weighted correction differential is holomorphic. Uniqueness of the decomposition~\eqref{eq:B-reduction} then gives
 \begin{equation}\label{eq:onishi-weighted-gauge}
-\sum_{j=1}^{N}\beta_j(c_{jk}-h_{jk})=0,\qquad k=1,\ldots,g.
+\begin{aligned}
+\sum_{j=1}^{N}\beta_jP_j&=0,\qquad
+\sum_{j=1}^{N}\beta_jd_{jk}=0,\\
+\sum_{j=1}^{N}\beta_j(c_{jk}-h_{jk})=0&\qquad(k=1,\ldots,g).
+\end{aligned}
 \end{equation}
-This is why the exponential in \eqref{eq:onishi-product-exponential} becomes one; it is a consequence of the complete \^Onishi factorization, not a separate normalization imposed on the individual modes.
+Thus the algebraic endpoint terms, second-kind integrals and holomorphic exponential corrections all cancel in the complete products. The exponential in \eqref{eq:onishi-product-exponential} becomes one as a consequence of the complete \^Onishi factorization.
 
 Only the normalized point-factor products remain. Equation~\eqref{eq:onishi-raw-products} gives
 \[
@@ -908,12 +966,12 @@ V(z)=V(z_0)\frac{q(\rho(z))-\rho'(z)}{q(\rho(z_0))-\rho'(z_0)}.
 \]
 The initial product conditions fix these as $(q+\rho')/2$ and $(q-\rho')/2$. Step 1 then identifies them with the normalized determinants:
 \begin{equation}\label{eq:onishi-mode-products}
-U(z)=\varepsilon\frac{D_n^*(z)}{\Delta_A},\qquad
-V(z)=-\varepsilon\frac{D_n(z)}{\Delta_A}.
+U(z)=\frac{D_n^*(z)}{\varepsilon_-\Delta_A},\qquad
+V(z)=-\frac{D_n(z)}{\varepsilon_+\Delta_A}.
 \end{equation}
-For the two determinant examples below $\varepsilon=-1$, hence $U=-D_n^*/\Delta_A$ and $V=D_n/\Delta_A$. This completes the connection between the Hamiltonian products, the sigma mode solutions and \^Onishi's determinant.
+The constants $\varepsilon_\pm$ are given in \eqref{eq:onishi-longer-signs}, with $\varepsilon_+=\varepsilon_-=1$ for $\deg q\le g$. For the two determinant examples below $\varepsilon_+=\varepsilon_-=-1$, hence $U=-D_n^*/\Delta_A$ and $V=D_n/\Delta_A$. This completes the connection between the Hamiltonian products, the sigma mode solutions and \^Onishi's determinant.
 
-The balanced fixed lifts make the cancellation visible in the explicit exponent. Other compatible lifts can redistribute an exponential between the raw sigma product and its correction, but the normalized initial-value solutions, and therefore their determinant products, are unchanged. The construction here uses the two stated polynomial column spaces and internally distinct main and residual lists, which both examples satisfy. Higher scalar degree requires longer column lists; repeated rows within a list require derivative limits rather than duplicating a row. Bernatska and Kopeliovich treat the corresponding rational interpolation and repeated-point constructions in~\cite[Sections~3.3--3.5]{divisor-addition}. Extending the present sigma-factor proof to those cases is outside our scope.
+The balanced fixed lifts make the cancellation visible in the explicit exponent. Other compatible lifts can redistribute an exponential between the raw sigma product and its correction, but the normalized initial-value solutions, and therefore their determinant products, are unchanged. The construction uses internally distinct main and residual lists, which both determinant examples satisfy. Repeated rows within a list require derivative limits rather than duplicating a row. Bernatska and Kopeliovich treat rational interpolation and repeated-point constructions in~\cite[Sections~3.3--3.5]{divisor-addition}; confluent sigma determinants are outside our scope.
 
 
 \section{Elementary modes and polynomial second-order potentials}
@@ -1270,14 +1328,14 @@ Write $B_j(\rho)=c_{j1}+c_{j2}\rho+c_{j3}\rho^2$. The exact coefficients are lis
 \begin{table}[htbp]
 \centering
 \begingroup
-\large
-\renewcommand{\arraystretch}{2.5}
+\normalsize
+\renewcommand{\arraystretch}{1.4}
 \setlength{\tabcolsep}{7pt}
 \begin{tabular}{lrrrrrrr}\toprule
 $j$ & 1 & 2 & 3 & 4 & 5 & 6 & 7\\\midrule
-$c_{j1}$ & $- \dfrac{112129}{224000}$ & $- \dfrac{19673}{44800}$ & $- \dfrac{12343}{32000}$ & $- \dfrac{8151}{32000}$ & $\dfrac{4233}{32000}$ & $\dfrac{8489}{32000}$ & $\dfrac{7397}{32000}$\\
-$c_{j2}$ & $\dfrac{1551}{2800}$ & $\dfrac{191}{280}$ & $\dfrac{263}{400}$ & $\dfrac{277}{400}$ & $\dfrac{223}{400}$ & $\dfrac{107}{400}$ & $- \dfrac{11}{200}$\\
-$c_{j3}$ & $\dfrac{261}{560}$ & $\dfrac{65}{112}$ & $\dfrac{27}{80}$ & $\dfrac{11}{80}$ & $- \dfrac{37}{80}$ & $- \dfrac{69}{80}$ & $- \dfrac{93}{80}$\\
+$c_{j1}$ & $- \dfrac{112129}{224000}$ & $- \dfrac{19673}{44800}$ & $- \dfrac{12343}{32000}$ & $- \dfrac{8151}{32000}$ & $\dfrac{4233}{32000}$ & $\dfrac{8489}{32000}$ & $\dfrac{7397}{32000}$\\[8pt]
+$c_{j2}$ & $\dfrac{1551}{2800}$ & $\dfrac{191}{280}$ & $\dfrac{263}{400}$ & $\dfrac{277}{400}$ & $\dfrac{223}{400}$ & $\dfrac{107}{400}$ & $- \dfrac{11}{200}$\\[8pt]
+$c_{j3}$ & $\dfrac{261}{560}$ & $\dfrac{65}{112}$ & $\dfrac{27}{80}$ & $\dfrac{11}{80}$ & $- \dfrac{37}{80}$ & $- \dfrac{69}{80}$ & $- \dfrac{93}{80}$\\[4pt]
 \bottomrule\end{tabular}
 \endgroup
 \caption{Genus-three polynomial corrections, generated by restriction of the full partial derivatives of $Q$.}\label{tab:g3-gauges}
@@ -1402,10 +1460,8 @@ Both pairs solve $\psi_j''=G_j(\rho)\psi_j$, $j=1,2$, with
  \end{aligned}
 \end{equation}
 Substituting $\rho=a_j-I_j/5$ expresses each cubic in its paired power
-$I_j=u_jv_j$. The odd-degree individual-mode
-construction applies, but $\deg q=5>g+1$ places its determinant
-factorisation beyond the column families treated in
-Section~\ref{sec:onishi-products}.
+$I_j=u_jv_j$. The odd-degree individual-mode construction applies.
+For $\deg q=5$ and $g=2$, Section~\ref{sec:longer-columns} prescribes a nine-row determinant, but these two distinct coordinates cannot supply its eight distinct fixed rows. This example would require confluent determinants to represent the complete products.
 
 
 \section{Numerical validation}\label{sec:numerical}
@@ -1553,7 +1609,7 @@ The explicit solutions raise two further questions: what the conserved quantitie
 
 \subsection{Scope of the construction}
 
-The construction combines scalar reduction with individual-mode integration for the polynomial Hamiltonian class considered here. It requires a smooth odd-degree curve of leading coefficient four, distinct weighted fixed mode points, a regular mode chart, and $\deg B_j\le g-1$. A polynomial $Q$ of degree at most $g$ automatically satisfies the last condition; higher-degree polynomials may do so by cancellation, as the first two examples show. Universally special polynomials are classified in Theorem~\ref{thm:special-Q}; their correction is identically zero, independently of degree. When $b_j\ne0$, each elementary mode pair forms a fundamental pair for a second-order equation with a self-generating polynomial potential, as established in Section~\ref{sec:polynomial-potentials}. This recovers the $n=1$ Lam\'e equation in genus one and gives higher-degree polynomial potentials in the higher-genus examples. Integer weights, including a double-weight mode, enter through the power line and weighted products.
+The construction combines scalar reduction with individual-mode integration for the polynomial Hamiltonian class considered here. It requires a smooth odd-degree curve of leading coefficient four, distinct weighted fixed mode points and a regular mode chart. Polynomial corrections integrate through algebraic endpoint terms and first- and second-kind differentials. For $\deg B_j\le g-1$ only first-kind differentials are needed, as in the first two examples. The determinant column list is determined by the scalar degree; the sigma product factorization uses internally distinct main and residual lists with compatible balanced lifts. Universally special polynomials are classified in Theorem~\ref{thm:special-Q}; their correction is identically zero. When $b_j\ne0$, each elementary mode pair forms a fundamental pair for a second-order equation with a self-generating polynomial potential, as established in Section~\ref{sec:polynomial-potentials}. This recovers the $n=1$ Lam\'e equation in genus one and gives higher-degree polynomial potentials in the higher-genus examples. Integer weights, including a double-weight mode, enter through the power line and weighted products.
 
 Regularized second-kind integrals define the exponential coefficients in arbitrary genus. The short fixed-point sigma expressions and full canonical trajectory checks in this paper cover genera two and three. Scalar coordinate recovery is given by the arbitrary-genus derivative ratio, with an additional genus-four formula and a separate check at regular curve points. Finite sigma-based coefficient extraction is available in every genus; uniform short fixed-point expressions remain a separate question. Singular curves and even-degree models require further treatment.
 
@@ -1581,9 +1637,9 @@ On the open set where every $I_j\ne0$, the differentials $dI_j$ are independent 
 
 The elementary Baker--Akhiezer restrictions and the complete modes are evaluated locally on chosen Abel lifts. Exponentials of Abel integrals and sigma quasi-periods can produce multipliers under continuation; global meromorphicity on the compact curve is not asserted. Determining their monodromy, period structure, and a corresponding spectral problem or Lax representation remains open. The scalar system is regular at finite turning points. The three-cycle calculation in Section~\ref{sec:g3-oscillatory} illustrates the resulting mode multipliers on one real oval; their structure on all cycles of the curve remains to be determined.
 
-For repeated weights, the number of coordinate pairs $N$ differs from the total weight $\sum_{j=1}^{N}\beta_j=\deg r$; the examples exploit that distinction and polynomial cancellation. It would be useful to characterize the most economical mode counts compatible with the smoothness, fixed-point, and correction-degree assumptions required here.
+For repeated weights, the number of coordinate pairs $N$ differs from the total weight $\sum_{j=1}^{N}\beta_j=\deg r$; the examples exploit that distinction and polynomial cancellation. It would be useful to characterize the most economical mode counts compatible with smooth curves and the distinct-coordinate determinant partition, and to extend the sigma product argument to confluent determinants.
 
-Further questions concern short sigma-only formulas for the higher-genus second-kind primitives, determinant descriptions beyond the interpolation families of Section~\ref{sec:onishi-products}, and conditions on $Q,\gamma_j,\beta_j$ compatible with real positive powers and physical conjugacy. The explicit low-genus examples provide a starting point for those questions while retaining a precise local domain for the proved formulas.
+Further questions concern short sigma-only formulas for the higher-genus second-kind primitives, even-degree curve models, and conditions on $Q,\gamma_j,\beta_j$ compatible with real positive powers and physical conjugacy. The explicit low-genus examples provide a starting point for those questions while retaining a precise local domain for the proved formulas.
 
 \section*{Code availability}
 
