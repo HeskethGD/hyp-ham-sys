@@ -1,5 +1,36 @@
 # Repository validation
 
+## Follow-up to the mathematical review: 23 October 2026
+
+Aligned the scope bullet and mode theorem with the general leading-coefficient
+prescription. Added the normalized-ordinate and product-scaling convention at
+the start of the determinant construction. Made the fixed-point derivative
+notation in Lemma 4.1 consistent. The follow-up accepts the two substantive
+fixes from the previous revision; no additional proof or numerical changes
+were required. Stored the reply locally in
+`reviews/response_to_review_of_response.md`.
+
+The paper verifier passes. Rebuilt the PDF, checked the affected rendered
+pages and LaTeX diagnostics, and refreshed the checksum manifest.
+
+## Revised mathematical review: 23 October 2026
+
+Corrected the general leading-coefficient prescription: curve evaluation uses
+`tau = s*z`, `Y = rho_prime/s`, with `s^2 = f/4`; original Hamiltonian modes
+are retained. Added the general reconstruction immediately after the mode
+solution theorem and connected the special examples and Discussion to it.
+Completed Lemma 4.1 by using the two-point product identity and sheet
+involution to fix the additive second-kind constants. Clarified the finite
+coordinate domain, the cited genus-four identity, and the polynomial-potential
+wording; corrected the Onishi heading accent.
+
+The paper verifier passes. Exact checks confirm the two rescaled mode
+equations, all 30 existing example normalization checks, and 44 second-kind
+local parity checks in genera 2–9. Rebuilt and visually checked the affected
+PDF pages and refreshed the checksum manifest. Numerical code and saved
+reports are unchanged. The point-by-point response is stored locally in
+`reviews/response_to_mathematical_review.md`, outside the public manifest.
+
 ## Main-paper extension packages: 23 October 2026
 
 Moved the branch-point and higher-degree computational material from the

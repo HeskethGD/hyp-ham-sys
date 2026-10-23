@@ -212,11 +212,11 @@ The divided difference is polynomial because its numerator vanishes at $\rho=\rh
 We express the separated mode integrals using sigma functions and Abelian differentials in the following setting:
 
 \begin{itemize}
-\item $F$ is squarefree of odd degree $2g+1$, with $g\ge2$ and leading coefficient $4$.
+\item $F$ is squarefree of odd degree $2g+1$, with $g\ge2$.
 \item The fixed coordinates $\rho(\mu_j)$ are distinct.
 \end{itemize}
 
-The first condition gives a smooth compactified hyperelliptic curve of genus $g$ with one point at infinity. The leading coefficient can always be normalized to $4$ by rescaling $z$ and the modes $u_j,v_j$; we use this normalization throughout. The weights $\beta_j$ encode the multiplicities of coincident mode points after a compatible degenerate-mode reduction; distinctness refers to the resulting weighted list, rather than to each occurrence in its divisor. At a branch fixed point $a_j=\rho(\mu_j)$, we have $q(a_j)=0$ and $F'(a_j)=-4r'(a_j)\ne0$, so smoothness forces $\beta_j=1$.
+The first condition gives a smooth compactified hyperelliptic curve of genus $g$ with one point at infinity. The sigma formulas are presented in the leading-four convention. For a general nonzero leading coefficient $f$, set $\tau=sz$ and $Y=\rho'/s$, with $s^2=f/4$, so that $Y^2=F/s^2$ has leading coefficient four. This is a reparametrization of propagation for curve evaluation; the original modes and Hamiltonian are retained. The corresponding mode formula is specified after Theorem~\ref{thm:mode-solutions}. The weights $\beta_j$ encode the multiplicities of coincident mode points after a compatible degenerate-mode reduction; distinctness refers to the resulting weighted list, rather than to each occurrence in its divisor. At a branch fixed point $a_j=\rho(\mu_j)$, we have $q(a_j)=0$ and $F'(a_j)=-4r'(a_j)\ne0$, so smoothness forces $\beta_j=1$.
 
 Even-degree models and singular curves require corresponding changes to the curve representation and are not treated here.
 
@@ -290,14 +290,14 @@ For the differential ordering \eqref{eq:holomorphic-diffs}, the general result i
 \end{equation}
 The product is empty in genera two and three. Since $\sigma_\sharp=\partial_{w_2}\mathcal D_g\sigma$, the scalar inversion theorem on the one-point stratum gives
 \begin{proposition}[One-point sigma coordinate recovery]\label{prop:inversion}
-For $g\ge2$ and $w(z)$ on the one-point Abel image, on a chart where the denominator is nonzero,
+For $g\ge2$ and $w(z)$ on the one-point Abel image of a finite curve point,
 \begin{equation}\label{eq:inversion-general}
 \rho(z)=-\frac{\partial_{w_1}\mathcal D_g\sigma(w(z))}
 {\partial_{w_2}\mathcal D_g\sigma(w(z))}.
 \end{equation}
 \end{proposition}
 \begin{proof}
-In the notation of \cite[Definition~5.1 and Theorem~5.5]{primeform}, the one-point derivative index is $\natural_1=\{2,4,6,\ldots\}\cap\{1,\ldots,g\}$. Replacing its index $2$ by $1$ gives $\natural_1^{(1)}$. The $k=1$ stratum inversion theorem states that the ratio of these derivatives is minus the coordinate of the single finite point. These two derivatives are precisely $\partial_{w_1}\mathcal D_g\sigma$ and $\partial_{w_2}\mathcal D_g\sigma$. An overall multiplicative normalization of sigma cancels from this ratio. Replacing the monic ordinate by $y/2$ gives the same Abel differential basis after the translation to our curve convention.
+In the notation of \cite[Definition~5.1 and Theorem~5.5]{primeform}, the one-point derivative index is $\natural_1=\{2,4,6,\ldots\}\cap\{1,\ldots,g\}$. Replacing its index $2$ by $1$ gives $\natural_1^{(1)}$. The $k=1$ stratum inversion theorem states that the ratio of these derivatives is minus the coordinate of the single finite point. These two derivatives are precisely $\partial_{w_1}\mathcal D_g\sigma$ and $\partial_{w_2}\mathcal D_g\sigma$. The denominator is $\sigma_\sharp$, which is nonzero at every finite point of this image by \cite[Proposition~6.6(1)]{onishi}. An overall multiplicative normalization of sigma cancels from this ratio. Replacing the monic ordinate by $y/2$ gives the same Abel differential basis after the translation to our curve convention.
 \end{proof}
 
 The formula represents the scalar coordinate analytically on its constrained Abel image. Its origin can also be seen directly in the two-point addition identity \cite[Lemma~7.1]{onishi}. If $w=w(z)$ and $w_\infty(t)$ is the Abel vector of a point with $\rho=t^{-2}$ tending to infinity, then
@@ -320,7 +320,7 @@ The general ratio becomes $-\sigma_1/\sigma_2$ for both genera two and three, an
 \rho(z)&=-\frac{\sigma_{13}(w(z))}{\sigma_{23}(w(z))},&&g=3,\label{eq:inversion-g3}\\
 \rho(z)&=-\frac{\sigma_{144}(w(z))}{\sigma_{244}(w(z))},&&g=4.\label{eq:inversion-g4}
 \end{align}
-All are evaluated on the one-point image, with nonzero displayed denominators. In genus two it is characterized locally by $\sigma=0$; in genus three the relevant branch satisfies $\sigma=\sigma_3=0$; in genus four it satisfies $\sigma=\sigma_4=\sigma_{44}=0$. The genus-four formula is given explicitly in \cite[Eq.~VII.18]{thirdkind}. These higher-derivative formulas are alternative representations on the same stratum, rather than the definition of the arbitrary-genus ratio.
+All are evaluated on the one-point image, with nonzero displayed denominators. In genus two it is characterized locally by $\sigma=0$; in genus three the relevant branch satisfies $\sigma=\sigma_3=0$; in genus four it satisfies $\sigma=\sigma_4=\sigma_{44}=0$. The genus-four formula is quoted directly from \cite[Eq.~VII.18]{thirdkind}. These higher-derivative formulas are alternative representations on the same stratum, rather than the definition of the arbitrary-genus ratio.
 
 For genus two, differentiating $\sigma(w(z))=0$ gives $\sigma_1+\rho\sigma_2=0$. In genus three $\sigma_3=0$ removes the last term when differentiating $\sigma=0$, giving the same first-derivative ratio; differentiating $\sigma_3=0$ and using $\sigma_{33}=0$ gives the displayed alternative \eqref{eq:inversion-g3}. Such identities explain why different derivative orders can represent the same coordinate.
 
@@ -393,17 +393,17 @@ For $\bar v_j$ replace $\rho'(\mu_j)$ and $h_{jk}$ by their negatives. Moreover,
 \begin{proof}
 We describe the normalization translation behind the third-kind formula. On the lifted curve, the sharp/flat kernel is the ratio of the algebraic prime form between the moving point and the sheet involution of the fixed point to its infinity factors. This is the hyperelliptic prime-form representation of \cite[Theorem~7.17]{primeform}. To translate its monic curve convention to ours, use the ordinate $y/2$; the holomorphic basis $d\rho/(2(y/2))$ is then \eqref{eq:holomorphic-diffs}. The second-kind basis is fixed by \eqref{eq:second-kind-diffs}, rather than by an independent holomorphic shift.
 
-The logarithmic kernel differential and \eqref{eq:third-kind-diff} have the same simple poles and residues; their difference is a holomorphic differential in the moving point. The sigma quasi-period multipliers have logarithmic derivatives given by periods of $dr_k$, so compatible continuation preserves this difference in the moving lift. Write the difference as $\sum_{k=1}^{g} h_{jk}\omega_k$.
+The logarithmic kernel differential and \eqref{eq:third-kind-diff} have the same simple poles and residues; their difference is a holomorphic differential in the moving point. The sigma quasi-period multipliers have logarithmic derivatives given by periods of $dr_k$, so compatible continuation preserves this difference in the moving lift. Temporarily write the difference as $\sum_{k=1}^{g} K_k(P)\omega_k$, where $P=\mu_j$ is the fixed curve point.
 
 To identify its coefficients, vary the fixed curve point, holding the moving point fixed. The mixed logarithmic derivative of the algebraic prime form is the algebraic fundamental bidifferential. In \cite[Eq.~II.11]{thirdkind}, that bidifferential is the derivative of the rational Cauchy differential plus $dr^T\omega$. Evaluating the fixed argument on its opposite sheet changes $dr$ to $-dr$. Subtracting the derivative of the rational mode differential therefore gives
 \[
-d_{\mu_j}\bigl(d_z\log\bar u_j(z)-\omega_j^{\rm mode}\bigr)
-=-\sum_{k=1}^{g} dr_k(\mu_j)\,\omega_k(z),
-\qquad d_{\mu_j}h_{jk}=-dr_k(\mu_j).
+d_P\bigl(d_z\log\bar u_j(z)-\omega_j^{\rm mode}\bigr)
+=-\sum_{k=1}^{g} dr_k(P)\,\omega_k(z),
+\qquad d_P K_k(P)=-dr_k(P).
 \]
-Here $d_{\mu_j}$ denotes variation along the fixed-point copy of the curve, not a propagation derivative. Integrating in the fixed point leaves an additive constant for each coefficient. The infinity prescription subtracts the divergent local powers and sets the remaining constant term to zero; compatible sheet reversal gives the corresponding negative primitive. These choices yield \eqref{eq:h-general}. Substituting $\omega_k=\rho^{k-1}dz$ proves \eqref{eq:kernel-log}. Applying the sheet involution gives the formula for $\bar v_j$.
+Here $d_P$ denotes variation along the fixed-point copy of the curve, not a propagation derivative. Thus $K_k(P)=-R_k(P)+C_k$, where $R_k=\Reg\int_\infty^P dr_k$ and $C_k$ is constant in $P$.
 
-The product identity is \^Onishi's two-point addition formula \cite[Lemma~7.1]{onishi}. The factor $(-1)^{g+1}$ in \eqref{eq:kernel-product} is the prefactor of that identity in the stated normalization. This is the infinity-based form of the third-kind integration formula; Eq.~III.17 of \cite{thirdkind} instead uses ordinary sigma with finite-base shifts.
+To fix $C_k$, use \^Onishi's two-point addition formula \cite[Lemma~7.1]{onishi}, which gives \eqref{eq:kernel-product} independently of the logarithmic formula. Its prefactor is $(-1)^{g+1}$ in our normalization. Let $\iota P$ have the opposite ordinate and the negative Abel lift. The corresponding kernel is $\bar v_j$ up to a factor independent of the moving point. The logarithmic derivative of the product is $-\rho'/(\rho(\mu_j)-\rho)$, exactly the sum of the two rational mode terms. Hence $K_k(\iota P)=-K_k(P)$. Near infinity, $\iota$ sends $t=\rho^{-1/2}$ to $-t$; each $dr_k$ has only even powers of $t$ multiplying $dt$. Its zero-constant-term primitive is therefore odd, so $R_k(\iota P)=-R_k(P)$. Substitution into $K_k=-R_k+C_k$ gives $C_k=-C_k$, hence $C_k=0$. Compatible continuation preserves this identity on the lifted curve. Consequently $K_k(P)=h_{jk}$ as defined in~\eqref{eq:h-general}. Substituting $\omega_k=\rho^{k-1}dz$ proves \eqref{eq:kernel-log}, and sheet reversal gives the formula for $\bar v_j$. This is the infinity-based third-kind integration formula; Eq.~III.17 of \cite{thirdkind} instead uses ordinary sigma with finite-base shifts.
 
 These identities also hold at a finite branch fixed point $(a,0)$.
 By \cite[Proposition~6.6(1)]{onishi}, $\sigma_\sharp$ has no zeros on
@@ -493,7 +493,7 @@ B_j(\rho)=\sum_{k=1}^g c_{jk}\rho^{k-1},\qquad
 Only first-kind differentials are then needed. This occurs automatically for $\deg Q\le g$ and can also occur through cancellation for higher-degree $Q$.
 
 \begin{theorem}[Local hyperelliptic mode solutions]\label{thm:mode-solutions}
-Let $\beta_j$ be positive integers, $\sum_{j=1}^{N}\gamma_j=0$, and $Q$ a polynomial in independent powers. Define $q,r,F$ by \eqref{eq:qr-defs}--\eqref{eq:scalar}. Assume that $F$ is squarefree of degree $2g+1$ with leading coefficient $4$, $g\ge2$, and that the fixed coordinates $\gamma_j/\beta_j$ are distinct. Let $[\rho'(z)]^2=F(\rho(z))$, $\rho''(z)=F_\rho(\rho(z))/2$ define a nonconstant scalar trajectory on a simply connected local chart with $I_j\ne0$ and nonvanishing displayed sigma normalizers and point factors. Use compatible infinity-based lifts and \eqref{eq:h-general}.
+Let $\beta_j$ be positive integers, $\sum_{j=1}^{N}\gamma_j=0$, and $Q$ a polynomial in independent powers. Define $q,r,F$ by \eqref{eq:qr-defs}--\eqref{eq:scalar}. Assume that $F$ is squarefree of degree $2g+1$, $g\ge2$, and that the fixed coordinates $\gamma_j/\beta_j$ are distinct. The displayed formulas use leading coefficient $4$; for a general nonzero leading coefficient, use the prescription~\eqref{eq:general-leading-normalization} below. Let $[\rho'(z)]^2=F(\rho(z))$, $\rho''(z)=F_\rho(\rho(z))/2$ define a nonconstant scalar trajectory on a simply connected local chart with $I_j\ne0$ and nonvanishing displayed sigma normalizers and point factors. Use compatible infinity-based lifts and \eqref{eq:h-general}.
 
 Choose initial modes with
 \[
@@ -533,6 +533,18 @@ Together with $\rho''=qq_\rho-2r_\rho$ and $q^2-(\rho')^2=4r$, these imply
 \]
 The initial product condition therefore gives $U=(q+\rho')/2$. Since $UV=r$, it also gives $V=(q-\rho')/2$. Substituting these products into the logarithmic equations recovers the polynomial canonical equations \eqref{eq:canonical}. Finally, $H=0$ follows from $U+V=q$, and the weighted invariants follow from $I_j=\gamma_j-\beta_j\rho$. The canonical vector field is polynomial, so local uniqueness for analytic ordinary differential equations identifies the constructed modes with the solution of the prescribed initial-value problem on this chart.
 \end{proof}
+
+For a general leading coefficient $f\ne0$, the same mode formula uses the normalized curve
+\begin{equation}\label{eq:general-leading-normalization}
+ \tau=sz,\qquad Y=\rho'/s,\qquad s^2=f/4,\qquad Y^2=F(\rho)/s^2.
+\end{equation}
+Compute the point factors on this curve, with fixed ordinates $b_j/s$, and take $\mathcal C_j=\int_{\tau_0}^{\tau} (B_j/s)\,d\tau$ using its differential basis. The modes are still evaluated at $\tau=sz$ with their original initial values. Indeed,
+\[
+ \frac{d}{d\tau}\log u_j
+ =\frac{b_j/s-Y}{2(a_j-\rho)}+\frac{B_j}{s},
+ \qquad a_j=\gamma_j/\beta_j,\quad b_j=q(a_j),
+\]
+so multiplication by $s$ recovers~\eqref{eq:split-log}; the $v_j$ equation follows likewise. The paired powers and complete products therefore retain their original Hamiltonian values. This extends the reconstruction to any nonzero leading coefficient without rescaling the modes.
 
 The nonzero-power and nonvanishing-factor conditions specify a chart for the logarithmic proof, rather than singularities of the polynomial canonical equations. At a modal zero, those equations can continue a finite solution even though its logarithmic derivative is undefined; the sigma expressions must then be interpreted by continuation or limits. Finite turning points likewise do not obstruct scalar continuation. Continuation around curve cycles is a separate issue and can introduce multipliers, as discussed in Section~\ref{sec:discussion}.
 
@@ -667,7 +679,7 @@ squarefree. For nonconstant special $Q$, cancellation in $q^2-4r$ can
 instead lower the degree; the total-weight-ten example in
 Section~\ref{sec:special-examples} has a degree-five, genus-two curve.
 
-\section{Onishi determinants for the complete products}\label{sec:onishi-products}
+\section{\^Onishi determinants for the complete products}\label{sec:onishi-products}
 
 The mode solutions and their Hamiltonian product identities have already been established in Theorem~\ref{thm:mode-solutions}, independently of the determinant representation:
 \[
@@ -679,6 +691,8 @@ We now relate these products to \^Onishi's identities for configurations admitti
 We know the number $N$ of mode pairs, the genus $g$ of the scalar curve and the polynomial $q$. We now ask whether the two curve functions on the right can be represented by \^Onishi determinants. The size $n$ of the required matrix has yet to be determined. We choose it from the columns available for this genus and the degree of $q$. We begin with that choice, before relating the determinant's sigma expression to the mode solutions.
 
 \subsection{Step 1: determine the columns and size, then fit the product}
+
+The determinant formulas in this section use the leading-four convention. For a general leading coefficient, apply them to the normalized curve~\eqref{eq:general-leading-normalization} with ordinate $Y$ and polynomial $q/s$; multiplying the resulting curve functions $(q/s\pm Y)/2$ by $s$ recovers the original products $U,V$.
 
 An \^Onishi determinant is formed by evaluating a prescribed list of curve functions at $n$ points, one point per row. The standard column functions are polynomials in the two curve coordinates, ordered by their poles at infinity \cite[Theorem~7.2]{onishi}. They include both pure powers of the coordinate and mixed coordinate--ordinate monomials. The determinant uses the first $n$ functions in this order; we cannot choose an arbitrary collection of columns. Here $\rho$ has pole order two and the monic ordinate $\rho'/2$ has pole order $2g+1$. The beginning of the ordered list is therefore
 \begin{equation}\label{eq:onishi-pole-columns}
@@ -1028,7 +1042,7 @@ solve
                     \frac{F(\rho)-c^2}{\rho-a}.
 \end{equation}
 This potential is polynomial if and only if $c^2=F(a)$.
-For $\deg F=D\ge2$, its polynomial degree is $D-2$.
+When polynomial, its degree is $D-2$ for $\deg F=D\ge2$.
 The pair is independent if and only if $c\ne0$.
 \end{theorem}
 
@@ -1062,9 +1076,9 @@ $\rho=a_j-I_j/\beta_j$ expresses it as a polynomial in the paired power:
  \end{aligned}
 \end{equation}
 Its coefficients are fixed by the conserved curve and mode point.
-The uniqueness in Theorem~\ref{thm:special-potential} concerns the squared
-normalised Wronskian for the prescribed product, with its two signs
-interchanging $u,v$. The Hamiltonian solutions also satisfy the
+For the prescribed product, the polynomiality condition in
+Theorem~\ref{thm:special-potential} fixes the squared normalised Wronskian
+$c^2=F(a)$; its two signs interchange $u,v$. The Hamiltonian solutions also satisfy the
 complete-product constraints~\eqref{eq:products}.
 
 For completeness, the second-order coefficients of the general modes are
@@ -1379,7 +1393,8 @@ Theorem~\ref{thm:special-Q} and the second-order equations in
 Theorems~\ref{thm:special-W}--\ref{thm:special-potential}.
 In each case $B_j=0$, so the modes are the corrected point factors
 in~\eqref{eq:point-factor-sigma}, normalised by their initial values
-as in Theorem~\ref{thm:mode-solutions}.
+as in Theorem~\ref{thm:mode-solutions}, using the curve reparametrization
+\eqref{eq:general-leading-normalization} when needed.
 Each pair has a nonzero constant Wronskian and solves a common equation
 with polynomial potential. Below, $\psi_j$ denotes either $u_j$ or $v_j$,
 and primes refer to the Hamiltonian propagation variable $z$.
@@ -1460,7 +1475,7 @@ Both pairs solve $\psi_j''=G_j(\rho)\psi_j$, $j=1,2$, with
  \end{aligned}
 \end{equation}
 Substituting $\rho=a_j-I_j/5$ expresses each cubic in its paired power
-$I_j=u_jv_j$. The odd-degree individual-mode construction applies.
+$I_j=u_jv_j$. The individual-mode reconstruction applies through~\eqref{eq:general-leading-normalization}.
 For $\deg q=5$ and $g=2$, Section~\ref{sec:longer-columns} prescribes a nine-row determinant, but these two distinct coordinates cannot supply its eight distinct fixed rows. This example would require confluent determinants to represent the complete products.
 
 
@@ -1593,7 +1608,7 @@ checks. At 35-digit working precision on the tested short regular paths,
 the maximum scaled sigma discrepancies are respectively
 $1.25\times10^{-33}$, $1.75\times10^{-31}$ and $9.27\times10^{-33}$.
 
-For sigma evaluation, the curve ordinate is rescaled so that the
+Following~\eqref{eq:general-leading-normalization}, the curve ordinate is rescaled for sigma evaluation so that the
 coefficient of the highest power of $\rho$ is four. For the first two
 examples, use $\tau=2z$ and $Y=\rho'/2$, giving $Y^2=F/4$.
 For the third, use $\tau=25\sqrt5\,z$ and $Y=\rho'/(25\sqrt5)$,
@@ -1609,7 +1624,7 @@ The explicit solutions raise two further questions: what the conserved quantitie
 
 \subsection{Scope of the construction}
 
-The construction combines scalar reduction with individual-mode integration for the polynomial Hamiltonian class considered here. It requires a smooth odd-degree curve of leading coefficient four, distinct weighted fixed mode points and a regular mode chart. Polynomial corrections integrate through algebraic endpoint terms and first- and second-kind differentials. For $\deg B_j\le g-1$ only first-kind differentials are needed, as in the first two examples. The determinant column list is determined by the scalar degree; the sigma product factorization uses internally distinct main and residual lists with compatible balanced lifts. The determinant construction provides an additional interpretation of the complete mode products; its distinct-point partition assumptions do not restrict Theorem~\ref{thm:mode-solutions}. Universally special polynomials are classified in Theorem~\ref{thm:special-Q}; their correction is identically zero. When $b_j\ne0$, each elementary mode pair forms a fundamental pair for a second-order equation with a self-generating polynomial potential, as established in Section~\ref{sec:polynomial-potentials}. This recovers the $n=1$ Lam\'e equation in genus one and gives higher-degree polynomial potentials in the higher-genus examples. Integer weights, including a double-weight mode, enter through the power line and weighted products.
+The construction combines scalar reduction with individual-mode integration for the polynomial Hamiltonian class considered here. It requires a smooth odd-degree curve, distinct weighted fixed mode points and a regular mode chart; curve evaluation uses the leading-four normalization~\eqref{eq:general-leading-normalization}. Polynomial corrections integrate through algebraic endpoint terms and first- and second-kind differentials. For $\deg B_j\le g-1$ only first-kind differentials are needed, as in the first two examples. The determinant column list is determined by the scalar degree; the sigma product factorization uses internally distinct main and residual lists with compatible balanced lifts. The determinant construction provides an additional interpretation of the complete mode products; its distinct-point partition assumptions do not restrict Theorem~\ref{thm:mode-solutions}. Universally special polynomials are classified in Theorem~\ref{thm:special-Q}; their correction is identically zero. When $b_j\ne0$, each elementary mode pair forms a fundamental pair for a second-order equation with a self-generating polynomial potential, as established in Section~\ref{sec:polynomial-potentials}. This recovers the $n=1$ Lam\'e equation in genus one and gives higher-degree polynomial potentials in the higher-genus examples. Integer weights, including a double-weight mode, enter through the power line and weighted products.
 
 Regularized second-kind integrals define the exponential coefficients in arbitrary genus. The short fixed-point sigma expressions and full canonical trajectory checks in this paper cover genera two and three. Scalar coordinate recovery is given by the arbitrary-genus derivative ratio, with an additional genus-four formula and a separate check at regular curve points. Finite sigma-based coefficient extraction is available in every genus; uniform short fixed-point expressions remain a separate question. Singular curves and even-degree models require further treatment.
 
