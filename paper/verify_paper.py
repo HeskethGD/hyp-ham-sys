@@ -196,6 +196,29 @@ def check_longer_determinants():
             equal(matrix.det(method='domain-ge'), expected)
 
 
+def check_extension_reports():
+    """Check the saved branch-point and higher-degree computations."""
+    package = ROOT / 'code/hyperelliptic_scalar_first'
+    for name, filename, count, notebooks in (
+        ('branch_points', 'results.json', 1003, ('notebook.html',)),
+        ('branch_points', 'determinant_results.json', 292, ('determinant_notebook.html',)),
+        ('higher_degree', 'results.json', 629, ('notebook.html',)),
+    ):
+        report = json.loads((package/name/filename).read_text())
+        assert report['all_passed'] and report['check_count'] == count
+        assert all(report['exact_checks'].values())
+        assert count == len(report['exact_checks']) + sum(e['check_count'] for e in report['examples'])
+        for entry in report['examples']:
+            assert entry['all_passed']
+            assert all(entry.get('exact_checks', {}).values())
+            assert sp.Rational(entry['maximum_scaled_error']) < sp.Rational(entry['tolerance'])
+            assert all(row['passed'] and sp.Rational(row['scaled_error']) < sp.Rational(entry['tolerance'])
+                       for row in entry['checks'])
+        for notebook in notebooks:
+            html = (package/name/notebook).read_text()
+            assert 'MarimoExceptionRaisedError' not in html
+
+
 def check_results():
     report = json.loads((ROOT / 'code/hyperelliptic_scalar_first/verification_results.json').read_text())
     assert report['passed']
@@ -261,6 +284,7 @@ if __name__ == '__main__':
     check_examples()
     check_special_examples()
     check_longer_determinants()
+    check_extension_reports()
     check_results()
     assert symbolic_checks()['passed']
     assert r"\frac{\beta_jV}{I_j}-Q_j(I)" in equation('eq:mode-log')
@@ -283,4 +307,4 @@ if __name__ == '__main__':
     for group_text in re.findall(r'\\cite(?:\[[^]]*\])?\{([^}]+)\}', SOURCE):
         cited.update(group_text.split(','))
     assert cited == bibkeys, (cited - bibkeys, bibkeys - cited)
-    print('PASS: printed Hamiltonians, coupled-system polynomials, curve and gauge data, numerical tables, special-polynomial examples and saved sigma checks, inversion report and references')
+    print('PASS: printed Hamiltonians, coupled-system polynomials, curve and gauge data, numerical tables, special-polynomial examples and saved sigma checks, branch-point and higher-degree reports, inversion report and references')

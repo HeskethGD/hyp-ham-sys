@@ -14,6 +14,8 @@ The paper derives scalar hyperelliptic motion from polynomial canonical Hamilton
 - `code/hyperelliptic_scalar_first/onishi_products/`: determinant construction and product-factorization notebook.
 - `code/hyperelliptic_scalar_first/special_q/`: weighted special-polynomial classification, exact checks and independent Hamiltonian/second-order integration.
 - `code/hyperelliptic_scalar_first/sigma_modes/`: sigma reconstruction and analytic derivative checks for the three special-polynomial examples.
+- `code/hyperelliptic_scalar_first/branch_points/`: simple branch fixed points, turning-point continuation, arbitrary-genus justification and branch-point determinant checks.
+- `code/hyperelliptic_scalar_first/higher_degree/`: higher-degree polynomial corrections, second-kind primitives, longer determinant columns and cancellation in complete products.
 - `code/hyperelliptic_scalar_first/notebook.py`: supporting analytic derivations, including alternative coefficient formulas and short checks on both sheets.
 - `code/hyperelliptic_scalar_first/model.py`, `sigma_jets.py`, `verification.py`: shared algebra, sigma coefficient calculations and verification.
 - `code/hyperelliptic_scalar_first/paper_plots.py`: publication layouts, regenerated from saved plot data.
@@ -47,6 +49,9 @@ python -m marimo edit code/hyperelliptic_scalar_first/genus_three_example/notebo
 python -m marimo edit code/hyperelliptic_scalar_first/onishi_products/notebook.py
 python -m marimo edit code/hyperelliptic_scalar_first/special_q/notebook.py
 python -m marimo edit code/hyperelliptic_scalar_first/sigma_modes/notebook.py
+python -m marimo edit code/hyperelliptic_scalar_first/branch_points/notebook.py
+python -m marimo edit code/hyperelliptic_scalar_first/branch_points/determinant_notebook.py
+python -m marimo edit code/hyperelliptic_scalar_first/higher_degree/notebook.py
 ```
 
 Launch one notebook at a time. The supporting derivation notebook can be opened in the same way at `code/hyperelliptic_scalar_first/notebook.py`.
@@ -92,6 +97,20 @@ PYTHONPATH=code python -m hyperelliptic_scalar_first.sigma_modes.verification
 
 Each package has a README describing its checks and command options. Both
 commands write `results.json` in their own package directory.
+
+Recompute the branch-point and higher-degree extensions:
+
+```sh
+PYTHONPATH=code python -m hyperelliptic_scalar_first.branch_points.verification
+PYTHONPATH=code python -m hyperelliptic_scalar_first.branch_points.determinants
+PYTHONPATH=code python -m hyperelliptic_scalar_first.higher_degree.verification
+```
+
+These check 1,003 branch-mode identities, 292 branch determinant identities
+and 629 higher-degree identities. The branch packages use 35 working
+digits; higher-degree checks use 40. The determinant command writes
+`determinant_results.json`; the other commands write `results.json`.
+The fast paper verifier also checks these saved reports.
 
 ## Rebuild the paper
 

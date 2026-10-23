@@ -669,12 +669,12 @@ Section~\ref{sec:special-examples} has a degree-five, genus-two curve.
 
 \section{Onishi determinants for the complete products}\label{sec:onishi-products}
 
-We have already established the Hamiltonian product identities
+The mode solutions and their Hamiltonian product identities have already been established in Theorem~\ref{thm:mode-solutions}, independently of the determinant representation:
 \[
 U(z)=\prod_{j=1}^{N} u_j(z)^{\beta_j}=\frac{q(\rho(z))+\rho'(z)}2,\qquad
 V(z)=\prod_{j=1}^{N} v_j(z)^{\beta_j}=\frac{q(\rho(z))-\rho'(z)}2.
 \]
-Representing these products by \^Onishi determinants connects the reconstructed modes to the same addition identities that give their paired powers. The essential step is to account for every uncorrected point factor in the determinant's sigma expression, including those contained in its composite factor; this will also explain why the exponential corrections disappear from the complete products.
+We now relate these products to \^Onishi's identities for configurations admitting the distinct-point partition described below. A repeated mode point can occur once in each of the main and residual lists, accommodating some weights $\beta_j>1$ without derivative rows. This connects the reconstructed modes to the same addition identities that give their paired powers. The essential step is to account for every uncorrected point factor in the determinant's sigma expression, including those contained in its composite factor; this will also explain why the exponential corrections disappear from the complete products.
 
 We know the number $N$ of mode pairs, the genus $g$ of the scalar curve and the polynomial $q$. We now ask whether the two curve functions on the right can be represented by \^Onishi determinants. The size $n$ of the required matrix has yet to be determined. We choose it from the columns available for this genus and the degree of $q$. We begin with that choice, before relating the determinant's sigma expression to the mode solutions.
 
@@ -777,7 +777,7 @@ where, in the order of the fixed rows,
 \]
 Here $\boldsymbol{\rho}'_A$ is a column vector, and $\mathsf W_A$ is the $(n-1)\times(n-1)$ Vandermonde matrix with determinant $\Delta_A$. It is invertible because the selected fixed coordinates are distinct.
 
-If $\mathbf q=(q_0,\ldots,q_{n-2})^T$ is the coefficient vector of the prescribed $q$, padded with zeros when necessary, its fixed-point values satisfy
+For these column arrangements, $\deg q\le n-2$. Writing $\mathbf q=(q_0,\ldots,q_{n-2})^T$ for its coefficient vector, padded with zeros when necessary, the fixed-point values satisfy
 \[
 \mathsf W_A\mathbf q=\boldsymbol{\rho}'_A.
 \]
@@ -785,7 +785,7 @@ Consequently,
 \begin{equation}\label{eq:onishi-vandermonde-q}
 q(\rho)=\mathbf p(\rho)^T\mathsf W_A^{-1}\boldsymbol{\rho}'_A.
 \end{equation}
-Thus the Vandermonde inverse takes the fixed ordinates $\rho'(\mu_j)$ to the polynomial $q$ evaluated at the moving coordinate. This is interpolation of the already specified scalar restriction, expressed in matrix form.
+Thus the Vandermonde inverse takes the fixed ordinates $\rho'(\mu_j)$ to the polynomial $q$ evaluated at the moving coordinate. If $\deg q>n-2$, the same expression gives only the polynomial interpolant of degree at most $n-2$ at those nodes and does not recover the entire $q$. This is interpolation of the already specified scalar restriction, expressed in matrix form.
 
 The Schur complement of $\mathsf W_A$ in \eqref{eq:onishi-schur-block} is
 \begin{equation}\label{eq:onishi-schur-complement}
@@ -971,7 +971,7 @@ V(z)=-\frac{D_n(z)}{\varepsilon_+\Delta_A}.
 \end{equation}
 The constants $\varepsilon_\pm$ are given in \eqref{eq:onishi-longer-signs}, with $\varepsilon_+=\varepsilon_-=1$ for $\deg q\le g$. For the two determinant examples below $\varepsilon_+=\varepsilon_-=-1$, hence $U=-D_n^*/\Delta_A$ and $V=D_n/\Delta_A$. This completes the connection between the Hamiltonian products, the sigma mode solutions and \^Onishi's determinant.
 
-The balanced fixed lifts make the cancellation visible in the explicit exponent. Other compatible lifts can redistribute an exponential between the raw sigma product and its correction, but the normalized initial-value solutions, and therefore their determinant products, are unchanged. The construction uses internally distinct main and residual lists, which both determinant examples satisfy. Repeated rows within a list require derivative limits rather than duplicating a row. Bernatska and Kopeliovich treat rational interpolation and repeated-point constructions in~\cite[Sections~3.3--3.5]{divisor-addition}; confluent sigma determinants are outside our scope.
+The balanced fixed lifts make the cancellation visible in the explicit exponent. Other compatible lifts can redistribute an exponential between the raw sigma product and its correction, but the normalized initial-value solutions, and therefore their determinant products, are unchanged. The construction uses internally distinct main and residual lists, which both determinant examples satisfy. More general multiplicities could be treated through confluent determinant identities, in which derivative limits replace coincident evaluation rows, but we do not pursue that extension here. Bernatska and Kopeliovich treat rational interpolation and repeated-point constructions in~\cite[Sections~3.3--3.5]{divisor-addition}.
 
 
 \section{Elementary modes and polynomial second-order potentials}
@@ -1609,7 +1609,7 @@ The explicit solutions raise two further questions: what the conserved quantitie
 
 \subsection{Scope of the construction}
 
-The construction combines scalar reduction with individual-mode integration for the polynomial Hamiltonian class considered here. It requires a smooth odd-degree curve of leading coefficient four, distinct weighted fixed mode points and a regular mode chart. Polynomial corrections integrate through algebraic endpoint terms and first- and second-kind differentials. For $\deg B_j\le g-1$ only first-kind differentials are needed, as in the first two examples. The determinant column list is determined by the scalar degree; the sigma product factorization uses internally distinct main and residual lists with compatible balanced lifts. Universally special polynomials are classified in Theorem~\ref{thm:special-Q}; their correction is identically zero. When $b_j\ne0$, each elementary mode pair forms a fundamental pair for a second-order equation with a self-generating polynomial potential, as established in Section~\ref{sec:polynomial-potentials}. This recovers the $n=1$ Lam\'e equation in genus one and gives higher-degree polynomial potentials in the higher-genus examples. Integer weights, including a double-weight mode, enter through the power line and weighted products.
+The construction combines scalar reduction with individual-mode integration for the polynomial Hamiltonian class considered here. It requires a smooth odd-degree curve of leading coefficient four, distinct weighted fixed mode points and a regular mode chart. Polynomial corrections integrate through algebraic endpoint terms and first- and second-kind differentials. For $\deg B_j\le g-1$ only first-kind differentials are needed, as in the first two examples. The determinant column list is determined by the scalar degree; the sigma product factorization uses internally distinct main and residual lists with compatible balanced lifts. The determinant construction provides an additional interpretation of the complete mode products; its distinct-point partition assumptions do not restrict Theorem~\ref{thm:mode-solutions}. Universally special polynomials are classified in Theorem~\ref{thm:special-Q}; their correction is identically zero. When $b_j\ne0$, each elementary mode pair forms a fundamental pair for a second-order equation with a self-generating polynomial potential, as established in Section~\ref{sec:polynomial-potentials}. This recovers the $n=1$ Lam\'e equation in genus one and gives higher-degree polynomial potentials in the higher-genus examples. Integer weights, including a double-weight mode, enter through the power line and weighted products.
 
 Regularized second-kind integrals define the exponential coefficients in arbitrary genus. The short fixed-point sigma expressions and full canonical trajectory checks in this paper cover genera two and three. Scalar coordinate recovery is given by the arbitrary-genus derivative ratio, with an additional genus-four formula and a separate check at regular curve points. Finite sigma-based coefficient extraction is available in every genus; uniform short fixed-point expressions remain a separate question. Singular curves and even-degree models require further treatment.
 

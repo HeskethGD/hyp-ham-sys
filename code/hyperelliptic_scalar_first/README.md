@@ -12,6 +12,21 @@ second derivatives. Both follow the same organization: `model.py`,
 `verification.py`, marimo source, an executed HTML export and `results.json`.
 Their READMEs give the corresponding package commands.
 
+The remaining main-paper extensions have the same organization:
+
+- [branch_points](branch_points/README.md): branch-point modes, analytic
+  continuation through a turning point and the arbitrary-genus argument.
+  Its second notebook checks the branch-point determinant identities and
+  compatible period balancing.
+- [higher_degree](higher_degree/README.md): polynomial corrections of
+  arbitrary degree, their first-/second-kind reduction, longer determinant
+  columns and complete-product cancellation.
+
+Both include model and verification modules, executable notebooks, fresh
+HTML exports, saved reports and derivation notes. The shared
+`abel_lifts.py` computes integer period coordinates for both packages.
+No code in this folder depends on exploratory material outside `code/`.
+
 The top-level `notebook.py` is a supporting derivation notebook. It contains the fixed-point sigma formulas, regularized second-kind integrals, reference-point coefficient extraction and short regular trajectories on both sheets. Its `verification.py` uses `model.py` and `sigma_jets.py` and reads this notebook's source for formatting checks. These files therefore remain together as one package. The longer worked examples have their own initial states and validation reports.
 
 `paper_plots.py` produces the combined publication figures from `plot_data.json` in the example folders. Those saved samples allow layout changes without rerunning the numerical calculations.

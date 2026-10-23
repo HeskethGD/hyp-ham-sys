@@ -19,7 +19,7 @@ The notebook imports the exact polynomial models from `code/hyperelliptic_scalar
 
 ## How the matrix size is chosen
 
-The known inputs are the genus, the scalar polynomial `q` and the Hamiltonian's mode count. An Onishi determinant must use an initial segment of the monomials ordered by their poles at infinity. The first list containing the ordinate has `g+2` columns and accommodates `degree(q)<=g`. The next polynomial column permits `degree(q)=g+1`, giving size `g+3`. Both lists have only one ordinate column, so its moving-row cofactor is constant. Extending farther reaches a mixed coordinate/ordinate column and can introduce a polynomial ordinate multiplier. The notebook now explains this choice before point counting or composite sigma factors.
+The known inputs are the genus, the scalar polynomial `q` and the Hamiltonian's mode count. An Onishi determinant must use an initial segment of the monomials ordered by their poles at infinity. The first list containing the ordinate has `g+2` columns and accommodates `degree(q)<=g`. The next polynomial column permits `degree(q)=g+1`, giving size `g+3`. Both lists have only one ordinate column, so its moving-row cofactor is constant. This notebook explains these short lists before point counting or composite sigma factors. The companion [higher_degree](../higher_degree/README.md) package treats longer lists and reduces their mixed ordinate columns using the fixed-point interpolation conditions.
 
 ## The proof
 
@@ -43,4 +43,8 @@ For genus two, the main points are modes 1–4 and the residual points are modes
 
 The main Vandermonde minors are exactly `21/50000` (genus two) and `81/4000000000` (genus three). Signs and composite-factor constants come from the corrected identities, not calibration. The integer Abel-lattice path class is verified before balancing a unit-weight lift; this changes its integration path, not the curve point.
 
-See `proof_scope.md` for assumptions, resolved issues and remaining extensions. The notebook and paper use the familiar fixed-point notation `rho(mu_j), rho'(mu_j), w(mu_j)` rather than introducing another set of point-coordinate names.
+See `proof_scope.md` for the scope of this notebook. Companion checks of
+the paper's branch-point and longer-column arguments are in
+[branch_points](../branch_points/README.md) and
+[higher_degree](../higher_degree/README.md). The notebook and paper use the
+fixed-point notation `rho(mu_j), rho'(mu_j), w(mu_j)`.

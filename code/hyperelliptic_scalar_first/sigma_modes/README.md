@@ -49,6 +49,10 @@ See `normalization.md` for the scaling argument. Global continuation,
 branch-point limits, and high-degree determinant identities are not established
 by these local checks.
 
+Those extensions are checked separately in
+[branch_points](../branch_points/README.md) and
+[higher_degree](../higher_degree/README.md).
+
 The fixed-point paths start at a common regular exterior anchor and have
 three segments above all finite branch points. Root-factor square roots
 transport the sheet continuously; quadrature is split near close roots.

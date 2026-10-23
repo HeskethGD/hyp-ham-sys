@@ -1,0 +1,3244 @@
+{
+  "exact_checks": {
+    "g=2, B=x^0: differential reduction": true,
+    "g=2, B=x^1: differential reduction": true,
+    "g=2, B=x^2: differential reduction": true,
+    "g=2, B=x^3: differential reduction": true,
+    "g=2, B=x^4: differential reduction": true,
+    "g=2, B=x^5: differential reduction": true,
+    "g=2, B=x^6: differential reduction": true,
+    "g=2, B=x^7: differential reduction": true,
+    "g=2, B=x^8: differential reduction": true,
+    "g=2, B=x^9: differential reduction": true,
+    "g=2, B=x^10: differential reduction": true,
+    "g=3, B=x^0: differential reduction": true,
+    "g=3, B=x^1: differential reduction": true,
+    "g=3, B=x^2: differential reduction": true,
+    "g=3, B=x^3: differential reduction": true,
+    "g=3, B=x^4: differential reduction": true,
+    "g=3, B=x^5: differential reduction": true,
+    "g=3, B=x^6: differential reduction": true,
+    "g=3, B=x^7: differential reduction": true,
+    "g=3, B=x^8: differential reduction": true,
+    "g=3, B=x^9: differential reduction": true,
+    "g=3, B=x^10: differential reduction": true,
+    "g=3, B=x^11: differential reduction": true,
+    "g=3, B=x^12: differential reduction": true,
+    "g=4, B=x^0: differential reduction": true,
+    "g=4, B=x^1: differential reduction": true,
+    "g=4, B=x^2: differential reduction": true,
+    "g=4, B=x^3: differential reduction": true,
+    "g=4, B=x^4: differential reduction": true,
+    "g=4, B=x^5: differential reduction": true,
+    "g=4, B=x^6: differential reduction": true,
+    "g=4, B=x^7: differential reduction": true,
+    "g=4, B=x^8: differential reduction": true,
+    "g=4, B=x^9: differential reduction": true,
+    "g=4, B=x^10: differential reduction": true,
+    "g=4, B=x^11: differential reduction": true,
+    "g=4, B=x^12: differential reduction": true,
+    "g=4, B=x^13: differential reduction": true,
+    "g=4, B=x^14: differential reduction": true,
+    "g=2, degree q=4: longer-column interpolation": true,
+    "g=2, degree q=4: opposite interpolation": true,
+    "g=2, degree q=5: longer-column interpolation": true,
+    "g=2, degree q=5: opposite interpolation": true,
+    "g=2, degree q=6: longer-column interpolation": true,
+    "g=2, degree q=6: opposite interpolation": true,
+    "g=3, degree q=5: longer-column interpolation": true,
+    "g=3, degree q=5: opposite interpolation": true,
+    "g=3, degree q=6: longer-column interpolation": true,
+    "g=3, degree q=6: opposite interpolation": true,
+    "g=4, degree q=6: longer-column interpolation": true,
+    "g=4, degree q=6: opposite interpolation": true
+  },
+  "examples": [
+    {
+      "name": "g2_high_q_high_B",
+      "genus": 2,
+      "N": 8,
+      "degree_q": 4,
+      "degrees_B": [
+        5,
+        5,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "F": "4*rho**5 - 168*rho**3 + 16385*rho**2 + 420*rho",
+      "q": "2*rho**4 - 84*rho**2 + rho + 210",
+      "Q": "-I1/8 - I2/8 - I3/8 - I4/8 - I5/8 - I6/8 - I7/8 - I8/8 + (I1 - I2 + 2)*(-I1/8 - I2/8 - I3/8 - I4/8 - I5/8 - I6/8 - I7/8 - I8/8)**5 + 2*(-I1/8 - I2/8 - I3/8 - I4/8 - I5/8 - I6/8 - I7/8 - I8/8)**4 - 84*(-I1/8 - I2/8 - I3/8 - I4/8 - I5/8 - I6/8 - I7/8 - I8/8)**2 + 210",
+      "B": [
+        "-rho**5 + 7*rho**2 - 28*rho + 389/8",
+        "rho**5 + 5*rho**2 - 4*rho - 683/8",
+        "3*rho**2 + 12*rho - 795/8",
+        "rho**2 + 20*rho - 331/8",
+        "-rho**2 + 20*rho + 325/8",
+        "-3*rho**2 + 12*rho + 789/8",
+        "-5*rho**2 - 4*rho + 677/8",
+        "-7*rho**2 - 28*rho - 395/8"
+      ],
+      "reductions": [
+        {
+          "P": "-rho/14",
+          "c": [
+            "389/8",
+            "-403"
+          ],
+          "d": [
+            "-10",
+            "16434/7"
+          ]
+        },
+        {
+          "P": "rho/14",
+          "c": [
+            "-683/8",
+            "371"
+          ],
+          "d": [
+            "10",
+            "-16350/7"
+          ]
+        },
+        {
+          "P": "0",
+          "c": [
+            "-795/8",
+            "12"
+          ],
+          "d": [
+            "0",
+            "3"
+          ]
+        },
+        {
+          "P": "0",
+          "c": [
+            "-331/8",
+            "20"
+          ],
+          "d": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "P": "0",
+          "c": [
+            "325/8",
+            "20"
+          ],
+          "d": [
+            "0",
+            "-1"
+          ]
+        },
+        {
+          "P": "0",
+          "c": [
+            "789/8",
+            "12"
+          ],
+          "d": [
+            "0",
+            "-3"
+          ]
+        },
+        {
+          "P": "0",
+          "c": [
+            "677/8",
+            "-4"
+          ],
+          "d": [
+            "0",
+            "-5"
+          ]
+        },
+        {
+          "P": "0",
+          "c": [
+            "-395/8",
+            "-28"
+          ],
+          "d": [
+            "0",
+            "-7"
+          ]
+        }
+      ],
+      "exact_checks": {
+        "all reduced differentials agree": true,
+        "weighted algebraic endpoint terms cancel": true,
+        "weighted second-kind coefficients cancel": true
+      },
+      "determinant": {
+        "size": 7,
+        "degree_q": 4,
+        "extra_ordinate_powers": [
+          1
+        ],
+        "fixed_rows": 6,
+        "residual_rows": 2,
+        "period_coordinates": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "interpolation_constant": "1",
+        "opposite_interpolation_constant": "-1"
+      },
+      "samples": [
+        {
+          "sheet": 1,
+          "rho": "8.001",
+          "z": "9.5467313268603e-7"
+        },
+        {
+          "sheet": 1,
+          "rho": "8.002",
+          "z": "1.9092104256322e-6"
+        },
+        {
+          "sheet": -1,
+          "rho": "8.001",
+          "z": "-9.5467313268603e-7"
+        },
+        {
+          "sheet": -1,
+          "rho": "8.002",
+          "z": "-1.9092104256322e-6"
+        }
+      ],
+      "all_passed": true,
+      "check_count": 327,
+      "checks": [
+        {
+          "check": "sheet 1, fraction 0.5: moving second-kind primitive 1",
+          "scaled_error": "4.88122701869e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: moving second-kind primitive 2",
+          "scaled_error": "5.64302891584e-42",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: correction 1 reduced primitive versus direct quadrature",
+          "scaled_error": "1.78207497759e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: u_1 sigma versus direct first-order quadrature",
+          "scaled_error": "1.78253104324e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: v_1 sigma versus direct first-order quadrature",
+          "scaled_error": "1.35242131544e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: correction 2 reduced primitive versus direct quadrature",
+          "scaled_error": "1.77522318862e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: u_2 sigma versus direct first-order quadrature",
+          "scaled_error": "1.77967124887e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: v_2 sigma versus direct first-order quadrature",
+          "scaled_error": "1.77441816588e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: correction 3 reduced primitive versus direct quadrature",
+          "scaled_error": "1.69332906429e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: u_3 sigma versus direct first-order quadrature",
+          "scaled_error": "4.97705737902e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: v_3 sigma versus direct first-order quadrature",
+          "scaled_error": "5.19621257897e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: correction 4 reduced primitive versus direct quadrature",
+          "scaled_error": "5.6444302143e-42",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: u_4 sigma versus direct first-order quadrature",
+          "scaled_error": "1.53560690392e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: v_4 sigma versus direct first-order quadrature",
+          "scaled_error": "4.52442845689e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: correction 5 reduced primitive versus direct quadrature",
+          "scaled_error": "5.6444302143e-42",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: u_5 sigma versus direct first-order quadrature",
+          "scaled_error": "6.9192283351e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: v_5 sigma versus direct first-order quadrature",
+          "scaled_error": "1.67164301547e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: correction 6 reduced primitive versus direct quadrature",
+          "scaled_error": "1.69293932815e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: u_6 sigma versus direct first-order quadrature",
+          "scaled_error": "4.89068255125e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: v_6 sigma versus direct first-order quadrature",
+          "scaled_error": "3.92173919393e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: correction 7 reduced primitive versus direct quadrature",
+          "scaled_error": "2.82221510715e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: u_7 sigma versus direct first-order quadrature",
+          "scaled_error": "1.48670839278e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: v_7 sigma versus direct first-order quadrature",
+          "scaled_error": "2.54079156152e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: correction 8 reduced primitive versus direct quadrature",
+          "scaled_error": "3.95054063062e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: u_8 sigma versus direct first-order quadrature",
+          "scaled_error": "7.11265040971e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: v_8 sigma versus direct first-order quadrature",
+          "scaled_error": "7.2397653478e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: mode 1 product",
+          "scaled_error": "2.74466764223e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: u_1 canonical derivative",
+          "scaled_error": "2.23265268837e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: v_1 canonical derivative",
+          "scaled_error": "2.32380110075e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: u_1 sigma second derivative versus full field Jacobian",
+          "scaled_error": "3.65188754336e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: v_1 sigma second derivative versus full field Jacobian",
+          "scaled_error": "4.00617070317e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: mode 2 product",
+          "scaled_error": "7.41912895162e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: u_2 canonical derivative",
+          "scaled_error": "3.2163876324e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: v_2 canonical derivative",
+          "scaled_error": "3.1865730827e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: u_2 sigma second derivative versus full field Jacobian",
+          "scaled_error": "5.00200253316e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: v_2 sigma second derivative versus full field Jacobian",
+          "scaled_error": "5.10949547842e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: mode 3 product",
+          "scaled_error": "3.30145125188e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: u_3 canonical derivative",
+          "scaled_error": "6.03576976936e-39",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: v_3 canonical derivative",
+          "scaled_error": "9.49820419124e-39",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: u_3 sigma second derivative versus full field Jacobian",
+          "scaled_error": "1.01557920281e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: v_3 sigma second derivative versus full field Jacobian",
+          "scaled_error": "8.39805432434e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: mode 4 product",
+          "scaled_error": "5.3678546117e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: u_4 canonical derivative",
+          "scaled_error": "6.56515979018e-39",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: v_4 canonical derivative",
+          "scaled_error": "1.28661721246e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: u_4 sigma second derivative versus full field Jacobian",
+          "scaled_error": "2.13093872105e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: v_4 sigma second derivative versus full field Jacobian",
+          "scaled_error": "9.09256678845e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: mode 5 product",
+          "scaled_error": "5.51853992837e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: u_5 canonical derivative",
+          "scaled_error": "7.59109723308e-39",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: v_5 canonical derivative",
+          "scaled_error": "2.87980621943e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: u_5 sigma second derivative versus full field Jacobian",
+          "scaled_error": "9.71653463433e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: v_5 sigma second derivative versus full field Jacobian",
+          "scaled_error": "9.11589256752e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: mode 6 product",
+          "scaled_error": "3.56805536272e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: u_6 canonical derivative",
+          "scaled_error": "1.03889484112e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: v_6 canonical derivative",
+          "scaled_error": "2.30244748365e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: u_6 sigma second derivative versus full field Jacobian",
+          "scaled_error": "8.73629430525e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: v_6 sigma second derivative versus full field Jacobian",
+          "scaled_error": "2.34622052312e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: mode 7 product",
+          "scaled_error": "3.83368621043e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: u_7 canonical derivative",
+          "scaled_error": "1.11185615751e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: v_7 canonical derivative",
+          "scaled_error": "4.27457209529e-39",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: u_7 sigma second derivative versus full field Jacobian",
+          "scaled_error": "3.33100816122e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: v_7 sigma second derivative versus full field Jacobian",
+          "scaled_error": "2.42856576652e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: mode 8 product",
+          "scaled_error": "4.04034082202e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: u_8 canonical derivative",
+          "scaled_error": "2.24947478649e-39",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: v_8 canonical derivative",
+          "scaled_error": "1.31346090658e-39",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: u_8 sigma second derivative versus full field Jacobian",
+          "scaled_error": "6.49871785756e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: v_8 sigma second derivative versus full field Jacobian",
+          "scaled_error": "1.03215081726e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: U",
+          "scaled_error": "1.91113902597e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: V",
+          "scaled_error": "1.45301572665e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: Hamiltonian",
+          "scaled_error": "1.94058961513e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: moving second-kind primitive 1",
+          "scaled_error": "3.97968763868e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: moving second-kind primitive 2",
+          "scaled_error": "1.27406056376e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: correction 1 reduced primitive versus direct quadrature",
+          "scaled_error": "2.01736756326e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: u_1 sigma versus direct first-order quadrature",
+          "scaled_error": "2.01525157347e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: v_1 sigma versus direct first-order quadrature",
+          "scaled_error": "1.58021661433e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: correction 2 reduced primitive versus direct quadrature",
+          "scaled_error": "2.00187032328e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: u_2 sigma versus direct first-order quadrature",
+          "scaled_error": "2.00243015934e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: v_2 sigma versus direct first-order quadrature",
+          "scaled_error": "2.00120227588e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: correction 3 reduced primitive versus direct quadrature",
+          "scaled_error": "3.82162117191e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: u_3 sigma versus direct first-order quadrature",
+          "scaled_error": "3.44532672819e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: v_3 sigma versus direct first-order quadrature",
+          "scaled_error": "4.00119462325e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: correction 4 reduced primitive versus direct quadrature",
+          "scaled_error": "1.27350004438e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: u_4 sigma versus direct first-order quadrature",
+          "scaled_error": "1.3651344575e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: v_4 sigma versus direct first-order quadrature",
+          "scaled_error": "6.82809827896e-42",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: correction 5 reduced primitive versus direct quadrature",
+          "scaled_error": "1.27462108315e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: u_5 sigma versus direct first-order quadrature",
+          "scaled_error": "3.11366174652e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: v_5 sigma versus direct first-order quadrature",
+          "scaled_error": "1.64892521978e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: correction 6 reduced primitive versus direct quadrature",
+          "scaled_error": "3.82198901275e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: u_6 sigma versus direct first-order quadrature",
+          "scaled_error": "6.88691868573e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: v_6 sigma versus direct first-order quadrature",
+          "scaled_error": "1.01387930397e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: correction 7 reduced primitive versus direct quadrature",
+          "scaled_error": "6.37086333821e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: u_7 sigma versus direct first-order quadrature",
+          "scaled_error": "6.99734574607e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: v_7 sigma versus direct first-order quadrature",
+          "scaled_error": "9.17775168212e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: correction 8 reduced primitive versus direct quadrature",
+          "scaled_error": "8.91674238819e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: u_8 sigma versus direct first-order quadrature",
+          "scaled_error": "1.04459430448e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: v_8 sigma versus direct first-order quadrature",
+          "scaled_error": "4.62247167552e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: mode 1 product",
+          "scaled_error": "5.80168686763e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: u_1 canonical derivative",
+          "scaled_error": "2.22920532595e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: v_1 canonical derivative",
+          "scaled_error": "2.07393999244e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: u_1 sigma second derivative versus full field Jacobian",
+          "scaled_error": "5.62580538956e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: v_1 sigma second derivative versus full field Jacobian",
+          "scaled_error": "4.93513161356e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: mode 2 product",
+          "scaled_error": "1.59364308137e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: u_2 canonical derivative",
+          "scaled_error": "1.15738435984e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: v_2 canonical derivative",
+          "scaled_error": "1.21907778594e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: u_2 sigma second derivative versus full field Jacobian",
+          "scaled_error": "1.97301929924e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: v_2 sigma second derivative versus full field Jacobian",
+          "scaled_error": "1.96233364536e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: mode 3 product",
+          "scaled_error": "4.77231597529e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: u_3 canonical derivative",
+          "scaled_error": "6.52045105679e-39",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: v_3 canonical derivative",
+          "scaled_error": "1.05213481028e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: u_3 sigma second derivative versus full field Jacobian",
+          "scaled_error": "1.40722536114e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: v_3 sigma second derivative versus full field Jacobian",
+          "scaled_error": "1.67236438604e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: mode 4 product",
+          "scaled_error": "2.89085529261e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: u_4 canonical derivative",
+          "scaled_error": "7.14377180739e-39",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: v_4 canonical derivative",
+          "scaled_error": "1.43328989375e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: u_4 sigma second derivative versus full field Jacobian",
+          "scaled_error": "1.64544170233e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: v_4 sigma second derivative versus full field Jacobian",
+          "scaled_error": "2.46056544555e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: mode 5 product",
+          "scaled_error": "4.06314567111e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: u_5 canonical derivative",
+          "scaled_error": "8.21234137475e-39",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: v_5 canonical derivative",
+          "scaled_error": "3.21827428608e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: u_5 sigma second derivative versus full field Jacobian",
+          "scaled_error": "9.64590143422e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: v_5 sigma second derivative versus full field Jacobian",
+          "scaled_error": "1.08760622039e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: mode 6 product",
+          "scaled_error": "5.6248139068e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: u_6 canonical derivative",
+          "scaled_error": "1.13104412306e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: v_6 canonical derivative",
+          "scaled_error": "2.62001959429e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: u_6 sigma second derivative versus full field Jacobian",
+          "scaled_error": "9.50116057382e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: v_6 sigma second derivative versus full field Jacobian",
+          "scaled_error": "1.51035895765e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: mode 7 product",
+          "scaled_error": "1.93999640961e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: u_7 canonical derivative",
+          "scaled_error": "1.25697079599e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: v_7 canonical derivative",
+          "scaled_error": "5.13577909725e-39",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: u_7 sigma second derivative versus full field Jacobian",
+          "scaled_error": "1.57121626144e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: v_7 sigma second derivative versus full field Jacobian",
+          "scaled_error": "1.14272631933e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: mode 8 product",
+          "scaled_error": "7.21472114739e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: u_8 canonical derivative",
+          "scaled_error": "2.62201442376e-39",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: v_8 canonical derivative",
+          "scaled_error": "1.59517262188e-39",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: u_8 sigma second derivative versus full field Jacobian",
+          "scaled_error": "8.69726865838e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: v_8 sigma second derivative versus full field Jacobian",
+          "scaled_error": "2.36325102141e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: U",
+          "scaled_error": "1.30628653503e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: V",
+          "scaled_error": "1.28367776005e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: Hamiltonian",
+          "scaled_error": "2.13950106137e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: moving second-kind primitive 1",
+          "scaled_error": "4.88122701869e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: moving second-kind primitive 2",
+          "scaled_error": "5.64302891584e-42",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: correction 1 reduced primitive versus direct quadrature",
+          "scaled_error": "1.78207497759e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: u_1 sigma versus direct first-order quadrature",
+          "scaled_error": "1.78274109289e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: v_1 sigma versus direct first-order quadrature",
+          "scaled_error": "2.60977848097e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: correction 2 reduced primitive versus direct quadrature",
+          "scaled_error": "1.77522318862e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: u_2 sigma versus direct first-order quadrature",
+          "scaled_error": "1.71962088153e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: v_2 sigma versus direct first-order quadrature",
+          "scaled_error": "1.77830255261e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: correction 3 reduced primitive versus direct quadrature",
+          "scaled_error": "1.69332906429e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: u_3 sigma versus direct first-order quadrature",
+          "scaled_error": "2.70573380032e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: v_3 sigma versus direct first-order quadrature",
+          "scaled_error": "3.73524236022e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: correction 4 reduced primitive versus direct quadrature",
+          "scaled_error": "5.6444302143e-42",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: u_4 sigma versus direct first-order quadrature",
+          "scaled_error": "4.98827188234e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: v_4 sigma versus direct first-order quadrature",
+          "scaled_error": "1.53009977145e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: correction 5 reduced primitive versus direct quadrature",
+          "scaled_error": "5.6444302143e-42",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: u_5 sigma versus direct first-order quadrature",
+          "scaled_error": "2.90336798338e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: v_5 sigma versus direct first-order quadrature",
+          "scaled_error": "6.59722756294e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: correction 6 reduced primitive versus direct quadrature",
+          "scaled_error": "1.69293932815e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: u_6 sigma versus direct first-order quadrature",
+          "scaled_error": "2.87674301203e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: v_6 sigma versus direct first-order quadrature",
+          "scaled_error": "5.75316923678e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: correction 7 reduced primitive versus direct quadrature",
+          "scaled_error": "2.82221510715e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: u_7 sigma versus direct first-order quadrature",
+          "scaled_error": "3.06304580667e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: v_7 sigma versus direct first-order quadrature",
+          "scaled_error": "3.59611428223e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: correction 8 reduced primitive versus direct quadrature",
+          "scaled_error": "3.95054063062e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: u_8 sigma versus direct first-order quadrature",
+          "scaled_error": "7.2397653478e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: v_8 sigma versus direct first-order quadrature",
+          "scaled_error": "7.11265040971e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: mode 1 product",
+          "scaled_error": "1.67160036268e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: u_1 canonical derivative",
+          "scaled_error": "1.41693881259e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: v_1 canonical derivative",
+          "scaled_error": "1.38618571456e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: u_1 sigma second derivative versus full field Jacobian",
+          "scaled_error": "2.74403525421e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: v_1 sigma second derivative versus full field Jacobian",
+          "scaled_error": "2.89784582353e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: mode 2 product",
+          "scaled_error": "6.32288899273e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: u_2 canonical derivative",
+          "scaled_error": "1.94690834928e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: v_2 canonical derivative",
+          "scaled_error": "1.93090017752e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: u_2 sigma second derivative versus full field Jacobian",
+          "scaled_error": "4.31773106318e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: v_2 sigma second derivative versus full field Jacobian",
+          "scaled_error": "3.96451278173e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: mode 3 product",
+          "scaled_error": "3.10688439539e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: u_3 canonical derivative",
+          "scaled_error": "1.05364563063e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: v_3 canonical derivative",
+          "scaled_error": "6.6923286952e-39",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: u_3 sigma second derivative versus full field Jacobian",
+          "scaled_error": "8.76108441505e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: v_3 sigma second derivative versus full field Jacobian",
+          "scaled_error": "3.86447119853e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: mode 4 product",
+          "scaled_error": "5.36292632123e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: u_4 canonical derivative",
+          "scaled_error": "1.43227537289e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: v_4 canonical derivative",
+          "scaled_error": "7.31529778375e-39",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: u_4 sigma second derivative versus full field Jacobian",
+          "scaled_error": "1.2526610494e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: v_4 sigma second derivative versus full field Jacobian",
+          "scaled_error": "2.01718980329e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: mode 5 product",
+          "scaled_error": "4.65785786146e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: u_5 canonical derivative",
+          "scaled_error": "3.18843547022e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: v_5 canonical derivative",
+          "scaled_error": "8.4446310906e-39",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: u_5 sigma second derivative versus full field Jacobian",
+          "scaled_error": "3.18223641179e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: v_5 sigma second derivative versus full field Jacobian",
+          "scaled_error": "3.19754873465e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: mode 6 product",
+          "scaled_error": "3.85595750054e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: u_6 canonical derivative",
+          "scaled_error": "2.56673618766e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: v_6 canonical derivative",
+          "scaled_error": "1.16166365684e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: u_6 sigma second derivative versus full field Jacobian",
+          "scaled_error": "9.46705773008e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: v_6 sigma second derivative versus full field Jacobian",
+          "scaled_error": "7.25433786855e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: mode 7 product",
+          "scaled_error": "4.20394048332e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: u_7 canonical derivative",
+          "scaled_error": "4.76215223056e-39",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: v_7 canonical derivative",
+          "scaled_error": "1.25974264432e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: u_7 sigma second derivative versus full field Jacobian",
+          "scaled_error": "1.42384741829e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: v_7 sigma second derivative versus full field Jacobian",
+          "scaled_error": "2.38196969798e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: mode 8 product",
+          "scaled_error": "4.04034082202e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: u_8 canonical derivative",
+          "scaled_error": "1.36331457899e-39",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: v_8 canonical derivative",
+          "scaled_error": "2.56439826121e-39",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: u_8 sigma second derivative versus full field Jacobian",
+          "scaled_error": "3.18404564213e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: v_8 sigma second derivative versus full field Jacobian",
+          "scaled_error": "1.60578738668e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: U",
+          "scaled_error": "1.46681722845e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: V",
+          "scaled_error": "2.22916337729e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: Hamiltonian",
+          "scaled_error": "2.18003337887e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: moving second-kind primitive 1",
+          "scaled_error": "3.97968763868e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: moving second-kind primitive 2",
+          "scaled_error": "1.27406056376e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: correction 1 reduced primitive versus direct quadrature",
+          "scaled_error": "2.01736756326e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: u_1 sigma versus direct first-order quadrature",
+          "scaled_error": "2.0194949787e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: v_1 sigma versus direct first-order quadrature",
+          "scaled_error": "2.86089329524e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: correction 2 reduced primitive versus direct quadrature",
+          "scaled_error": "2.00187032328e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: u_2 sigma versus direct first-order quadrature",
+          "scaled_error": "1.87803602293e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: v_2 sigma versus direct first-order quadrature",
+          "scaled_error": "2.00292754735e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: correction 3 reduced primitive versus direct quadrature",
+          "scaled_error": "3.82162117191e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: u_3 sigma versus direct first-order quadrature",
+          "scaled_error": "4.07135793692e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: v_3 sigma versus direct first-order quadrature",
+          "scaled_error": "2.87058555781e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: correction 4 reduced primitive versus direct quadrature",
+          "scaled_error": "1.27350004438e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: u_4 sigma versus direct first-order quadrature",
+          "scaled_error": "1.33241391642e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: v_4 sigma versus direct first-order quadrature",
+          "scaled_error": "1.44698698029e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: correction 5 reduced primitive versus direct quadrature",
+          "scaled_error": "1.27462108315e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: u_5 sigma versus direct first-order quadrature",
+          "scaled_error": "1.37929344397e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: v_5 sigma versus direct first-order quadrature",
+          "scaled_error": "3.00995469533e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: correction 6 reduced primitive versus direct quadrature",
+          "scaled_error": "3.82198901275e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: u_6 sigma versus direct first-order quadrature",
+          "scaled_error": "2.64270233637e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: v_6 sigma versus direct first-order quadrature",
+          "scaled_error": "5.54067808701e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: correction 7 reduced primitive versus direct quadrature",
+          "scaled_error": "6.37086333821e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: u_7 sigma versus direct first-order quadrature",
+          "scaled_error": "9.21212140315e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: v_7 sigma versus direct first-order quadrature",
+          "scaled_error": "7.77951911185e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: correction 8 reduced primitive versus direct quadrature",
+          "scaled_error": "8.91674238819e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: u_8 sigma versus direct first-order quadrature",
+          "scaled_error": "4.62247167552e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: v_8 sigma versus direct first-order quadrature",
+          "scaled_error": "1.04459430448e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: mode 1 product",
+          "scaled_error": "6.47572813713e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: u_1 canonical derivative",
+          "scaled_error": "2.40875962197e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: v_1 canonical derivative",
+          "scaled_error": "2.16231513163e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: u_1 sigma second derivative versus full field Jacobian",
+          "scaled_error": "6.59578669708e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: v_1 sigma second derivative versus full field Jacobian",
+          "scaled_error": "5.2870542949e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: mode 2 product",
+          "scaled_error": "4.34498149296e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: u_2 canonical derivative",
+          "scaled_error": "1.50250640099e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: v_2 canonical derivative",
+          "scaled_error": "1.47254373046e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: u_2 sigma second derivative versus full field Jacobian",
+          "scaled_error": "2.06193440972e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: v_2 sigma second derivative versus full field Jacobian",
+          "scaled_error": "2.11778659224e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: mode 3 product",
+          "scaled_error": "6.0480252734e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: u_3 canonical derivative",
+          "scaled_error": "8.55921090027e-39",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: v_3 canonical derivative",
+          "scaled_error": "5.31674616805e-39",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: u_3 sigma second derivative versus full field Jacobian",
+          "scaled_error": "4.13716543395e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: v_3 sigma second derivative versus full field Jacobian",
+          "scaled_error": "1.48902204267e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: mode 4 product",
+          "scaled_error": "2.12356460858e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: u_4 canonical derivative",
+          "scaled_error": "1.16417557356e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: v_4 canonical derivative",
+          "scaled_error": "5.79289893793e-39",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: u_4 sigma second derivative versus full field Jacobian",
+          "scaled_error": "8.617160818e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: v_4 sigma second derivative versus full field Jacobian",
+          "scaled_error": "7.26494623706e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: mode 5 product",
+          "scaled_error": "3.8778689258e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: u_5 canonical derivative",
+          "scaled_error": "2.61929471508e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: v_5 canonical derivative",
+          "scaled_error": "6.70816525221e-39",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: u_5 sigma second derivative versus full field Jacobian",
+          "scaled_error": "2.85810757759e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: v_5 sigma second derivative versus full field Jacobian",
+          "scaled_error": "2.96110075497e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: mode 6 product",
+          "scaled_error": "3.74070111203e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: u_6 canonical derivative",
+          "scaled_error": "2.15684698503e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: v_6 canonical derivative",
+          "scaled_error": "9.32312400867e-39",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: u_6 sigma second derivative versus full field Jacobian",
+          "scaled_error": "5.88648871578e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: v_6 sigma second derivative versus full field Jacobian",
+          "scaled_error": "3.90905231573e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: mode 7 product",
+          "scaled_error": "2.67512069988e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: u_7 canonical derivative",
+          "scaled_error": "4.19405017652e-39",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: v_7 canonical derivative",
+          "scaled_error": "1.02489259397e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: u_7 sigma second derivative versus full field Jacobian",
+          "scaled_error": "5.42128774669e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: v_7 sigma second derivative versus full field Jacobian",
+          "scaled_error": "2.12095068472e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: mode 8 product",
+          "scaled_error": "7.21472114739e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: u_8 canonical derivative",
+          "scaled_error": "1.41349121341e-39",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: v_8 canonical derivative",
+          "scaled_error": "2.18766011012e-39",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: u_8 sigma second derivative versus full field Jacobian",
+          "scaled_error": "7.38405558425e-39",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: v_8 sigma second derivative versus full field Jacobian",
+          "scaled_error": "2.54569251169e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: U",
+          "scaled_error": "1.4163576703e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: V",
+          "scaled_error": "1.35922804876e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: Hamiltonian",
+          "scaled_error": "1.72741713617e-35",
+          "passed": true
+        },
+        {
+          "check": "partition: total Abel period 1",
+          "scaled_error": "8.02150047487e-43",
+          "passed": true
+        },
+        {
+          "check": "partition: total Abel period 2",
+          "scaled_error": "1.28344007598e-41",
+          "passed": true
+        },
+        {
+          "check": "partition: balanced Abel sum 1",
+          "scaled_error": "8.02150047487e-43",
+          "passed": true
+        },
+        {
+          "check": "partition: holomorphic correction cancellation 1",
+          "scaled_error": "8.15631570631e-39",
+          "passed": true
+        },
+        {
+          "check": "partition: balanced Abel sum 2",
+          "scaled_error": "1.28344007598e-41",
+          "passed": true
+        },
+        {
+          "check": "partition: holomorphic correction cancellation 2",
+          "scaled_error": "2.90409337911e-40",
+          "passed": true
+        },
+        {
+          "check": "partition sheet 1, fraction 0.0: longer algebraic determinant",
+          "scaled_error": "6.7323785355e-41",
+          "passed": true
+        },
+        {
+          "check": "partition sheet 1, fraction 0.0: opposite longer algebraic determinant",
+          "scaled_error": "0.0",
+          "passed": true
+        },
+        {
+          "check": "partition sheet 1, fraction 0.0: full main sigma identity",
+          "scaled_error": "2.99123628648e-39",
+          "passed": true
+        },
+        {
+          "check": "partition sheet 1, fraction 0.0: full opposite sigma identity",
+          "scaled_error": "1.78048275775e-39",
+          "passed": true
+        },
+        {
+          "check": "partition sheet 1, fraction 0.0: full residual auxiliary sigma identity",
+          "scaled_error": "2.69549619375e-39",
+          "passed": true
+        },
+        {
+          "check": "partition sheet 1, fraction 0.0: complete raw u factorization",
+          "scaled_error": "0.0",
+          "passed": true
+        },
+        {
+          "check": "partition sheet 1, fraction 0.0: complete raw v factorization",
+          "scaled_error": "0.0",
+          "passed": true
+        },
+        {
+          "check": "partition sheet 1, fraction 0.0: full U equals normalized longer determinant",
+          "scaled_error": "7.84007889072e-82",
+          "passed": true
+        },
+        {
+          "check": "partition sheet 1, fraction 0.0: full V equals normalized longer determinant",
+          "scaled_error": "9.46740731555e-41",
+          "passed": true
+        },
+        {
+          "check": "partition sheet 1, fraction 1.0: longer algebraic determinant",
+          "scaled_error": "0.0",
+          "passed": true
+        },
+        {
+          "check": "partition sheet 1, fraction 1.0: opposite longer algebraic determinant",
+          "scaled_error": "2.18152224698e-41",
+          "passed": true
+        },
+        {
+          "check": "partition sheet 1, fraction 1.0: full main sigma identity",
+          "scaled_error": "4.07675159229e-39",
+          "passed": true
+        },
+        {
+          "check": "partition sheet 1, fraction 1.0: full opposite sigma identity",
+          "scaled_error": "1.72244310917e-39",
+          "passed": true
+        },
+        {
+          "check": "partition sheet 1, fraction 1.0: full residual auxiliary sigma identity",
+          "scaled_error": "3.37421877318e-39",
+          "passed": true
+        },
+        {
+          "check": "partition sheet 1, fraction 1.0: complete raw u factorization",
+          "scaled_error": "1.58483304834e-40",
+          "passed": true
+        },
+        {
+          "check": "partition sheet 1, fraction 1.0: complete raw v factorization",
+          "scaled_error": "1.91556638671e-40",
+          "passed": true
+        },
+        {
+          "check": "partition sheet 1, fraction 1.0: full U equals normalized longer determinant",
+          "scaled_error": "1.58673294653e-40",
+          "passed": true
+        },
+        {
+          "check": "partition sheet 1, fraction 1.0: full V equals normalized longer determinant",
+          "scaled_error": "1.7059276862e-40",
+          "passed": true
+        },
+        {
+          "check": "partition sheet -1, fraction 0.0: longer algebraic determinant",
+          "scaled_error": "0.0",
+          "passed": true
+        },
+        {
+          "check": "partition sheet -1, fraction 0.0: opposite longer algebraic determinant",
+          "scaled_error": "6.7323785355e-41",
+          "passed": true
+        },
+        {
+          "check": "partition sheet -1, fraction 0.0: full main sigma identity",
+          "scaled_error": "1.78048275775e-39",
+          "passed": true
+        },
+        {
+          "check": "partition sheet -1, fraction 0.0: full opposite sigma identity",
+          "scaled_error": "2.99123628648e-39",
+          "passed": true
+        },
+        {
+          "check": "partition sheet -1, fraction 0.0: full residual auxiliary sigma identity",
+          "scaled_error": "2.29094256637e-40",
+          "passed": true
+        },
+        {
+          "check": "partition sheet -1, fraction 0.0: complete raw u factorization",
+          "scaled_error": "0.0",
+          "passed": true
+        },
+        {
+          "check": "partition sheet -1, fraction 0.0: complete raw v factorization",
+          "scaled_error": "0.0",
+          "passed": true
+        },
+        {
+          "check": "partition sheet -1, fraction 0.0: full U equals normalized longer determinant",
+          "scaled_error": "7.10055548666e-41",
+          "passed": true
+        },
+        {
+          "check": "partition sheet -1, fraction 0.0: full V equals normalized longer determinant",
+          "scaled_error": "1.1520488856e-41",
+          "passed": true
+        },
+        {
+          "check": "partition sheet -1, fraction 1.0: longer algebraic determinant",
+          "scaled_error": "2.18152224698e-41",
+          "passed": true
+        },
+        {
+          "check": "partition sheet -1, fraction 1.0: opposite longer algebraic determinant",
+          "scaled_error": "0.0",
+          "passed": true
+        },
+        {
+          "check": "partition sheet -1, fraction 1.0: full main sigma identity",
+          "scaled_error": "1.72244310917e-39",
+          "passed": true
+        },
+        {
+          "check": "partition sheet -1, fraction 1.0: full opposite sigma identity",
+          "scaled_error": "4.07675159229e-39",
+          "passed": true
+        },
+        {
+          "check": "partition sheet -1, fraction 1.0: full residual auxiliary sigma identity",
+          "scaled_error": "3.70874160366e-40",
+          "passed": true
+        },
+        {
+          "check": "partition sheet -1, fraction 1.0: complete raw u factorization",
+          "scaled_error": "1.91556638671e-40",
+          "passed": true
+        },
+        {
+          "check": "partition sheet -1, fraction 1.0: complete raw v factorization",
+          "scaled_error": "1.58483304834e-40",
+          "passed": true
+        },
+        {
+          "check": "partition sheet -1, fraction 1.0: full U equals normalized longer determinant",
+          "scaled_error": "1.86211194089e-40",
+          "passed": true
+        },
+        {
+          "check": "partition sheet -1, fraction 1.0: full V equals normalized longer determinant",
+          "scaled_error": "1.5228933764e-40",
+          "passed": true
+        },
+        {
+          "check": "partition sheet 1, fraction 1.0: residual splitting constant",
+          "scaled_error": "3.00446957268e-42",
+          "passed": true
+        },
+        {
+          "check": "partition sheet 1, fraction 1.0: raw product splitting constant",
+          "scaled_error": "2.37065632182e-40",
+          "passed": true
+        },
+        {
+          "check": "partition sheet -1, fraction 0.0: residual splitting constant",
+          "scaled_error": "6.62666311163e-42",
+          "passed": true
+        },
+        {
+          "check": "partition sheet -1, fraction 0.0: raw product splitting constant",
+          "scaled_error": "5.91772758846e-40",
+          "passed": true
+        },
+        {
+          "check": "partition sheet -1, fraction 1.0: residual splitting constant",
+          "scaled_error": "7.26282673312e-42",
+          "passed": true
+        },
+        {
+          "check": "partition sheet -1, fraction 1.0: raw product splitting constant",
+          "scaled_error": "4.36646964735e-40",
+          "passed": true
+        }
+      ],
+      "tolerance": "1.0e-26",
+      "maximum_scaled_error": "2.18003337887e-35",
+      "seconds": 20.394
+    },
+    {
+      "name": "g3_fixed_curve_high_B",
+      "genus": 3,
+      "N": 7,
+      "degree_q": 0,
+      "degrees_B": [
+        8,
+        8,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "F": "4*rho**7 - 56*rho**5 + 196*rho**3 - 144*rho + 1",
+      "q": "1",
+      "Q": "(I1 - I2 + 1)*(-I1/7 - I2/7 - I3/7 - I4/7 - I5/7 - I6/7 - I7/7)**8 + 1",
+      "B": [
+        "-rho**8",
+        "rho**8",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "reductions": [
+        {
+          "P": "-rho**2/22 - 9/11",
+          "c": [
+            "-648/11",
+            "1/11",
+            "-5440/33"
+          ],
+          "d": [
+            "0",
+            "-917/33",
+            "0"
+          ]
+        },
+        {
+          "P": "rho**2/22 + 9/11",
+          "c": [
+            "648/11",
+            "-1/11",
+            "5440/33"
+          ],
+          "d": [
+            "0",
+            "917/33",
+            "0"
+          ]
+        },
+        {
+          "P": "0",
+          "c": [
+            "0",
+            "0",
+            "0"
+          ],
+          "d": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "P": "0",
+          "c": [
+            "0",
+            "0",
+            "0"
+          ],
+          "d": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "P": "0",
+          "c": [
+            "0",
+            "0",
+            "0"
+          ],
+          "d": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "P": "0",
+          "c": [
+            "0",
+            "0",
+            "0"
+          ],
+          "d": [
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "P": "0",
+          "c": [
+            "0",
+            "0",
+            "0"
+          ],
+          "d": [
+            "0",
+            "0",
+            "0"
+          ]
+        }
+      ],
+      "exact_checks": {
+        "all reduced differentials agree": true,
+        "weighted algebraic endpoint terms cancel": true,
+        "weighted second-kind coefficients cancel": true
+      },
+      "determinant": null,
+      "samples": [
+        {
+          "sheet": 1,
+          "rho": "4.001",
+          "z": "7.0382153081425e-6"
+        },
+        {
+          "sheet": 1,
+          "rho": "4.002",
+          "z": "1.4067317743364e-5"
+        },
+        {
+          "sheet": -1,
+          "rho": "4.001",
+          "z": "-7.0382153081425e-6"
+        },
+        {
+          "sheet": -1,
+          "rho": "4.002",
+          "z": "-1.4067317743364e-5"
+        }
+      ],
+      "all_passed": true,
+      "check_count": 251,
+      "checks": [
+        {
+          "check": "sheet 1, fraction 0.5: moving second-kind primitive 1",
+          "scaled_error": "2.64744516268e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: moving second-kind primitive 2",
+          "scaled_error": "8.16564641131e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: moving second-kind primitive 3",
+          "scaled_error": "8.40779078595e-43",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: correction 1 reduced primitive versus direct quadrature",
+          "scaled_error": "4.46550100068e-39",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: u_1 sigma versus direct first-order quadrature",
+          "scaled_error": "4.46753464626e-39",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: v_1 sigma versus direct first-order quadrature",
+          "scaled_error": "6.94505946684e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: correction 2 reduced primitive versus direct quadrature",
+          "scaled_error": "4.46550100068e-39",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: u_2 sigma versus direct first-order quadrature",
+          "scaled_error": "4.45598638152e-39",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: v_2 sigma versus direct first-order quadrature",
+          "scaled_error": "4.63866272733e-39",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: correction 3 reduced primitive versus direct quadrature",
+          "scaled_error": "0.0",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: u_3 sigma versus direct first-order quadrature",
+          "scaled_error": "1.52964748979e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: v_3 sigma versus direct first-order quadrature",
+          "scaled_error": "2.11662546694e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: correction 4 reduced primitive versus direct quadrature",
+          "scaled_error": "0.0",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: u_4 sigma versus direct first-order quadrature",
+          "scaled_error": "2.33397044256e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: v_4 sigma versus direct first-order quadrature",
+          "scaled_error": "3.34378533434e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: correction 5 reduced primitive versus direct quadrature",
+          "scaled_error": "0.0",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: u_5 sigma versus direct first-order quadrature",
+          "scaled_error": "1.40424574678e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: v_5 sigma versus direct first-order quadrature",
+          "scaled_error": "1.91642496281e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: correction 6 reduced primitive versus direct quadrature",
+          "scaled_error": "0.0",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: u_6 sigma versus direct first-order quadrature",
+          "scaled_error": "4.35938628545e-42",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: v_6 sigma versus direct first-order quadrature",
+          "scaled_error": "1.19145315484e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: correction 7 reduced primitive versus direct quadrature",
+          "scaled_error": "0.0",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: u_7 sigma versus direct first-order quadrature",
+          "scaled_error": "4.58949696499e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: v_7 sigma versus direct first-order quadrature",
+          "scaled_error": "1.41948920251e-44",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: mode 1 product",
+          "scaled_error": "1.31436971777e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: u_1 canonical derivative",
+          "scaled_error": "9.57707706399e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: v_1 canonical derivative",
+          "scaled_error": "1.01315608805e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: u_1 sigma second derivative versus full field Jacobian",
+          "scaled_error": "2.20675700615e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: v_1 sigma second derivative versus full field Jacobian",
+          "scaled_error": "2.50521285584e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: mode 2 product",
+          "scaled_error": "1.87343389363e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: u_2 canonical derivative",
+          "scaled_error": "7.55970137414e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: v_2 canonical derivative",
+          "scaled_error": "7.26525879489e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: u_2 sigma second derivative versus full field Jacobian",
+          "scaled_error": "1.65400758509e-39",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: v_2 sigma second derivative versus full field Jacobian",
+          "scaled_error": "1.57264041957e-39",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: mode 3 product",
+          "scaled_error": "1.23597687862e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: u_3 canonical derivative",
+          "scaled_error": "1.61533411511e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: v_3 canonical derivative",
+          "scaled_error": "1.59252623003e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: u_3 sigma second derivative versus full field Jacobian",
+          "scaled_error": "1.096353799e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: v_3 sigma second derivative versus full field Jacobian",
+          "scaled_error": "6.63568510584e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: mode 4 product",
+          "scaled_error": "3.66150075155e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: u_4 canonical derivative",
+          "scaled_error": "1.29251752663e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: v_4 canonical derivative",
+          "scaled_error": "1.27387258358e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: u_4 sigma second derivative versus full field Jacobian",
+          "scaled_error": "4.44097974466e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: v_4 sigma second derivative versus full field Jacobian",
+          "scaled_error": "5.16013422952e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: mode 5 product",
+          "scaled_error": "5.12179216029e-42",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: u_5 canonical derivative",
+          "scaled_error": "9.69724250275e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: v_5 canonical derivative",
+          "scaled_error": "9.55553134808e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: u_5 sigma second derivative versus full field Jacobian",
+          "scaled_error": "8.47435597515e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: v_5 sigma second derivative versus full field Jacobian",
+          "scaled_error": "5.89723858141e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: mode 6 product",
+          "scaled_error": "1.21952800719e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: u_6 canonical derivative",
+          "scaled_error": "6.46455249224e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: v_6 canonical derivative",
+          "scaled_error": "6.37109987695e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: u_6 sigma second derivative versus full field Jacobian",
+          "scaled_error": "2.0712508815e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: v_6 sigma second derivative versus full field Jacobian",
+          "scaled_error": "2.43477526333e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: mode 7 product",
+          "scaled_error": "2.29359381382e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: u_7 canonical derivative",
+          "scaled_error": "3.23589247018e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: v_7 canonical derivative",
+          "scaled_error": "3.18636167377e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: u_7 sigma second derivative versus full field Jacobian",
+          "scaled_error": "1.1507724151e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: v_7 sigma second derivative versus full field Jacobian",
+          "scaled_error": "1.45677306235e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: U",
+          "scaled_error": "2.11177775304e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: V",
+          "scaled_error": "2.30711348089e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: Hamiltonian",
+          "scaled_error": "7.98178778095e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: moving second-kind primitive 1",
+          "scaled_error": "1.65016907159e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: moving second-kind primitive 2",
+          "scaled_error": "2.79811277356e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: moving second-kind primitive 3",
+          "scaled_error": "1.25556342404e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: correction 1 reduced primitive versus direct quadrature",
+          "scaled_error": "2.42216121117e-39",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: u_1 sigma versus direct first-order quadrature",
+          "scaled_error": "2.38089943582e-39",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: v_1 sigma versus direct first-order quadrature",
+          "scaled_error": "5.99800932817e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: correction 2 reduced primitive versus direct quadrature",
+          "scaled_error": "2.42216121117e-39",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: u_2 sigma versus direct first-order quadrature",
+          "scaled_error": "2.38778875313e-39",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: v_2 sigma versus direct first-order quadrature",
+          "scaled_error": "2.50551558589e-39",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: correction 3 reduced primitive versus direct quadrature",
+          "scaled_error": "0.0",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: u_3 sigma versus direct first-order quadrature",
+          "scaled_error": "8.23510092364e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: v_3 sigma versus direct first-order quadrature",
+          "scaled_error": "2.49254681676e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: correction 4 reduced primitive versus direct quadrature",
+          "scaled_error": "0.0",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: u_4 sigma versus direct first-order quadrature",
+          "scaled_error": "7.18667931381e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: v_4 sigma versus direct first-order quadrature",
+          "scaled_error": "1.10078132519e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: correction 5 reduced primitive versus direct quadrature",
+          "scaled_error": "0.0",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: u_5 sigma versus direct first-order quadrature",
+          "scaled_error": "2.30266276409e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: v_5 sigma versus direct first-order quadrature",
+          "scaled_error": "8.19143410583e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: correction 6 reduced primitive versus direct quadrature",
+          "scaled_error": "0.0",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: u_6 sigma versus direct first-order quadrature",
+          "scaled_error": "4.10469036217e-43",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: v_6 sigma versus direct first-order quadrature",
+          "scaled_error": "7.59523234124e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: correction 7 reduced primitive versus direct quadrature",
+          "scaled_error": "0.0",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: u_7 sigma versus direct first-order quadrature",
+          "scaled_error": "4.58722286582e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: v_7 sigma versus direct first-order quadrature",
+          "scaled_error": "2.29358059243e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: mode 1 product",
+          "scaled_error": "5.29995886634e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: u_1 canonical derivative",
+          "scaled_error": "1.19286344147e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: v_1 canonical derivative",
+          "scaled_error": "1.30234820387e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: u_1 sigma second derivative versus full field Jacobian",
+          "scaled_error": "1.56667646293e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: v_1 sigma second derivative versus full field Jacobian",
+          "scaled_error": "2.59012631393e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: mode 2 product",
+          "scaled_error": "1.09232097336e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: u_2 canonical derivative",
+          "scaled_error": "5.22638609961e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: v_2 canonical derivative",
+          "scaled_error": "5.13198935194e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: u_2 sigma second derivative versus full field Jacobian",
+          "scaled_error": "1.13906802124e-39",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: v_2 sigma second derivative versus full field Jacobian",
+          "scaled_error": "1.13562545838e-39",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: mode 3 product",
+          "scaled_error": "9.60642065196e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: u_3 canonical derivative",
+          "scaled_error": "1.3649054096e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: v_3 canonical derivative",
+          "scaled_error": "1.34570957371e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: u_3 sigma second derivative versus full field Jacobian",
+          "scaled_error": "1.6968251749e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: v_3 sigma second derivative versus full field Jacobian",
+          "scaled_error": "1.00959797892e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: mode 4 product",
+          "scaled_error": "8.06367324028e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: u_4 canonical derivative",
+          "scaled_error": "1.09186136458e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: v_4 canonical derivative",
+          "scaled_error": "1.07649128345e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: u_4 sigma second derivative versus full field Jacobian",
+          "scaled_error": "1.15216298424e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: v_4 sigma second derivative versus full field Jacobian",
+          "scaled_error": "6.86436724698e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: mode 5 product",
+          "scaled_error": "9.69127687954e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: u_5 canonical derivative",
+          "scaled_error": "8.1945234421e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: v_5 canonical derivative",
+          "scaled_error": "8.07389157515e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: u_5 sigma second derivative versus full field Jacobian",
+          "scaled_error": "4.86608407203e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: v_5 sigma second derivative versus full field Jacobian",
+          "scaled_error": "4.02459897649e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: mode 6 product",
+          "scaled_error": "7.60957534289e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: u_6 canonical derivative",
+          "scaled_error": "5.46275116021e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: v_6 canonical derivative",
+          "scaled_error": "5.3844772679e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: u_6 sigma second derivative versus full field Jacobian",
+          "scaled_error": "8.51373156399e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: v_6 sigma second derivative versus full field Jacobian",
+          "scaled_error": "5.03778330374e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: mode 7 product",
+          "scaled_error": "2.29130480905e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: u_7 canonical derivative",
+          "scaled_error": "2.73452156394e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: v_7 canonical derivative",
+          "scaled_error": "2.69453031559e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: u_7 sigma second derivative versus full field Jacobian",
+          "scaled_error": "1.05521552058e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: v_7 sigma second derivative versus full field Jacobian",
+          "scaled_error": "2.88485039424e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: U",
+          "scaled_error": "1.69846500927e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: V",
+          "scaled_error": "4.57244730449e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: Hamiltonian",
+          "scaled_error": "6.75245078531e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: moving second-kind primitive 1",
+          "scaled_error": "1.02597468364e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: moving second-kind primitive 2",
+          "scaled_error": "1.01790320449e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: moving second-kind primitive 3",
+          "scaled_error": "8.40779078595e-43",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: correction 1 reduced primitive versus direct quadrature",
+          "scaled_error": "1.9170659823e-39",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: u_1 sigma versus direct first-order quadrature",
+          "scaled_error": "1.91767549626e-39",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: v_1 sigma versus direct first-order quadrature",
+          "scaled_error": "1.19099561747e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: correction 2 reduced primitive versus direct quadrature",
+          "scaled_error": "1.9170659823e-39",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: u_2 sigma versus direct first-order quadrature",
+          "scaled_error": "1.3203088285e-39",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: v_2 sigma versus direct first-order quadrature",
+          "scaled_error": "1.90970893057e-39",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: correction 3 reduced primitive versus direct quadrature",
+          "scaled_error": "0.0",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: u_3 sigma versus direct first-order quadrature",
+          "scaled_error": "1.43275948059e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: v_3 sigma versus direct first-order quadrature",
+          "scaled_error": "1.76897911205e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: correction 4 reduced primitive versus direct quadrature",
+          "scaled_error": "0.0",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: u_4 sigma versus direct first-order quadrature",
+          "scaled_error": "3.34378533434e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: v_4 sigma versus direct first-order quadrature",
+          "scaled_error": "2.33397044256e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: correction 5 reduced primitive versus direct quadrature",
+          "scaled_error": "0.0",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: u_5 sigma versus direct first-order quadrature",
+          "scaled_error": "2.33900918345e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: v_5 sigma versus direct first-order quadrature",
+          "scaled_error": "2.07704211624e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: correction 6 reduced primitive versus direct quadrature",
+          "scaled_error": "0.0",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: u_6 sigma versus direct first-order quadrature",
+          "scaled_error": "1.19145315484e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: v_6 sigma versus direct first-order quadrature",
+          "scaled_error": "4.35938628545e-42",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: correction 7 reduced primitive versus direct quadrature",
+          "scaled_error": "0.0",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: u_7 sigma versus direct first-order quadrature",
+          "scaled_error": "1.41948920252e-44",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: v_7 sigma versus direct first-order quadrature",
+          "scaled_error": "4.58949696499e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: mode 1 product",
+          "scaled_error": "7.17243175639e-43",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: u_1 canonical derivative",
+          "scaled_error": "2.66085103707e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: v_1 canonical derivative",
+          "scaled_error": "2.2631233243e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: u_1 sigma second derivative versus full field Jacobian",
+          "scaled_error": "5.53564576547e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: v_1 sigma second derivative versus full field Jacobian",
+          "scaled_error": "4.74582109419e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: mode 2 product",
+          "scaled_error": "1.86488350592e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: u_2 canonical derivative",
+          "scaled_error": "8.78104790113e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: v_2 canonical derivative",
+          "scaled_error": "8.70702533993e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: u_2 sigma second derivative versus full field Jacobian",
+          "scaled_error": "1.83160782566e-39",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: v_2 sigma second derivative versus full field Jacobian",
+          "scaled_error": "1.54524639647e-39",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: mode 3 product",
+          "scaled_error": "1.72297653854e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: u_3 canonical derivative",
+          "scaled_error": "1.465152428e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: v_3 canonical derivative",
+          "scaled_error": "1.48609777187e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: u_3 sigma second derivative versus full field Jacobian",
+          "scaled_error": "9.87083143338e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: v_3 sigma second derivative versus full field Jacobian",
+          "scaled_error": "1.35685943583e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: mode 4 product",
+          "scaled_error": "3.66150075155e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: u_4 canonical derivative",
+          "scaled_error": "1.17191959313e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: v_4 canonical derivative",
+          "scaled_error": "1.18915968504e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: u_4 sigma second derivative versus full field Jacobian",
+          "scaled_error": "7.36669877018e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: v_4 sigma second derivative versus full field Jacobian",
+          "scaled_error": "1.14037743836e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: mode 5 product",
+          "scaled_error": "1.79297453935e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: u_5 canonical derivative",
+          "scaled_error": "8.7908108517e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: v_5 canonical derivative",
+          "scaled_error": "8.92222403467e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: u_5 sigma second derivative versus full field Jacobian",
+          "scaled_error": "8.64296592401e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: v_5 sigma second derivative versus full field Jacobian",
+          "scaled_error": "2.96087352062e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: mode 6 product",
+          "scaled_error": "1.21952800719e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: u_6 canonical derivative",
+          "scaled_error": "5.86135531258e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: v_6 canonical derivative",
+          "scaled_error": "5.94800541382e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: u_6 sigma second derivative versus full field Jacobian",
+          "scaled_error": "5.69466676617e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: v_6 sigma second derivative versus full field Jacobian",
+          "scaled_error": "1.05769637802e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: mode 7 product",
+          "scaled_error": "2.29359381382e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: u_7 canonical derivative",
+          "scaled_error": "2.93132615614e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: v_7 canonical derivative",
+          "scaled_error": "2.97742426599e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: u_7 sigma second derivative versus full field Jacobian",
+          "scaled_error": "5.23220117472e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: v_7 sigma second derivative versus full field Jacobian",
+          "scaled_error": "5.21983239061e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: U",
+          "scaled_error": "2.46192630658e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: V",
+          "scaled_error": "2.11881521799e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: Hamiltonian",
+          "scaled_error": "7.34344425366e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: moving second-kind primitive 1",
+          "scaled_error": "1.65016907159e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: moving second-kind primitive 2",
+          "scaled_error": "2.79811277356e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: moving second-kind primitive 3",
+          "scaled_error": "1.0761972206e-42",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: correction 1 reduced primitive versus direct quadrature",
+          "scaled_error": "2.42216121117e-39",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: u_1 sigma versus direct first-order quadrature",
+          "scaled_error": "2.44917538917e-39",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: v_1 sigma versus direct first-order quadrature",
+          "scaled_error": "9.47059705942e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: correction 2 reduced primitive versus direct quadrature",
+          "scaled_error": "2.42216121117e-39",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: u_2 sigma versus direct first-order quadrature",
+          "scaled_error": "9.87252892652e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: v_2 sigma versus direct first-order quadrature",
+          "scaled_error": "2.40601531072e-39",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: correction 3 reduced primitive versus direct quadrature",
+          "scaled_error": "0.0",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: u_3 sigma versus direct first-order quadrature",
+          "scaled_error": "3.00988123187e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: v_3 sigma versus direct first-order quadrature",
+          "scaled_error": "1.00961207159e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: correction 4 reduced primitive versus direct quadrature",
+          "scaled_error": "0.0",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: u_4 sigma versus direct first-order quadrature",
+          "scaled_error": "1.10078132519e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: v_4 sigma versus direct first-order quadrature",
+          "scaled_error": "7.18667931381e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: correction 5 reduced primitive versus direct quadrature",
+          "scaled_error": "0.0",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: u_5 sigma versus direct first-order quadrature",
+          "scaled_error": "7.32668203448e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: v_5 sigma versus direct first-order quadrature",
+          "scaled_error": "1.65738635716e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: correction 6 reduced primitive versus direct quadrature",
+          "scaled_error": "0.0",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: u_6 sigma versus direct first-order quadrature",
+          "scaled_error": "7.59523234124e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: v_6 sigma versus direct first-order quadrature",
+          "scaled_error": "4.10469036217e-43",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: correction 7 reduced primitive versus direct quadrature",
+          "scaled_error": "0.0",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: u_7 sigma versus direct first-order quadrature",
+          "scaled_error": "2.29358059243e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: v_7 sigma versus direct first-order quadrature",
+          "scaled_error": "4.58722286582e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: mode 1 product",
+          "scaled_error": "3.95088717422e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: u_1 canonical derivative",
+          "scaled_error": "8.68781224779e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: v_1 canonical derivative",
+          "scaled_error": "8.72255552811e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: u_1 sigma second derivative versus full field Jacobian",
+          "scaled_error": "1.96633973296e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: v_1 sigma second derivative versus full field Jacobian",
+          "scaled_error": "2.6261762934e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: mode 2 product",
+          "scaled_error": "6.3236907322e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: u_2 canonical derivative",
+          "scaled_error": "4.04871253054e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: v_2 canonical derivative",
+          "scaled_error": "4.05535225466e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: u_2 sigma second derivative versus full field Jacobian",
+          "scaled_error": "7.83758058749e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: v_2 sigma second derivative versus full field Jacobian",
+          "scaled_error": "7.60856004895e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: mode 3 product",
+          "scaled_error": "1.12436123506e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: u_3 canonical derivative",
+          "scaled_error": "8.57519486039e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: v_3 canonical derivative",
+          "scaled_error": "8.69804374787e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: u_3 sigma second derivative versus full field Jacobian",
+          "scaled_error": "2.66289504786e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: v_3 sigma second derivative versus full field Jacobian",
+          "scaled_error": "8.08438757228e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: mode 4 product",
+          "scaled_error": "8.06367324028e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: u_4 canonical derivative",
+          "scaled_error": "6.85863960454e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: v_4 canonical derivative",
+          "scaled_error": "6.95744815737e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: u_4 sigma second derivative versus full field Jacobian",
+          "scaled_error": "5.91715768348e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: v_4 sigma second derivative versus full field Jacobian",
+          "scaled_error": "2.55826419015e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: mode 5 product",
+          "scaled_error": "8.26791275302e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: u_5 canonical derivative",
+          "scaled_error": "5.1436844069e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: v_5 canonical derivative",
+          "scaled_error": "5.22277882905e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: u_5 sigma second derivative versus full field Jacobian",
+          "scaled_error": "3.42938540094e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: v_5 sigma second derivative versus full field Jacobian",
+          "scaled_error": "2.37696902065e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: mode 6 product",
+          "scaled_error": "7.60957534289e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: u_6 canonical derivative",
+          "scaled_error": "3.4301418422e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: v_6 canonical derivative",
+          "scaled_error": "3.48114325233e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: u_6 sigma second derivative versus full field Jacobian",
+          "scaled_error": "2.89262257412e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: v_6 sigma second derivative versus full field Jacobian",
+          "scaled_error": "6.54521259428e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: mode 7 product",
+          "scaled_error": "2.29130480905e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: u_7 canonical derivative",
+          "scaled_error": "1.7162624865e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: v_7 canonical derivative",
+          "scaled_error": "1.74239069651e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: u_7 sigma second derivative versus full field Jacobian",
+          "scaled_error": "1.49769071533e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: v_7 sigma second derivative versus full field Jacobian",
+          "scaled_error": "6.272779892e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: U",
+          "scaled_error": "2.00269891297e-41",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: V",
+          "scaled_error": "2.01981134184e-40",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: Hamiltonian",
+          "scaled_error": "4.30215251797e-35",
+          "passed": true
+        }
+      ],
+      "tolerance": "1.0e-26",
+      "maximum_scaled_error": "1.6968251749e-34",
+      "seconds": 32.542
+    }
+  ],
+  "all_passed": true,
+  "check_count": 629
+}

@@ -1,0 +1,5113 @@
+{
+  "scope": "Simple branch fixed points on smooth odd-degree curves; explicit genera 2 and 3; no global monodromy or determinant extension asserted.",
+  "exact_checks": {
+    "genus 2 squarefree": true,
+    "genus 2 all fixed points branch": true,
+    "genus 2 all corrections vanish": true,
+    "genus 3 squarefree": true,
+    "genus 3 all fixed points branch": true,
+    "genus 3 all corrections vanish": true,
+    "repeated-weight zero energy curve singular": true,
+    "double-weight fixed point has F'=0": true,
+    "branch square-root ODE identity": true
+  },
+  "examples": [
+    {
+      "genus": 2,
+      "dps": 35,
+      "F": "4*rho**5 - 20*rho**3 + 16*rho",
+      "fixed_sigma_sharp_moduli": [
+        "0.61841166468",
+        "1.63507719781",
+        "2.47158860943",
+        "1.63507719781",
+        "0.61841166468"
+      ],
+      "potential_last": "4*rho**3 + 6*rho**2 - 2*rho - 2",
+      "h_last": [
+        "(-0.341788328067284016 - 2.63310734585973286e-36j)",
+        "(0.727020016739566963 - 7.5231638452933046e-37j)"
+      ],
+      "tolerance": "1.0e-23",
+      "maximum_scaled_error": "1.20972474632e-34",
+      "check_count": 413,
+      "all_passed": true,
+      "checks": [
+        {
+          "check": "fixed 1: sigma stratum",
+          "scaled_error": "3.30470900696e-37",
+          "passed": true
+        },
+        {
+          "check": "fixed 1: h_1 sigma versus second-kind quadrature",
+          "scaled_error": "8.88531285359e-36",
+          "passed": true
+        },
+        {
+          "check": "fixed 1: h_2 sigma versus second-kind quadrature",
+          "scaled_error": "1.22788530738e-36",
+          "passed": true
+        },
+        {
+          "check": "fixed 2: sigma stratum",
+          "scaled_error": "1.8711296152e-36",
+          "passed": true
+        },
+        {
+          "check": "fixed 2: h_1 sigma versus second-kind quadrature",
+          "scaled_error": "5.4922201879e-36",
+          "passed": true
+        },
+        {
+          "check": "fixed 2: h_2 sigma versus second-kind quadrature",
+          "scaled_error": "1.86344113853e-36",
+          "passed": true
+        },
+        {
+          "check": "fixed 3: sigma stratum",
+          "scaled_error": "2.25031645406e-37",
+          "passed": true
+        },
+        {
+          "check": "fixed 3: h_1 sigma versus second-kind quadrature",
+          "scaled_error": "0.0",
+          "passed": true
+        },
+        {
+          "check": "fixed 3: h_2 sigma versus second-kind quadrature",
+          "scaled_error": "5.49156131039e-37",
+          "passed": true
+        },
+        {
+          "check": "fixed 4: sigma stratum",
+          "scaled_error": "8.89666136346e-37",
+          "passed": true
+        },
+        {
+          "check": "fixed 4: h_1 sigma versus second-kind quadrature",
+          "scaled_error": "2.86934302e-36",
+          "passed": true
+        },
+        {
+          "check": "fixed 4: h_2 sigma versus second-kind quadrature",
+          "scaled_error": "6.21147046175e-37",
+          "passed": true
+        },
+        {
+          "check": "fixed 5: sigma stratum",
+          "scaled_error": "1.67492395976e-39",
+          "passed": true
+        },
+        {
+          "check": "fixed 5: h_1 sigma versus second-kind quadrature",
+          "scaled_error": "5.64237288394e-36",
+          "passed": true
+        },
+        {
+          "check": "fixed 5: h_2 sigma versus second-kind quadrature",
+          "scaled_error": "1.50463276905e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: Hamiltonian",
+          "scaled_error": "2.40742103412e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 1: u sigma versus square root",
+          "scaled_error": "2.19564128467e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 1: v sigma versus square root",
+          "scaled_error": "3.77824246743e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 1: product",
+          "scaled_error": "1.20254704685e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 1: raw sigma product",
+          "scaled_error": "1.50383387304e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 1: u canonical",
+          "scaled_error": "1.06755304282e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 1: v canonical",
+          "scaled_error": "3.34471563997e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 1: Wronskian",
+          "scaled_error": "8.52851125009e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 1: u polynomial potential",
+          "scaled_error": "7.73870509762e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 1: v polynomial potential",
+          "scaled_error": "2.40450154542e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 2: u sigma versus square root",
+          "scaled_error": "1.51288697899e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 2: v sigma versus square root",
+          "scaled_error": "3.13005475619e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 2: product",
+          "scaled_error": "4.55663118496e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 2: raw sigma product",
+          "scaled_error": "1.89065930809e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 2: u canonical",
+          "scaled_error": "3.32508689039e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 2: v canonical",
+          "scaled_error": "7.62725532803e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 2: Wronskian",
+          "scaled_error": "9.72885123491e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 2: u polynomial potential",
+          "scaled_error": "4.78885747382e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 2: v polynomial potential",
+          "scaled_error": "5.57538956591e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 3: u sigma versus square root",
+          "scaled_error": "1.5283578745e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 3: v sigma versus square root",
+          "scaled_error": "2.00773254216e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 3: product",
+          "scaled_error": "1.00977146534e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 3: raw sigma product",
+          "scaled_error": "1.17043364202e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 3: u canonical",
+          "scaled_error": "7.0440134243e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 3: v canonical",
+          "scaled_error": "6.55978391589e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 3: Wronskian",
+          "scaled_error": "4.05081122794e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 3: u polynomial potential",
+          "scaled_error": "2.43887664896e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 3: v polynomial potential",
+          "scaled_error": "4.88350839311e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 4: u sigma versus square root",
+          "scaled_error": "1.00721632338e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 4: v sigma versus square root",
+          "scaled_error": "1.58224581574e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 4: product",
+          "scaled_error": "3.35261760055e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 4: raw sigma product",
+          "scaled_error": "1.00952444103e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 4: u canonical",
+          "scaled_error": "3.28685872827e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 4: v canonical",
+          "scaled_error": "2.20836183092e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 4: Wronskian",
+          "scaled_error": "2.41944949264e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 4: u polynomial potential",
+          "scaled_error": "1.780237053e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 4: v polynomial potential",
+          "scaled_error": "1.780237053e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 5: u sigma versus square root",
+          "scaled_error": "2.03845577273e-39",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 5: v sigma versus square root",
+          "scaled_error": "2.99433181949e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 5: product",
+          "scaled_error": "1.4897354149e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 5: raw sigma product",
+          "scaled_error": "1.4897354149e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 5: u canonical",
+          "scaled_error": "3.35861143608e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 5: v canonical",
+          "scaled_error": "3.62444279902e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 5: Wronskian",
+          "scaled_error": "2.59367268236e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 5: u polynomial potential",
+          "scaled_error": "1.23914415826e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 5: v polynomial potential",
+          "scaled_error": "3.71743247478e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: general-Q Hamiltonian",
+          "scaled_error": "3.62476811644e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: general-Q u_1 canonical",
+          "scaled_error": "1.94946998632e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: general-Q v_1 canonical",
+          "scaled_error": "1.46612249631e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: general-Q u_2 canonical",
+          "scaled_error": "2.44040490465e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: general-Q v_2 canonical",
+          "scaled_error": "1.19588354623e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: general-Q u_3 canonical",
+          "scaled_error": "6.29496218123e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: general-Q v_3 canonical",
+          "scaled_error": "5.47765552486e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: general-Q u_4 canonical",
+          "scaled_error": "2.20741268951e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: general-Q v_4 canonical",
+          "scaled_error": "3.28749623484e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: general-Q u_5 canonical",
+          "scaled_error": "2.30651142307e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: general-Q v_5 canonical",
+          "scaled_error": "2.678863522e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: Hamiltonian",
+          "scaled_error": "7.24435493e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 1: u sigma versus square root",
+          "scaled_error": "1.03051663807e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 1: v sigma versus square root",
+          "scaled_error": "3.77405890226e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 1: product",
+          "scaled_error": "1.21091682302e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 1: raw sigma product",
+          "scaled_error": "1.23715818661e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 1: u canonical",
+          "scaled_error": "1.20362424953e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 1: v canonical",
+          "scaled_error": "1.11994907128e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 1: Wronskian",
+          "scaled_error": "7.55325650064e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 1: u polynomial potential",
+          "scaled_error": "6.59609213818e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 1: v polynomial potential",
+          "scaled_error": "4.21282926621e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 2: u sigma versus square root",
+          "scaled_error": "3.20305374127e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 2: v sigma versus square root",
+          "scaled_error": "3.17995806026e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 2: product",
+          "scaled_error": "4.6956878532e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 2: raw sigma product",
+          "scaled_error": "1.57235867841e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 2: u canonical",
+          "scaled_error": "1.1854724745e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 2: v canonical",
+          "scaled_error": "7.53811024461e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 2: Wronskian",
+          "scaled_error": "1.20972474632e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 2: u polynomial potential",
+          "scaled_error": "9.22185440196e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 2: v polynomial potential",
+          "scaled_error": "2.43017201339e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 3: u sigma versus square root",
+          "scaled_error": "1.54247992487e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 3: v sigma versus square root",
+          "scaled_error": "2.16507574985e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 3: product",
+          "scaled_error": "3.02595704421e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 3: raw sigma product",
+          "scaled_error": "2.00575813307e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 3: u canonical",
+          "scaled_error": "1.30054686345e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 3: v canonical",
+          "scaled_error": "4.31845716008e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 3: Wronskian",
+          "scaled_error": "2.57046945861e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 3: u polynomial potential",
+          "scaled_error": "4.82576196364e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 3: v polynomial potential",
+          "scaled_error": "4.892454025e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 4: u sigma versus square root",
+          "scaled_error": "8.23858688093e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 4: v sigma versus square root",
+          "scaled_error": "1.67597179181e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 4: product",
+          "scaled_error": "2.16946189547e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 4: raw sigma product",
+          "scaled_error": "1.07976251213e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 4: u canonical",
+          "scaled_error": "4.37069765888e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 4: v canonical",
+          "scaled_error": "1.09298920454e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 4: Wronskian",
+          "scaled_error": "1.21574327739e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 4: u polynomial potential",
+          "scaled_error": "3.52855169796e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 4: v polynomial potential",
+          "scaled_error": "4.40759934092e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 5: u sigma versus square root",
+          "scaled_error": "1.48981390101e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 5: v sigma versus square root",
+          "scaled_error": "1.48981390101e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 5: product",
+          "scaled_error": "1.11155092773e-50",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 5: raw sigma product",
+          "scaled_error": "2.95026033148e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 5: u canonical",
+          "scaled_error": "5.44719603604e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 5: v canonical",
+          "scaled_error": "2.10932843394e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 5: Wronskian",
+          "scaled_error": "2.61625483579e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 5: u polynomial potential",
+          "scaled_error": "2.4556532474e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 5: v polynomial potential",
+          "scaled_error": "3.6834798711e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: general-Q Hamiltonian",
+          "scaled_error": "8.42623764665e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: general-Q u_1 canonical",
+          "scaled_error": "2.35708622813e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: general-Q v_1 canonical",
+          "scaled_error": "1.27764258169e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: general-Q u_2 canonical",
+          "scaled_error": "9.5081817825e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: general-Q v_2 canonical",
+          "scaled_error": "9.24462417557e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: general-Q u_3 canonical",
+          "scaled_error": "1.13991163694e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: general-Q v_3 canonical",
+          "scaled_error": "2.17035831427e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: general-Q u_4 canonical",
+          "scaled_error": "3.30835528825e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: general-Q v_4 canonical",
+          "scaled_error": "3.2431167616e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: general-Q u_5 canonical",
+          "scaled_error": "4.36801085147e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: general-Q v_5 canonical",
+          "scaled_error": "2.10932843394e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: Hamiltonian",
+          "scaled_error": "3.86565310819e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 1: u sigma versus square root",
+          "scaled_error": "2.21163383103e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 1: v sigma versus square root",
+          "scaled_error": "5.45078848153e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 1: product",
+          "scaled_error": "5.96441377996e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 1: raw sigma product",
+          "scaled_error": "1.20138564885e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 1: u canonical",
+          "scaled_error": "4.13563498474e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 1: v canonical",
+          "scaled_error": "7.45316448817e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 1: Wronskian",
+          "scaled_error": "8.11890082643e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 1: u polynomial potential",
+          "scaled_error": "3.31083598305e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 1: v polynomial potential",
+          "scaled_error": "8.57826587731e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 2: u sigma versus square root",
+          "scaled_error": "6.85790178612e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 2: v sigma versus square root",
+          "scaled_error": "4.94605579246e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 2: product",
+          "scaled_error": "5.63184597107e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 2: raw sigma product",
+          "scaled_error": "4.60173398622e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 2: u canonical",
+          "scaled_error": "2.17558096189e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 2: v canonical",
+          "scaled_error": "7.67348907511e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 2: Wronskian",
+          "scaled_error": "1.11253670224e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 2: u polynomial potential",
+          "scaled_error": "8.23946922959e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 2: v polynomial potential",
+          "scaled_error": "7.85820961928e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 3: u sigma versus square root",
+          "scaled_error": "3.35831696142e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 3: v sigma versus square root",
+          "scaled_error": "2.76297453684e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 3: product",
+          "scaled_error": "1.04618377327e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 3: raw sigma product",
+          "scaled_error": "2.01020313153e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 3: u canonical",
+          "scaled_error": "4.36526487621e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 3: v canonical",
+          "scaled_error": "4.44512317868e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 3: Wronskian",
+          "scaled_error": "3.73466342041e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 3: u polynomial potential",
+          "scaled_error": "4.95303978025e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 3: v polynomial potential",
+          "scaled_error": "6.12173807538e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 4: u sigma versus square root",
+          "scaled_error": "1.55959597024e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 4: v sigma versus square root",
+          "scaled_error": "2.01392533212e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 4: product",
+          "scaled_error": "2.43781576974e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 4: raw sigma product",
+          "scaled_error": "5.98877894396e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 4: u canonical",
+          "scaled_error": "7.67097125095e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 4: v canonical",
+          "scaled_error": "9.20351074608e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 4: Wronskian",
+          "scaled_error": "2.70502676683e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 4: u polynomial potential",
+          "scaled_error": "3.56047410599e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 4: v polynomial potential",
+          "scaled_error": "1.88292822332e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 5: u sigma versus square root",
+          "scaled_error": "2.03845577273e-39",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 5: v sigma versus square root",
+          "scaled_error": "1.49716695054e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 5: product",
+          "scaled_error": "2.97947082981e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 5: raw sigma product",
+          "scaled_error": "5.95894165961e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 5: u canonical",
+          "scaled_error": "1.66974085921e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 5: v canonical",
+          "scaled_error": "2.33712859927e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 5: Wronskian",
+          "scaled_error": "2.59367268236e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 5: u polynomial potential",
+          "scaled_error": "3.71743247478e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 5: v polynomial potential",
+          "scaled_error": "3.71743247478e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: general-Q Hamiltonian",
+          "scaled_error": "2.55469039636e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: general-Q u_1 canonical",
+          "scaled_error": "2.84759618873e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: general-Q v_1 canonical",
+          "scaled_error": "5.2773086291e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: general-Q u_2 canonical",
+          "scaled_error": "3.41111618477e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: general-Q v_2 canonical",
+          "scaled_error": "6.42472788733e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: general-Q u_3 canonical",
+          "scaled_error": "4.36526487621e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: general-Q v_3 canonical",
+          "scaled_error": "3.38671114251e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: general-Q u_4 canonical",
+          "scaled_error": "7.67097125095e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: general-Q v_4 canonical",
+          "scaled_error": "1.42590322396e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: general-Q u_5 canonical",
+          "scaled_error": "1.66974085921e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: general-Q v_5 canonical",
+          "scaled_error": "1.37331882287e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: Hamiltonian",
+          "scaled_error": "1.21045214618e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 1: u sigma versus square root",
+          "scaled_error": "1.35913491618e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 1: v sigma versus square root",
+          "scaled_error": "3.4136204828e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 1: product",
+          "scaled_error": "5.64957357797e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 1: raw sigma product",
+          "scaled_error": "2.56236241556e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 1: u canonical",
+          "scaled_error": "6.76876941277e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 1: v canonical",
+          "scaled_error": "6.28553397678e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 1: Wronskian",
+          "scaled_error": "6.04260520051e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 1: u polynomial potential",
+          "scaled_error": "1.36342538967e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 1: v polynomial potential",
+          "scaled_error": "1.36342538967e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 2: u sigma versus square root",
+          "scaled_error": "1.57445239666e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 2: v sigma versus square root",
+          "scaled_error": "1.19585198925e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 2: product",
+          "scaled_error": "3.56065788768e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 2: raw sigma product",
+          "scaled_error": "4.5520743301e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 2: u canonical",
+          "scaled_error": "8.80687660139e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 2: v canonical",
+          "scaled_error": "1.2958677292e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 2: Wronskian",
+          "scaled_error": "9.21298918851e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 2: u polynomial potential",
+          "scaled_error": "3.65875473047e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 2: v polynomial potential",
+          "scaled_error": "5.47831551725e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 3: u sigma versus square root",
+          "scaled_error": "3.15374272919e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 3: v sigma versus square root",
+          "scaled_error": "1.02956571094e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 3: product",
+          "scaled_error": "3.07692943622e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 3: raw sigma product",
+          "scaled_error": "3.06873130827e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 3: u canonical",
+          "scaled_error": "3.44066980911e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 3: v canonical",
+          "scaled_error": "3.20679589694e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 3: Wronskian",
+          "scaled_error": "4.06426907255e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 3: u polynomial potential",
+          "scaled_error": "2.55696764083e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 3: v polynomial potential",
+          "scaled_error": "3.65519021123e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 4: u sigma versus square root",
+          "scaled_error": "2.64685240659e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 4: v sigma versus square root",
+          "scaled_error": "1.98960371225e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 4: product",
+          "scaled_error": "2.16795962188e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 4: raw sigma product",
+          "scaled_error": "6.01396030396e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 4: u canonical",
+          "scaled_error": "3.35834592024e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 4: v canonical",
+          "scaled_error": "2.38052518504e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 4: Wronskian",
+          "scaled_error": "2.43148655479e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 4: u polynomial potential",
+          "scaled_error": "2.65041526543e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 4: v polynomial potential",
+          "scaled_error": "4.4240558985e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 5: u sigma versus square root",
+          "scaled_error": "1.48981390101e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 5: v sigma versus square root",
+          "scaled_error": "4.46942713863e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 5: product",
+          "scaled_error": "5.90052066295e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 5: raw sigma product",
+          "scaled_error": "1.03259111602e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 5: u canonical",
+          "scaled_error": "1.12128519484e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 5: v canonical",
+          "scaled_error": "2.37881528935e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 5: Wronskian",
+          "scaled_error": "2.61625483579e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 5: u polynomial potential",
+          "scaled_error": "2.4556532474e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 5: v polynomial potential",
+          "scaled_error": "4.9113064948e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: general-Q Hamiltonian",
+          "scaled_error": "1.20377467476e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: general-Q u_1 canonical",
+          "scaled_error": "4.67142716753e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: general-Q v_1 canonical",
+          "scaled_error": "7.12671053708e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: general-Q u_2 canonical",
+          "scaled_error": "1.12913887734e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: general-Q v_2 canonical",
+          "scaled_error": "1.84866332948e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: general-Q u_3 canonical",
+          "scaled_error": "3.88652442447e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: general-Q v_3 canonical",
+          "scaled_error": "1.12444956246e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: general-Q u_4 canonical",
+          "scaled_error": "4.40865859781e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: general-Q v_4 canonical",
+          "scaled_error": "3.39026374146e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: general-Q u_5 canonical",
+          "scaled_error": "2.8345066923e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: general-Q v_5 canonical",
+          "scaled_error": "3.39756430582e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15: Hamiltonian",
+          "scaled_error": "3.15972881501e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15: U",
+          "scaled_error": "2.8588022612e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15: V",
+          "scaled_error": "3.00926553811e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 1: product",
+          "scaled_error": "3.8614542293e-73",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 1: u canonical derivative",
+          "scaled_error": "4.89973248528e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 1: v canonical derivative",
+          "scaled_error": "8.03173096165e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 1: Wronskian",
+          "scaled_error": "3.06689820707e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 1: u polynomial ODE",
+          "scaled_error": "6.3574766805e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 1: v polynomial ODE",
+          "scaled_error": "6.93956708046e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 2: product",
+          "scaled_error": "1.15212326881e-73",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 2: u canonical derivative",
+          "scaled_error": "8.18592566255e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 2: v canonical derivative",
+          "scaled_error": "3.95734540215e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 2: Wronskian",
+          "scaled_error": "1.59755557678e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 2: u polynomial ODE",
+          "scaled_error": "7.06606287086e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 2: v polynomial ODE",
+          "scaled_error": "4.4860570763e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 3: product",
+          "scaled_error": "1.11170236933e-72",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 3: u canonical derivative",
+          "scaled_error": "8.87180552114e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 3: v canonical derivative",
+          "scaled_error": "4.00127377843e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 3: Wronskian",
+          "scaled_error": "1.83770361282e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 3: u polynomial ODE",
+          "scaled_error": "2.96858227093e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 3: v polynomial ODE",
+          "scaled_error": "5.56971872426e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 4: product",
+          "scaled_error": "4.39772710267e-73",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 4: u canonical derivative",
+          "scaled_error": "1.1778971111e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 4: v canonical derivative",
+          "scaled_error": "4.13900679329e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 4: Wronskian",
+          "scaled_error": "3.31514498264e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 4: u polynomial ODE",
+          "scaled_error": "4.18219362401e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 4: v polynomial ODE",
+          "scaled_error": "4.7574602959e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 5: product",
+          "scaled_error": "2.24015044408e-74",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 5: u canonical derivative",
+          "scaled_error": "6.16717222929e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 5: v canonical derivative",
+          "scaled_error": "3.76158813182e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 5: Wronskian",
+          "scaled_error": "1.95167748681e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 5: u polynomial ODE",
+          "scaled_error": "5.63858814032e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 5: v polynomial ODE",
+          "scaled_error": "3.94447847012e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15: vanishing mode signed continuation",
+          "scaled_error": "0.0",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075: Hamiltonian",
+          "scaled_error": "1.0286649896e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075: U",
+          "scaled_error": "7.34115055087e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075: V",
+          "scaled_error": "3.39353798305e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 1: product",
+          "scaled_error": "1.62342061489e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 1: u canonical derivative",
+          "scaled_error": "4.29853186946e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 1: v canonical derivative",
+          "scaled_error": "1.68915492467e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 1: Wronskian",
+          "scaled_error": "2.38535591943e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 1: u polynomial ODE",
+          "scaled_error": "2.61113346548e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 1: v polynomial ODE",
+          "scaled_error": "1.82435911743e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 2: product",
+          "scaled_error": "2.54877823716e-37",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 2: u canonical derivative",
+          "scaled_error": "9.35564121403e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 2: v canonical derivative",
+          "scaled_error": "5.6703897484e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 2: Wronskian",
+          "scaled_error": "3.915180342e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 2: u polynomial ODE",
+          "scaled_error": "4.39966873473e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 2: v polynomial ODE",
+          "scaled_error": "1.88686415447e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 3: product",
+          "scaled_error": "1.50933293982e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 3: u canonical derivative",
+          "scaled_error": "1.35228699153e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 3: v canonical derivative",
+          "scaled_error": "1.4928851311e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 3: Wronskian",
+          "scaled_error": "2.37929489651e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 3: u polynomial ODE",
+          "scaled_error": "1.07306393861e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 3: v polynomial ODE",
+          "scaled_error": "2.52059137309e-37",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 4: product",
+          "scaled_error": "3.20256337588e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 4: u canonical derivative",
+          "scaled_error": "8.27045986318e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 4: v canonical derivative",
+          "scaled_error": "1.63345908638e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 4: Wronskian",
+          "scaled_error": "1.87279392721e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 4: u polynomial ODE",
+          "scaled_error": "1.39910640345e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 4: v polynomial ODE",
+          "scaled_error": "1.45884302961e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 5: product",
+          "scaled_error": "1.35354121584e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 5: u canonical derivative",
+          "scaled_error": "6.69753976585e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 5: v canonical derivative",
+          "scaled_error": "4.53344574153e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 5: Wronskian",
+          "scaled_error": "1.98510335981e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 5: u polynomial ODE",
+          "scaled_error": "1.05227120778e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 5: v polynomial ODE",
+          "scaled_error": "2.2764252986e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075: vanishing mode signed continuation",
+          "scaled_error": "1.41566796854e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0: Hamiltonian",
+          "scaled_error": "2.02349057416e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0: U",
+          "scaled_error": "2.02349057416e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0: V",
+          "scaled_error": "5.07740768927e-51",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 1: product",
+          "scaled_error": "3.41960853772e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 1: u canonical derivative",
+          "scaled_error": "5.64262064215e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 1: v canonical derivative",
+          "scaled_error": "1.90891796051e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 1: Wronskian",
+          "scaled_error": "2.69156892222e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 1: u polynomial ODE",
+          "scaled_error": "1.94961333653e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 1: v polynomial ODE",
+          "scaled_error": "5.54835676992e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 2: product",
+          "scaled_error": "1.77945527729e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 2: u canonical derivative",
+          "scaled_error": "1.28620567055e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 2: v canonical derivative",
+          "scaled_error": "1.47774632389e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 2: Wronskian",
+          "scaled_error": "3.40134915143e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 2: u polynomial ODE",
+          "scaled_error": "1.51572051949e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 2: v polynomial ODE",
+          "scaled_error": "2.30513605975e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 3: product",
+          "scaled_error": "2.25991376025e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 3: u canonical derivative",
+          "scaled_error": "6.7908150964e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 3: v canonical derivative",
+          "scaled_error": "6.74049562464e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 3: Wronskian",
+          "scaled_error": "8.76541029185e-37",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 3: u polynomial ODE",
+          "scaled_error": "2.87927243671e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 3: v polynomial ODE",
+          "scaled_error": "1.56506817137e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 4: product",
+          "scaled_error": "2.29989063038e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 4: u canonical derivative",
+          "scaled_error": "1.11190050349e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 4: v canonical derivative",
+          "scaled_error": "9.66392044859e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 4: Wronskian",
+          "scaled_error": "2.97503126675e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 4: u polynomial ODE",
+          "scaled_error": "3.37207777253e-37",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 4: v polynomial ODE",
+          "scaled_error": "1.99195448434e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 5: product",
+          "scaled_error": "4.28086941683e-87",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 5: u canonical derivative",
+          "scaled_error": "6.43918937874e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 5: v canonical derivative",
+          "scaled_error": "3.02127539439e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 5: Wronskian",
+          "scaled_error": "2.02349057416e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 5: u polynomial ODE",
+          "scaled_error": "8.32582085639e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 5: v polynomial ODE",
+          "scaled_error": "1.69138600504e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0: vanishing mode signed continuation",
+          "scaled_error": "2.75362189223e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075: Hamiltonian",
+          "scaled_error": "4.59268078113e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075: U",
+          "scaled_error": "4.47615380342e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075: V",
+          "scaled_error": "1.16732385537e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 1: product",
+          "scaled_error": "1.60357967181e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 1: u canonical derivative",
+          "scaled_error": "4.72154401074e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 1: v canonical derivative",
+          "scaled_error": "6.56458893745e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 1: Wronskian",
+          "scaled_error": "2.72061569701e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 1: u polynomial ODE",
+          "scaled_error": "2.4442634532e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 1: v polynomial ODE",
+          "scaled_error": "6.37839885033e-40",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 2: product",
+          "scaled_error": "2.29942198355e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 2: u canonical derivative",
+          "scaled_error": "3.39025791324e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 2: v canonical derivative",
+          "scaled_error": "6.32230467994e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 2: Wronskian",
+          "scaled_error": "2.75027344824e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 2: u polynomial ODE",
+          "scaled_error": "2.3608738034e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 2: v polynomial ODE",
+          "scaled_error": "7.65709892064e-38",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 3: product",
+          "scaled_error": "4.54213407752e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 3: u canonical derivative",
+          "scaled_error": "1.12533511084e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 3: v canonical derivative",
+          "scaled_error": "3.96452637436e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 3: Wronskian",
+          "scaled_error": "1.97206088352e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 3: u polynomial ODE",
+          "scaled_error": "2.98234981386e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 3: v polynomial ODE",
+          "scaled_error": "3.24472701771e-37",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 4: product",
+          "scaled_error": "2.99760444342e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 4: u canonical derivative",
+          "scaled_error": "8.00664962821e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 4: v canonical derivative",
+          "scaled_error": "3.92248324406e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 4: Wronskian",
+          "scaled_error": "2.0870414267e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 4: u polynomial ODE",
+          "scaled_error": "1.63237426728e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 4: v polynomial ODE",
+          "scaled_error": "3.47963734197e-37",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 5: product",
+          "scaled_error": "1.92166198029e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 5: u canonical derivative",
+          "scaled_error": "6.16268395226e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 5: v canonical derivative",
+          "scaled_error": "5.28954081462e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 5: Wronskian",
+          "scaled_error": "2.08623722459e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 5: u polynomial ODE",
+          "scaled_error": "2.00656913462e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 5: v polynomial ODE",
+          "scaled_error": "2.26211867354e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075: vanishing mode signed continuation",
+          "scaled_error": "4.09749316567e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15: Hamiltonian",
+          "scaled_error": "7.42339864037e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15: U",
+          "scaled_error": "7.19270688851e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15: V",
+          "scaled_error": "2.31083873477e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 1: product",
+          "scaled_error": "1.86835684834e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 1: u canonical derivative",
+          "scaled_error": "7.67088664304e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 1: v canonical derivative",
+          "scaled_error": "7.38977719242e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 1: Wronskian",
+          "scaled_error": "2.73453227311e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 1: u polynomial ODE",
+          "scaled_error": "5.26912159607e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 1: v polynomial ODE",
+          "scaled_error": "5.8081189999e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 2: product",
+          "scaled_error": "2.37795177282e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 2: u canonical derivative",
+          "scaled_error": "2.13235439693e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 2: v canonical derivative",
+          "scaled_error": "6.93558554724e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 2: Wronskian",
+          "scaled_error": "6.00766837451e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 2: u polynomial ODE",
+          "scaled_error": "1.20927166538e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 2: v polynomial ODE",
+          "scaled_error": "4.62857486341e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 3: product",
+          "scaled_error": "3.26703737124e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 3: u canonical derivative",
+          "scaled_error": "1.52732918568e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 3: v canonical derivative",
+          "scaled_error": "5.80687694749e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 3: Wronskian",
+          "scaled_error": "2.6298244926e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 3: u polynomial ODE",
+          "scaled_error": "1.32218778487e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 3: v polynomial ODE",
+          "scaled_error": "3.83874271573e-37",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 4: product",
+          "scaled_error": "1.7020999213e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 4: u canonical derivative",
+          "scaled_error": "2.18526411655e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 4: v canonical derivative",
+          "scaled_error": "5.24671159559e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 4: Wronskian",
+          "scaled_error": "4.49069737285e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 4: u polynomial ODE",
+          "scaled_error": "1.78934800913e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 4: v polynomial ODE",
+          "scaled_error": "1.04572507395e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 5: product",
+          "scaled_error": "1.2834321426e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 5: u canonical derivative",
+          "scaled_error": "6.48600507923e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 5: v canonical derivative",
+          "scaled_error": "6.05463873151e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 5: Wronskian",
+          "scaled_error": "2.01867669167e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 5: u polynomial ODE",
+          "scaled_error": "8.40089453832e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 5: v polynomial ODE",
+          "scaled_error": "5.18709508042e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15: vanishing mode signed continuation",
+          "scaled_error": "5.70030486238e-35",
+          "passed": true
+        }
+      ],
+      "turning_samples": [
+        {
+          "t": "0.15",
+          "rho": "2.0225",
+          "Y": "1.50427888442552953",
+          "u_last": "(1.0 + 0.0j)",
+          "du_last": "(33.4284196539006562 - 4.00931641640930632e-34j)"
+        },
+        {
+          "t": "0.075",
+          "rho": "2.005625",
+          "Y": "0.739157007718846512",
+          "u_last": "(0.5 + 6.06987449252130113e-36j)",
+          "du_last": "(32.8514225652820672 - 4.03600061745837078e-34j)"
+        },
+        {
+          "t": "0.0",
+          "rho": "2.0",
+          "Y": "0.0",
+          "u_last": "(2.46437693523103187e-35 + 1.22852751148321122e-35j)",
+          "du_last": "(32.6598632371090413 - 4.10711829602499251e-34j)"
+        },
+        {
+          "t": "-0.075",
+          "rho": "2.005625",
+          "Y": "-0.739157007718846512",
+          "u_last": "(-0.5 + 1.86445355185286691e-35j)",
+          "du_last": "(32.8514225652820672 - 4.22489873905703283e-34j)"
+        },
+        {
+          "t": "-0.15",
+          "rho": "2.0225",
+          "Y": "-1.50427888442552953",
+          "u_last": "(-1.0 + 2.51447071692328544e-35j)",
+          "du_last": "(33.4284196539006562 - 4.3920479971785306e-34j)"
+        }
+      ],
+      "seconds": 3.623
+    },
+    {
+      "genus": 3,
+      "dps": 35,
+      "F": "4*rho**7 - 56*rho**5 + 196*rho**3 - 144*rho",
+      "fixed_sigma_sharp_moduli": [
+        "0.233240391181",
+        "0.672140824803",
+        "1.56887907624",
+        "2.05346135323",
+        "1.56887907624",
+        "0.672140824803",
+        "0.233240391181"
+      ],
+      "potential_last": "6*rho**5 + 15*rho**4 - 20*rho**3 - 45*rho**2 + 8*rho + 12",
+      "h_last": [
+        "(0.361295378615655477 - 1.96325520423690315e-35j)",
+        "(-1.43652840258408284 - 9.79261571966707881e-36j)",
+        "(0.66862966635043776 - 1.97483050942059901e-36j)"
+      ],
+      "tolerance": "1.0e-23",
+      "maximum_scaled_error": "3.00900358194e-32",
+      "check_count": 581,
+      "all_passed": true,
+      "checks": [
+        {
+          "check": "fixed 1: sigma stratum",
+          "scaled_error": "9.11020398843e-38",
+          "passed": true
+        },
+        {
+          "check": "fixed 1: sigma_3 stratum",
+          "scaled_error": "6.11715592304e-38",
+          "passed": true
+        },
+        {
+          "check": "fixed 1: h_1 sigma versus second-kind quadrature",
+          "scaled_error": "2.86574152519e-35",
+          "passed": true
+        },
+        {
+          "check": "fixed 1: h_2 sigma versus second-kind quadrature",
+          "scaled_error": "2.41218056752e-35",
+          "passed": true
+        },
+        {
+          "check": "fixed 1: h_3 sigma versus second-kind quadrature",
+          "scaled_error": "1.24987722416e-35",
+          "passed": true
+        },
+        {
+          "check": "fixed 2: sigma stratum",
+          "scaled_error": "2.75377003479e-37",
+          "passed": true
+        },
+        {
+          "check": "fixed 2: sigma_3 stratum",
+          "scaled_error": "2.75083971595e-37",
+          "passed": true
+        },
+        {
+          "check": "fixed 2: h_1 sigma versus second-kind quadrature",
+          "scaled_error": "1.21421084913e-35",
+          "passed": true
+        },
+        {
+          "check": "fixed 2: h_2 sigma versus second-kind quadrature",
+          "scaled_error": "4.89113625982e-36",
+          "passed": true
+        },
+        {
+          "check": "fixed 2: h_3 sigma versus second-kind quadrature",
+          "scaled_error": "6.04988352129e-36",
+          "passed": true
+        },
+        {
+          "check": "fixed 3: sigma stratum",
+          "scaled_error": "4.94086331866e-37",
+          "passed": true
+        },
+        {
+          "check": "fixed 3: sigma_3 stratum",
+          "scaled_error": "8.72867723835e-37",
+          "passed": true
+        },
+        {
+          "check": "fixed 3: h_1 sigma versus second-kind quadrature",
+          "scaled_error": "1.84443513724e-35",
+          "passed": true
+        },
+        {
+          "check": "fixed 3: h_2 sigma versus second-kind quadrature",
+          "scaled_error": "5.39125015207e-36",
+          "passed": true
+        },
+        {
+          "check": "fixed 3: h_3 sigma versus second-kind quadrature",
+          "scaled_error": "1.79121085203e-36",
+          "passed": true
+        },
+        {
+          "check": "fixed 4: sigma stratum",
+          "scaled_error": "9.67238734466e-37",
+          "passed": true
+        },
+        {
+          "check": "fixed 4: sigma_3 stratum",
+          "scaled_error": "1.75612464487e-36",
+          "passed": true
+        },
+        {
+          "check": "fixed 4: h_1 sigma versus second-kind quadrature",
+          "scaled_error": "1.73225247624e-35",
+          "passed": true
+        },
+        {
+          "check": "fixed 4: h_2 sigma versus second-kind quadrature",
+          "scaled_error": "4.01159940409e-36",
+          "passed": true
+        },
+        {
+          "check": "fixed 4: h_3 sigma versus second-kind quadrature",
+          "scaled_error": "1.16394289674e-36",
+          "passed": true
+        },
+        {
+          "check": "fixed 5: sigma stratum",
+          "scaled_error": "9.993192024e-37",
+          "passed": true
+        },
+        {
+          "check": "fixed 5: sigma_3 stratum",
+          "scaled_error": "2.20833258139e-36",
+          "passed": true
+        },
+        {
+          "check": "fixed 5: h_1 sigma versus second-kind quadrature",
+          "scaled_error": "2.13768699499e-35",
+          "passed": true
+        },
+        {
+          "check": "fixed 5: h_2 sigma versus second-kind quadrature",
+          "scaled_error": "4.97907907816e-36",
+          "passed": true
+        },
+        {
+          "check": "fixed 5: h_3 sigma versus second-kind quadrature",
+          "scaled_error": "1.60210769087e-36",
+          "passed": true
+        },
+        {
+          "check": "fixed 6: sigma stratum",
+          "scaled_error": "4.0395735061e-37",
+          "passed": true
+        },
+        {
+          "check": "fixed 6: sigma_3 stratum",
+          "scaled_error": "8.43306391942e-37",
+          "passed": true
+        },
+        {
+          "check": "fixed 6: h_1 sigma versus second-kind quadrature",
+          "scaled_error": "4.54766586345e-35",
+          "passed": true
+        },
+        {
+          "check": "fixed 6: h_2 sigma versus second-kind quadrature",
+          "scaled_error": "6.5621478985e-36",
+          "passed": true
+        },
+        {
+          "check": "fixed 6: h_3 sigma versus second-kind quadrature",
+          "scaled_error": "9.91251539213e-37",
+          "passed": true
+        },
+        {
+          "check": "fixed 7: sigma stratum",
+          "scaled_error": "4.42920946834e-38",
+          "passed": true
+        },
+        {
+          "check": "fixed 7: sigma_3 stratum",
+          "scaled_error": "1.55362249288e-37",
+          "passed": true
+        },
+        {
+          "check": "fixed 7: h_1 sigma versus second-kind quadrature",
+          "scaled_error": "4.05527587197e-35",
+          "passed": true
+        },
+        {
+          "check": "fixed 7: h_2 sigma versus second-kind quadrature",
+          "scaled_error": "8.12167085476e-36",
+          "passed": true
+        },
+        {
+          "check": "fixed 7: h_3 sigma versus second-kind quadrature",
+          "scaled_error": "1.82591774138e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: Hamiltonian",
+          "scaled_error": "5.90281659075e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 1: u sigma versus square root",
+          "scaled_error": "1.35546987552e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 1: v sigma versus square root",
+          "scaled_error": "1.94325751122e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 1: product",
+          "scaled_error": "2.6240765692e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 1: raw sigma product",
+          "scaled_error": "6.08912742734e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 1: u canonical",
+          "scaled_error": "2.13797272047e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 1: v canonical",
+          "scaled_error": "1.54379185716e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 1: Wronskian",
+          "scaled_error": "2.72116696885e-33",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 1: u polynomial potential",
+          "scaled_error": "1.75538840399e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 1: v polynomial potential",
+          "scaled_error": "1.24687188291e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 2: u sigma versus square root",
+          "scaled_error": "1.50575611933e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 2: v sigma versus square root",
+          "scaled_error": "2.02032289866e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 2: product",
+          "scaled_error": "2.00985172614e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 2: raw sigma product",
+          "scaled_error": "7.7830173076e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 2: u canonical",
+          "scaled_error": "1.64840110611e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 2: v canonical",
+          "scaled_error": "1.45583384259e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 2: Wronskian",
+          "scaled_error": "2.39497096149e-33",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 2: u polynomial potential",
+          "scaled_error": "1.75173001424e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 2: v polynomial potential",
+          "scaled_error": "1.13217974802e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 3: u sigma versus square root",
+          "scaled_error": "1.51799224905e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 3: v sigma versus square root",
+          "scaled_error": "2.41277322856e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 3: product",
+          "scaled_error": "2.09094108607e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 3: raw sigma product",
+          "scaled_error": "2.41362603026e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 3: u canonical",
+          "scaled_error": "1.55043261421e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 3: v canonical",
+          "scaled_error": "6.38818863229e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 3: Wronskian",
+          "scaled_error": "1.34847603003e-33",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 3: u polynomial potential",
+          "scaled_error": "1.25466095122e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 3: v polynomial potential",
+          "scaled_error": "4.31116266706e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 4: u sigma versus square root",
+          "scaled_error": "1.06022379856e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 4: v sigma versus square root",
+          "scaled_error": "4.1705735467e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 4: product",
+          "scaled_error": "2.10594446365e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 4: raw sigma product",
+          "scaled_error": "6.32281254846e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 4: u canonical",
+          "scaled_error": "2.00198288373e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 4: v canonical",
+          "scaled_error": "4.06240769472e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 4: Wronskian",
+          "scaled_error": "1.36524271908e-33",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 4: u polynomial potential",
+          "scaled_error": "1.67891309468e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 4: v polynomial potential",
+          "scaled_error": "2.85862158374e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 5: u sigma versus square root",
+          "scaled_error": "3.80435371523e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 5: v sigma versus square root",
+          "scaled_error": "3.06213417123e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 5: product",
+          "scaled_error": "7.42219544002e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 5: raw sigma product",
+          "scaled_error": "1.11176591932e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 5: u canonical",
+          "scaled_error": "2.07522754858e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 5: v canonical",
+          "scaled_error": "7.23384243207e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 5: Wronskian",
+          "scaled_error": "5.84216303583e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 5: u polynomial potential",
+          "scaled_error": "1.62081506878e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 5: v polynomial potential",
+          "scaled_error": "8.56414119887e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 6: u sigma versus square root",
+          "scaled_error": "8.46015678142e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 6: v sigma versus square root",
+          "scaled_error": "1.55040471885e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 6: product",
+          "scaled_error": "1.23472933235e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 6: raw sigma product",
+          "scaled_error": "1.4741010115e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 6: u canonical",
+          "scaled_error": "1.61481728354e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 6: v canonical",
+          "scaled_error": "4.56377215485e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 6: Wronskian",
+          "scaled_error": "2.73729462877e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 6: u polynomial potential",
+          "scaled_error": "8.0797098192e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 6: v polynomial potential",
+          "scaled_error": "8.17630834203e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 7: u sigma versus square root",
+          "scaled_error": "2.99433349536e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 7: v sigma versus square root",
+          "scaled_error": "3.45277465134e-39",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 7: product",
+          "scaled_error": "1.48973544808e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 7: raw sigma product",
+          "scaled_error": "5.95894324971e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 7: u canonical",
+          "scaled_error": "1.07853564539e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 7: v canonical",
+          "scaled_error": "2.46819110683e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 7: Wronskian",
+          "scaled_error": "2.20467151393e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 7: u polynomial potential",
+          "scaled_error": "1.53314110928e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5, mode 7: v polynomial potential",
+          "scaled_error": "1.51670618736e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: general-Q Hamiltonian",
+          "scaled_error": "5.91224498002e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: general-Q u_1 canonical",
+          "scaled_error": "2.36888671086e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: general-Q v_1 canonical",
+          "scaled_error": "1.38697889651e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: general-Q u_2 canonical",
+          "scaled_error": "1.53534077756e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: general-Q v_2 canonical",
+          "scaled_error": "1.58862470075e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: general-Q u_3 canonical",
+          "scaled_error": "1.55043261421e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: general-Q v_3 canonical",
+          "scaled_error": "6.38818863229e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: general-Q u_4 canonical",
+          "scaled_error": "2.00198288373e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: general-Q v_4 canonical",
+          "scaled_error": "4.06240769472e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: general-Q u_5 canonical",
+          "scaled_error": "2.07522754858e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: general-Q v_5 canonical",
+          "scaled_error": "7.23384243207e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: general-Q u_6 canonical",
+          "scaled_error": "1.61481728354e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: general-Q v_6 canonical",
+          "scaled_error": "4.56377215485e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: general-Q u_7 canonical",
+          "scaled_error": "1.07853564539e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 0.5: general-Q v_7 canonical",
+          "scaled_error": "2.46819110683e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: Hamiltonian",
+          "scaled_error": "1.47187387635e-33",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 1: u sigma versus square root",
+          "scaled_error": "2.71664565271e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 1: v sigma versus square root",
+          "scaled_error": "2.82980915664e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 1: product",
+          "scaled_error": "4.30796717073e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 1: raw sigma product",
+          "scaled_error": "6.07994419889e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 1: u canonical",
+          "scaled_error": "2.05447748921e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 1: v canonical",
+          "scaled_error": "1.69987305297e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 1: Wronskian",
+          "scaled_error": "2.43735774777e-33",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 1: u polynomial potential",
+          "scaled_error": "1.70160849757e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 1: v polynomial potential",
+          "scaled_error": "2.01103327273e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 2: u sigma versus square root",
+          "scaled_error": "1.77735552253e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 2: v sigma versus square root",
+          "scaled_error": "1.83919951275e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 2: product",
+          "scaled_error": "3.89990097375e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 2: raw sigma product",
+          "scaled_error": "5.63766200194e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 2: u canonical",
+          "scaled_error": "2.12277014049e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 2: v canonical",
+          "scaled_error": "1.9177378145e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 2: Wronskian",
+          "scaled_error": "2.53102776642e-33",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 2: u polynomial potential",
+          "scaled_error": "1.34635559794e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 2: v polynomial potential",
+          "scaled_error": "1.86789185104e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 3: u sigma versus square root",
+          "scaled_error": "2.23531867667e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 3: v sigma versus square root",
+          "scaled_error": "6.37316734317e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 3: product",
+          "scaled_error": "4.81907307124e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 3: raw sigma product",
+          "scaled_error": "5.35877493647e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 3: u canonical",
+          "scaled_error": "2.00183584603e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 3: v canonical",
+          "scaled_error": "1.33605186468e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 3: Wronskian",
+          "scaled_error": "1.84076440702e-33",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 3: u polynomial potential",
+          "scaled_error": "1.84982164173e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 3: v polynomial potential",
+          "scaled_error": "1.09787911709e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 4: u sigma versus square root",
+          "scaled_error": "2.6075585151e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 4: v sigma versus square root",
+          "scaled_error": "6.36759399619e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 4: product",
+          "scaled_error": "6.4452839471e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 4: raw sigma product",
+          "scaled_error": "5.55171261833e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 4: u canonical",
+          "scaled_error": "2.14210958996e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 4: v canonical",
+          "scaled_error": "2.06158651243e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 4: Wronskian",
+          "scaled_error": "1.82600326908e-33",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 4: u polynomial potential",
+          "scaled_error": "2.29992259844e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 4: v polynomial potential",
+          "scaled_error": "5.50752273509e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 5: u sigma versus square root",
+          "scaled_error": "1.03276731182e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 5: v sigma versus square root",
+          "scaled_error": "6.37133478746e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 5: product",
+          "scaled_error": "6.08167821065e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 5: raw sigma product",
+          "scaled_error": "6.97784994094e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 5: u canonical",
+          "scaled_error": "2.51003002001e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 5: v canonical",
+          "scaled_error": "8.63219167157e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 5: Wronskian",
+          "scaled_error": "1.10739213331e-33",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 5: u polynomial potential",
+          "scaled_error": "2.13568584852e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 5: v polynomial potential",
+          "scaled_error": "9.63087122241e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 6: u sigma versus square root",
+          "scaled_error": "8.22237850799e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 6: v sigma versus square root",
+          "scaled_error": "9.43644287782e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 6: product",
+          "scaled_error": "2.31033576213e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 6: raw sigma product",
+          "scaled_error": "1.3581324554e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 6: u canonical",
+          "scaled_error": "2.23165253584e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 6: v canonical",
+          "scaled_error": "1.86611245654e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 6: Wronskian",
+          "scaled_error": "1.94518924383e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 6: u polynomial potential",
+          "scaled_error": "1.02510956224e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 6: v polynomial potential",
+          "scaled_error": "8.78539159071e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 7: u sigma versus square root",
+          "scaled_error": "1.48982710828e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 7: v sigma versus square root",
+          "scaled_error": "4.46943053605e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 7: product",
+          "scaled_error": "5.90052069645e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 7: raw sigma product",
+          "scaled_error": "1.032591195e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 7: u canonical",
+          "scaled_error": "2.57522421873e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 7: v canonical",
+          "scaled_error": "6.47854514803e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 7: Wronskian",
+          "scaled_error": "2.22242436241e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 7: u polynomial potential",
+          "scaled_error": "4.49671221654e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0, mode 7: v polynomial potential",
+          "scaled_error": "4.49103403992e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: general-Q Hamiltonian",
+          "scaled_error": "1.37913129575e-33",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: general-Q u_1 canonical",
+          "scaled_error": "2.19299297388e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: general-Q v_1 canonical",
+          "scaled_error": "1.42362599345e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: general-Q u_2 canonical",
+          "scaled_error": "2.04247300858e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: general-Q v_2 canonical",
+          "scaled_error": "2.09058308445e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: general-Q u_3 canonical",
+          "scaled_error": "1.94100104348e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: general-Q v_3 canonical",
+          "scaled_error": "1.33605186468e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: general-Q u_4 canonical",
+          "scaled_error": "2.07971364048e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: general-Q v_4 canonical",
+          "scaled_error": "2.06158651243e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: general-Q u_5 canonical",
+          "scaled_error": "2.41151511455e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: general-Q v_5 canonical",
+          "scaled_error": "8.63219167157e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: general-Q u_6 canonical",
+          "scaled_error": "2.10550553213e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: general-Q v_6 canonical",
+          "scaled_error": "1.86611245654e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: general-Q u_7 canonical",
+          "scaled_error": "2.44382910716e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet 1, fraction 1.0: general-Q v_7 canonical",
+          "scaled_error": "6.47854514803e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: Hamiltonian",
+          "scaled_error": "6.74740000237e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 1: u sigma versus square root",
+          "scaled_error": "1.41617881563e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 1: v sigma versus square root",
+          "scaled_error": "4.37215749958e-38",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 1: product",
+          "scaled_error": "8.59191992973e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 1: raw sigma product",
+          "scaled_error": "1.30285739688e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 1: u canonical",
+          "scaled_error": "3.12684476046e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 1: v canonical",
+          "scaled_error": "3.32455852422e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 1: Wronskian",
+          "scaled_error": "1.82541429614e-33",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 1: u polynomial potential",
+          "scaled_error": "3.29616515306e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 1: v polynomial potential",
+          "scaled_error": "5.02203866493e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 2: u sigma versus square root",
+          "scaled_error": "1.74045025746e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 2: v sigma versus square root",
+          "scaled_error": "1.06318127605e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 2: product",
+          "scaled_error": "1.01759149687e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 2: raw sigma product",
+          "scaled_error": "1.26955677951e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 2: u canonical",
+          "scaled_error": "3.64316775426e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 2: v canonical",
+          "scaled_error": "3.30510035068e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 2: Wronskian",
+          "scaled_error": "1.78966063708e-33",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 2: u polynomial potential",
+          "scaled_error": "4.26399437423e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 2: v polynomial potential",
+          "scaled_error": "3.65191866083e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 3: u sigma versus square root",
+          "scaled_error": "1.24385711441e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 3: v sigma versus square root",
+          "scaled_error": "1.23278789132e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 3: product",
+          "scaled_error": "1.47182632836e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 3: raw sigma product",
+          "scaled_error": "9.64335985794e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 3: u canonical",
+          "scaled_error": "3.34762268704e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 3: v canonical",
+          "scaled_error": "2.5036106422e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 3: Wronskian",
+          "scaled_error": "1.58639479429e-33",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 3: u polynomial potential",
+          "scaled_error": "3.39714584793e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 3: v polynomial potential",
+          "scaled_error": "3.28664682518e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 4: u sigma versus square root",
+          "scaled_error": "1.51101940366e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 4: v sigma versus square root",
+          "scaled_error": "1.52821902325e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 4: product",
+          "scaled_error": "1.56282211957e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 4: raw sigma product",
+          "scaled_error": "7.35629919132e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 4: u canonical",
+          "scaled_error": "2.68391619088e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 4: v canonical",
+          "scaled_error": "2.56198827011e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 4: Wronskian",
+          "scaled_error": "1.07931913781e-33",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 4: u polynomial potential",
+          "scaled_error": "2.83794758612e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 4: v polynomial potential",
+          "scaled_error": "3.17109769213e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 5: u sigma versus square root",
+          "scaled_error": "4.85363220741e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 5: v sigma versus square root",
+          "scaled_error": "1.24196606056e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 5: product",
+          "scaled_error": "1.57728256351e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 5: raw sigma product",
+          "scaled_error": "3.05009794227e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 5: u canonical",
+          "scaled_error": "2.24129836674e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 5: v canonical",
+          "scaled_error": "1.10560213656e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 5: Wronskian",
+          "scaled_error": "1.43469646339e-33",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 5: u polynomial potential",
+          "scaled_error": "2.25870950693e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 5: v polynomial potential",
+          "scaled_error": "1.40955711644e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 6: u sigma versus square root",
+          "scaled_error": "6.98949642109e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 6: v sigma versus square root",
+          "scaled_error": "1.69342350492e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 6: product",
+          "scaled_error": "2.99550843593e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 6: raw sigma product",
+          "scaled_error": "7.0129154063e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 6: u canonical",
+          "scaled_error": "1.61291635287e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 6: v canonical",
+          "scaled_error": "4.70102933897e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 6: Wronskian",
+          "scaled_error": "8.83016203065e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 6: u polynomial potential",
+          "scaled_error": "2.0731591291e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 6: v polynomial potential",
+          "scaled_error": "2.9802605399e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 7: u sigma versus square root",
+          "scaled_error": "1.49717030227e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 7: v sigma versus square root",
+          "scaled_error": "7.48582892679e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 7: product",
+          "scaled_error": "7.44867708115e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 7: raw sigma product",
+          "scaled_error": "1.48974177526e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 7: u canonical",
+          "scaled_error": "6.72841863658e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 7: v canonical",
+          "scaled_error": "6.82406372206e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 7: Wronskian",
+          "scaled_error": "4.05089830435e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 7: u polynomial potential",
+          "scaled_error": "1.36459057245e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5, mode 7: v polynomial potential",
+          "scaled_error": "5.32188536635e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: general-Q Hamiltonian",
+          "scaled_error": "6.74702574628e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: general-Q u_1 canonical",
+          "scaled_error": "2.84895020071e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: general-Q v_1 canonical",
+          "scaled_error": "3.57812861844e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: general-Q u_2 canonical",
+          "scaled_error": "3.87293555095e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: general-Q v_2 canonical",
+          "scaled_error": "2.9350233801e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: general-Q u_3 canonical",
+          "scaled_error": "3.34762268704e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: general-Q v_3 canonical",
+          "scaled_error": "2.5036106422e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: general-Q u_4 canonical",
+          "scaled_error": "2.68391619088e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: general-Q v_4 canonical",
+          "scaled_error": "2.56198827011e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: general-Q u_5 canonical",
+          "scaled_error": "2.24129836674e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: general-Q v_5 canonical",
+          "scaled_error": "1.10560213656e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: general-Q u_6 canonical",
+          "scaled_error": "1.61291635287e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: general-Q v_6 canonical",
+          "scaled_error": "4.70102933897e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: general-Q u_7 canonical",
+          "scaled_error": "6.72841863658e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 0.5: general-Q v_7 canonical",
+          "scaled_error": "6.82406372206e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: Hamiltonian",
+          "scaled_error": "1.11967572544e-33",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 1: u sigma versus square root",
+          "scaled_error": "1.82859610261e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 1: v sigma versus square root",
+          "scaled_error": "1.20553486004e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 1: product",
+          "scaled_error": "9.751111679e-37",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 1: raw sigma product",
+          "scaled_error": "1.2092368321e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 1: u canonical",
+          "scaled_error": "1.63120130645e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 1: v canonical",
+          "scaled_error": "3.45335142701e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 1: Wronskian",
+          "scaled_error": "1.66446044141e-33",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 1: u polynomial potential",
+          "scaled_error": "1.86579052409e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 1: v polynomial potential",
+          "scaled_error": "3.68388494219e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 2: u sigma versus square root",
+          "scaled_error": "3.05403000863e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 2: v sigma versus square root",
+          "scaled_error": "3.15010114109e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 2: product",
+          "scaled_error": "1.0761732945e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 2: raw sigma product",
+          "scaled_error": "1.25154346237e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 2: u canonical",
+          "scaled_error": "2.07414174621e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 2: v canonical",
+          "scaled_error": "4.39406611477e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 2: Wronskian",
+          "scaled_error": "2.15448327342e-33",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 2: u polynomial potential",
+          "scaled_error": "2.57207675737e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 2: v polynomial potential",
+          "scaled_error": "4.62335990944e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 3: u sigma versus square root",
+          "scaled_error": "2.12823647639e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 3: v sigma versus square root",
+          "scaled_error": "2.92308625578e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 3: product",
+          "scaled_error": "1.15668456413e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 3: raw sigma product",
+          "scaled_error": "8.50690896289e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 3: u canonical",
+          "scaled_error": "2.13183817548e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 3: v canonical",
+          "scaled_error": "3.21647842433e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 3: Wronskian",
+          "scaled_error": "1.52867163478e-33",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 3: u polynomial potential",
+          "scaled_error": "2.50279642443e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 3: v polynomial potential",
+          "scaled_error": "2.65921364463e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 4: u sigma versus square root",
+          "scaled_error": "1.74766045687e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 4: v sigma versus square root",
+          "scaled_error": "1.71631205011e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 4: product",
+          "scaled_error": "2.99495352804e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 4: raw sigma product",
+          "scaled_error": "4.87010154156e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 4: u canonical",
+          "scaled_error": "1.48329587039e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 4: v canonical",
+          "scaled_error": "3.17190868681e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 4: Wronskian",
+          "scaled_error": "1.27291558344e-33",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 4: u polynomial potential",
+          "scaled_error": "1.42268260741e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 4: v polynomial potential",
+          "scaled_error": "2.6874019285e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 5: u sigma versus square root",
+          "scaled_error": "1.13451573564e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 5: v sigma versus square root",
+          "scaled_error": "2.17600078778e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 5: product",
+          "scaled_error": "1.04148505214e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 5: raw sigma product",
+          "scaled_error": "3.08529120539e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 5: u canonical",
+          "scaled_error": "1.37833917465e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 5: v canonical",
+          "scaled_error": "1.76714281311e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 5: Wronskian",
+          "scaled_error": "1.39659545601e-33",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 5: u polynomial potential",
+          "scaled_error": "9.01291224589e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 5: v polynomial potential",
+          "scaled_error": "1.56410855804e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 6: u sigma versus square root",
+          "scaled_error": "3.20444279262e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 6: v sigma versus square root",
+          "scaled_error": "2.99475987966e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 6: product",
+          "scaled_error": "4.60034178459e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 6: raw sigma product",
+          "scaled_error": "1.09918340184e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 6: u canonical",
+          "scaled_error": "1.06117427599e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 6: v canonical",
+          "scaled_error": "3.60947769558e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 6: Wronskian",
+          "scaled_error": "9.77445498002e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 6: u polynomial potential",
+          "scaled_error": "1.26408804133e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 6: v polynomial potential",
+          "scaled_error": "6.52595426297e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 7: u sigma versus square root",
+          "scaled_error": "2.97962621322e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 7: v sigma versus square root",
+          "scaled_error": "2.97962785346e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 7: product",
+          "scaled_error": "5.90052069645e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 7: raw sigma product",
+          "scaled_error": "1.47513569479e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 7: u canonical",
+          "scaled_error": "6.68244686025e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 7: v canonical",
+          "scaled_error": "6.91677862792e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 7: Wronskian",
+          "scaled_error": "2.26762534499e-34",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 7: u polynomial potential",
+          "scaled_error": "8.98453128825e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0, mode 7: v polynomial potential",
+          "scaled_error": "4.50984111807e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: general-Q Hamiltonian",
+          "scaled_error": "1.11456943593e-33",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: general-Q u_1 canonical",
+          "scaled_error": "1.42865761365e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: general-Q v_1 canonical",
+          "scaled_error": "3.71387432942e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: general-Q u_2 canonical",
+          "scaled_error": "2.3249921745e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: general-Q v_2 canonical",
+          "scaled_error": "4.16907481842e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: general-Q u_3 canonical",
+          "scaled_error": "2.28092972132e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: general-Q v_3 canonical",
+          "scaled_error": "3.30525204408e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: general-Q u_4 canonical",
+          "scaled_error": "1.59180334416e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: general-Q v_4 canonical",
+          "scaled_error": "3.26736319965e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: general-Q u_5 canonical",
+          "scaled_error": "1.45856074484e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: general-Q v_5 canonical",
+          "scaled_error": "1.79185589931e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: general-Q u_6 canonical",
+          "scaled_error": "1.13354840554e-35",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: general-Q v_6 canonical",
+          "scaled_error": "3.35610304348e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: general-Q u_7 canonical",
+          "scaled_error": "6.81450452415e-36",
+          "passed": true
+        },
+        {
+          "check": "sheet -1, fraction 1.0: general-Q v_7 canonical",
+          "scaled_error": "7.76649584273e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15: Hamiltonian",
+          "scaled_error": "1.32407683677e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15: U",
+          "scaled_error": "2.35176811889e-72",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15: V",
+          "scaled_error": "3.20085829099e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 1: product",
+          "scaled_error": "9.99340984012e-37",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 1: u canonical derivative",
+          "scaled_error": "1.29513955783e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 1: v canonical derivative",
+          "scaled_error": "8.8068831573e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 1: Wronskian",
+          "scaled_error": "8.34700829935e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 1: u polynomial ODE",
+          "scaled_error": "4.55756175035e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 1: v polynomial ODE",
+          "scaled_error": "3.72809768147e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 2: product",
+          "scaled_error": "5.04064630202e-73",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 2: u canonical derivative",
+          "scaled_error": "1.4928397222e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 2: v canonical derivative",
+          "scaled_error": "3.77662479028e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 2: Wronskian",
+          "scaled_error": "7.29533535911e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 2: u polynomial ODE",
+          "scaled_error": "2.42461868338e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 2: v polynomial ODE",
+          "scaled_error": "1.54062174838e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 3: product",
+          "scaled_error": "8.74559161756e-73",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 3: u canonical derivative",
+          "scaled_error": "1.05068356849e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 3: v canonical derivative",
+          "scaled_error": "5.03137009148e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 3: Wronskian",
+          "scaled_error": "4.31715514192e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 3: u polynomial ODE",
+          "scaled_error": "1.28149848516e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 3: v polynomial ODE",
+          "scaled_error": "7.19503585448e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 4: product",
+          "scaled_error": "7.01790669238e-73",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 4: u canonical derivative",
+          "scaled_error": "1.07243501192e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 4: v canonical derivative",
+          "scaled_error": "6.01491217014e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 4: Wronskian",
+          "scaled_error": "5.70986088091e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 4: u polynomial ODE",
+          "scaled_error": "2.28239910598e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 4: v polynomial ODE",
+          "scaled_error": "1.52947226301e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 5: product",
+          "scaled_error": "6.09239625709e-73",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 5: u canonical derivative",
+          "scaled_error": "6.88270969218e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 5: v canonical derivative",
+          "scaled_error": "5.96638330151e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 5: Wronskian",
+          "scaled_error": "3.41483338525e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 5: u polynomial ODE",
+          "scaled_error": "2.15569362562e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 5: v polynomial ODE",
+          "scaled_error": "4.71098530013e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 6: product",
+          "scaled_error": "1.18291562729e-72",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 6: u canonical derivative",
+          "scaled_error": "5.57532357168e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 6: v canonical derivative",
+          "scaled_error": "3.12245817499e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 6: Wronskian",
+          "scaled_error": "3.82001620101e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 6: u polynomial ODE",
+          "scaled_error": "1.82837697769e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 6: v polynomial ODE",
+          "scaled_error": "2.02269425149e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 7: product",
+          "scaled_error": "3.92338762893e-74",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 7: u canonical derivative",
+          "scaled_error": "4.15265798336e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 7: v canonical derivative",
+          "scaled_error": "2.90987126839e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 7: Wronskian",
+          "scaled_error": "1.81453336129e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 7: u polynomial ODE",
+          "scaled_error": "2.35401824584e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15, mode 7: v polynomial ODE",
+          "scaled_error": "6.59320041115e-37",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.15: vanishing mode signed continuation",
+          "scaled_error": "0.0",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075: Hamiltonian",
+          "scaled_error": "1.25952554447e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075: U",
+          "scaled_error": "3.4727470871e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075: V",
+          "scaled_error": "3.12469902621e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 1: product",
+          "scaled_error": "7.09690887229e-37",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 1: u canonical derivative",
+          "scaled_error": "2.94569466114e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 1: v canonical derivative",
+          "scaled_error": "1.18864600499e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 1: Wronskian",
+          "scaled_error": "9.59872339048e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 1: u polynomial ODE",
+          "scaled_error": "4.14487438727e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 1: v polynomial ODE",
+          "scaled_error": "1.80768998554e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 2: product",
+          "scaled_error": "1.26438583818e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 2: u canonical derivative",
+          "scaled_error": "1.52315987428e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 2: v canonical derivative",
+          "scaled_error": "1.20558637699e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 2: Wronskian",
+          "scaled_error": "8.10971924202e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 2: u polynomial ODE",
+          "scaled_error": "1.44330336426e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 2: v polynomial ODE",
+          "scaled_error": "8.66537395662e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 3: product",
+          "scaled_error": "7.13079873689e-37",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 3: u canonical derivative",
+          "scaled_error": "1.03996800574e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 3: v canonical derivative",
+          "scaled_error": "8.9590688814e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 3: Wronskian",
+          "scaled_error": "4.12360033686e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 3: u polynomial ODE",
+          "scaled_error": "1.49880892167e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 3: v polynomial ODE",
+          "scaled_error": "1.51192042011e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 4: product",
+          "scaled_error": "1.0641079106e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 4: u canonical derivative",
+          "scaled_error": "1.3700514012e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 4: v canonical derivative",
+          "scaled_error": "1.48880860867e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 4: Wronskian",
+          "scaled_error": "5.22582610011e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 4: u polynomial ODE",
+          "scaled_error": "8.01563893965e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 4: v polynomial ODE",
+          "scaled_error": "6.56714748754e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 5: product",
+          "scaled_error": "1.51383874966e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 5: u canonical derivative",
+          "scaled_error": "8.58576904258e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 5: v canonical derivative",
+          "scaled_error": "1.22514535932e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 5: Wronskian",
+          "scaled_error": "3.49742073991e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 5: u polynomial ODE",
+          "scaled_error": "1.27694172372e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 5: v polynomial ODE",
+          "scaled_error": "1.75407171929e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 6: product",
+          "scaled_error": "6.22967935564e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 6: u canonical derivative",
+          "scaled_error": "9.55146203905e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 6: v canonical derivative",
+          "scaled_error": "2.83066244327e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 6: Wronskian",
+          "scaled_error": "6.23009080541e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 6: u polynomial ODE",
+          "scaled_error": "8.57786743824e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 6: v polynomial ODE",
+          "scaled_error": "2.07807810149e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 7: product",
+          "scaled_error": "1.30643194945e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 7: u canonical derivative",
+          "scaled_error": "4.7121140884e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 7: v canonical derivative",
+          "scaled_error": "2.42068133884e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 7: Wronskian",
+          "scaled_error": "1.81511678382e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 7: u polynomial ODE",
+          "scaled_error": "4.50393994509e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075, mode 7: v polynomial ODE",
+          "scaled_error": "2.4068305596e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.075: vanishing mode signed continuation",
+          "scaled_error": "2.19234191554e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0: Hamiltonian",
+          "scaled_error": "1.90151736559e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0: U",
+          "scaled_error": "1.90151736559e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0: V",
+          "scaled_error": "3.89393944622e-49",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 1: product",
+          "scaled_error": "1.4119423921e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 1: u canonical derivative",
+          "scaled_error": "3.62955873342e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 1: v canonical derivative",
+          "scaled_error": "1.16065924475e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 1: Wronskian",
+          "scaled_error": "8.76641973297e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 1: u polynomial ODE",
+          "scaled_error": "1.78783337223e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 1: v polynomial ODE",
+          "scaled_error": "1.10819200172e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 2: product",
+          "scaled_error": "5.18252969831e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 2: u canonical derivative",
+          "scaled_error": "1.25637305764e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 2: v canonical derivative",
+          "scaled_error": "4.26720418294e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 2: Wronskian",
+          "scaled_error": "8.56732669662e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 2: u polynomial ODE",
+          "scaled_error": "1.58215930788e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 2: v polynomial ODE",
+          "scaled_error": "1.84946448439e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 3: product",
+          "scaled_error": "4.36699967934e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 3: u canonical derivative",
+          "scaled_error": "1.30997272467e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 3: v canonical derivative",
+          "scaled_error": "1.36644195154e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 3: Wronskian",
+          "scaled_error": "3.96276340909e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 3: u polynomial ODE",
+          "scaled_error": "1.17711210754e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 3: v polynomial ODE",
+          "scaled_error": "1.98633190135e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 4: product",
+          "scaled_error": "5.07098572091e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 4: u canonical derivative",
+          "scaled_error": "1.21093348618e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 4: v canonical derivative",
+          "scaled_error": "4.01925811507e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 4: Wronskian",
+          "scaled_error": "6.4287211719e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 4: u polynomial ODE",
+          "scaled_error": "1.1346491585e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 4: v polynomial ODE",
+          "scaled_error": "1.96586344848e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 5: product",
+          "scaled_error": "4.90351675747e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 5: u canonical derivative",
+          "scaled_error": "1.21993987023e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 5: v canonical derivative",
+          "scaled_error": "1.48148090716e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 5: Wronskian",
+          "scaled_error": "2.29700492611e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 5: u polynomial ODE",
+          "scaled_error": "4.90431633668e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 5: v polynomial ODE",
+          "scaled_error": "4.29058499027e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 6: product",
+          "scaled_error": "2.1065849137e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 6: u canonical derivative",
+          "scaled_error": "8.15483304621e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 6: v canonical derivative",
+          "scaled_error": "3.75570794503e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 6: Wronskian",
+          "scaled_error": "7.40309373777e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 6: u polynomial ODE",
+          "scaled_error": "1.10216542704e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 6: v polynomial ODE",
+          "scaled_error": "2.22759609593e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 7: product",
+          "scaled_error": "1.02838798299e-85",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 7: u canonical derivative",
+          "scaled_error": "4.72145509914e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 7: v canonical derivative",
+          "scaled_error": "1.92333049712e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 7: Wronskian",
+          "scaled_error": "1.90151736559e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 7: u polynomial ODE",
+          "scaled_error": "3.00900358194e-32",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0, mode 7: v polynomial ODE",
+          "scaled_error": "2.11123975409e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=0.0: vanishing mode signed continuation",
+          "scaled_error": "4.72435787762e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075: Hamiltonian",
+          "scaled_error": "2.59548760817e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075: U",
+          "scaled_error": "1.54288386132e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075: V",
+          "scaled_error": "3.75270982592e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 1: product",
+          "scaled_error": "4.08562435449e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 1: u canonical derivative",
+          "scaled_error": "3.46480864602e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 1: v canonical derivative",
+          "scaled_error": "1.44058818345e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 1: Wronskian",
+          "scaled_error": "1.02014620332e-33",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 1: u polynomial ODE",
+          "scaled_error": "2.15959637428e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 1: v polynomial ODE",
+          "scaled_error": "2.51902153229e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 2: product",
+          "scaled_error": "3.62450617466e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 2: u canonical derivative",
+          "scaled_error": "1.15151075311e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 2: v canonical derivative",
+          "scaled_error": "2.67111273761e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 2: Wronskian",
+          "scaled_error": "8.70681718051e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 2: u polynomial ODE",
+          "scaled_error": "3.56005303963e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 2: v polynomial ODE",
+          "scaled_error": "1.76529384429e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 3: product",
+          "scaled_error": "4.53679217584e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 3: u canonical derivative",
+          "scaled_error": "1.67888924028e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 3: v canonical derivative",
+          "scaled_error": "2.27853941012e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 3: Wronskian",
+          "scaled_error": "8.71902258716e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 3: u polynomial ODE",
+          "scaled_error": "3.79194802544e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 3: v polynomial ODE",
+          "scaled_error": "1.374062097e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 4: product",
+          "scaled_error": "4.00653637506e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 4: u canonical derivative",
+          "scaled_error": "1.21966075074e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 4: v canonical derivative",
+          "scaled_error": "1.44611507752e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 4: Wronskian",
+          "scaled_error": "4.33952854072e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 4: u polynomial ODE",
+          "scaled_error": "1.29997136223e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 4: v polynomial ODE",
+          "scaled_error": "2.18839899565e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 5: product",
+          "scaled_error": "3.06788053205e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 5: u canonical derivative",
+          "scaled_error": "8.61079766125e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 5: v canonical derivative",
+          "scaled_error": "9.09257962594e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 5: Wronskian",
+          "scaled_error": "2.34990778687e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 5: u polynomial ODE",
+          "scaled_error": "1.64832013756e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 5: v polynomial ODE",
+          "scaled_error": "1.67307896018e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 6: product",
+          "scaled_error": "6.22828040101e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 6: u canonical derivative",
+          "scaled_error": "2.55294985102e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 6: v canonical derivative",
+          "scaled_error": "6.85372022623e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 6: Wronskian",
+          "scaled_error": "8.20740681745e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 6: u polynomial ODE",
+          "scaled_error": "7.89230610965e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 6: v polynomial ODE",
+          "scaled_error": "9.40241223434e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 7: product",
+          "scaled_error": "2.22292251874e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 7: u canonical derivative",
+          "scaled_error": "4.61900831341e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 7: v canonical derivative",
+          "scaled_error": "2.14340793592e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 7: Wronskian",
+          "scaled_error": "1.9160654946e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 7: u polynomial ODE",
+          "scaled_error": "1.59766989803e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075, mode 7: v polynomial ODE",
+          "scaled_error": "1.37201751137e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.075: vanishing mode signed continuation",
+          "scaled_error": "7.1391402562e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15: Hamiltonian",
+          "scaled_error": "3.74385515915e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15: U",
+          "scaled_error": "1.06943490604e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15: V",
+          "scaled_error": "3.1776992747e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 1: product",
+          "scaled_error": "4.11959891326e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 1: u canonical derivative",
+          "scaled_error": "1.6624820188e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 1: v canonical derivative",
+          "scaled_error": "1.74740676605e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 1: Wronskian",
+          "scaled_error": "1.07949521669e-33",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 1: u polynomial ODE",
+          "scaled_error": "2.68929520546e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 1: v polynomial ODE",
+          "scaled_error": "1.50761945573e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 2: product",
+          "scaled_error": "7.22299593732e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 2: u canonical derivative",
+          "scaled_error": "9.34489661042e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 2: v canonical derivative",
+          "scaled_error": "1.22543675437e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 2: Wronskian",
+          "scaled_error": "6.16248284391e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 2: u polynomial ODE",
+          "scaled_error": "2.15986024037e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 2: v polynomial ODE",
+          "scaled_error": "1.2478740716e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 3: product",
+          "scaled_error": "3.14394968677e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 3: u canonical derivative",
+          "scaled_error": "1.4654905741e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 3: v canonical derivative",
+          "scaled_error": "1.1551468296e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 3: Wronskian",
+          "scaled_error": "6.9230981043e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 3: u polynomial ODE",
+          "scaled_error": "2.77655024523e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 3: v polynomial ODE",
+          "scaled_error": "1.07093692321e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 4: product",
+          "scaled_error": "5.18288580657e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 4: u canonical derivative",
+          "scaled_error": "9.99894342918e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 4: v canonical derivative",
+          "scaled_error": "1.07710716337e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 4: Wronskian",
+          "scaled_error": "6.2101911496e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 4: u polynomial ODE",
+          "scaled_error": "8.95273674996e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 4: v polynomial ODE",
+          "scaled_error": "1.31872410529e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 5: product",
+          "scaled_error": "4.75927912411e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 5: u canonical derivative",
+          "scaled_error": "5.34484590899e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 5: v canonical derivative",
+          "scaled_error": "9.29807546233e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 5: Wronskian",
+          "scaled_error": "3.27129184141e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 5: u polynomial ODE",
+          "scaled_error": "8.94171377461e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 5: v polynomial ODE",
+          "scaled_error": "2.13214904059e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 6: product",
+          "scaled_error": "3.57578219288e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 6: u canonical derivative",
+          "scaled_error": "1.37173354775e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 6: v canonical derivative",
+          "scaled_error": "6.28952523471e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 6: Wronskian",
+          "scaled_error": "8.84712824233e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 6: u polynomial ODE",
+          "scaled_error": "5.54833173899e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 6: v polynomial ODE",
+          "scaled_error": "5.59213438668e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 7: product",
+          "scaled_error": "2.0958047415e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 7: u canonical derivative",
+          "scaled_error": "5.15074770451e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 7: v canonical derivative",
+          "scaled_error": "2.26125950654e-35",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 7: Wronskian",
+          "scaled_error": "1.91540408021e-34",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 7: u polynomial ODE",
+          "scaled_error": "9.59577067357e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15, mode 7: v polynomial ODE",
+          "scaled_error": "1.65152318438e-36",
+          "passed": true
+        },
+        {
+          "check": "turn t=-0.15: vanishing mode signed continuation",
+          "scaled_error": "9.57962123566e-35",
+          "passed": true
+        }
+      ],
+      "turning_samples": [
+        {
+          "t": "0.15",
+          "rho": "3.0225",
+          "Y": "8.27326120929992479",
+          "u_last": "(1.0 + 0.0j)",
+          "du_last": "(183.850249095553884 - 4.50621196511058264e-33j)"
+        },
+        {
+          "t": "0.075",
+          "rho": "3.005625",
+          "Y": "4.05270469510200184",
+          "u_last": "(0.5 + 1.24351059756946776e-35j)",
+          "du_last": "(180.120208671200082 - 4.54478503326270987e-33j)"
+        },
+        {
+          "t": "0.0",
+          "rho": "3.0",
+          "Y": "0.0",
+          "u_last": "(3.99403092170469659e-35 + 2.52334586458139885e-35j)",
+          "du_last": "(178.885438199983176 - 4.64434499544229642e-33j)"
+        },
+        {
+          "t": "-0.075",
+          "rho": "3.005625",
+          "Y": "-4.05270469510200184",
+          "u_last": "(-0.5 + 3.83987073772673479e-35j)",
+          "du_last": "(180.120208671200082 - 4.80901900719686305e-33j)"
+        },
+        {
+          "t": "-0.15",
+          "rho": "3.0225",
+          "Y": "-8.27326120929992479",
+          "u_last": "(-1.0 + 5.19327444010331935e-35j)",
+          "du_last": "(183.850249095553884 - 5.0443528936405577e-33j)"
+        }
+      ],
+      "seconds": 39.642
+    }
+  ],
+  "check_count": 1003,
+  "all_passed": true
+}

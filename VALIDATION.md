@@ -1,5 +1,28 @@
 # Repository validation
 
+## Main-paper extension packages: 23 October 2026
+
+Moved the branch-point and higher-degree computational material from the
+ignored exploratory folder into `code/hyperelliptic_scalar_first/`.
+Each package includes executable marimo notebooks, model and verification
+modules, saved reports, executed HTML and mathematical derivation notes.
+Separated branch models from verification and extracted the shared integer
+period-coordinate helper into `abel_lifts.py`.
+
+Executed all three migrated notebooks: 1,003 branch-mode checks, 292 branch
+determinant checks and 629 higher-degree checks pass. Their JSON reports
+match the earlier reports exactly apart from run times. The HTML exports
+contain no notebook execution errors, exploratory-folder dependencies or
+absolute workspace paths. Marimo checks and Python compilation pass.
+
+Tested all three command-line imports and 100 exact checks in an isolated
+copy containing only the main code folder. The remaining Ferrer and
+auxiliary-determinant-chain experiments import the migrated shared modules
+successfully and remain outside the main code. Updated navigation and
+execution instructions; the fast paper verifier now checks all three new
+saved reports and passes. Refreshed the checksum manifest to include the
+new packages. The manuscript and its PDF were not changed by this migration.
+
 ## Polynomial correction integrals and longer determinants: 23 October 2026
 
 Integrated arbitrary polynomial correction integrals into the mode-solution

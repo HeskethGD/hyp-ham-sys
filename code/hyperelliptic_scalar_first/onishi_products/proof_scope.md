@@ -16,7 +16,7 @@ The proof covers the two standard interpolation families, `degree(q)<=g` and `de
 
 The following are extensions, rather than gaps in either current example:
 
-1. **Higher scalar degree.** The general mode theorem can allow a scalar restriction of degree greater than `g+1`. The longer Onishi pole basis contains further ordinate columns. A determinant proposal needs a nonzero interpolation minor/rank argument and the corresponding sigma factorization. No arbitrary-degree claim is made here.
+1. **Higher scalar degree.** This notebook tests only the two short column lists above. The longer pole-ordered lists, their nonzero interpolation minors and sigma factorization are now treated in the companion [higher_degree](../higher_degree/README.md) package.
 2. **Forced repeated rows.** Weights or degeneracies that cannot be shared between two internally distinct lists require confluent Onishi limits and Hermite interpolation. Simply duplicating a row gives a zero determinant and is invalid. Those limits are not proved in this notebook.
 3. **Obstructed balanced mode lifts.** If all weights have a nontrivial common divisor, it may be impossible to absorb a given period vector using identical lifts for each mode's copies. One must retain quasi-period exponential multipliers or justify a lift choice for individual divisor copies. The examples each have unit-weight points, so this obstruction does not arise.
 4. **Reconstructing the entire Hamiltonian from the determinant.** Interpolation gives `q` on the invariant power line. It does not specify the off-line polynomial `Q` or its independent partial derivatives, which control the individual phase terms. Many different `Q` share the same `q` and determinant. The paper supplies `Q` before forming these products.
