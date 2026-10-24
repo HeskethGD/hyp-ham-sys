@@ -234,3 +234,6 @@ reviews/
 
 # Historical notes and separate draft
 /part_2/
+
+# Local Generapy usage review and draft upstream issues
+/generapy_review/
